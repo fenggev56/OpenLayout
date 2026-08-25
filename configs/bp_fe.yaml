@@ -1,0 +1,93 @@
+# OpenLayout flow config — bp_fe on Nangate45 (PlaceReasoner-Bench).
+# Everything user-editable lives here: paths, per-stage budgets, design goal,
+# LLM provider, macro-stage sampling.
+
+design:
+  name: bp_fe
+  top: bp_fe_top
+  data_dir: Benchmark/PlaceReasoner-Bench/bp_fe
+  netlist: bp_fe.v                       # relative to data_dir
+  sdc: constraint.sdc
+  floorplan_def: def/1_1_u60_floorplan.def   # predefined floorplan (ar1)
+  cluster_file: Benchmark/PlaceReasoner-Bench/bp_fe/bp_fe_macro_clusters.txt
+
+paths:
+  output_dir: output/bp_fe
+  image_dir:  output/bp_fe/Optimize_images/bp_fe
+
+# Design goal: timing met + DRC clean. No area/power requirement.
+# Clock fmax = the default from synthesis SDC.
+goal:
+  timing_met: true
+  drc_clean: true
+  max_wns: 0.0          # setup wns must be >= this
+  max_area_um2: null
+  max_power_w: null
+  max_ir_drop_v: null   # IR drop is checked/reported; set a limit to enforce
+  # Priority order used to pick the best attempt when comparing parallel
+  # optimizer runs (timing first — most important). Reorder freely; known
+  # names: timing, drc, tns, placement, wirelength, power, area, ir_drop.
+  priority: [timing, drc, tns, placement, wirelength, power, area]
+
+# Technology (PDK) files: std-cell liberty + tech/cell LEF. Design-specific
+# macro LEF/LIB stay in design.data_dir/{lef,lib}. Relative to project root.
+tech:
+  dir: Digital_lib/Nangate45
+
+# Flow skill library: per-stage dirs with SKILL.md (shared) + DEBUGGER.md +
+# OPTIMIZER.md (role-specific) + template/ (executable, e.g. image_snapshot).
+skills:
+  flow_dir: skills/skills_openroad_flow
+
+# Layout snapshots (taken via the image_snapshot skill after every stage)
+image:
+  width: 1024
+  margin: 0.03
+
+llm:
+  provider: openai            # openai | local (OpenAI-compatible base_url)
+  model: gpt-5-mini
+  api_key_file: API_key/api_key_openai.md
+  base_url: null              # e.g. http://localhost:8000/v1 for local vLLM
+  max_output_tokens: 8192
+  max_attempts: 3
+  timeout: 600
+
+# Stage 1 — macro placement optimization (merged macroflow project).
+# Samples N candidates; each gets PPA/DRC feedback from the SAME simple
+# downstream scripts; the best is selected. Skipped when the design has no
+# macros (enable: auto).
+macro_stage:
+  enable: auto
+  candidates: 3
+  parallel_workers: 3
+  gate_a_max_refine: 2
+  gate_b_max_refine: 2
+  model_config: config_macro_gpt.yaml   # macroflow model YAML (VLM agents)
+  route_mode: light
+  eval_downstream: auto      # auto: only candidates without routed metrics
+  eval_droute_iter: 5        # light detailed-route iterations for feedback
+  eval_parallel: 3
+  timeout_s: 14400
+
+# Per-stage optimizer budgets (Debugger gets +debugger_extra_budget each).
+# When a budget runs out the stage keeps its best result and moves on.
+stages:
+  - {name: floorplan,    optimizer_budget: 0}
+  - {name: macro_place,  optimizer_budget: 0}   # optimization = candidate sampling
+  - {name: detail_place, optimizer_budget: 3}
+  - {name: cts,          optimizer_budget: 3}
+  - {name: route,        optimizer_budget: 3}
+  - {name: finish,       optimizer_budget: 3}
+
+agents:
+  optimizer_suggestions: 2    # parallel suggestions per optimizer action
+  debugger_extra_budget: 1    # debugger budget = optimizer_budget + this
+  parallel_eval: true
+  allow_tool_queries: true    # agents may request whitelisted OpenROAD queries
+  max_queries: 4              # per agent call (one extra LLM round)
+
+openroad:
+  executable: openroad
+  threads: 8
+  timeout_s: 7200

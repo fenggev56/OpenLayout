@@ -1,0 +1,45 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: swerv_wrapper)
+==============================================================================
+
+3 macro clusters, 28 macros
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[592] mem/Gen_dccm_enable_dccm/macros
+type=Macro macro_count=8 macro_types={'fakeram45_2048x39': 8}
+  mem/Gen_dccm_enable_dccm/mem_bank_0__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um orient=R0 pins=L131,R0,B0,T0
+  mem/Gen_dccm_enable_dccm/mem_bank_1__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um orient=R0 pins=L131,R0,B0,T0
+  mem/Gen_dccm_enable_dccm/mem_bank_2__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um orient=R0 pins=L131,R0,B0,T0
+  mem/Gen_dccm_enable_dccm/mem_bank_3__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um orient=R0 pins=L131,R0,B0,T0
+  mem/Gen_dccm_enable_dccm/mem_bank_4__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um orient=R0 pins=L131,R0,B0,T0
+  mem/Gen_dccm_enable_dccm/mem_bank_5__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um orient=R0 pins=L131,R0,B0,T0
+  mem/Gen_dccm_enable_dccm/mem_bank_6__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um orient=R0 pins=L131,R0,B0,T0
+  mem/Gen_dccm_enable_dccm/mem_bank_7__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um orient=R0 pins=L131,R0,B0,T0
+------------------------------------------------------------------------------
+[594] mem/icm/ic_tag_inst/macros
+type=Macro macro_count=4 macro_types={'fakeram45_64x21': 4}
+  mem/icm/ic_tag_inst.WAYS_0__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um orient=R0 pins=L72,R0,B0,T0
+  mem/icm/ic_tag_inst.WAYS_1__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um orient=R0 pins=L72,R0,B0,T0
+  mem/icm/ic_tag_inst.WAYS_2__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um orient=R0 pins=L72,R0,B0,T0
+  mem/icm/ic_tag_inst.WAYS_3__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um orient=R0 pins=L72,R0,B0,T0
+------------------------------------------------------------------------------
+[ 78] merged[mem/icm/ic_data_inst/WAYS_0__SUBBANKS_0__ic_bank_sb_way_data]+15
+type=Macro macro_count=16 macro_types={'fakeram45_256x34': 16}
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um orient=R0 pins=L113,R0,B0,T0

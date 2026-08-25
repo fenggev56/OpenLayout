@@ -1,0 +1,78 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: ethernet)
+==============================================================================
+
+2 macro clusters, 64 macros
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[ 23] wishbone/rx_fifo/fifo
+type=Macro macro_count=32 macro_types={'RAM16X1D': 32}
+  wishbone/rx_fifo.fifo.ram00  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram01  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram02  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram03  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram04  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram05  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram06  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram07  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram08  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram09  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram10  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram11  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram12  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram13  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram14  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram15  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram16  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram17  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram18  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram19  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram20  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram21  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram22  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram23  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram24  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram25  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram26  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram27  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram28  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram29  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram30  type=RAM16X1D size=23.5x17.05um
+  wishbone/rx_fifo.fifo.ram31  type=RAM16X1D size=23.5x17.05um
+------------------------------------------------------------------------------
+[ 24] wishbone/tx_fifo/fifo
+type=Macro macro_count=32 macro_types={'RAM16X1D': 32}
+  wishbone/tx_fifo.fifo.ram00  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram01  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram02  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram03  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram04  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram05  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram06  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram07  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram08  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram09  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram10  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram11  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram12  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram13  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram14  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram15  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram16  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram17  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram18  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram19  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram20  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram21  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram22  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram23  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram24  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram25  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram26  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram27  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram28  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram29  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram30  type=RAM16X1D size=23.5x17.05um
+  wishbone/tx_fifo.fifo.ram31  type=RAM16X1D size=23.5x17.05um

@@ -1,0 +1,113 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: ariane81)
+==============================================================================
+
+8 macro clusters, 81 macros
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[ 72] ex_stage_i/lsu_i/i_store_unit/i_amo_buffer
+type=Macro macro_count=1 macro_types={'fifo_v3_1': 1}
+  ex_stage_i/lsu_i/i_store_unit/i_amo_buffer.i_amo_fifo.i_fifo_v3  type=fifo_v3_1 size=35.905x42.685um orient=R0 pins=L97,R97,B42,T41
+------------------------------------------------------------------------------
+[131] issue_stage_i/i_issue_read_operands/macros
+type=Macro macro_count=1 macro_types={'ariane_regfile': 1}
+  issue_stage_i/i_issue_read_operands/i_ariane_regfile  type=ariane_regfile size=203.65x163.32um orient=R0 pins=L86,R86,B55,T54
+------------------------------------------------------------------------------
+[138] merged[i_cache_subsystem/i_icache/i_lfsr]+8/macros[fakeram45_256x32]
+type=Macro macro_count=16 macro_types={'fakeram45_256x32': 16}
+  i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+------------------------------------------------------------------------------
+[139] merged[i_cache_subsystem/i_icache/i_lfsr]+8/macros[fakeram45_256x48]
+type=Macro macro_count=4 macro_types={'fakeram45_256x48': 4}
+  i_cache_subsystem/i_icache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem  type=fakeram45_256x48 size=115.71x67.2um orient=R0 pins=L155,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem  type=fakeram45_256x48 size=115.71x67.2um orient=R0 pins=L155,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem  type=fakeram45_256x48 size=115.71x67.2um orient=R0 pins=L155,R0,B0,T0
+  i_cache_subsystem/i_icache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem  type=fakeram45_256x48 size=115.71x67.2um orient=R0 pins=L155,R0,B0,T0
+------------------------------------------------------------------------------
+[141] merged[i_cache_subsystem/i_nbdcache/sram_block_0__data_sram]+16/macros[fakeram45_256x16]
+type=Macro macro_count=25 macro_types={'fakeram45_256x16': 25}
+  i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_1  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_2  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_1  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_2  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_1  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_2  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_1  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_2  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_1  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_2  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_1  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_2  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_1  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_2  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_1  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_2  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/valid_dirty_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x16 size=77.71x40.6um orient=R0 pins=L59,R0,B0,T0
+------------------------------------------------------------------------------
+[140] merged[i_cache_subsystem/i_nbdcache/sram_block_0__data_sram]+16/macros[fakeram45_256x32]
+type=Macro macro_count=32 macro_types={'fakeram45_256x32': 32}
+  i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_0  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+  i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_1  type=fakeram45_256x32 size=78.66x64.4um orient=R0 pins=L107,R0,B0,T0
+------------------------------------------------------------------------------
+[142] merged[i_cache_subsystem/i_nbdcache/sram_block_0__data_sram]+16/macros[fakeram45_256x48]
+type=Macro macro_count=1 macro_types={'fakeram45_256x48': 1}
+  i_cache_subsystem/i_nbdcache/valid_dirty_sram/genblk1_0__i_ram/macro_mem_1  type=fakeram45_256x48 size=115.71x67.2um orient=R0 pins=L155,R0,B0,T0
+------------------------------------------------------------------------------
+[133] merged[i_frontend/i_fetch_fifo]+1/macros
+type=Macro macro_count=1 macro_types={'fifo_v3_8': 1}
+  i_frontend/i_fetch_fifo/i_fifo_v3  type=fifo_v3_8 size=123.245x147.49um orient=R0 pins=L121,R122,B51,T51

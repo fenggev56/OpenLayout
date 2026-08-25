@@ -1,0 +1,55 @@
+provider: openai
+
+# GPT-5.4 "place reasoner" — the multi-agent macro-placement system (Planner /
+# Placer / Checker / Optimizer) is driven by the OpenAI Responses API with
+# reasoning ON. Everything downstream (detail place, CTS, route, timing repair)
+# stays at skill defaults, per Instructions/placereasoner_gpt.md.
+openai:
+  model: gpt-5.4
+  # Key is read from $OPENAI_API_KEY first; this file is the fallback so the 5
+  # spawned candidate workers do not depend on a shell export.
+  api_key_file: API_key/api_key_openai.md
+  # Reasoning + function tools require /v1/responses (chat-completions rejects
+  # the combination for gpt-5.4). See macroflow/llm_openai.py.
+  reasoning_effort: medium
+  # Output budget covers reasoning + visible output; the agent loop's own
+  # max_tokens (~1536) is far too small for a reasoning model.
+  max_output_tokens: 16384
+  max_attempts: 5
+  timeout: 600
+
+tech_node: Nangate45
+default_eda_tool: openroad
+
+flow:
+  macro_candidates: 5
+  gate_a_max_refine: 4
+  gate_b_max_refine: 2
+  parallel_workers: 5
+  # The model emits explicit macro coordinates (submit_placement_plan) instead
+  # of the deterministic cluster-aware Python path, so GPT-5.4's placement
+  # reasoning actually determines PPA. Matches config_macro_base_vlmplace.yaml.
+  vlm_place_coords: true
+  # Optimizer (step 10) refinement budget — placereasoner_gpt.md says 2.
+  post_route_opt_loops: 2
+  optimizer_variants: 4
+
+image:
+  save_width: 1024
+  margin: 0.03
+  pin_overlay: true
+
+skills:
+  base_dir: skills
+  manifest:
+    - {name: openroad-init-script,      path: skills_Nangate45/0.init/SKILL_init.md}
+    - {name: macro-place-planner,       path: skills_Nangate45/1.macro_place/SKILL_planner.md}
+    - {name: macro-place-checker,       path: skills_Nangate45/1.macro_place/SKILL_checker.md}
+    - {name: detail-place,              path: skills_Nangate45/2.detail_place/skill.md}
+    - {name: post-detail-cts-route,     path: skills_Nangate45/3.post_detail_placement/skill.md}
+    - {name: ppa-checker,               path: skills_Nangate45/4.PPA_checker/SKILL.md}
+    - {name: macro-optimizer,           path: skills_Nangate45/5.optimizer/SKILL.md}
+
+benchmark_path: benchmark.json
+evals_path: evals.json
+output_dir: output

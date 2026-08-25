@@ -1,0 +1,106 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: vga_lcd)
+==============================================================================
+
+12 macro clusters, 62 macros
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[106] clut_mem/clut_mem/u_spram_256x24_composed[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block0  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block1  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+------------------------------------------------------------------------------
+[105] clut_mem/clut_mem/u_spram_256x24_composed[memory_block_64x24]
+type=Macro macro_count=2 macro_types={'memory_block_64x24': 2}
+  clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_1  type=memory_block_64x24 size=73.365x216.09um orient=R0 pins=L25,R25,B5,T4
+  clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_2  type=memory_block_64x24 size=73.365x216.09um orient=R0 pins=L25,R25,B5,T4
+------------------------------------------------------------------------------
+[107] clut_mem/clut_mem/u_spram_256x24_composed[memory_block_64x8]
+type=Macro macro_count=2 macro_types={'memory_block_64x8': 2}
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+------------------------------------------------------------------------------
+[109] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem4  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem5  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+------------------------------------------------------------------------------
+[108] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0[memory_block_64x8]
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+------------------------------------------------------------------------------
+[111] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem4  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem5  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+------------------------------------------------------------------------------
+[110] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1[memory_block_64x8]
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+------------------------------------------------------------------------------
+[113] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem4  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem5  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+------------------------------------------------------------------------------
+[112] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2[memory_block_64x8]
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+------------------------------------------------------------------------------
+[115] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem4  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem5  type=memory_block_128x8 size=63.28x185.84um orient=R0 pins=L15,R16,B3,T3
+------------------------------------------------------------------------------
+[114] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3[memory_block_64x8]
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+------------------------------------------------------------------------------
+[ 27] merged[line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0]+7
+type=Macro macro_count=32 macro_types={'memory_block_64x8': 32}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem0  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem1  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem2  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem3  type=memory_block_64x8 size=43.585x126.755um orient=R0 pins=L14,R15,B3,T3

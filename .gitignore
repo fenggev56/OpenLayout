@@ -1,0 +1,28 @@
+# --- Benchmark data (large; obtained separately, see Benchmark/README.md) ---
+# The PlaceReasoner-Bench design data is ~589 MB and is not tracked here.
+# Its documentation (Benchmark/PlaceReasoner-Bench/README.md) IS tracked.
+Benchmark/PlaceReasoner-Bench/*/
+!Benchmark/PlaceReasoner-Bench/README.md
+
+# --- Secrets ---
+# Never commit a real API key. Use the .example template or $OPENAI_API_KEY.
+API_key/*
+!API_key/*.example
+!API_key/README.md
+
+# --- Run artifacts ---
+output/
+work/
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- Editor / OS ---
+*.orig
+*.swp
+.DS_Store

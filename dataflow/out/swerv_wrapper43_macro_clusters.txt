@@ -1,0 +1,72 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: swerv_wrapper43)
+==============================================================================
+
+7 macro clusters, 43 macros
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[597] mem/Gen_dccm_enable_dccm/macros
+type=Macro macro_count=8 macro_types={'fakeram45_2048x39': 8}
+  mem/Gen_dccm_enable_dccm/mem_bank_0__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_1__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_2__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_3__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_4__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_5__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_6__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_7__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+------------------------------------------------------------------------------
+[601] mem/icm/ic_tag_inst/macros
+type=Macro macro_count=4 macro_types={'fakeram45_64x21': 4}
+  mem/icm/ic_tag_inst.WAYS_0__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um
+  mem/icm/ic_tag_inst.WAYS_1__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um
+  mem/icm/ic_tag_inst.WAYS_2__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um
+  mem/icm/ic_tag_inst.WAYS_3__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um
+------------------------------------------------------------------------------
+[ 81] merged[mem/icm/ic_data_inst/WAYS_0__SUBBANKS_0__ic_bank_sb_way_data]+15
+type=Macro macro_count=16 macro_types={'fakeram45_256x34': 16}
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+------------------------------------------------------------------------------
+[ 21] swerv/dec/dec_trigger
+type=Macro macro_count=8 macro_types={'rvmaskandmatch': 8}
+  swerv/dec/dec_trigger.genblk1_0__trigger_i0_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/dec/dec_trigger.genblk1_0__trigger_i1_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/dec/dec_trigger.genblk1_1__trigger_i0_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/dec/dec_trigger.genblk1_1__trigger_i1_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/dec/dec_trigger.genblk1_2__trigger_i0_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/dec/dec_trigger.genblk1_2__trigger_i1_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/dec/dec_trigger.genblk1_3__trigger_i0_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/dec/dec_trigger.genblk1_3__trigger_i1_match  type=rvmaskandmatch size=28.015x20.21um
+------------------------------------------------------------------------------
+[599] swerv/dmi_wrapper/macros
+type=Macro macro_count=1 macro_types={'rvjtag_tap': 1}
+  swerv/dmi_wrapper.i_jtag_tap  type=rvjtag_tap size=34.82x41.385um
+------------------------------------------------------------------------------
+[ 70] swerv/lsu/ecc
+type=Macro macro_count=2 macro_types={'rvecc_decode': 2}
+  swerv/lsu/ecc.Gen_dccm_enable_lsu_ecc_decode_hi  type=rvecc_decode size=22.845x33.265um
+  swerv/lsu/ecc.Gen_dccm_enable_lsu_ecc_decode_lo  type=rvecc_decode size=22.845x33.265um
+------------------------------------------------------------------------------
+[ 79] swerv/lsu/trigger
+type=Macro macro_count=4 macro_types={'rvmaskandmatch': 4}
+  swerv/lsu/trigger.genblk1_0__trigger_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/lsu/trigger.genblk1_1__trigger_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/lsu/trigger.genblk1_2__trigger_match  type=rvmaskandmatch size=28.015x20.21um
+  swerv/lsu/trigger.genblk1_3__trigger_match  type=rvmaskandmatch size=28.015x20.21um
