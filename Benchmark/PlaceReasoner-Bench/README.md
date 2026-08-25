@@ -5,6 +5,9 @@ open-source EDA flow, and an open technology node. Eight designs are each
 evaluated at 60% core utilization under two core aspect ratios (1:1 and 2:1),
 giving 16 placement tasks.
 
+Data download: **https://huggingface.co/datasets/fenggev566/PlaceReasoner-Bench**
+(see [`../README.md`](../README.md) — the design files are not tracked in git).
+
 ## Designs
 
 | Design | Top module | #Macros | #Clusters | #Types | Clk (ns) |

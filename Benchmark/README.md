@@ -5,11 +5,32 @@ utilization under two core aspect ratios (1:1 and 2:1) — 16 placement tasks.
 See [PlaceReasoner-Bench/README.md](PlaceReasoner-Bench/README.md) for the
 design table (including top module names), directory layout, and provenance.
 
-## Data is not tracked in git
+## Download the data
 
 The design data (netlists, DEFs, LEF/LIB) is roughly **589 MB**, so it is
 git-ignored rather than committed — large binaries in git history are
-permanent and would slow every clone. Only the documentation is tracked.
+permanent and would slow every clone. It is hosted on HuggingFace instead:
+
+**https://huggingface.co/datasets/fenggev566/PlaceReasoner-Bench**
+
+```bash
+pip install huggingface_hub
+
+hf download fenggev566/PlaceReasoner-Bench \
+  --repo-type dataset \
+  --local-dir Benchmark/PlaceReasoner-Bench
+```
+
+A single design:
+
+```bash
+hf download fenggev566/PlaceReasoner-Bench \
+  --repo-type dataset --include "bp_fe/*" \
+  --local-dir Benchmark/PlaceReasoner-Bench
+```
+
+Run this from the repository root so the data lands where `configs/*.yaml`
+expects it (`design.data_dir: Benchmark/PlaceReasoner-Bench/<design>`).
 
 Expected layout once the data is in place:
 

@@ -37,11 +37,30 @@ floorplan -> macro_place -> detail_place -> cts -> route -> finish
 - Layout images are taken through the `image_snapshot` skill
   (`skills/skills_openroad_flow/image_snapshot/`) after every stage.
 
-## Run
+## Benchmark data
+
+The design data is **not** in this repository (~589 MB). Fetch it from
+HuggingFace into `Benchmark/PlaceReasoner-Bench/` before running:
 
 ```bash
-conda activate coder
-cd OpenLayout
+pip install huggingface_hub
+hf download fenggev566/PlaceReasoner-Bench \
+  --repo-type dataset --local-dir Benchmark/PlaceReasoner-Bench
+```
+
+**PlaceReasoner-Bench** — 8 open-source designs on Nangate45, each at 60% core
+utilization under two core aspect ratios (1:1 and 2:1), giving 16 placement
+tasks: `ariane133`, `ariane81`, `bp_be`, `bp_fe`, `ethernet`, `swerv_wrapper`,
+`vga_lcd`, `VeriGPU`. See [`Benchmark/README.md`](Benchmark/README.md) for the
+design table (top module names, macro counts, clock periods) and layout.
+
+## Run
+
+An OpenAI-compatible API key is required for the LLM agents — export
+`$OPENAI_API_KEY`, or see [`API_key/README.md`](API_key/README.md) for the
+key-file route used by parallel candidate workers.
+
+```bash
 python run_openlayout.py --config configs/bp_fe.yaml            # whole flow
 python run_openlayout.py --config configs/bp_fe.yaml --stages detail_place cts
 python run_openlayout.py --config configs/bp_fe.yaml --no-llm   # worker-only
