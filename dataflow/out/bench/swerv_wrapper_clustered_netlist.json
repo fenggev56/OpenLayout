@@ -1,0 +1,4588 @@
+{
+  "design": "swerv_wrapper",
+  "directed": true,
+  "params": {
+    "min_num_inst": 1000,
+    "max_num_inst": 5000,
+    "max_num_macro": 12,
+    "min_num_macro": 4,
+    "virtual_weight": 500,
+    "net_threshold": 5,
+    "large_net_threshold": 500,
+    "num_bundled_pins_per_edge": 3,
+    "bisect_refine_passes": 4,
+    "bisect_balance": 0.1,
+    "tiny_cluster_inst": 100,
+    "dataflow_mode": "min"
+  },
+  "stats": {
+    "instances": 98067,
+    "macros": 28,
+    "io_bits": 1416,
+    "nets": 103407,
+    "clusters": 36,
+    "bundled_pins": 12
+  },
+  "clusters": [
+    {
+      "id": 603,
+      "name": "mem/Gen_dccm_enable_dccm/std",
+      "type": "StdCell",
+      "num_inst": 1197,
+      "num_macro": 0,
+      "area_um2": 1573.922
+    },
+    {
+      "id": 604,
+      "name": "mem/Gen_dccm_enable_dccm/macros",
+      "type": "Macro",
+      "num_inst": 8,
+      "num_macro": 8,
+      "area_um2": 363830.544,
+      "macro_masters": {
+        "fakeram45_2048x39": 8
+      }
+    },
+    {
+      "id": 570,
+      "name": "swerv/glue_logic(+5).p0",
+      "type": "StdCell",
+      "num_inst": 3160,
+      "num_macro": 0,
+      "area_um2": 5907.328
+    },
+    {
+      "id": 571,
+      "name": "swerv/glue_logic(+5).p1",
+      "type": "StdCell",
+      "num_inst": 3245,
+      "num_macro": 0,
+      "area_um2": 6141.674
+    },
+    {
+      "id": 605,
+      "name": "mem/icm/ic_tag_inst(+1)/std",
+      "type": "StdCell",
+      "num_inst": 386,
+      "num_macro": 0,
+      "area_um2": 643.188
+    },
+    {
+      "id": 606,
+      "name": "mem/icm/ic_tag_inst",
+      "type": "Macro",
+      "num_inst": 4,
+      "num_macro": 4,
+      "area_um2": 3797.416,
+      "macro_masters": {
+        "fakeram45_64x21": 4
+      }
+    },
+    {
+      "id": 22,
+      "name": "swerv/dec/glue_logic(+2)",
+      "type": "StdCell",
+      "num_inst": 4112,
+      "num_macro": 0,
+      "area_um2": 7264.726
+    },
+    {
+      "id": 56,
+      "name": "swerv/exu/mul_e1",
+      "type": "StdCell",
+      "num_inst": 4550,
+      "num_macro": 0,
+      "area_um2": 9390.066
+    },
+    {
+      "id": 574,
+      "name": "swerv/exu/glue_logic(+28).p0.p0",
+      "type": "StdCell",
+      "num_inst": 2992,
+      "num_macro": 0,
+      "area_um2": 3488.59
+    },
+    {
+      "id": 575,
+      "name": "swerv/exu/glue_logic(+28).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3036,
+      "num_macro": 0,
+      "area_um2": 4389.532
+    },
+    {
+      "id": 577,
+      "name": "swerv/exu/glue_logic(+28).p1.p0",
+      "type": "StdCell",
+      "num_inst": 2856,
+      "num_macro": 0,
+      "area_um2": 4778.956
+    },
+    {
+      "id": 578,
+      "name": "swerv/exu/glue_logic(+28).p1.p1",
+      "type": "StdCell",
+      "num_inst": 2806,
+      "num_macro": 0,
+      "area_um2": 6622.868
+    },
+    {
+      "id": 63,
+      "name": "swerv/ifu/aln",
+      "type": "StdCell",
+      "num_inst": 4986,
+      "num_macro": 0,
+      "area_um2": 7519.288
+    },
+    {
+      "id": 64,
+      "name": "swerv/ifu/bp(+4)",
+      "type": "StdCell",
+      "num_inst": 4432,
+      "num_macro": 0,
+      "area_um2": 7565.04
+    },
+    {
+      "id": 607,
+      "name": "swerv/ifu/glue_logic(+21)/std",
+      "type": "StdCell",
+      "num_inst": 4518,
+      "num_macro": 0,
+      "area_um2": 7989.044
+    },
+    {
+      "id": 608,
+      "name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "type": "Macro",
+      "num_inst": 16,
+      "num_macro": 16,
+      "area_um2": 103616.576,
+      "macro_masters": {
+        "fakeram45_256x34": 16
+      }
+    },
+    {
+      "id": 580,
+      "name": "swerv/lsu/glue_logic(+10).p0",
+      "type": "StdCell",
+      "num_inst": 2537,
+      "num_macro": 0,
+      "area_um2": 4553.122
+    },
+    {
+      "id": 581,
+      "name": "swerv/lsu/glue_logic(+10).p1",
+      "type": "StdCell",
+      "num_inst": 2598,
+      "num_macro": 0,
+      "area_um2": 5488.644
+    },
+    {
+      "id": 583,
+      "name": "swerv/dec/arf/glue_logic(+32).p0",
+      "type": "StdCell",
+      "num_inst": 4291,
+      "num_macro": 0,
+      "area_um2": 7872.536
+    },
+    {
+      "id": 584,
+      "name": "swerv/dec/arf/glue_logic(+32).p1",
+      "type": "StdCell",
+      "num_inst": 4267,
+      "num_macro": 0,
+      "area_um2": 6898.71
+    },
+    {
+      "id": 586,
+      "name": "swerv/dec/decode/glue_logic(+84).p0",
+      "type": "StdCell",
+      "num_inst": 4532,
+      "num_macro": 0,
+      "area_um2": 7053.788
+    },
+    {
+      "id": 587,
+      "name": "swerv/dec/decode/glue_logic(+84).p1",
+      "type": "StdCell",
+      "num_inst": 4507,
+      "num_macro": 0,
+      "area_um2": 9916.214
+    },
+    {
+      "id": 589,
+      "name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "type": "StdCell",
+      "num_inst": 3633,
+      "num_macro": 0,
+      "area_um2": 6697.348
+    },
+    {
+      "id": 590,
+      "name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "type": "StdCell",
+      "num_inst": 3851,
+      "num_macro": 0,
+      "area_um2": 6502.104
+    },
+    {
+      "id": 303,
+      "name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "type": "StdCell",
+      "num_inst": 1984,
+      "num_macro": 0,
+      "area_um2": 2891.154
+    },
+    {
+      "id": 592,
+      "name": "swerv/lsu/stbuf/glue_logic(+75).p0",
+      "type": "StdCell",
+      "num_inst": 4965,
+      "num_macro": 0,
+      "area_um2": 8190.406
+    },
+    {
+      "id": 594,
+      "name": "swerv/lsu/stbuf/glue_logic(+75).p1.p0",
+      "type": "StdCell",
+      "num_inst": 2716,
+      "num_macro": 0,
+      "area_um2": 3243.072
+    },
+    {
+      "id": 595,
+      "name": "swerv/lsu/stbuf/glue_logic(+75).p1.p1",
+      "type": "StdCell",
+      "num_inst": 2780,
+      "num_macro": 0,
+      "area_um2": 3243.338
+    },
+    {
+      "id": 598,
+      "name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0",
+      "type": "StdCell",
+      "num_inst": 2836,
+      "num_macro": 0,
+      "area_um2": 3647.392
+    },
+    {
+      "id": 599,
+      "name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1",
+      "type": "StdCell",
+      "num_inst": 2988,
+      "num_macro": 0,
+      "area_um2": 4877.376
+    },
+    {
+      "id": 601,
+      "name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0",
+      "type": "StdCell",
+      "num_inst": 2914,
+      "num_macro": 0,
+      "area_um2": 4510.03
+    },
+    {
+      "id": 602,
+      "name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "type": "StdCell",
+      "num_inst": 3251,
+      "num_macro": 0,
+      "area_um2": 6301.274
+    },
+    {
+      "id": 23,
+      "name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}",
+      "type": "StdCell",
+      "num_inst": 464,
+      "num_macro": 0,
+      "area_um2": 2468.48
+    },
+    {
+      "id": 30,
+      "name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}",
+      "type": "StdCell",
+      "num_inst": 395,
+      "num_macro": 0,
+      "area_um2": 2101.4
+    },
+    {
+      "id": 179,
+      "name": "swerv/dec/decode/{i0wb1instff,i0wb1pcff,i1wb1instff,...+1}",
+      "type": "StdCell",
+      "num_inst": 126,
+      "num_macro": 0,
+      "area_um2": 670.32
+    },
+    {
+      "id": 543,
+      "name": "swerv/lsu/bus_intf/bus_buffer/{lsu_axi_rdata_ff,obuf_dataff}",
+      "type": "StdCell",
+      "num_inst": 128,
+      "num_macro": 0,
+      "area_um2": 680.96
+    },
+    {
+      "id": 0,
+      "name": "PIN_B0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        179.11166666666668,
+        0.0
+      ],
+      "io_pins": 43,
+      "io_summary": {
+        "INPUT": 43,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "dma_axi_wlast",
+            "ifu_axi_awready",
+            "ifu_axi_bvalid",
+            "ifu_axi_rlast",
+            "ifu_axi_wready",
+            "lsu_axi_rlast",
+            "mbist_mode",
+            "sb_axi_bid"
+          ],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "PIN_B1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        537.335,
+        0.0
+      ],
+      "io_pins": 373,
+      "io_summary": {
+        "INPUT": 68,
+        "OUTPUT": 305,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "dma_axi_wvalid",
+            "dma_bus_clk_en",
+            "i_cpu_halt_req",
+            "i_cpu_run_req",
+            "ifu_axi_arready",
+            "dma_axi_wdata[63]",
+            "dma_axi_wdata[62]",
+            "dma_axi_wdata[61]"
+          ],
+          "OUTPUT": [
+            "dma_axi_wready",
+            "ifu_axi_arlock",
+            "ifu_axi_arvalid",
+            "ifu_axi_awlock",
+            "ifu_axi_awvalid",
+            "ifu_axi_bready",
+            "ifu_axi_araddr[31]",
+            "ifu_axi_araddr[30]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "PIN_B2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        895.5583333333334,
+        0.0
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "PIN_T0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        179.11166666666668,
+        1074.67
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "PIN_T1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        537.335,
+        1074.67
+      ],
+      "io_pins": 200,
+      "io_summary": {
+        "INPUT": 116,
+        "OUTPUT": 84,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "clk",
+            "dbg_bus_clk_en",
+            "dma_axi_arid",
+            "dma_axi_arvalid",
+            "dma_axi_awid",
+            "dma_axi_awvalid",
+            "dma_axi_bready",
+            "dma_axi_rready"
+          ],
+          "OUTPUT": [
+            "debug_brkpt_status",
+            "dma_axi_arready",
+            "dma_axi_awready",
+            "dma_axi_bid",
+            "dma_axi_bvalid",
+            "dma_axi_rid",
+            "dma_axi_rlast",
+            "dma_axi_rvalid"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "PIN_T2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        895.5583333333334,
+        1074.67
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "PIN_L0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        179.11166666666668
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "PIN_L1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        537.335
+      ],
+      "io_pins": 400,
+      "io_summary": {
+        "INPUT": 157,
+        "OUTPUT": 243,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "ifu_axi_rvalid",
+            "ifu_bus_clk_en",
+            "jtag_tck",
+            "jtag_tdi",
+            "jtag_tms",
+            "jtag_trst_n",
+            "sb_axi_awready",
+            "sb_axi_bvalid"
+          ],
+          "OUTPUT": [
+            "ifu_axi_rready",
+            "ifu_axi_wlast",
+            "ifu_axi_wvalid",
+            "jtag_tdo",
+            "sb_axi_awid",
+            "sb_axi_awlock",
+            "sb_axi_awvalid",
+            "sb_axi_bready"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "PIN_L2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        895.5583333333334
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "PIN_R0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        1074.67,
+        179.11166666666668
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "PIN_R1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        1074.67,
+        537.335
+      ],
+      "io_pins": 400,
+      "io_summary": {
+        "INPUT": 150,
+        "OUTPUT": 250,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lsu_axi_arready",
+            "lsu_axi_awready",
+            "lsu_axi_bvalid",
+            "lsu_axi_rvalid",
+            "lsu_axi_wready",
+            "lsu_bus_clk_en",
+            "mpc_debug_halt_req",
+            "mpc_debug_run_req"
+          ],
+          "OUTPUT": [
+            "lsu_axi_arlock",
+            "lsu_axi_arvalid",
+            "lsu_axi_awlock",
+            "lsu_axi_awvalid",
+            "lsu_axi_bready",
+            "lsu_axi_rready",
+            "lsu_axi_wlast",
+            "lsu_axi_wvalid"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "PIN_R2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        1074.67,
+        895.5583333333334
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    }
+  ],
+  "real_connections": [
+    {
+      "a": 583,
+      "b": 584,
+      "weight": 3904.0
+    },
+    {
+      "a": 594,
+      "b": 595,
+      "weight": 2914.0
+    },
+    {
+      "a": 586,
+      "b": 587,
+      "weight": 2827.0
+    },
+    {
+      "a": 592,
+      "b": 595,
+      "weight": 2719.0
+    },
+    {
+      "a": 589,
+      "b": 590,
+      "weight": 2636.0
+    },
+    {
+      "a": 592,
+      "b": 594,
+      "weight": 2213.0
+    },
+    {
+      "a": 601,
+      "b": 602,
+      "weight": 1873.0
+    },
+    {
+      "a": 607,
+      "b": 608,
+      "weight": 1792.0
+    },
+    {
+      "a": 598,
+      "b": 599,
+      "weight": 1382.0
+    },
+    {
+      "a": 22,
+      "b": 63,
+      "weight": 1078.0
+    },
+    {
+      "a": 598,
+      "b": 602,
+      "weight": 1043.0
+    },
+    {
+      "a": 603,
+      "b": 604,
+      "weight": 1041.0
+    },
+    {
+      "a": 580,
+      "b": 581,
+      "weight": 977.0
+    },
+    {
+      "a": 570,
+      "b": 571,
+      "weight": 970.0
+    },
+    {
+      "a": 574,
+      "b": 575,
+      "weight": 842.0
+    },
+    {
+      "a": 30,
+      "b": 578,
+      "weight": 778.0
+    },
+    {
+      "a": 599,
+      "b": 602,
+      "weight": 741.0
+    },
+    {
+      "a": 23,
+      "b": 577,
+      "weight": 645.0
+    },
+    {
+      "a": 23,
+      "b": 578,
+      "weight": 610.0
+    },
+    {
+      "a": 575,
+      "b": 578,
+      "weight": 514.0
+    },
+    {
+      "a": 23,
+      "b": 575,
+      "weight": 498.0
+    },
+    {
+      "a": 30,
+      "b": 577,
+      "weight": 474.0
+    },
+    {
+      "a": 605,
+      "b": 606,
+      "weight": 448.0
+    },
+    {
+      "a": 303,
+      "b": 580,
+      "weight": 447.0
+    },
+    {
+      "a": 599,
+      "b": 601,
+      "weight": 405.0
+    },
+    {
+      "a": 570,
+      "b": 583,
+      "weight": 401.0
+    },
+    {
+      "a": 303,
+      "b": 581,
+      "weight": 397.0
+    },
+    {
+      "a": 22,
+      "b": 587,
+      "weight": 364.0
+    },
+    {
+      "a": 7,
+      "b": 570,
+      "weight": 340.0
+    },
+    {
+      "a": 598,
+      "b": 601,
+      "weight": 313.0
+    },
+    {
+      "a": 581,
+      "b": 604,
+      "weight": 312.0
+    },
+    {
+      "a": 23,
+      "b": 587,
+      "weight": 308.0
+    },
+    {
+      "a": 30,
+      "b": 574,
+      "weight": 300.0
+    },
+    {
+      "a": 574,
+      "b": 577,
+      "weight": 277.0
+    },
+    {
+      "a": 63,
+      "b": 607,
+      "weight": 273.0
+    },
+    {
+      "a": 570,
+      "b": 584,
+      "weight": 265.0
+    },
+    {
+      "a": 578,
+      "b": 587,
+      "weight": 261.0
+    },
+    {
+      "a": 575,
+      "b": 586,
+      "weight": 259.0
+    },
+    {
+      "a": 571,
+      "b": 581,
+      "weight": 251.0
+    },
+    {
+      "a": 587,
+      "b": 590,
+      "weight": 229.0
+    },
+    {
+      "a": 577,
+      "b": 578,
+      "weight": 212.0
+    },
+    {
+      "a": 581,
+      "b": 592,
+      "weight": 197.0
+    },
+    {
+      "a": 574,
+      "b": 578,
+      "weight": 192.0
+    },
+    {
+      "a": 581,
+      "b": 586,
+      "weight": 190.0
+    },
+    {
+      "a": 570,
+      "b": 607,
+      "weight": 189.0
+    },
+    {
+      "a": 23,
+      "b": 574,
+      "weight": 186.0
+    },
+    {
+      "a": 581,
+      "b": 589,
+      "weight": 174.0
+    },
+    {
+      "a": 580,
+      "b": 586,
+      "weight": 168.0
+    },
+    {
+      "a": 575,
+      "b": 577,
+      "weight": 164.0
+    },
+    {
+      "a": 4,
+      "b": 571,
+      "weight": 161.0
+    },
+    {
+      "a": 605,
+      "b": 607,
+      "weight": 156.0
+    },
+    {
+      "a": 1,
+      "b": 607,
+      "weight": 155.0
+    },
+    {
+      "a": 571,
+      "b": 580,
+      "weight": 154.0
+    },
+    {
+      "a": 23,
+      "b": 586,
+      "weight": 152.0
+    },
+    {
+      "a": 577,
+      "b": 587,
+      "weight": 152.0
+    },
+    {
+      "a": 580,
+      "b": 592,
+      "weight": 149.0
+    },
+    {
+      "a": 64,
+      "b": 607,
+      "weight": 146.0
+    },
+    {
+      "a": 30,
+      "b": 575,
+      "weight": 145.0
+    },
+    {
+      "a": 578,
+      "b": 586,
+      "weight": 140.0
+    },
+    {
+      "a": 10,
+      "b": 543,
+      "weight": 128.0
+    },
+    {
+      "a": 1,
+      "b": 179,
+      "weight": 126.0
+    },
+    {
+      "a": 179,
+      "b": 587,
+      "weight": 126.0
+    },
+    {
+      "a": 7,
+      "b": 607,
+      "weight": 125.0
+    },
+    {
+      "a": 589,
+      "b": 607,
+      "weight": 125.0
+    },
+    {
+      "a": 22,
+      "b": 589,
+      "weight": 119.0
+    },
+    {
+      "a": 56,
+      "b": 586,
+      "weight": 118.0
+    },
+    {
+      "a": 587,
+      "b": 589,
+      "weight": 113.0
+    },
+    {
+      "a": 577,
+      "b": 586,
+      "weight": 109.0
+    },
+    {
+      "a": 10,
+      "b": 590,
+      "weight": 103.0
+    },
+    {
+      "a": 581,
+      "b": 590,
+      "weight": 100.0
+    },
+    {
+      "a": 63,
+      "b": 64,
+      "weight": 96.0
+    },
+    {
+      "a": 575,
+      "b": 607,
+      "weight": 95.0
+    },
+    {
+      "a": 570,
+      "b": 580,
+      "weight": 92.0
+    },
+    {
+      "a": 580,
+      "b": 590,
+      "weight": 91.0
+    },
+    {
+      "a": 575,
+      "b": 583,
+      "weight": 87.0
+    },
+    {
+      "a": 580,
+      "b": 599,
+      "weight": 85.0
+    },
+    {
+      "a": 22,
+      "b": 590,
+      "weight": 83.0
+    },
+    {
+      "a": 581,
+      "b": 599,
+      "weight": 82.0
+    },
+    {
+      "a": 10,
+      "b": 602,
+      "weight": 80.0
+    },
+    {
+      "a": 581,
+      "b": 587,
+      "weight": 78.0
+    },
+    {
+      "a": 571,
+      "b": 607,
+      "weight": 76.0
+    },
+    {
+      "a": 575,
+      "b": 587,
+      "weight": 76.0
+    },
+    {
+      "a": 30,
+      "b": 590,
+      "weight": 75.0
+    },
+    {
+      "a": 7,
+      "b": 571,
+      "weight": 74.0
+    },
+    {
+      "a": 303,
+      "b": 601,
+      "weight": 74.0
+    },
+    {
+      "a": 580,
+      "b": 589,
+      "weight": 73.0
+    },
+    {
+      "a": 584,
+      "b": 586,
+      "weight": 73.0
+    },
+    {
+      "a": 577,
+      "b": 590,
+      "weight": 69.0
+    },
+    {
+      "a": 22,
+      "b": 586,
+      "weight": 65.0
+    },
+    {
+      "a": 543,
+      "b": 602,
+      "weight": 64.0
+    },
+    {
+      "a": 543,
+      "b": 599,
+      "weight": 64.0
+    },
+    {
+      "a": 578,
+      "b": 581,
+      "weight": 64.0
+    },
+    {
+      "a": 56,
+      "b": 578,
+      "weight": 64.0
+    },
+    {
+      "a": 581,
+      "b": 598,
+      "weight": 63.0
+    },
+    {
+      "a": 22,
+      "b": 23,
+      "weight": 62.0
+    },
+    {
+      "a": 30,
+      "b": 587,
+      "weight": 62.0
+    },
+    {
+      "a": 581,
+      "b": 603,
+      "weight": 57.0
+    },
+    {
+      "a": 10,
+      "b": 570,
+      "weight": 53.0
+    },
+    {
+      "a": 580,
+      "b": 603,
+      "weight": 52.0
+    },
+    {
+      "a": 586,
+      "b": 589,
+      "weight": 48.0
+    },
+    {
+      "a": 56,
+      "b": 580,
+      "weight": 48.0
+    },
+    {
+      "a": 578,
+      "b": 583,
+      "weight": 46.0
+    },
+    {
+      "a": 10,
+      "b": 598,
+      "weight": 44.0
+    },
+    {
+      "a": 1,
+      "b": 571,
+      "weight": 41.0
+    },
+    {
+      "a": 589,
+      "b": 602,
+      "weight": 41.0
+    },
+    {
+      "a": 64,
+      "b": 577,
+      "weight": 40.0
+    },
+    {
+      "a": 586,
+      "b": 590,
+      "weight": 39.0
+    },
+    {
+      "a": 303,
+      "b": 602,
+      "weight": 38.0
+    },
+    {
+      "a": 574,
+      "b": 586,
+      "weight": 38.0
+    },
+    {
+      "a": 7,
+      "b": 602,
+      "weight": 37.0
+    },
+    {
+      "a": 22,
+      "b": 570,
+      "weight": 37.0
+    },
+    {
+      "a": 575,
+      "b": 584,
+      "weight": 37.0
+    },
+    {
+      "a": 574,
+      "b": 590,
+      "weight": 36.0
+    },
+    {
+      "a": 590,
+      "b": 607,
+      "weight": 36.0
+    },
+    {
+      "a": 584,
+      "b": 587,
+      "weight": 36.0
+    },
+    {
+      "a": 22,
+      "b": 575,
+      "weight": 33.0
+    },
+    {
+      "a": 10,
+      "b": 571,
+      "weight": 32.0
+    },
+    {
+      "a": 584,
+      "b": 602,
+      "weight": 32.0
+    },
+    {
+      "a": 570,
+      "b": 575,
+      "weight": 32.0
+    },
+    {
+      "a": 570,
+      "b": 586,
+      "weight": 32.0
+    },
+    {
+      "a": 4,
+      "b": 570,
+      "weight": 31.0
+    },
+    {
+      "a": 571,
+      "b": 589,
+      "weight": 31.0
+    },
+    {
+      "a": 22,
+      "b": 578,
+      "weight": 31.0
+    },
+    {
+      "a": 581,
+      "b": 601,
+      "weight": 31.0
+    },
+    {
+      "a": 581,
+      "b": 602,
+      "weight": 30.0
+    },
+    {
+      "a": 580,
+      "b": 587,
+      "weight": 28.0
+    },
+    {
+      "a": 1,
+      "b": 589,
+      "weight": 25.0
+    },
+    {
+      "a": 583,
+      "b": 587,
+      "weight": 25.0
+    },
+    {
+      "a": 570,
+      "b": 605,
+      "weight": 24.0
+    },
+    {
+      "a": 574,
+      "b": 583,
+      "weight": 24.0
+    },
+    {
+      "a": 30,
+      "b": 64,
+      "weight": 20.0
+    },
+    {
+      "a": 578,
+      "b": 584,
+      "weight": 18.0
+    },
+    {
+      "a": 592,
+      "b": 603,
+      "weight": 17.0
+    },
+    {
+      "a": 56,
+      "b": 581,
+      "weight": 16.0
+    },
+    {
+      "a": 63,
+      "b": 587,
+      "weight": 16.0
+    },
+    {
+      "a": 1,
+      "b": 22,
+      "weight": 15.0
+    },
+    {
+      "a": 56,
+      "b": 587,
+      "weight": 15.0
+    },
+    {
+      "a": 570,
+      "b": 590,
+      "weight": 12.0
+    },
+    {
+      "a": 590,
+      "b": 602,
+      "weight": 12.0
+    },
+    {
+      "a": 574,
+      "b": 584,
+      "weight": 12.0
+    },
+    {
+      "a": 587,
+      "b": 602,
+      "weight": 10.0
+    },
+    {
+      "a": 63,
+      "b": 589,
+      "weight": 10.0
+    },
+    {
+      "a": 64,
+      "b": 578,
+      "weight": 10.0
+    },
+    {
+      "a": 4,
+      "b": 590,
+      "weight": 9.0
+    },
+    {
+      "a": 1,
+      "b": 590,
+      "weight": 9.0
+    },
+    {
+      "a": 64,
+      "b": 590,
+      "weight": 8.0
+    },
+    {
+      "a": 581,
+      "b": 595,
+      "weight": 8.0
+    },
+    {
+      "a": 580,
+      "b": 598,
+      "weight": 8.0
+    },
+    {
+      "a": 1,
+      "b": 570,
+      "weight": 7.0
+    },
+    {
+      "a": 570,
+      "b": 581,
+      "weight": 7.0
+    },
+    {
+      "a": 571,
+      "b": 590,
+      "weight": 6.0
+    },
+    {
+      "a": 10,
+      "b": 599,
+      "weight": 6.0
+    },
+    {
+      "a": 570,
+      "b": 603,
+      "weight": 6.0
+    },
+    {
+      "a": 303,
+      "b": 598,
+      "weight": 6.0
+    },
+    {
+      "a": 575,
+      "b": 590,
+      "weight": 5.0
+    },
+    {
+      "a": 587,
+      "b": 598,
+      "weight": 5.0
+    },
+    {
+      "a": 580,
+      "b": 595,
+      "weight": 5.0
+    },
+    {
+      "a": 570,
+      "b": 587,
+      "weight": 4.0
+    },
+    {
+      "a": 589,
+      "b": 598,
+      "weight": 4.0
+    },
+    {
+      "a": 571,
+      "b": 592,
+      "weight": 4.0
+    },
+    {
+      "a": 64,
+      "b": 575,
+      "weight": 4.0
+    },
+    {
+      "a": 578,
+      "b": 589,
+      "weight": 4.0
+    },
+    {
+      "a": 571,
+      "b": 587,
+      "weight": 3.0
+    },
+    {
+      "a": 586,
+      "b": 602,
+      "weight": 3.0
+    },
+    {
+      "a": 583,
+      "b": 586,
+      "weight": 3.0
+    },
+    {
+      "a": 574,
+      "b": 587,
+      "weight": 3.0
+    },
+    {
+      "a": 577,
+      "b": 589,
+      "weight": 3.0
+    },
+    {
+      "a": 589,
+      "b": 601,
+      "weight": 3.0
+    },
+    {
+      "a": 303,
+      "b": 590,
+      "weight": 2.0
+    },
+    {
+      "a": 7,
+      "b": 598,
+      "weight": 2.0
+    },
+    {
+      "a": 10,
+      "b": 589,
+      "weight": 2.0
+    },
+    {
+      "a": 22,
+      "b": 583,
+      "weight": 2.0
+    },
+    {
+      "a": 30,
+      "b": 589,
+      "weight": 2.0
+    },
+    {
+      "a": 303,
+      "b": 586,
+      "weight": 2.0
+    },
+    {
+      "a": 580,
+      "b": 602,
+      "weight": 2.0
+    },
+    {
+      "a": 63,
+      "b": 590,
+      "weight": 2.0
+    },
+    {
+      "a": 574,
+      "b": 589,
+      "weight": 2.0
+    },
+    {
+      "a": 64,
+      "b": 574,
+      "weight": 2.0
+    },
+    {
+      "a": 7,
+      "b": 590,
+      "weight": 1.0
+    },
+    {
+      "a": 570,
+      "b": 589,
+      "weight": 1.0
+    },
+    {
+      "a": 7,
+      "b": 22,
+      "weight": 1.0
+    },
+    {
+      "a": 64,
+      "b": 589,
+      "weight": 1.0
+    },
+    {
+      "a": 575,
+      "b": 589,
+      "weight": 1.0
+    },
+    {
+      "a": 581,
+      "b": 594,
+      "weight": 1.0
+    },
+    {
+      "a": 303,
+      "b": 603,
+      "weight": 1.0
+    },
+    {
+      "a": 303,
+      "b": 587,
+      "weight": 1.0
+    },
+    {
+      "a": 303,
+      "b": 589,
+      "weight": 1.0
+    },
+    {
+      "a": 303,
+      "b": 575,
+      "weight": 1.0
+    },
+    {
+      "a": 63,
+      "b": 575,
+      "weight": 1.0
+    },
+    {
+      "a": 590,
+      "b": 601,
+      "weight": 1.0
+    },
+    {
+      "a": 580,
+      "b": 594,
+      "weight": 1.0
+    }
+  ],
+  "virtual_connections": [
+    {
+      "a": 10,
+      "b": 608,
+      "weight": 1961.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 604,
+      "weight": 1695.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 604,
+      "b": 608,
+      "weight": 1048.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "weight": 928.938,
+      "kind": "dataflow"
+    },
+    {
+      "a": 606,
+      "b": 608,
+      "weight": 720.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 10,
+      "weight": 615.062,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 606,
+      "weight": 591.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 604,
+      "weight": 573.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 7,
+      "weight": 556.688,
+      "kind": "dataflow"
+    },
+    {
+      "a": 604,
+      "b": 606,
+      "weight": 470.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 608,
+      "weight": 312.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 10,
+      "weight": 258.125,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "weight": 254.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 606,
+      "weight": 250.25,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 608,
+      "weight": 227.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 604,
+      "weight": 176.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 606,
+      "weight": 70.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 7,
+      "weight": 66.312,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 606,
+      "weight": 58.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 608,
+      "weight": 40.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 604,
+      "weight": 33.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 603,
+      "b": 604,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 605,
+      "b": 606,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 607,
+      "b": 608,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    }
+  ],
+  "real_connections_directed": [
+    {
+      "src": 584,
+      "dst": 583,
+      "weight": 2306.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/arf/glue_logic(+32).p1",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p0"
+    },
+    {
+      "src": 594,
+      "dst": 595,
+      "weight": 1668.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p0",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p1"
+    },
+    {
+      "src": 583,
+      "dst": 584,
+      "weight": 1598.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/arf/glue_logic(+32).p0",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p1"
+    },
+    {
+      "src": 592,
+      "dst": 595,
+      "weight": 1539.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p0",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p1"
+    },
+    {
+      "src": 586,
+      "dst": 587,
+      "weight": 1517.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 590,
+      "dst": 589,
+      "weight": 1417.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 587,
+      "dst": 586,
+      "weight": 1310.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 607,
+      "dst": 608,
+      "weight": 1248.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data"
+    },
+    {
+      "src": 595,
+      "dst": 594,
+      "weight": 1246.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p1",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p0"
+    },
+    {
+      "src": 592,
+      "dst": 594,
+      "weight": 1228.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p0",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p0"
+    },
+    {
+      "src": 589,
+      "dst": 590,
+      "weight": 1219.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 595,
+      "dst": 592,
+      "weight": 1180.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p1",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p0"
+    },
+    {
+      "src": 63,
+      "dst": 22,
+      "weight": 1073.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/aln",
+      "dst_name": "swerv/dec/glue_logic(+2)"
+    },
+    {
+      "src": 602,
+      "dst": 601,
+      "weight": 1035.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0"
+    },
+    {
+      "src": 594,
+      "dst": 592,
+      "weight": 985.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p0",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p0"
+    },
+    {
+      "src": 601,
+      "dst": 602,
+      "weight": 838.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 598,
+      "dst": 599,
+      "weight": 817.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1"
+    },
+    {
+      "src": 604,
+      "dst": 603,
+      "weight": 625.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "mem/Gen_dccm_enable_dccm/macros",
+      "dst_name": "mem/Gen_dccm_enable_dccm/std"
+    },
+    {
+      "src": 602,
+      "dst": 598,
+      "weight": 614.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0"
+    },
+    {
+      "src": 23,
+      "dst": 577,
+      "weight": 613.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p0"
+    },
+    {
+      "src": 599,
+      "dst": 602,
+      "weight": 586.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 580,
+      "dst": 581,
+      "weight": 566.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 599,
+      "dst": 598,
+      "weight": 565.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0"
+    },
+    {
+      "src": 608,
+      "dst": 607,
+      "weight": 544.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 30,
+      "dst": 578,
+      "weight": 524.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 570,
+      "dst": 571,
+      "weight": 486.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 571,
+      "dst": 570,
+      "weight": 484.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 23,
+      "dst": 578,
+      "weight": 482.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 23,
+      "dst": 575,
+      "weight": 464.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 575,
+      "dst": 574,
+      "weight": 439.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 598,
+      "dst": 602,
+      "weight": 429.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 30,
+      "dst": 577,
+      "weight": 426.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p0"
+    },
+    {
+      "src": 603,
+      "dst": 604,
+      "weight": 416.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "mem/Gen_dccm_enable_dccm/std",
+      "dst_name": "mem/Gen_dccm_enable_dccm/macros"
+    },
+    {
+      "src": 581,
+      "dst": 580,
+      "weight": 411.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 574,
+      "dst": 575,
+      "weight": 403.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 580,
+      "dst": 303,
+      "weight": 402.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/lsu/bus_intf/glue_logic(+9)"
+    },
+    {
+      "src": 570,
+      "dst": 583,
+      "weight": 401.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p0"
+    },
+    {
+      "src": 581,
+      "dst": 303,
+      "weight": 397.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/bus_intf/glue_logic(+9)"
+    },
+    {
+      "src": 22,
+      "dst": 587,
+      "weight": 363.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 575,
+      "dst": 578,
+      "weight": 359.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 599,
+      "dst": 601,
+      "weight": 337.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0"
+    },
+    {
+      "src": 581,
+      "dst": 604,
+      "weight": 312.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "mem/Gen_dccm_enable_dccm/macros"
+    },
+    {
+      "src": 30,
+      "dst": 574,
+      "weight": 300.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 570,
+      "dst": 584,
+      "weight": 265.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p1"
+    },
+    {
+      "src": 607,
+      "dst": 63,
+      "weight": 261.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "swerv/ifu/aln"
+    },
+    {
+      "src": 587,
+      "dst": 578,
+      "weight": 258.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 578,
+      "dst": 30,
+      "weight": 254.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}"
+    },
+    {
+      "src": 606,
+      "dst": 605,
+      "weight": 248.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "mem/icm/ic_tag_inst",
+      "dst_name": "mem/icm/ic_tag_inst(+1)/std"
+    },
+    {
+      "src": 7,
+      "dst": 570,
+      "weight": 239.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 574,
+      "dst": 577,
+      "weight": 222.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p0"
+    },
+    {
+      "src": 598,
+      "dst": 601,
+      "weight": 213.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0"
+    },
+    {
+      "src": 605,
+      "dst": 606,
+      "weight": 200.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "mem/icm/ic_tag_inst(+1)/std",
+      "dst_name": "mem/icm/ic_tag_inst"
+    },
+    {
+      "src": 571,
+      "dst": 581,
+      "weight": 194.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 587,
+      "dst": 23,
+      "weight": 194.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}"
+    },
+    {
+      "src": 587,
+      "dst": 590,
+      "weight": 190.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 578,
+      "dst": 577,
+      "weight": 189.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p0"
+    },
+    {
+      "src": 23,
+      "dst": 574,
+      "weight": 186.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 607,
+      "dst": 570,
+      "weight": 184.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 589,
+      "dst": 581,
+      "weight": 170.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 574,
+      "dst": 578,
+      "weight": 168.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 602,
+      "dst": 599,
+      "weight": 155.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1"
+    },
+    {
+      "src": 578,
+      "dst": 575,
+      "weight": 155.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 30,
+      "dst": 575,
+      "weight": 145.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 23,
+      "dst": 586,
+      "weight": 138.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 575,
+      "dst": 586,
+      "weight": 135.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 586,
+      "dst": 581,
+      "weight": 134.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 607,
+      "dst": 1,
+      "weight": 131.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 592,
+      "dst": 581,
+      "weight": 128.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p0",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 578,
+      "dst": 23,
+      "weight": 128.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}"
+    },
+    {
+      "src": 179,
+      "dst": 1,
+      "weight": 126.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/dec/decode/{i0wb1instff,i0wb1pcff,i1wb1instff,...+1}",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 587,
+      "dst": 179,
+      "weight": 126.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/dec/decode/{i0wb1instff,i0wb1pcff,i1wb1instff,...+1}"
+    },
+    {
+      "src": 586,
+      "dst": 575,
+      "weight": 124.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 607,
+      "dst": 605,
+      "weight": 122.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "mem/icm/ic_tag_inst(+1)/std"
+    },
+    {
+      "src": 580,
+      "dst": 571,
+      "weight": 122.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 589,
+      "dst": 22,
+      "weight": 119.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/dec/glue_logic(+2)"
+    },
+    {
+      "src": 56,
+      "dst": 586,
+      "weight": 117.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/mul_e1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 580,
+      "dst": 586,
+      "weight": 114.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 23,
+      "dst": 587,
+      "weight": 114.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 586,
+      "dst": 578,
+      "weight": 109.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 577,
+      "dst": 586,
+      "weight": 109.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 607,
+      "dst": 64,
+      "weight": 106.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "swerv/ifu/bp(+4)"
+    },
+    {
+      "src": 570,
+      "dst": 7,
+      "weight": 101.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 601,
+      "dst": 598,
+      "weight": 100.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0"
+    },
+    {
+      "src": 580,
+      "dst": 592,
+      "weight": 99.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p0"
+    },
+    {
+      "src": 10,
+      "dst": 590,
+      "weight": 97.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 64,
+      "dst": 63,
+      "weight": 96.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/bp(+4)",
+      "dst_name": "swerv/ifu/aln"
+    },
+    {
+      "src": 575,
+      "dst": 607,
+      "weight": 95.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 580,
+      "dst": 570,
+      "weight": 92.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 590,
+      "dst": 581,
+      "weight": 89.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 583,
+      "dst": 575,
+      "weight": 87.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/arf/glue_logic(+32).p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 4,
+      "dst": 571,
+      "weight": 86.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_T1",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 577,
+      "dst": 587,
+      "weight": 86.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 580,
+      "dst": 599,
+      "weight": 85.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1"
+    },
+    {
+      "src": 590,
+      "dst": 22,
+      "weight": 83.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/dec/glue_logic(+2)"
+    },
+    {
+      "src": 581,
+      "dst": 599,
+      "weight": 82.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1"
+    },
+    {
+      "src": 575,
+      "dst": 577,
+      "weight": 82.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p0"
+    },
+    {
+      "src": 577,
+      "dst": 575,
+      "weight": 82.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 589,
+      "dst": 607,
+      "weight": 77.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 571,
+      "dst": 4,
+      "weight": 75.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "PIN_T1"
+    },
+    {
+      "src": 607,
+      "dst": 7,
+      "weight": 75.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 607,
+      "dst": 571,
+      "weight": 75.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 589,
+      "dst": 580,
+      "weight": 73.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 586,
+      "dst": 584,
+      "weight": 73.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p1"
+    },
+    {
+      "src": 581,
+      "dst": 592,
+      "weight": 69.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p0"
+    },
+    {
+      "src": 577,
+      "dst": 590,
+      "weight": 69.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 601,
+      "dst": 599,
+      "weight": 68.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1"
+    },
+    {
+      "src": 587,
+      "dst": 577,
+      "weight": 66.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p0"
+    },
+    {
+      "src": 602,
+      "dst": 10,
+      "weight": 65.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 601,
+      "dst": 303,
+      "weight": 65.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0",
+      "dst_name": "swerv/lsu/bus_intf/glue_logic(+9)"
+    },
+    {
+      "src": 10,
+      "dst": 543,
+      "weight": 64.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/{lsu_axi_rdata_ff,obuf_dataff}"
+    },
+    {
+      "src": 602,
+      "dst": 543,
+      "weight": 64.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/{lsu_axi_rdata_ff,obuf_dataff}"
+    },
+    {
+      "src": 543,
+      "dst": 10,
+      "weight": 64.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/{lsu_axi_rdata_ff,obuf_dataff}",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 543,
+      "dst": 599,
+      "weight": 64.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/{lsu_axi_rdata_ff,obuf_dataff}",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1"
+    },
+    {
+      "src": 22,
+      "dst": 586,
+      "weight": 64.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 578,
+      "dst": 581,
+      "weight": 64.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 578,
+      "dst": 56,
+      "weight": 64.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/exu/mul_e1"
+    },
+    {
+      "src": 589,
+      "dst": 587,
+      "weight": 63.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 581,
+      "dst": 598,
+      "weight": 63.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0"
+    },
+    {
+      "src": 22,
+      "dst": 23,
+      "weight": 62.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}"
+    },
+    {
+      "src": 587,
+      "dst": 30,
+      "weight": 62.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}"
+    },
+    {
+      "src": 590,
+      "dst": 580,
+      "weight": 61.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 575,
+      "dst": 587,
+      "weight": 61.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 581,
+      "dst": 571,
+      "weight": 57.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 587,
+      "dst": 581,
+      "weight": 57.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 581,
+      "dst": 586,
+      "weight": 56.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 577,
+      "dst": 574,
+      "weight": 55.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 586,
+      "dst": 580,
+      "weight": 54.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 603,
+      "dst": 580,
+      "weight": 52.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "mem/Gen_dccm_enable_dccm/std",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 7,
+      "dst": 607,
+      "weight": 50.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 592,
+      "dst": 580,
+      "weight": 50.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p0",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 587,
+      "dst": 589,
+      "weight": 50.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 607,
+      "dst": 589,
+      "weight": 48.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 580,
+      "dst": 56,
+      "weight": 48.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/exu/mul_e1"
+    },
+    {
+      "src": 577,
+      "dst": 30,
+      "weight": 48.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}"
+    },
+    {
+      "src": 7,
+      "dst": 571,
+      "weight": 47.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 570,
+      "dst": 10,
+      "weight": 46.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 583,
+      "dst": 578,
+      "weight": 46.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/arf/glue_logic(+32).p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 30,
+      "dst": 590,
+      "weight": 46.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 303,
+      "dst": 580,
+      "weight": 45.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 586,
+      "dst": 589,
+      "weight": 42.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 1,
+      "dst": 571,
+      "weight": 40.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 598,
+      "dst": 10,
+      "weight": 40.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 602,
+      "dst": 589,
+      "weight": 40.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 577,
+      "dst": 64,
+      "weight": 40.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/ifu/bp(+4)"
+    },
+    {
+      "src": 64,
+      "dst": 607,
+      "weight": 40.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/bp(+4)",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 590,
+      "dst": 587,
+      "weight": 39.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 586,
+      "dst": 574,
+      "weight": 38.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 602,
+      "dst": 7,
+      "weight": 37.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 570,
+      "dst": 22,
+      "weight": 37.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/dec/glue_logic(+2)"
+    },
+    {
+      "src": 584,
+      "dst": 575,
+      "weight": 37.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/arf/glue_logic(+32).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 587,
+      "dst": 584,
+      "weight": 36.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p1"
+    },
+    {
+      "src": 602,
+      "dst": 303,
+      "weight": 35.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/lsu/bus_intf/glue_logic(+9)"
+    },
+    {
+      "src": 586,
+      "dst": 590,
+      "weight": 35.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 574,
+      "dst": 590,
+      "weight": 35.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 605,
+      "dst": 607,
+      "weight": 34.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "mem/icm/ic_tag_inst(+1)/std",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 575,
+      "dst": 23,
+      "weight": 34.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}"
+    },
+    {
+      "src": 571,
+      "dst": 580,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 602,
+      "dst": 584,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p1"
+    },
+    {
+      "src": 570,
+      "dst": 575,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 22,
+      "dst": 575,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 586,
+      "dst": 570,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 577,
+      "dst": 23,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}"
+    },
+    {
+      "src": 4,
+      "dst": 570,
+      "weight": 31.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_T1",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 22,
+      "dst": 578,
+      "weight": 31.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 581,
+      "dst": 603,
+      "weight": 31.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "mem/Gen_dccm_enable_dccm/std"
+    },
+    {
+      "src": 581,
+      "dst": 601,
+      "weight": 31.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0"
+    },
+    {
+      "src": 578,
+      "dst": 586,
+      "weight": 31.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 580,
+      "dst": 590,
+      "weight": 30.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 590,
+      "dst": 30,
+      "weight": 29.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}"
+    },
+    {
+      "src": 571,
+      "dst": 10,
+      "weight": 29.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 571,
+      "dst": 7,
+      "weight": 27.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 581,
+      "dst": 602,
+      "weight": 26.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 603,
+      "dst": 581,
+      "weight": 26.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "mem/Gen_dccm_enable_dccm/std",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 589,
+      "dst": 1,
+      "weight": 25.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 587,
+      "dst": 583,
+      "weight": 25.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p0"
+    },
+    {
+      "src": 1,
+      "dst": 607,
+      "weight": 24.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 570,
+      "dst": 605,
+      "weight": 24.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "mem/icm/ic_tag_inst(+1)/std"
+    },
+    {
+      "src": 583,
+      "dst": 574,
+      "weight": 24.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/arf/glue_logic(+32).p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 578,
+      "dst": 574,
+      "weight": 24.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 577,
+      "dst": 578,
+      "weight": 23.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 590,
+      "dst": 607,
+      "weight": 21.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 581,
+      "dst": 587,
+      "weight": 21.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 571,
+      "dst": 589,
+      "weight": 20.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 30,
+      "dst": 64,
+      "weight": 20.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}",
+      "dst_name": "swerv/ifu/bp(+4)"
+    },
+    {
+      "src": 584,
+      "dst": 578,
+      "weight": 18.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/arf/glue_logic(+32).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p1.p1"
+    },
+    {
+      "src": 592,
+      "dst": 603,
+      "weight": 17.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p0",
+      "dst_name": "mem/Gen_dccm_enable_dccm/std"
+    },
+    {
+      "src": 581,
+      "dst": 56,
+      "weight": 16.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/exu/mul_e1"
+    },
+    {
+      "src": 63,
+      "dst": 587,
+      "weight": 16.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/aln",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 607,
+      "dst": 590,
+      "weight": 15.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/glue_logic(+21)/std",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 10,
+      "dst": 602,
+      "weight": 15.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 22,
+      "dst": 1,
+      "weight": 15.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 587,
+      "dst": 580,
+      "weight": 15.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 587,
+      "dst": 575,
+      "weight": 15.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 586,
+      "dst": 23,
+      "weight": 14.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/{dec/decode/i1e2resultff,exu/csr_rs1_ff,exu/i0_alu_e1,...+3}"
+    },
+    {
+      "src": 580,
+      "dst": 587,
+      "weight": 13.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 63,
+      "dst": 607,
+      "weight": 12.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/aln",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 584,
+      "dst": 574,
+      "weight": 12.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/arf/glue_logic(+32).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 589,
+      "dst": 571,
+      "weight": 11.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 581,
+      "dst": 590,
+      "weight": 11.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 56,
+      "dst": 587,
+      "weight": 11.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/mul_e1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 602,
+      "dst": 587,
+      "weight": 10.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 602,
+      "dst": 590,
+      "weight": 10.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 63,
+      "dst": 589,
+      "weight": 10.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/aln",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 578,
+      "dst": 64,
+      "weight": 10.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/ifu/bp(+4)"
+    },
+    {
+      "src": 590,
+      "dst": 4,
+      "weight": 9.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "PIN_T1"
+    },
+    {
+      "src": 590,
+      "dst": 570,
+      "weight": 9.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 303,
+      "dst": 601,
+      "weight": 9.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0"
+    },
+    {
+      "src": 590,
+      "dst": 64,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/ifu/bp(+4)"
+    },
+    {
+      "src": 580,
+      "dst": 598,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0"
+    },
+    {
+      "src": 590,
+      "dst": 1,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 1,
+      "dst": 570,
+      "weight": 7.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 10,
+      "dst": 570,
+      "weight": 7.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 581,
+      "dst": 570,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/glue_logic(+5).p0"
+    },
+    {
+      "src": 581,
+      "dst": 595,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p1"
+    },
+    {
+      "src": 590,
+      "dst": 10,
+      "weight": 6.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 10,
+      "dst": 599,
+      "weight": 6.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1"
+    },
+    {
+      "src": 570,
+      "dst": 603,
+      "weight": 6.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "mem/Gen_dccm_enable_dccm/std"
+    },
+    {
+      "src": 589,
+      "dst": 586,
+      "weight": 6.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 303,
+      "dst": 598,
+      "weight": 6.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0"
+    },
+    {
+      "src": 571,
+      "dst": 590,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 598,
+      "dst": 587,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 570,
+      "dst": 607,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 22,
+      "dst": 63,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "swerv/ifu/aln"
+    },
+    {
+      "src": 595,
+      "dst": 580,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    },
+    {
+      "src": 590,
+      "dst": 586,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 10,
+      "dst": 598,
+      "weight": 4.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0"
+    },
+    {
+      "src": 602,
+      "dst": 581,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 570,
+      "dst": 587,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 589,
+      "dst": 598,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0"
+    },
+    {
+      "src": 581,
+      "dst": 589,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 592,
+      "dst": 571,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p0",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 587,
+      "dst": 56,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/exu/mul_e1"
+    },
+    {
+      "src": 575,
+      "dst": 64,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/ifu/bp(+4)"
+    },
+    {
+      "src": 575,
+      "dst": 590,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 578,
+      "dst": 589,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 571,
+      "dst": 587,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 10,
+      "dst": 571,
+      "weight": 3.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 570,
+      "dst": 590,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 303,
+      "dst": 602,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 586,
+      "dst": 583,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p0"
+    },
+    {
+      "src": 587,
+      "dst": 574,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 577,
+      "dst": 589,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 578,
+      "dst": 587,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p1.p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 601,
+      "dst": 589,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 590,
+      "dst": 602,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 1,
+      "dst": 590,
+      "weight": 2.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 598,
+      "dst": 7,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p0",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 10,
+      "dst": 589,
+      "weight": 2.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 22,
+      "dst": 583,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "swerv/dec/arf/glue_logic(+32).p0"
+    },
+    {
+      "src": 589,
+      "dst": 30,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/{dec/tlu/flush_lower_ff,exu/i0_alu_e4,exu/i1_alu_e4}"
+    },
+    {
+      "src": 303,
+      "dst": 586,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 580,
+      "dst": 602,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 586,
+      "dst": 602,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 63,
+      "dst": 590,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/ifu/aln",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 574,
+      "dst": 589,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 574,
+      "dst": 64,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p0",
+      "dst_name": "swerv/ifu/bp(+4)"
+    },
+    {
+      "src": 590,
+      "dst": 574,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p0"
+    },
+    {
+      "src": 590,
+      "dst": 575,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 590,
+      "dst": 303,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/lsu/bus_intf/glue_logic(+9)"
+    },
+    {
+      "src": 590,
+      "dst": 571,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p1",
+      "dst_name": "swerv/glue_logic(+5).p1"
+    },
+    {
+      "src": 571,
+      "dst": 1,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 571,
+      "dst": 607,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p1",
+      "dst_name": "swerv/ifu/glue_logic(+21)/std"
+    },
+    {
+      "src": 7,
+      "dst": 590,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 602,
+      "dst": 586,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p0"
+    },
+    {
+      "src": 570,
+      "dst": 589,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/glue_logic(+5).p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 22,
+      "dst": 7,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "swerv/dec/glue_logic(+2)",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 589,
+      "dst": 64,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/ifu/bp(+4)"
+    },
+    {
+      "src": 589,
+      "dst": 575,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 589,
+      "dst": 602,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/tlu/glue_logic(+64).p0",
+      "dst_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1"
+    },
+    {
+      "src": 581,
+      "dst": 594,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/glue_logic(+10).p1",
+      "dst_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p0"
+    },
+    {
+      "src": 303,
+      "dst": 603,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "mem/Gen_dccm_enable_dccm/std"
+    },
+    {
+      "src": 303,
+      "dst": 587,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/dec/decode/glue_logic(+84).p1"
+    },
+    {
+      "src": 303,
+      "dst": 589,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p0"
+    },
+    {
+      "src": 303,
+      "dst": 590,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 303,
+      "dst": 575,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/glue_logic(+9)",
+      "dst_name": "swerv/exu/glue_logic(+28).p0.p1"
+    },
+    {
+      "src": 586,
+      "dst": 22,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/dec/glue_logic(+2)"
+    },
+    {
+      "src": 586,
+      "dst": 56,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p0",
+      "dst_name": "swerv/exu/mul_e1"
+    },
+    {
+      "src": 587,
+      "dst": 22,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/dec/decode/glue_logic(+84).p1",
+      "dst_name": "swerv/dec/glue_logic(+2)"
+    },
+    {
+      "src": 575,
+      "dst": 22,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/dec/glue_logic(+2)"
+    },
+    {
+      "src": 575,
+      "dst": 63,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/exu/glue_logic(+28).p0.p1",
+      "dst_name": "swerv/ifu/aln"
+    },
+    {
+      "src": 601,
+      "dst": 590,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0",
+      "dst_name": "swerv/dec/tlu/glue_logic(+64).p1"
+    },
+    {
+      "src": 595,
+      "dst": 581,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p1",
+      "dst_name": "swerv/lsu/glue_logic(+10).p1"
+    },
+    {
+      "src": 594,
+      "dst": 580,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "swerv/lsu/stbuf/glue_logic(+75).p1.p0",
+      "dst_name": "swerv/lsu/glue_logic(+10).p0"
+    }
+  ],
+  "virtual_connections_directed": [
+    {
+      "src": 10,
+      "dst": 608,
+      "weight": 1961.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 604,
+      "weight": 1654.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 4,
+      "weight": 919.438,
+      "kind": "dataflow"
+    },
+    {
+      "src": 604,
+      "dst": 608,
+      "weight": 816.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 1,
+      "weight": 613.625,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 606,
+      "weight": 587.25,
+      "kind": "dataflow"
+    },
+    {
+      "src": 604,
+      "dst": 4,
+      "weight": 457.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 4,
+      "weight": 448.188,
+      "kind": "dataflow"
+    },
+    {
+      "src": 604,
+      "dst": 606,
+      "weight": 412.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 606,
+      "dst": 608,
+      "weight": 384.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 608,
+      "dst": 606,
+      "weight": 336.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 608,
+      "weight": 312.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 4,
+      "weight": 239.375,
+      "kind": "dataflow"
+    },
+    {
+      "src": 608,
+      "dst": 604,
+      "weight": 232.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 608,
+      "weight": 211.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 606,
+      "dst": 1,
+      "weight": 151.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 10,
+      "weight": 131.25,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 7,
+      "weight": 126.875,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 604,
+      "weight": 116.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 7,
+      "weight": 108.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 606,
+      "weight": 98.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 604,
+      "weight": 91.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 604,
+      "dst": 1,
+      "weight": 85.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 606,
+      "weight": 70.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 1,
+      "weight": 66.312,
+      "kind": "dataflow"
+    },
+    {
+      "src": 606,
+      "dst": 604,
+      "weight": 58.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 604,
+      "dst": 10,
+      "weight": 41.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 608,
+      "weight": 36.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 606,
+      "dst": 4,
+      "weight": 29.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 606,
+      "weight": 29.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 604,
+      "weight": 29.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 608,
+      "dst": 1,
+      "weight": 16.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 10,
+      "weight": 15.375,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 1,
+      "weight": 9.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 604,
+      "dst": 7,
+      "weight": 4.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 608,
+      "dst": 4,
+      "weight": 4.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 606,
+      "dst": 10,
+      "weight": 3.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 10,
+      "weight": 1.438,
+      "kind": "dataflow"
+    }
+  ]
+}

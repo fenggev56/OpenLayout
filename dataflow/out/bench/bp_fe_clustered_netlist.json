@@ -1,0 +1,2639 @@
+{
+  "design": "bp_fe",
+  "directed": true,
+  "params": {
+    "min_num_inst": 1000,
+    "max_num_inst": 5000,
+    "max_num_macro": 12,
+    "min_num_macro": 4,
+    "virtual_weight": 500,
+    "net_threshold": 5,
+    "large_net_threshold": 500,
+    "num_bundled_pins_per_edge": 3,
+    "bisect_refine_passes": 4,
+    "bisect_balance": 0.1,
+    "tiny_cluster_inst": 100,
+    "dataflow_mode": "min"
+  },
+  "stats": {
+    "instances": 33199,
+    "macros": 11,
+    "io_bits": 2511,
+    "nets": 35045,
+    "clusters": 16,
+    "bundled_pins": 12
+  },
+  "clusters": [
+    {
+      "id": 48,
+      "name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std",
+      "type": "StdCell",
+      "num_inst": 3996,
+      "num_macro": 0,
+      "area_um2": 6413.792
+    },
+    {
+      "id": 49,
+      "name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1",
+      "type": "Macro",
+      "num_inst": 1,
+      "num_macro": 1,
+      "area_um2": 17301.438,
+      "macro_masters": {
+        "fakeram45_512x64": 1
+      }
+    },
+    {
+      "id": 15,
+      "name": "bp_fe_pc_gen_1/glue_logic",
+      "type": "StdCell",
+      "num_inst": 2772,
+      "num_macro": 0,
+      "area_um2": 4033.092
+    },
+    {
+      "id": 50,
+      "name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "type": "Macro",
+      "num_inst": 8,
+      "num_macro": 8,
+      "area_um2": 138411.504,
+      "macro_masters": {
+        "fakeram45_512x64": 8
+      }
+    },
+    {
+      "id": 51,
+      "name": "icache_1/metadata_mem",
+      "type": "Macro",
+      "num_inst": 1,
+      "num_macro": 1,
+      "area_um2": 387.296,
+      "macro_masters": {
+        "fakeram45_64x7": 1
+      }
+    },
+    {
+      "id": 52,
+      "name": "icache_1/tag_mem",
+      "type": "Macro",
+      "num_inst": 1,
+      "num_macro": 1,
+      "area_um2": 4874.982,
+      "macro_masters": {
+        "fakeram45_64x96": 1
+      }
+    },
+    {
+      "id": 35,
+      "name": "icache_1/glue_logic(+11).p0.p0",
+      "type": "StdCell",
+      "num_inst": 3108,
+      "num_macro": 0,
+      "area_um2": 3597.118
+    },
+    {
+      "id": 36,
+      "name": "icache_1/glue_logic(+11).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3032,
+      "num_macro": 0,
+      "area_um2": 3493.112
+    },
+    {
+      "id": 38,
+      "name": "icache_1/glue_logic(+11).p1.p0",
+      "type": "StdCell",
+      "num_inst": 3285,
+      "num_macro": 0,
+      "area_um2": 5981.808
+    },
+    {
+      "id": 39,
+      "name": "icache_1/glue_logic(+11).p1.p1",
+      "type": "StdCell",
+      "num_inst": 3459,
+      "num_macro": 0,
+      "area_um2": 3970.848
+    },
+    {
+      "id": 29,
+      "name": "icache_1/lce/lce_data_cmd_fifo",
+      "type": "StdCell",
+      "num_inst": 1046,
+      "num_macro": 0,
+      "area_um2": 4730.012
+    },
+    {
+      "id": 31,
+      "name": "icache_1/lce/lce_tr_resp_in_fifo",
+      "type": "StdCell",
+      "num_inst": 1046,
+      "num_macro": 0,
+      "area_um2": 4730.012
+    },
+    {
+      "id": 43,
+      "name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "type": "StdCell",
+      "num_inst": 3144,
+      "num_macro": 0,
+      "area_um2": 3515.19
+    },
+    {
+      "id": 44,
+      "name": "icache_1/lce/glue_logic(+3).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3150,
+      "num_macro": 0,
+      "area_um2": 3060.064
+    },
+    {
+      "id": 46,
+      "name": "icache_1/lce/glue_logic(+3).p1.p0",
+      "type": "StdCell",
+      "num_inst": 2519,
+      "num_macro": 0,
+      "area_um2": 4469.598
+    },
+    {
+      "id": 47,
+      "name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "type": "StdCell",
+      "num_inst": 2631,
+      "num_macro": 0,
+      "area_um2": 3695.804
+    },
+    {
+      "id": 0,
+      "name": "PIN_B0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        105.89166666666667,
+        0.0
+      ],
+      "io_pins": 211,
+      "io_summary": {
+        "INPUT": 167,
+        "OUTPUT": 44,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "bp_fe_cmd_i[2]",
+            "bp_fe_cmd_i[1]",
+            "bp_fe_cmd_i[0]",
+            "cce_lce_cmd_i[35]",
+            "cce_lce_data_cmd_i[539]",
+            "cce_lce_data_cmd_i[538]",
+            "cce_lce_data_cmd_i[537]",
+            "cce_lce_data_cmd_i[533]"
+          ],
+          "OUTPUT": [
+            "lce_lce_tr_resp_o[139]",
+            "lce_lce_tr_resp_o[138]",
+            "lce_lce_tr_resp_o[137]",
+            "lce_lce_tr_resp_o[136]",
+            "lce_lce_tr_resp_o[135]",
+            "lce_lce_tr_resp_o[134]",
+            "lce_lce_tr_resp_o[133]",
+            "lce_lce_tr_resp_o[132]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "PIN_B1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        317.675,
+        0.0
+      ],
+      "io_pins": 371,
+      "io_summary": {
+        "INPUT": 156,
+        "OUTPUT": 215,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "bp_fe_queue_ready_i",
+            "cce_lce_cmd_v_i",
+            "cce_lce_cmd_i[34]",
+            "cce_lce_cmd_i[33]",
+            "cce_lce_cmd_i[32]",
+            "cce_lce_cmd_i[31]",
+            "cce_lce_cmd_i[30]",
+            "cce_lce_cmd_i[29]"
+          ],
+          "OUTPUT": [
+            "bp_fe_queue_v_o",
+            "cce_lce_cmd_ready_o",
+            "bp_fe_queue_o[99]",
+            "bp_fe_queue_o[98]",
+            "bp_fe_queue_o[97]",
+            "bp_fe_queue_o[96]",
+            "bp_fe_queue_o[95]",
+            "bp_fe_queue_o[94]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "PIN_B2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        529.4583333333334,
+        0.0
+      ],
+      "io_pins": 59,
+      "io_summary": {
+        "INPUT": 2,
+        "OUTPUT": 57,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_cce_data_resp_ready_i",
+            "lce_cce_req_ready_i"
+          ],
+          "OUTPUT": [
+            "lce_cce_data_resp_v_o",
+            "lce_cce_req_v_o",
+            "lce_cce_data_resp_o[99]",
+            "lce_cce_data_resp_o[9]",
+            "lce_cce_req_o[29]",
+            "lce_cce_req_o[28]",
+            "lce_cce_req_o[27]",
+            "lce_cce_req_o[26]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "PIN_T0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        105.89166666666667,
+        635.35
+      ],
+      "io_pins": 59,
+      "io_summary": {
+        "INPUT": 59,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_lce_tr_resp_i[275]",
+            "lce_lce_tr_resp_i[274]",
+            "lce_lce_tr_resp_i[273]",
+            "lce_lce_tr_resp_i[272]",
+            "lce_lce_tr_resp_i[271]",
+            "lce_lce_tr_resp_i[270]",
+            "lce_lce_tr_resp_i[269]",
+            "lce_lce_tr_resp_i[268]"
+          ],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "PIN_T1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        317.675,
+        635.35
+      ],
+      "io_pins": 371,
+      "io_summary": {
+        "INPUT": 274,
+        "OUTPUT": 97,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "bp_fe_cmd_v_i",
+            "lce_cce_resp_ready_i",
+            "bp_fe_cmd_i[108]",
+            "bp_fe_cmd_i[107]",
+            "bp_fe_cmd_i[106]",
+            "bp_fe_cmd_i[105]",
+            "bp_fe_cmd_i[104]",
+            "bp_fe_cmd_i[103]"
+          ],
+          "OUTPUT": [
+            "bp_fe_cmd_ready_o",
+            "lce_cce_resp_v_o",
+            "bp_fe_queue_o[133]",
+            "bp_fe_queue_o[132]",
+            "bp_fe_queue_o[131]",
+            "bp_fe_queue_o[130]",
+            "bp_fe_queue_o[129]",
+            "bp_fe_queue_o[128]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "PIN_T2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        529.4583333333334,
+        635.35
+      ],
+      "io_pins": 170,
+      "io_summary": {
+        "INPUT": 170,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_lce_tr_resp_i[428]",
+            "lce_lce_tr_resp_i[427]",
+            "lce_lce_tr_resp_i[426]",
+            "lce_lce_tr_resp_i[425]",
+            "lce_lce_tr_resp_i[424]",
+            "lce_lce_tr_resp_i[423]",
+            "lce_lce_tr_resp_i[422]",
+            "lce_lce_tr_resp_i[421]"
+          ],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "PIN_L0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        105.89166666666667
+      ],
+      "io_pins": 46,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 46,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [
+            "lce_cce_data_resp_o[454]",
+            "lce_cce_data_resp_o[453]",
+            "lce_cce_data_resp_o[452]",
+            "lce_cce_data_resp_o[451]",
+            "lce_cce_data_resp_o[450]",
+            "lce_cce_data_resp_o[449]",
+            "lce_cce_data_resp_o[448]",
+            "lce_cce_data_resp_o[447]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "PIN_L1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        317.675
+      ],
+      "io_pins": 378,
+      "io_summary": {
+        "INPUT": 200,
+        "OUTPUT": 178,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "cce_lce_data_cmd_i[387]",
+            "cce_lce_data_cmd_i[386]",
+            "cce_lce_data_cmd_i[385]",
+            "cce_lce_data_cmd_i[384]",
+            "cce_lce_data_cmd_i[383]",
+            "cce_lce_data_cmd_i[382]",
+            "cce_lce_data_cmd_i[381]",
+            "cce_lce_data_cmd_i[380]"
+          ],
+          "OUTPUT": [
+            "lce_cce_data_resp_o[412]",
+            "lce_cce_data_resp_o[411]",
+            "lce_cce_data_resp_o[410]",
+            "lce_cce_data_resp_o[409]",
+            "lce_cce_data_resp_o[408]",
+            "lce_cce_data_resp_o[407]",
+            "lce_cce_data_resp_o[406]",
+            "lce_cce_data_resp_o[405]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "PIN_L2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        529.4583333333334
+      ],
+      "io_pins": 176,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 176,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [
+            "lce_lce_tr_resp_o[324]",
+            "lce_lce_tr_resp_o[323]",
+            "lce_lce_tr_resp_o[322]",
+            "lce_lce_tr_resp_o[321]",
+            "lce_lce_tr_resp_o[320]",
+            "lce_lce_tr_resp_o[319]",
+            "lce_lce_tr_resp_o[318]",
+            "lce_lce_tr_resp_o[317]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "PIN_R0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        635.35,
+        105.89166666666667
+      ],
+      "io_pins": 177,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 177,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [
+            "lce_lce_tr_resp_o[505]",
+            "lce_lce_tr_resp_o[504]",
+            "lce_lce_tr_resp_o[503]",
+            "lce_lce_tr_resp_o[502]",
+            "lce_lce_tr_resp_o[501]",
+            "lce_lce_tr_resp_o[500]",
+            "lce_lce_tr_resp_o[499]",
+            "lce_lce_tr_resp_o[498]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "PIN_R1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        635.35,
+        317.675
+      ],
+      "io_pins": 378,
+      "io_summary": {
+        "INPUT": 205,
+        "OUTPUT": 173,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "cce_lce_data_cmd_v_i",
+            "clk_i",
+            "icache_id_i",
+            "cce_lce_data_cmd_i[536]",
+            "cce_lce_data_cmd_i[535]",
+            "cce_lce_data_cmd_i[534]",
+            "cce_lce_data_cmd_i[523]",
+            "cce_lce_data_cmd_i[522]"
+          ],
+          "OUTPUT": [
+            "cce_lce_data_cmd_ready_o",
+            "lce_cce_data_resp_o[233]",
+            "lce_cce_data_resp_o[232]",
+            "lce_cce_data_resp_o[231]",
+            "lce_cce_data_resp_o[230]",
+            "lce_cce_data_resp_o[229]",
+            "lce_cce_data_resp_o[228]",
+            "lce_cce_data_resp_o[227]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "PIN_R2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        635.35,
+        529.4583333333334
+      ],
+      "io_pins": 115,
+      "io_summary": {
+        "INPUT": 3,
+        "OUTPUT": 112,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_lce_tr_resp_ready_i",
+            "lce_lce_tr_resp_v_i",
+            "reset_i"
+          ],
+          "OUTPUT": [
+            "lce_lce_tr_resp_ready_o",
+            "lce_lce_tr_resp_v_o",
+            "lce_cce_data_resp_o[274]",
+            "lce_cce_data_resp_o[273]",
+            "lce_cce_data_resp_o[272]",
+            "lce_cce_data_resp_o[271]",
+            "lce_cce_data_resp_o[270]",
+            "lce_cce_data_resp_o[269]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    }
+  ],
+  "real_connections": [
+    {
+      "a": 35,
+      "b": 36,
+      "weight": 2271.0
+    },
+    {
+      "a": 29,
+      "b": 46,
+      "weight": 2084.0
+    },
+    {
+      "a": 31,
+      "b": 46,
+      "weight": 2084.0
+    },
+    {
+      "a": 43,
+      "b": 44,
+      "weight": 1665.0
+    },
+    {
+      "a": 38,
+      "b": 39,
+      "weight": 1437.0
+    },
+    {
+      "a": 44,
+      "b": 47,
+      "weight": 1419.0
+    },
+    {
+      "a": 36,
+      "b": 39,
+      "weight": 1321.0
+    },
+    {
+      "a": 29,
+      "b": 44,
+      "weight": 909.0
+    },
+    {
+      "a": 35,
+      "b": 43,
+      "weight": 896.0
+    },
+    {
+      "a": 31,
+      "b": 44,
+      "weight": 798.0
+    },
+    {
+      "a": 36,
+      "b": 50,
+      "weight": 542.0
+    },
+    {
+      "a": 39,
+      "b": 50,
+      "weight": 502.0
+    },
+    {
+      "a": 36,
+      "b": 43,
+      "weight": 463.0
+    },
+    {
+      "a": 10,
+      "b": 46,
+      "weight": 404.0
+    },
+    {
+      "a": 7,
+      "b": 46,
+      "weight": 400.0
+    },
+    {
+      "a": 36,
+      "b": 38,
+      "weight": 352.0
+    },
+    {
+      "a": 5,
+      "b": 46,
+      "weight": 340.0
+    },
+    {
+      "a": 4,
+      "b": 46,
+      "weight": 332.0
+    },
+    {
+      "a": 43,
+      "b": 47,
+      "weight": 327.0
+    },
+    {
+      "a": 15,
+      "b": 38,
+      "weight": 274.0
+    },
+    {
+      "a": 39,
+      "b": 52,
+      "weight": 271.0
+    },
+    {
+      "a": 31,
+      "b": 43,
+      "weight": 258.0
+    },
+    {
+      "a": 0,
+      "b": 46,
+      "weight": 252.0
+    },
+    {
+      "a": 1,
+      "b": 46,
+      "weight": 238.0
+    },
+    {
+      "a": 4,
+      "b": 15,
+      "weight": 212.0
+    },
+    {
+      "a": 35,
+      "b": 50,
+      "weight": 207.0
+    },
+    {
+      "a": 38,
+      "b": 50,
+      "weight": 204.0
+    },
+    {
+      "a": 8,
+      "b": 43,
+      "weight": 174.0
+    },
+    {
+      "a": 39,
+      "b": 44,
+      "weight": 157.0
+    },
+    {
+      "a": 7,
+      "b": 47,
+      "weight": 154.0
+    },
+    {
+      "a": 10,
+      "b": 47,
+      "weight": 150.0
+    },
+    {
+      "a": 29,
+      "b": 43,
+      "weight": 147.0
+    },
+    {
+      "a": 39,
+      "b": 47,
+      "weight": 137.0
+    },
+    {
+      "a": 4,
+      "b": 49,
+      "weight": 129.0
+    },
+    {
+      "a": 1,
+      "b": 43,
+      "weight": 127.0
+    },
+    {
+      "a": 3,
+      "b": 46,
+      "weight": 118.0
+    },
+    {
+      "a": 1,
+      "b": 47,
+      "weight": 116.0
+    },
+    {
+      "a": 9,
+      "b": 44,
+      "weight": 106.0
+    },
+    {
+      "a": 4,
+      "b": 48,
+      "weight": 87.0
+    },
+    {
+      "a": 36,
+      "b": 44,
+      "weight": 79.0
+    },
+    {
+      "a": 46,
+      "b": 47,
+      "weight": 75.0
+    },
+    {
+      "a": 11,
+      "b": 43,
+      "weight": 72.0
+    },
+    {
+      "a": 9,
+      "b": 43,
+      "weight": 71.0
+    },
+    {
+      "a": 15,
+      "b": 36,
+      "weight": 66.0
+    },
+    {
+      "a": 39,
+      "b": 43,
+      "weight": 66.0
+    },
+    {
+      "a": 15,
+      "b": 49,
+      "weight": 64.0
+    },
+    {
+      "a": 36,
+      "b": 47,
+      "weight": 57.0
+    },
+    {
+      "a": 44,
+      "b": 46,
+      "weight": 53.0
+    },
+    {
+      "a": 15,
+      "b": 48,
+      "weight": 52.0
+    },
+    {
+      "a": 2,
+      "b": 43,
+      "weight": 50.0
+    },
+    {
+      "a": 6,
+      "b": 47,
+      "weight": 46.0
+    },
+    {
+      "a": 11,
+      "b": 47,
+      "weight": 45.0
+    },
+    {
+      "a": 1,
+      "b": 15,
+      "weight": 44.0
+    },
+    {
+      "a": 0,
+      "b": 43,
+      "weight": 44.0
+    },
+    {
+      "a": 38,
+      "b": 43,
+      "weight": 42.0
+    },
+    {
+      "a": 10,
+      "b": 43,
+      "weight": 27.0
+    },
+    {
+      "a": 7,
+      "b": 44,
+      "weight": 24.0
+    },
+    {
+      "a": 38,
+      "b": 51,
+      "weight": 21.0
+    },
+    {
+      "a": 43,
+      "b": 46,
+      "weight": 19.0
+    },
+    {
+      "a": 38,
+      "b": 52,
+      "weight": 17.0
+    },
+    {
+      "a": 38,
+      "b": 47,
+      "weight": 16.0
+    },
+    {
+      "a": 38,
+      "b": 48,
+      "weight": 13.0
+    },
+    {
+      "a": 38,
+      "b": 44,
+      "weight": 13.0
+    },
+    {
+      "a": 2,
+      "b": 47,
+      "weight": 10.0
+    },
+    {
+      "a": 48,
+      "b": 49,
+      "weight": 10.0
+    },
+    {
+      "a": 39,
+      "b": 51,
+      "weight": 10.0
+    },
+    {
+      "a": 39,
+      "b": 48,
+      "weight": 9.0
+    },
+    {
+      "a": 15,
+      "b": 39,
+      "weight": 7.0
+    },
+    {
+      "a": 36,
+      "b": 52,
+      "weight": 7.0
+    },
+    {
+      "a": 4,
+      "b": 43,
+      "weight": 5.0
+    },
+    {
+      "a": 15,
+      "b": 43,
+      "weight": 2.0
+    },
+    {
+      "a": 11,
+      "b": 15,
+      "weight": 2.0
+    },
+    {
+      "a": 11,
+      "b": 48,
+      "weight": 2.0
+    },
+    {
+      "a": 8,
+      "b": 44,
+      "weight": 2.0
+    },
+    {
+      "a": 36,
+      "b": 48,
+      "weight": 2.0
+    },
+    {
+      "a": 43,
+      "b": 48,
+      "weight": 1.0
+    },
+    {
+      "a": 10,
+      "b": 29,
+      "weight": 1.0
+    },
+    {
+      "a": 11,
+      "b": 36,
+      "weight": 1.0
+    },
+    {
+      "a": 11,
+      "b": 31,
+      "weight": 1.0
+    }
+  ],
+  "virtual_connections": [
+    {
+      "a": 4,
+      "b": 50,
+      "weight": 2189.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 50,
+      "weight": 1792.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 50,
+      "weight": 1680.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 50,
+      "weight": 1467.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 9,
+      "b": 50,
+      "weight": 1416.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 8,
+      "b": 50,
+      "weight": 1408.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 50,
+      "weight": 1360.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 5,
+      "b": 50,
+      "weight": 1360.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 3,
+      "b": 50,
+      "weight": 472.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 11,
+      "b": 50,
+      "weight": 432.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "weight": 205.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "weight": 133.938,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 49,
+      "weight": 88.188,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 52,
+      "weight": 58.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 10,
+      "weight": 51.25,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 11,
+      "weight": 50.25,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 52,
+      "weight": 49.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 49,
+      "b": 50,
+      "weight": 45.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 51,
+      "weight": 25.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 11,
+      "weight": 17.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "weight": 15.812,
+      "kind": "dataflow"
+    },
+    {
+      "a": 50,
+      "b": 52,
+      "weight": 12.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 49,
+      "weight": 11.875,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 10,
+      "weight": 9.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 11,
+      "weight": 8.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 11,
+      "weight": 8.25,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 50,
+      "weight": 8.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "weight": 7.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 51,
+      "weight": 6.125,
+      "kind": "dataflow"
+    },
+    {
+      "a": 49,
+      "b": 52,
+      "weight": 3.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 50,
+      "b": 51,
+      "weight": 3.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 51,
+      "weight": 2.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 49,
+      "weight": 1.312,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 52,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 11,
+      "b": 51,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 11,
+      "b": 52,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 49,
+      "b": 51,
+      "weight": 0.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 48,
+      "b": 49,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 35,
+      "b": 50,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 36,
+      "b": 50,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 38,
+      "b": 50,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 39,
+      "b": 50,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 35,
+      "b": 51,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 36,
+      "b": 51,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 38,
+      "b": 51,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 39,
+      "b": 51,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 35,
+      "b": 52,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 36,
+      "b": 52,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 38,
+      "b": 52,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 39,
+      "b": 52,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    }
+  ],
+  "real_connections_directed": [
+    {
+      "src": 35,
+      "dst": 36,
+      "weight": 1333.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p0.p0",
+      "dst_name": "icache_1/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 44,
+      "dst": 43,
+      "weight": 1321.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 29,
+      "dst": 46,
+      "weight": 1042.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/lce_data_cmd_fifo",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 31,
+      "dst": 46,
+      "weight": 1042.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/lce_tr_resp_in_fifo",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 46,
+      "dst": 29,
+      "weight": 1042.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p0",
+      "dst_name": "icache_1/lce/lce_data_cmd_fifo"
+    },
+    {
+      "src": 46,
+      "dst": 31,
+      "weight": 1042.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p0",
+      "dst_name": "icache_1/lce/lce_tr_resp_in_fifo"
+    },
+    {
+      "src": 36,
+      "dst": 35,
+      "weight": 938.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p0.p1",
+      "dst_name": "icache_1/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 29,
+      "dst": 44,
+      "weight": 909.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/lce_data_cmd_fifo",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 43,
+      "dst": 35,
+      "weight": 896.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 47,
+      "dst": 44,
+      "weight": 865.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 31,
+      "dst": 44,
+      "weight": 798.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/lce_tr_resp_in_fifo",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 39,
+      "dst": 38,
+      "weight": 794.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "icache_1/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 39,
+      "dst": 36,
+      "weight": 755.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "icache_1/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 38,
+      "dst": 39,
+      "weight": 643.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p0",
+      "dst_name": "icache_1/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 36,
+      "dst": 39,
+      "weight": 566.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p0.p1",
+      "dst_name": "icache_1/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 44,
+      "dst": 47,
+      "weight": 554.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 50,
+      "dst": 39,
+      "weight": 494.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "dst_name": "icache_1/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 43,
+      "dst": 36,
+      "weight": 433.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 10,
+      "dst": 46,
+      "weight": 404.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 7,
+      "dst": 46,
+      "weight": 400.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 36,
+      "dst": 50,
+      "weight": 385.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "icache_1/glue_logic(+11).p0.p1",
+      "dst_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank"
+    },
+    {
+      "src": 43,
+      "dst": 44,
+      "weight": 344.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 5,
+      "dst": 46,
+      "weight": 340.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_T2",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 4,
+      "dst": 46,
+      "weight": 332.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_T1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 38,
+      "dst": 15,
+      "weight": 264.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p0",
+      "dst_name": "bp_fe_pc_gen_1/glue_logic"
+    },
+    {
+      "src": 47,
+      "dst": 43,
+      "weight": 257.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 31,
+      "dst": 43,
+      "weight": 254.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/lce_tr_resp_in_fifo",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 0,
+      "dst": 46,
+      "weight": 252.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 1,
+      "dst": 46,
+      "weight": 238.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 35,
+      "dst": 50,
+      "weight": 207.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "icache_1/glue_logic(+11).p0.p0",
+      "dst_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank"
+    },
+    {
+      "src": 50,
+      "dst": 38,
+      "weight": 204.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "dst_name": "icache_1/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 39,
+      "dst": 52,
+      "weight": 192.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "icache_1/tag_mem"
+    },
+    {
+      "src": 36,
+      "dst": 38,
+      "weight": 184.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p0.p1",
+      "dst_name": "icache_1/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 43,
+      "dst": 8,
+      "weight": 174.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_L2"
+    },
+    {
+      "src": 38,
+      "dst": 36,
+      "weight": 168.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p0",
+      "dst_name": "icache_1/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 39,
+      "dst": 44,
+      "weight": 157.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 50,
+      "dst": 36,
+      "weight": 157.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "dst_name": "icache_1/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 47,
+      "dst": 7,
+      "weight": 154.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 47,
+      "dst": 10,
+      "weight": 149.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 29,
+      "dst": 43,
+      "weight": 143.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/lce_data_cmd_fifo",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 39,
+      "dst": 47,
+      "weight": 137.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 4,
+      "dst": 49,
+      "weight": 129.0,
+      "src_type": "Pin",
+      "dst_type": "Macro",
+      "src_name": "PIN_T1",
+      "dst_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1"
+    },
+    {
+      "src": 4,
+      "dst": 15,
+      "weight": 119.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_T1",
+      "dst_name": "bp_fe_pc_gen_1/glue_logic"
+    },
+    {
+      "src": 3,
+      "dst": 46,
+      "weight": 118.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_T0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 47,
+      "dst": 1,
+      "weight": 116.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 44,
+      "dst": 9,
+      "weight": 106.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p1",
+      "dst_name": "PIN_R0"
+    },
+    {
+      "src": 15,
+      "dst": 4,
+      "weight": 93.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "bp_fe_pc_gen_1/glue_logic",
+      "dst_name": "PIN_T1"
+    },
+    {
+      "src": 4,
+      "dst": 48,
+      "weight": 87.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_T1",
+      "dst_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std"
+    },
+    {
+      "src": 36,
+      "dst": 44,
+      "weight": 79.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p0.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 52,
+      "dst": 39,
+      "weight": 79.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/tag_mem",
+      "dst_name": "icache_1/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 46,
+      "dst": 47,
+      "weight": 75.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 1,
+      "dst": 43,
+      "weight": 71.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 43,
+      "dst": 9,
+      "weight": 71.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_R0"
+    },
+    {
+      "src": 43,
+      "dst": 47,
+      "weight": 70.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 15,
+      "dst": 36,
+      "weight": 66.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "bp_fe_pc_gen_1/glue_logic",
+      "dst_name": "icache_1/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 43,
+      "dst": 11,
+      "weight": 66.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_R2"
+    },
+    {
+      "src": 49,
+      "dst": 15,
+      "weight": 64.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1",
+      "dst_name": "bp_fe_pc_gen_1/glue_logic"
+    },
+    {
+      "src": 36,
+      "dst": 47,
+      "weight": 57.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p0.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 43,
+      "dst": 1,
+      "weight": 56.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 44,
+      "dst": 46,
+      "weight": 53.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 43,
+      "dst": 2,
+      "weight": 47.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_B2"
+    },
+    {
+      "src": 47,
+      "dst": 6,
+      "weight": 46.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "dst_name": "PIN_L0"
+    },
+    {
+      "src": 47,
+      "dst": 11,
+      "weight": 45.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "dst_name": "PIN_R2"
+    },
+    {
+      "src": 43,
+      "dst": 0,
+      "weight": 44.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_B0"
+    },
+    {
+      "src": 15,
+      "dst": 1,
+      "weight": 43.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "bp_fe_pc_gen_1/glue_logic",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 48,
+      "dst": 15,
+      "weight": 40.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std",
+      "dst_name": "bp_fe_pc_gen_1/glue_logic"
+    },
+    {
+      "src": 43,
+      "dst": 39,
+      "weight": 33.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 39,
+      "dst": 43,
+      "weight": 33.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 36,
+      "dst": 43,
+      "weight": 30.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p0.p1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 44,
+      "dst": 7,
+      "weight": 24.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p1",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 43,
+      "dst": 10,
+      "weight": 23.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 38,
+      "dst": 43,
+      "weight": 23.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 38,
+      "dst": 51,
+      "weight": 20.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "icache_1/glue_logic(+11).p1.p0",
+      "dst_name": "icache_1/metadata_mem"
+    },
+    {
+      "src": 43,
+      "dst": 38,
+      "weight": 19.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 43,
+      "dst": 46,
+      "weight": 19.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 52,
+      "dst": 38,
+      "weight": 17.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/tag_mem",
+      "dst_name": "icache_1/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 38,
+      "dst": 47,
+      "weight": 16.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 38,
+      "dst": 48,
+      "weight": 13.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p0",
+      "dst_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std"
+    },
+    {
+      "src": 38,
+      "dst": 44,
+      "weight": 13.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p0",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 15,
+      "dst": 48,
+      "weight": 12.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "bp_fe_pc_gen_1/glue_logic",
+      "dst_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std"
+    },
+    {
+      "src": 15,
+      "dst": 38,
+      "weight": 10.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "bp_fe_pc_gen_1/glue_logic",
+      "dst_name": "icache_1/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 47,
+      "dst": 2,
+      "weight": 10.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p1.p1",
+      "dst_name": "PIN_B2"
+    },
+    {
+      "src": 48,
+      "dst": 49,
+      "weight": 10.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std",
+      "dst_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1"
+    },
+    {
+      "src": 51,
+      "dst": 39,
+      "weight": 10.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/metadata_mem",
+      "dst_name": "icache_1/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 39,
+      "dst": 50,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank"
+    },
+    {
+      "src": 39,
+      "dst": 15,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "bp_fe_pc_gen_1/glue_logic"
+    },
+    {
+      "src": 39,
+      "dst": 48,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/glue_logic(+11).p1.p1",
+      "dst_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std"
+    },
+    {
+      "src": 36,
+      "dst": 52,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "icache_1/glue_logic(+11).p0.p1",
+      "dst_name": "icache_1/tag_mem"
+    },
+    {
+      "src": 11,
+      "dst": 43,
+      "weight": 6.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R2",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 43,
+      "dst": 4,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_T1"
+    },
+    {
+      "src": 43,
+      "dst": 29,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/lce/lce_data_cmd_fifo"
+    },
+    {
+      "src": 43,
+      "dst": 31,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "icache_1/lce/lce_tr_resp_in_fifo"
+    },
+    {
+      "src": 10,
+      "dst": 43,
+      "weight": 4.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 2,
+      "dst": 43,
+      "weight": 3.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B2",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 43,
+      "dst": 15,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "bp_fe_pc_gen_1/glue_logic"
+    },
+    {
+      "src": 11,
+      "dst": 15,
+      "weight": 2.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R2",
+      "dst_name": "bp_fe_pc_gen_1/glue_logic"
+    },
+    {
+      "src": 11,
+      "dst": 48,
+      "weight": 2.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R2",
+      "dst_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std"
+    },
+    {
+      "src": 44,
+      "dst": 8,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p1",
+      "dst_name": "PIN_L2"
+    },
+    {
+      "src": 48,
+      "dst": 39,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std",
+      "dst_name": "icache_1/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 48,
+      "dst": 36,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std",
+      "dst_name": "icache_1/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 4,
+      "dst": 43,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_T1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 1,
+      "dst": 15,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "bp_fe_pc_gen_1/glue_logic"
+    },
+    {
+      "src": 43,
+      "dst": 48,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/lce/glue_logic(+3).p0.p0",
+      "dst_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std"
+    },
+    {
+      "src": 29,
+      "dst": 10,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/lce_data_cmd_fifo",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 10,
+      "dst": 47,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "icache_1/lce/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 11,
+      "dst": 36,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R2",
+      "dst_name": "icache_1/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 31,
+      "dst": 11,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "icache_1/lce/lce_tr_resp_in_fifo",
+      "dst_name": "PIN_R2"
+    },
+    {
+      "src": 51,
+      "dst": 38,
+      "weight": 1.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "icache_1/metadata_mem",
+      "dst_name": "icache_1/glue_logic(+11).p1.p0"
+    }
+  ],
+  "virtual_connections_directed": [
+    {
+      "src": 4,
+      "dst": 50,
+      "weight": 1966.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 50,
+      "weight": 1616.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 50,
+      "weight": 1600.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 9,
+      "weight": 1416.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 8,
+      "weight": 1408.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 5,
+      "dst": 50,
+      "weight": 1360.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 50,
+      "weight": 1156.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 50,
+      "weight": 1008.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 3,
+      "dst": 50,
+      "weight": 472.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 11,
+      "weight": 424.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 0,
+      "weight": 352.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 1,
+      "weight": 311.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 4,
+      "weight": 223.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 7,
+      "weight": 192.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 2,
+      "weight": 192.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 4,
+      "weight": 69.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 49,
+      "weight": 69.625,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 1,
+      "weight": 64.188,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 10,
+      "weight": 64.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 52,
+      "weight": 58.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 10,
+      "weight": 50.25,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 52,
+      "weight": 49.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 11,
+      "weight": 37.25,
+      "kind": "dataflow"
+    },
+    {
+      "src": 49,
+      "dst": 50,
+      "weight": 36.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 51,
+      "weight": 25.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 49,
+      "dst": 4,
+      "weight": 18.562,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 2,
+      "weight": 13.312,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 1,
+      "weight": 13.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 1,
+      "weight": 13.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 2,
+      "weight": 12.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 52,
+      "weight": 12.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 49,
+      "weight": 9.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 50,
+      "weight": 8.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 50,
+      "weight": 8.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 10,
+      "weight": 7.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 10,
+      "weight": 7.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 10,
+      "weight": 7.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 49,
+      "dst": 1,
+      "weight": 7.375,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 51,
+      "weight": 6.125,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 11,
+      "weight": 5.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 4,
+      "dst": 11,
+      "weight": 5.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 49,
+      "weight": 4.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 49,
+      "dst": 52,
+      "weight": 3.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 50,
+      "dst": 51,
+      "weight": 3.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 4,
+      "weight": 2.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 4,
+      "weight": 2.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 2,
+      "weight": 2.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 51,
+      "dst": 2,
+      "weight": 1.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 49,
+      "dst": 2,
+      "weight": 1.312,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 1,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 11,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 51,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 52,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 51,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 52,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 49,
+      "dst": 51,
+      "weight": 0.75,
+      "kind": "dataflow"
+    }
+  ]
+}

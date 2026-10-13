@@ -1,0 +1,145 @@
+==============================================================================
+RTL-MP CLUSTERED NETLIST  (design: VeriGPU)
+==============================================================================
+
+Hyperparameters: Params(min_inst=1000, max_inst=5000, min_macro=4, max_macro=12, net_thr=5, virt_w=500)
+
+23 clusters  (22 std-cell, 1 macro)  + 12 bundled IO pins
+
+------------------------------------------------------------------------------
+BUNDLED IO PIN CLUSTERS
+------------------------------------------------------------------------------
+  [  0] PIN_B0   xy=(117.9, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  1] PIN_B1   xy=(353.7, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  2] PIN_B2   xy=(589.5, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  3] PIN_T0   xy=(117.9, 707.4) inputs=   0 outputs=   0 inouts=  0
+  [  4] PIN_T1   xy=(353.7, 707.4) inputs=   0 outputs=   0 inouts=  0
+  [  5] PIN_T2   xy=(589.5, 707.4) inputs=   0 outputs=   0 inouts=  0
+  [  6] PIN_L0   xy=(0.0, 117.9) inputs=   0 outputs=   0 inouts=  0
+  [  7] PIN_L1   xy=(0.0, 353.7) inputs=   0 outputs=   0 inouts=  0
+  [  8] PIN_L2   xy=(0.0, 589.5) inputs=   0 outputs=   0 inouts=  0
+  [  9] PIN_R0   xy=(707.4, 117.9) inputs=   0 outputs=   0 inouts=  0
+  [ 10] PIN_R1   xy=(707.4, 353.7) inputs=  66 outputs=  68 inouts=  0
+  [ 11] PIN_R2   xy=(707.4, 589.5) inputs=   0 outputs=   0 inouts=  0
+------------------------------------------------------------------------------
+MACRO CLUSTERS (grouped by footprint -> regular tilings)
+------------------------------------------------------------------------------
+  [ 46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SU macros= 12 {'small_mem': 12}
+
+------------------------------------------------------------------------------
+STD-CELL CLUSTERS (largest 20)
+------------------------------------------------------------------------------
+  [ 50] gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1  inst=  3650 area=   7418.2um2
+  [ 57] gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p1  inst=  3620 area=   7773.1um2
+  [ 64] gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p1  inst=  3620 area=   7773.1um2
+  [ 71] gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p1  inst=  3620 area=   7773.1um2
+  [ 60] gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p1  inst=  3605 area=   5179.6um2
+  [ 67] gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p1  inst=  3605 area=   5179.6um2
+  [ 74] gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p1  inst=  3605 area=   5179.6um2
+  [ 56] gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p0  inst=  3597 area=   6454.8um2
+  [ 63] gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p0  inst=  3597 area=   6454.8um2
+  [ 70] gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p0  inst=  3597 area=   6454.8um2
+  [ 59] gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0  inst=  3572 area=   5729.9um2
+  [ 66] gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0  inst=  3572 area=   5729.9um2
+  [ 73] gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0  inst=  3572 area=   5729.9um2
+  [ 53] gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1  inst=  3563 area=   5292.1um2
+  [ 49] gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0  inst=  3550 area=   6640.4um2
+  [ 52] gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0  inst=  3529 area=   5673.0um2
+  [ 41] gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0   inst=  3379 area=   8327.7um2
+  [ 42] gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1   inst=  3271 area=   6725.8um2
+  [ 44] gpu_die_/global_mem_controller_/glue_logic(+3).p1.p0   inst=  2874 area=   6912.5um2
+  [ 45] gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1   inst=  2568 area=   6389.9um2
+
+------------------------------------------------------------------------------
+STRONGEST DATAFLOW VIRTUAL CONNECTIONS  (Info_Flow / 2^hops)
+------------------------------------------------------------------------------
+         1872.00  Pin    :PIN_R1                       <-> Macro  :gpu_die_/global_mem_controll
+
+------------------------------------------------------------------------------
+STRONGEST REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      3203.0  StdCell:gpu_die_/core_array[1]/core_ <-> StdCell:gpu_die_/core_array[1]/core_
+      3203.0  StdCell:gpu_die_/core_array[2]/core_ <-> StdCell:gpu_die_/core_array[2]/core_
+      3203.0  StdCell:gpu_die_/core_array[3]/core_ <-> StdCell:gpu_die_/core_array[3]/core_
+      3127.0  StdCell:gpu_die_/core_array[0]/core_ <-> StdCell:gpu_die_/core_array[0]/core_
+      2777.0  StdCell:gpu_die_/core_array[0]/core_ <-> StdCell:gpu_die_/core_array[0]/core_
+      2586.0  StdCell:gpu_die_/core_array[1]/core_ <-> StdCell:gpu_die_/core_array[1]/core_
+      2586.0  StdCell:gpu_die_/core_array[2]/core_ <-> StdCell:gpu_die_/core_array[2]/core_
+      2586.0  StdCell:gpu_die_/core_array[3]/core_ <-> StdCell:gpu_die_/core_array[3]/core_
+      1561.0  StdCell:gpu_die_/global_mem_controll <-> StdCell:gpu_die_/global_mem_controll
+      1140.0  StdCell:gpu_die_/global_mem_controll <-> Macro  :gpu_die_/global_mem_controll
+      1045.0  StdCell:gpu_die_/core_array[0]/core_ <-> StdCell:gpu_die_/core_array[0]/core_
+       947.0  StdCell:gpu_die_/core_array[1]/core_ <-> StdCell:gpu_die_/core_array[1]/core_
+       947.0  StdCell:gpu_die_/core_array[3]/core_ <-> StdCell:gpu_die_/core_array[3]/core_
+       947.0  StdCell:gpu_die_/core_array[2]/core_ <-> StdCell:gpu_die_/core_array[2]/core_
+       871.0  StdCell:gpu_die_/core_array[1]/core_ <-> StdCell:gpu_die_/core_array[1]/core_
+       871.0  StdCell:gpu_die_/core_array[3]/core_ <-> StdCell:gpu_die_/core_array[3]/core_
+       871.0  StdCell:gpu_die_/core_array[2]/core_ <-> StdCell:gpu_die_/core_array[2]/core_
+       852.0  StdCell:gpu_die_/core_array[0]/core_ <-> StdCell:gpu_die_/core_array[0]/core_
+       835.0  StdCell:gpu_die_/global_mem_controll <-> StdCell:gpu_die_/global_mem_controll
+       585.0  StdCell:gpu_die_/global_mem_controll <-> StdCell:gpu_die_/global_mem_controll
+       570.0  StdCell:gpu_die_/global_mem_controll <-> StdCell:gpu_die_/global_mem_controll
+       531.0  StdCell:gpu_die_/glue_logic(+1)      <-> StdCell:gpu_die_/core_array[0]/core_
+       501.0  StdCell:gpu_die_/glue_logic(+1)      <-> StdCell:gpu_die_/core_array[0]/core_
+       396.0  StdCell:gpu_die_/global_mem_controll <-> Macro  :gpu_die_/global_mem_controll
+       355.0  StdCell:gpu_die_/glue_logic(+1)      <-> StdCell:gpu_die_/core_array[0]/core_
+
+------------------------------------------------------------------------------
+MACRO <-> STD-CELL VIRTUAL CONNECTIONS (Step 4, weight=virtual_weight)
+------------------------------------------------------------------------------
+     500.0  StdCell:gpu_die_/global_mem_controll <-> Macro  :gpu_die_/global_mem_controll
+     500.0  StdCell:gpu_die_/global_mem_controll <-> Macro  :gpu_die_/global_mem_controll
+     500.0  StdCell:gpu_die_/global_mem_controll <-> Macro  :gpu_die_/global_mem_controll
+     500.0  StdCell:gpu_die_/global_mem_controll <-> Macro  :gpu_die_/global_mem_controll
+
+==============================================================================
+DIRECTED VIEW  (driver-cluster --> sink-cluster, dataflow direction)
+==============================================================================
+
+DIRECTED IO FLOW SUMMARY
+------------------------------------------------------------------------------
+  Top-level INPUT ports drive their bundled pin clusters into the core.
+  Top-level OUTPUT ports are sinks driven by std-cell or macro clusters.
+  Edges below are aggregated directed star-model net connections.
+
+STRONGEST DIRECTED DATAFLOW CONNECTIONS
+------------------------------------------------------------------------------
+         1872.00  Pin    :PIN_R1                       --> Macro  :gpu_die_/global_mem_controll
+
+STRONGEST DIRECTED REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      1642.0  StdCell:gpu_die_/core_array[1]/core_ --> StdCell:gpu_die_/core_array[1]/core_
+      1642.0  StdCell:gpu_die_/core_array[2]/core_ --> StdCell:gpu_die_/core_array[2]/core_
+      1642.0  StdCell:gpu_die_/core_array[3]/core_ --> StdCell:gpu_die_/core_array[3]/core_
+      1614.0  StdCell:gpu_die_/core_array[0]/core_ --> StdCell:gpu_die_/core_array[0]/core_
+      1561.0  StdCell:gpu_die_/core_array[1]/core_ --> StdCell:gpu_die_/core_array[1]/core_
+      1561.0  StdCell:gpu_die_/core_array[2]/core_ --> StdCell:gpu_die_/core_array[2]/core_
+      1561.0  StdCell:gpu_die_/core_array[3]/core_ --> StdCell:gpu_die_/core_array[3]/core_
+      1513.0  StdCell:gpu_die_/core_array[0]/core_ --> StdCell:gpu_die_/core_array[0]/core_
+      1461.0  StdCell:gpu_die_/core_array[0]/core_ --> StdCell:gpu_die_/core_array[0]/core_
+      1381.0  StdCell:gpu_die_/core_array[1]/core_ --> StdCell:gpu_die_/core_array[1]/core_
+      1381.0  StdCell:gpu_die_/core_array[2]/core_ --> StdCell:gpu_die_/core_array[2]/core_
+      1381.0  StdCell:gpu_die_/core_array[3]/core_ --> StdCell:gpu_die_/core_array[3]/core_
+      1316.0  StdCell:gpu_die_/core_array[0]/core_ --> StdCell:gpu_die_/core_array[0]/core_
+      1205.0  StdCell:gpu_die_/core_array[1]/core_ --> StdCell:gpu_die_/core_array[1]/core_
+      1205.0  StdCell:gpu_die_/core_array[2]/core_ --> StdCell:gpu_die_/core_array[2]/core_
+      1205.0  StdCell:gpu_die_/core_array[3]/core_ --> StdCell:gpu_die_/core_array[3]/core_
+       877.0  StdCell:gpu_die_/global_mem_controll --> StdCell:gpu_die_/global_mem_controll
+       768.0  Macro  :gpu_die_/global_mem_controll --> StdCell:gpu_die_/global_mem_controll
+       684.0  StdCell:gpu_die_/global_mem_controll --> StdCell:gpu_die_/global_mem_controll
+       624.0  StdCell:gpu_die_/global_mem_controll --> StdCell:gpu_die_/global_mem_controll
+       616.0  StdCell:gpu_die_/core_array[0]/core_ --> StdCell:gpu_die_/core_array[0]/core_
+       579.0  StdCell:gpu_die_/core_array[1]/core_ --> StdCell:gpu_die_/core_array[1]/core_
+       579.0  StdCell:gpu_die_/core_array[2]/core_ --> StdCell:gpu_die_/core_array[2]/core_
+       579.0  StdCell:gpu_die_/core_array[3]/core_ --> StdCell:gpu_die_/core_array[3]/core_
+       528.0  StdCell:gpu_die_/glue_logic(+1)      --> StdCell:gpu_die_/core_array[0]/core_
+
+STRONGEST INPUT-PIN --> CORE CONNECTIONS
+------------------------------------------------------------------------------
+       192.0  Pin    :PIN_R1                       --> StdCell:gpu_die_/glue_logic(+1)
+
+STRONGEST CORE --> OUTPUT-PIN CONNECTIONS
+------------------------------------------------------------------------------
+        34.0  StdCell:gpu_die_/core_array[0]/core_ --> Pin    :PIN_R1
+        31.0  StdCell:<top>/glue_logic             --> Pin    :PIN_R1
+         2.0  StdCell:gpu_die_/glue_logic(+1)      --> Pin    :PIN_R1

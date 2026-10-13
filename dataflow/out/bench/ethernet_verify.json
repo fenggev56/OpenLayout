@@ -1,0 +1,28 @@
+{
+  "design": "ethernet",
+  "macros_verilog": 64,
+  "macros_clustered": 64,
+  "clusters": 2,
+  "cluster_sizes": [
+    32,
+    32
+  ],
+  "rtl_modules_with_macros": 2,
+  "rtl_bank_groups": 2,
+  "bank_group_sizes": [
+    32,
+    32
+  ],
+  "bank_groups_split": 0,
+  "clusters_spanning_modules": 0,
+  "problems": [
+    [
+      "C5",
+      "cluster [23] has 32 macros > max_num_macro=12 (wishbone/rx_fifo/fifo)"
+    ],
+    [
+      "C5",
+      "cluster [24] has 32 macros > max_num_macro=12 (wishbone/tx_fifo/fifo)"
+    ]
+  ]
+}

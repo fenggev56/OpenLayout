@@ -1,0 +1,41 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: bp_be)
+==============================================================================
+
+3 macro clusters, 10 macros
+
+------------------------------------------------------------------------------
+MACRO_IN_NETLIST
+------------------------------------------------------------------------------
+  be_mmu/dcache/data_mem_0__data_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+  be_mmu/dcache/data_mem_1__data_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+  be_mmu/dcache/data_mem_2__data_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+  be_mmu/dcache/data_mem_3__data_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+  be_mmu/dcache/data_mem_4__data_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+  be_mmu/dcache/data_mem_5__data_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+  be_mmu/dcache/data_mem_6__data_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+  be_mmu/dcache/data_mem_7__data_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+  be_mmu/dcache/stat_mem.macro_mem.mem  type=fakeram45_64x15 cluster=[32] be_mmu/dcache/stat_mem
+  be_mmu/dcache/tag_mem.macro_mem.mem  type=fakeram45_64x96 cluster=[67] be_mmu/dcache/tag_mem
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[ 66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem
+type=Macro macro_count=8 macro_types={'fakeram45_512x64': 8}
+  be_mmu/dcache/data_mem_0__data_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  be_mmu/dcache/data_mem_1__data_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  be_mmu/dcache/data_mem_2__data_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  be_mmu/dcache/data_mem_3__data_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  be_mmu/dcache/data_mem_4__data_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  be_mmu/dcache/data_mem_5__data_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  be_mmu/dcache/data_mem_6__data_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  be_mmu/dcache/data_mem_7__data_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+------------------------------------------------------------------------------
+[ 32] be_mmu/dcache/stat_mem
+type=Macro macro_count=1 macro_types={'fakeram45_64x15': 1}
+  be_mmu/dcache/stat_mem.macro_mem.mem  type=fakeram45_64x15 size=11.21x58.8um
+------------------------------------------------------------------------------
+[ 67] be_mmu/dcache/tag_mem
+type=Macro macro_count=1 macro_types={'fakeram45_64x96': 1}
+  be_mmu/dcache/tag_mem.macro_mem.mem  type=fakeram45_64x96 size=54.53x89.4um

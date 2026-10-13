@@ -1,0 +1,252 @@
+==============================================================================
+RTL-MP CLUSTERED NETLIST  (design: vga_lcd)
+==============================================================================
+
+Hyperparameters: Params(min_inst=1000, max_inst=5000, min_macro=4, max_macro=12, net_thr=5, virt_w=500)
+
+59 clusters  (40 std-cell, 19 macro)  + 12 bundled IO pins
+
+------------------------------------------------------------------------------
+BUNDLED IO PIN CLUSTERS
+------------------------------------------------------------------------------
+  [  0] PIN_B0   xy=(177.7, 0.0) inputs=   2 outputs=   0 inouts=  0
+  [  1] PIN_B1   xy=(533.1, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  2] PIN_B2   xy=(888.5, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  3] PIN_T0   xy=(177.7, 1066.2) inputs=   0 outputs=   0 inouts=  0
+  [  4] PIN_T1   xy=(533.1, 1066.2) inputs=  87 outputs= 109 inouts=  0
+  [  5] PIN_T2   xy=(888.5, 1066.2) inputs=   0 outputs=   0 inouts=  0
+  [  6] PIN_L0   xy=(0.0, 177.7) inputs=   0 outputs=   0 inouts=  0
+  [  7] PIN_L1   xy=(0.0, 533.1) inputs=   0 outputs=   0 inouts=  0
+  [  8] PIN_L2   xy=(0.0, 888.5) inputs=   0 outputs=   0 inouts=  0
+  [  9] PIN_R0   xy=(1066.2, 177.7) inputs=   0 outputs=   0 inouts=  0
+  [ 10] PIN_R1   xy=(1066.2, 533.1) inputs=   0 outputs=   0 inouts=  0
+  [ 11] PIN_R2   xy=(1066.2, 888.5) inputs=   0 outputs=   0 inouts=  0
+------------------------------------------------------------------------------
+MACRO CLUSTERS (grouped by footprint -> regular tilings)
+------------------------------------------------------------------------------
+  [136] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[mem macros=  4 {'memory_block_64x8': 4}
+  [138] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[mem macros=  4 {'memory_block_64x8': 4}
+  [140] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[mem macros=  4 {'memory_block_64x8': 4}
+  [142] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[mem macros=  4 {'memory_block_64x8': 4}
+  [118] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros     macros=  4 {'memory_block_64x8': 4}
+  [120] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros     macros=  4 {'memory_block_64x8': 4}
+  [122] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros     macros=  4 {'memory_block_64x8': 4}
+  [124] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros     macros=  4 {'memory_block_64x8': 4}
+  [126] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros     macros=  4 {'memory_block_64x8': 4}
+  [128] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros     macros=  4 {'memory_block_64x8': 4}
+  [130] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros     macros=  4 {'memory_block_64x8': 4}
+  [132] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros     macros=  4 {'memory_block_64x8': 4}
+  [133] clut_mem/clut_mem/u_spram_256x24_composed/macros[mem macros=  2 {'memory_block_128x8': 2}
+  [134] clut_mem/clut_mem/u_spram_256x24_composed/macros[mem macros=  2 {'memory_block_64x24': 2}
+  [135] clut_mem/clut_mem/u_spram_256x24_composed/macros[mem macros=  2 {'memory_block_64x8': 2}
+  [137] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[mem macros=  2 {'memory_block_128x8': 2}
+  [139] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[mem macros=  2 {'memory_block_128x8': 2}
+  [141] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[mem macros=  2 {'memory_block_128x8': 2}
+  [143] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[mem macros=  2 {'memory_block_128x8': 2}
+
+------------------------------------------------------------------------------
+STD-CELL CLUSTERS (largest 20)
+------------------------------------------------------------------------------
+  [ 96] line_fifo/fifo_dc_mem/u_mem_slice0.p1.p0.p1            inst=  4949 area=  18775.9um2
+  [ 80] line_fifo/fifo_dc_mem/u_mem_slice0.p0.p0.p0            inst=  4881 area=   3779.1um2
+  [106] clut_mem/clut_mem/u_spram_256x24_direct.p1.p1          inst=  4665 area=  11292.8um2
+  [ 98] line_fifo/fifo_dc_mem/u_mem_slice0.p1.p1.p0            inst=  4613 area=  17609.7um2
+  [ 99] line_fifo/fifo_dc_mem/u_mem_slice0.p1.p1.p1            inst=  4252 area=  17546.4um2
+  [103] clut_mem/clut_mem/u_spram_256x24_direct.p0.p1          inst=  3817 area=  10454.1um2
+  [105] clut_mem/clut_mem/u_spram_256x24_direct.p1.p0          inst=  3817 area=   7267.7um2
+  [ 66] <top>/glue_logic(+2).p1.p1.p1.p1                       inst=  3768 area=   3924.8um2
+  [ 90] line_fifo/fifo_dc_mem/u_mem_slice0.p0.p1.p1.p1         inst=  3656 area=   4351.5um2
+  [ 65] <top>/glue_logic(+2).p1.p1.p1.p0                       inst=  3334 area=   3462.5um2
+  [ 83] line_fifo/fifo_dc_mem/u_mem_slice0.p0.p0.p1.p1         inst=  3280 area=   5958.1um2
+  [ 59] <top>/glue_logic(+2).p1.p0.p1.p1                       inst=  3273 area=   3414.9um2
+  [ 94] line_fifo/fifo_dc_mem/u_mem_slice0.p1.p0.p0.p0         inst=  3213 area=   5859.4um2
+  [ 40] <top>/glue_logic(+2).p0.p0.p0.p0                       inst=  3133 area=   3389.6um2
+  [102] clut_mem/clut_mem/u_spram_256x24_direct.p0.p0          inst=  3124 area=   6413.5um2
+  [ 41] <top>/glue_logic(+2).p0.p0.p0.p1                       inst=  3092 area=   3302.4um2
+  [ 48] <top>/glue_logic(+2).p0.p1.p0.p1                       inst=  3076 area=   2731.6um2
+  [ 44] <top>/glue_logic(+2).p0.p0.p1.p1                       inst=  3049 area=   4318.2um2
+  [ 51] <top>/glue_logic(+2).p0.p1.p1.p1                       inst=  3041 area=   3035.1um2
+  [ 50] <top>/glue_logic(+2).p0.p1.p1.p0                       inst=  3039 area=   2998.4um2
+
+------------------------------------------------------------------------------
+STRONGEST DATAFLOW VIRTUAL CONNECTIONS  (Info_Flow / 2^hops)
+------------------------------------------------------------------------------
+          264.00  Pin    :PIN_T1                       <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          264.00  Pin    :PIN_T1                       <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          264.00  Pin    :PIN_T1                       <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          264.00  Pin    :PIN_T1                       <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          264.00  Pin    :PIN_T1                       <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          264.00  Pin    :PIN_T1                       <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          264.00  Pin    :PIN_T1                       <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          264.00  Pin    :PIN_T1                       <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+          256.00  Macro  :line_fifo/fifo_dc_mem/u_mem_ <-> Macro  :clut_mem/clut_mem/u_spram_25
+
+------------------------------------------------------------------------------
+STRONGEST REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      3167.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      3087.0  StdCell:<top>/glue_logic(+2).p0.p0.p <-> StdCell:<top>/glue_logic(+2).p0.p0.p
+      3084.0  StdCell:<top>/glue_logic(+2).p0.p0.p <-> StdCell:clut_mem/clut_mem/u_spram_25
+      3043.0  StdCell:<top>/glue_logic(+2).p1.p0.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      3002.0  StdCell:<top>/glue_logic(+2).p0.p0.p <-> StdCell:clut_mem/clut_mem/u_spram_25
+      2984.0  StdCell:<top>/glue_logic(+2).p0.p0.p <-> StdCell:clut_mem/clut_mem/u_spram_25
+      2766.0  StdCell:<top>/glue_logic(+2).p1.p0.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      2602.0  StdCell:<top>/glue_logic(+2).p0.p0.p <-> StdCell:clut_mem/clut_mem/u_spram_25
+      2342.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      2323.0  StdCell:<top>/glue_logic(+2).p1.p0.p <-> StdCell:clut_mem/clut_mem/glue_logic
+      2285.0  StdCell:<top>/glue_logic(+2).p1.p0.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      2224.0  StdCell:wbm                          <-> StdCell:<top>/glue_logic(+2).p0.p0.p
+      2212.0  StdCell:<top>/glue_logic(+2).p1.p0.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      2208.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      2034.0  StdCell:<top>/glue_logic(+2).p0.p0.p <-> StdCell:clut_mem/clut_mem/u_spram_25
+      1994.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1908.0  StdCell:<top>/glue_logic(+2).p0.p1.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1881.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1862.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1774.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1743.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1738.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1730.0  StdCell:<top>/glue_logic(+2).p1.p0.p <-> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1721.0  StdCell:<top>/glue_logic(+2).p1.p0.p <-> StdCell:clut_mem/clut_mem/glue_logic
+      1717.0  StdCell:<top>/glue_logic(+2).p0.p1.p <-> StdCell:line_fifo/fifo_dc_mem/glue_l
+
+------------------------------------------------------------------------------
+MACRO <-> STD-CELL VIRTUAL CONNECTIONS (Step 4, weight=virtual_weight)
+------------------------------------------------------------------------------
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:<top>/glue_logic(+2).p1.p1.p <-> Macro  :line_fifo/fifo_dc_mem/u_mem_
+     500.0  StdCell:clut_mem/clut_mem/glue_logic <-> Macro  :clut_mem/clut_mem/u_spram_25
+     500.0  StdCell:clut_mem/clut_mem/glue_logic <-> Macro  :clut_mem/clut_mem/u_spram_25
+     500.0  StdCell:clut_mem/clut_mem/glue_logic <-> Macro  :clut_mem/clut_mem/u_spram_25
+
+==============================================================================
+DIRECTED VIEW  (driver-cluster --> sink-cluster, dataflow direction)
+==============================================================================
+
+DIRECTED IO FLOW SUMMARY
+------------------------------------------------------------------------------
+  Top-level INPUT ports drive their bundled pin clusters into the core.
+  Top-level OUTPUT ports are sinks driven by std-cell or macro clusters.
+  Edges below are aggregated directed star-model net connections.
+
+STRONGEST DIRECTED DATAFLOW CONNECTIONS
+------------------------------------------------------------------------------
+          256.00  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+          256.00  Macro  :clut_mem/clut_mem/u_spram_25 --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+
+STRONGEST DIRECTED REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      3047.0  StdCell:<top>/glue_logic(+2).p0.p0.p --> StdCell:<top>/glue_logic(+2).p0.p0.p
+      2328.0  StdCell:<top>/glue_logic(+2).p0.p0.p --> StdCell:clut_mem/clut_mem/u_spram_25
+      2275.0  StdCell:<top>/glue_logic(+2).p0.p0.p --> StdCell:clut_mem/clut_mem/u_spram_25
+      2210.0  StdCell:<top>/glue_logic(+2).p0.p0.p --> StdCell:clut_mem/clut_mem/u_spram_25
+      2066.0  StdCell:clut_mem/clut_mem/glue_logic --> StdCell:<top>/glue_logic(+2).p1.p0.p
+      2047.0  StdCell:<top>/glue_logic(+2).p0.p0.p --> StdCell:clut_mem/clut_mem/u_spram_25
+      1994.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1862.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1850.0  StdCell:<top>/glue_logic(+2).p1.p1.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1814.0  StdCell:<top>/glue_logic(+2).p1.p1.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1696.0  StdCell:<top>/glue_logic(+2).p1.p0.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1658.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1541.0  StdCell:<top>/glue_logic(+2).p1.p0.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1502.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:<top>/glue_logic(+2).p1.p0.p
+      1492.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:<top>/glue_logic(+2).p0.p1.p
+      1442.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1426.0  StdCell:<top>/glue_logic(+2).p1.p0.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1407.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1388.0  StdCell:<top>/glue_logic(+2).p1.p0.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1387.0  StdCell:<top>/glue_logic(+2).p1.p0.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1375.0  StdCell:line_fifo/fifo_dc_mem/glue_l --> StdCell:<top>/glue_logic(+2).p0.p1.p
+      1355.0  StdCell:<top>/glue_logic(+2).p1.p1.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+      1340.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:<top>/glue_logic(+2).p1.p0.p
+      1317.0  StdCell:line_fifo/fifo_dc_mem/u_mem_ --> StdCell:<top>/glue_logic(+2).p1.p1.p
+      1308.0  StdCell:<top>/glue_logic(+2).p1.p1.p --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+
+STRONGEST INPUT-PIN --> CORE CONNECTIONS
+------------------------------------------------------------------------------
+       406.0  Pin    :PIN_T1                       --> StdCell:<top>/glue_logic(+2).p0.p0.p
+       137.0  Pin    :PIN_T1                       --> StdCell:pixel_generator(+1)
+        42.0  Pin    :PIN_T1                       --> StdCell:line_fifo/fifo_dc_mem/glue_l
+        21.0  Pin    :PIN_T1                       --> StdCell:<top>/glue_logic(+2).p0.p0.p
+        17.0  Pin    :PIN_T1                       --> StdCell:<top>/glue_logic(+2).p1.p1.p
+        16.0  Pin    :PIN_T1                       --> StdCell:<top>/glue_logic(+2).p0.p0.p
+        12.0  Pin    :PIN_T1                       --> StdCell:<top>/glue_logic(+2).p0.p0.p
+         8.0  Pin    :PIN_T1                       --> StdCell:line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         4.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         3.0  Pin    :PIN_T1                       --> StdCell:line_fifo/fifo_dc_mem/glue_l
+         3.0  Pin    :PIN_T1                       --> StdCell:wbm
+         2.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         2.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+         2.0  Pin    :PIN_T1                       --> Macro  :line_fifo/fifo_dc_mem/u_mem_
+
+STRONGEST CORE --> OUTPUT-PIN CONNECTIONS
+------------------------------------------------------------------------------
+        33.0  StdCell:wbm                          --> Pin    :PIN_T1
+        28.0  StdCell:pixel_generator(+1)          --> Pin    :PIN_T1
+        24.0  StdCell:<top>/glue_logic(+2).p0.p0.p --> Pin    :PIN_T1
+        12.0  StdCell:<top>/glue_logic(+2).p1.p1.p --> Pin    :PIN_T1
+        12.0  StdCell:<top>/glue_logic(+2).p0.p0.p --> Pin    :PIN_T1

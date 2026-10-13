@@ -1,0 +1,193 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: vga_lcd)
+==============================================================================
+
+19 macro clusters, 62 macros
+
+------------------------------------------------------------------------------
+MACRO_IN_NETLIST
+------------------------------------------------------------------------------
+  clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_1  type=memory_block_64x24 cluster=[134] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x24]
+  clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_2  type=memory_block_64x24 cluster=[134] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x24]
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block0  type=memory_block_128x8 cluster=[133] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_128x8]
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block1  type=memory_block_128x8 cluster=[133] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_128x8]
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_0  type=memory_block_64x8 cluster=[135] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x8]
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_1  type=memory_block_64x8 cluster=[135] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem0  type=memory_block_64x8 cluster=[136] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem1  type=memory_block_64x8 cluster=[136] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem2  type=memory_block_64x8 cluster=[136] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem3  type=memory_block_64x8 cluster=[136] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem4  type=memory_block_128x8 cluster=[137] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_128x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem5  type=memory_block_128x8 cluster=[137] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_128x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem0  type=memory_block_64x8 cluster=[138] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem1  type=memory_block_64x8 cluster=[138] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem2  type=memory_block_64x8 cluster=[138] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem3  type=memory_block_64x8 cluster=[138] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem4  type=memory_block_128x8 cluster=[139] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_128x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem5  type=memory_block_128x8 cluster=[139] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_128x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem0  type=memory_block_64x8 cluster=[142] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem1  type=memory_block_64x8 cluster=[142] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem2  type=memory_block_64x8 cluster=[142] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem3  type=memory_block_64x8 cluster=[142] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem4  type=memory_block_128x8 cluster=[143] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_128x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem5  type=memory_block_128x8 cluster=[143] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_128x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem0  type=memory_block_64x8 cluster=[140] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem1  type=memory_block_64x8 cluster=[140] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem2  type=memory_block_64x8 cluster=[140] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem3  type=memory_block_64x8 cluster=[140] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem4  type=memory_block_128x8 cluster=[141] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_128x8]
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem5  type=memory_block_128x8 cluster=[141] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_128x8]
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem0  type=memory_block_64x8 cluster=[132] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem1  type=memory_block_64x8 cluster=[132] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem2  type=memory_block_64x8 cluster=[132] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem3  type=memory_block_64x8 cluster=[132] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem0  type=memory_block_64x8 cluster=[130] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem1  type=memory_block_64x8 cluster=[130] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem2  type=memory_block_64x8 cluster=[130] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem3  type=memory_block_64x8 cluster=[130] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem0  type=memory_block_64x8 cluster=[128] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem1  type=memory_block_64x8 cluster=[128] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem2  type=memory_block_64x8 cluster=[128] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem3  type=memory_block_64x8 cluster=[128] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem0  type=memory_block_64x8 cluster=[126] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem1  type=memory_block_64x8 cluster=[126] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem2  type=memory_block_64x8 cluster=[126] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem3  type=memory_block_64x8 cluster=[126] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem0  type=memory_block_64x8 cluster=[122] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem1  type=memory_block_64x8 cluster=[122] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem2  type=memory_block_64x8 cluster=[122] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem3  type=memory_block_64x8 cluster=[122] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem0  type=memory_block_64x8 cluster=[124] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem1  type=memory_block_64x8 cluster=[124] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem2  type=memory_block_64x8 cluster=[124] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem3  type=memory_block_64x8 cluster=[124] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem0  type=memory_block_64x8 cluster=[120] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem1  type=memory_block_64x8 cluster=[120] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem2  type=memory_block_64x8 cluster=[120] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem3  type=memory_block_64x8 cluster=[120] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem0  type=memory_block_64x8 cluster=[118] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem1  type=memory_block_64x8 cluster=[118] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem2  type=memory_block_64x8 cluster=[118] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem3  type=memory_block_64x8 cluster=[118] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[133] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block0  type=memory_block_128x8 size=63.28x185.84um
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block1  type=memory_block_128x8 size=63.28x185.84um
+------------------------------------------------------------------------------
+[134] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x24]
+type=Macro macro_count=2 macro_types={'memory_block_64x24': 2}
+  clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_1  type=memory_block_64x24 size=73.365x216.09um
+  clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_2  type=memory_block_64x24 size=73.365x216.09um
+------------------------------------------------------------------------------
+[135] clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x8]
+type=Macro macro_count=2 macro_types={'memory_block_64x8': 2}
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_0  type=memory_block_64x8 size=43.585x126.755um
+  clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_1  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[137] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem4  type=memory_block_128x8 size=63.28x185.84um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem5  type=memory_block_128x8 size=63.28x185.84um
+------------------------------------------------------------------------------
+[136] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[139] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem4  type=memory_block_128x8 size=63.28x185.84um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem5  type=memory_block_128x8 size=63.28x185.84um
+------------------------------------------------------------------------------
+[138] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[143] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem4  type=memory_block_128x8 size=63.28x185.84um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem5  type=memory_block_128x8 size=63.28x185.84um
+------------------------------------------------------------------------------
+[142] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[141] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_128x8]
+type=Macro macro_count=2 macro_types={'memory_block_128x8': 2}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem4  type=memory_block_128x8 size=63.28x185.84um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem5  type=memory_block_128x8 size=63.28x185.84um
+------------------------------------------------------------------------------
+[140] line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[132] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[130] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[128] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[126] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[122] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[124] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[120] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem3  type=memory_block_64x8 size=43.585x126.755um
+------------------------------------------------------------------------------
+[118] line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros
+type=Macro macro_count=4 macro_types={'memory_block_64x8': 4}
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem0  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem1  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem2  type=memory_block_64x8 size=43.585x126.755um
+  line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem3  type=memory_block_64x8 size=43.585x126.755um

@@ -1,0 +1,13 @@
+cluster_id,cluster_name,cluster_type,macro_real_name,macro_type,width_um,height_um,area_um2
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_58676,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_58677,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_58678,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61847,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61848,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61849,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61850,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61851,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61852,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61853,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61854,small_mem,75.56,149.125,11267.885
+46,"gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",Macro,inst_61855,small_mem,75.56,149.125,11267.885

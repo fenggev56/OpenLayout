@@ -1,0 +1,1124 @@
+{
+  "design": "ethernet",
+  "stats": {
+    "instances": 35236,
+    "macros": 64,
+    "macro_clusters": 2
+  },
+  "macro_in_netlist": [
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram00",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram01",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram02",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram03",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram04",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram05",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram06",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram07",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram08",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram09",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram10",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram11",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram12",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram13",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram14",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram15",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram16",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram17",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram18",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram19",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram20",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram21",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram22",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram23",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram24",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram25",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram26",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram27",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram28",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram29",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram30",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/rx_fifo.fifo.ram31",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram00",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram01",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram02",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram03",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram04",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram05",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram06",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram07",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram08",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram09",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram10",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram11",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram12",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram13",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram14",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram15",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram16",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram17",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram18",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram19",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram20",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram21",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram22",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram23",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram24",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram25",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram26",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram27",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram28",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram29",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram30",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "wishbone/tx_fifo.fifo.ram31",
+      "type": "RAM16X1D",
+      "width_um": 23.5,
+      "height_um": 17.05,
+      "area_um2": 400.675,
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro"
+    }
+  ],
+  "macro_clusters": [
+    {
+      "cluster_id": 23,
+      "cluster_name": "wishbone/rx_fifo/fifo",
+      "cluster_type": "Macro",
+      "macro_count": 32,
+      "macro_types": {
+        "RAM16X1D": 32
+      },
+      "area_um2": 12821.6,
+      "macros": [
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram00",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram01",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram02",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram03",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram04",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram05",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram06",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram07",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram08",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram09",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram10",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram11",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram12",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram13",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram14",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram15",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram16",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram17",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram18",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram19",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram20",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram21",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram22",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram23",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram24",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram25",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram26",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram27",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram28",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram29",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram30",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/rx_fifo.fifo.ram31",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        }
+      ]
+    },
+    {
+      "cluster_id": 24,
+      "cluster_name": "wishbone/tx_fifo/fifo",
+      "cluster_type": "Macro",
+      "macro_count": 32,
+      "macro_types": {
+        "RAM16X1D": 32
+      },
+      "area_um2": 12821.6,
+      "macros": [
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram00",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram01",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram02",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram03",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram04",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram05",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram06",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram07",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram08",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram09",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram10",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram11",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram12",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram13",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram14",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram15",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram16",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram17",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram18",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram19",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram20",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram21",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram22",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram23",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram24",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram25",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram26",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram27",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram28",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram29",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram30",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        },
+        {
+          "real_name": "wishbone/tx_fifo.fifo.ram31",
+          "type": "RAM16X1D",
+          "width_um": 23.5,
+          "height_um": 17.05,
+          "area_um2": 400.675
+        }
+      ]
+    }
+  ]
+}

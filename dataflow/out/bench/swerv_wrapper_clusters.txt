@@ -1,0 +1,224 @@
+==============================================================================
+RTL-MP CLUSTERED NETLIST  (design: swerv_wrapper)
+==============================================================================
+
+Hyperparameters: Params(min_inst=1000, max_inst=5000, min_macro=4, max_macro=12, net_thr=5, virt_w=500)
+
+36 clusters  (33 std-cell, 3 macro)  + 12 bundled IO pins
+
+------------------------------------------------------------------------------
+BUNDLED IO PIN CLUSTERS
+------------------------------------------------------------------------------
+  [  0] PIN_B0   xy=(179.1, 0.0) inputs=  43 outputs=   0 inouts=  0
+  [  1] PIN_B1   xy=(537.3, 0.0) inputs=  68 outputs= 305 inouts=  0
+  [  2] PIN_B2   xy=(895.6, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  3] PIN_T0   xy=(179.1, 1074.7) inputs=   0 outputs=   0 inouts=  0
+  [  4] PIN_T1   xy=(537.3, 1074.7) inputs= 116 outputs=  84 inouts=  0
+  [  5] PIN_T2   xy=(895.6, 1074.7) inputs=   0 outputs=   0 inouts=  0
+  [  6] PIN_L0   xy=(0.0, 179.1) inputs=   0 outputs=   0 inouts=  0
+  [  7] PIN_L1   xy=(0.0, 537.3) inputs= 157 outputs= 243 inouts=  0
+  [  8] PIN_L2   xy=(0.0, 895.6) inputs=   0 outputs=   0 inouts=  0
+  [  9] PIN_R0   xy=(1074.7, 179.1) inputs=   0 outputs=   0 inouts=  0
+  [ 10] PIN_R1   xy=(1074.7, 537.3) inputs= 150 outputs= 250 inouts=  0
+  [ 11] PIN_R2   xy=(1074.7, 895.6) inputs=   0 outputs=   0 inouts=  0
+------------------------------------------------------------------------------
+MACRO CLUSTERS (grouped by footprint -> regular tilings)
+------------------------------------------------------------------------------
+  [608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS macros= 16 {'fakeram45_256x34': 16}
+  [604] mem/Gen_dccm_enable_dccm/macros                      macros=  8 {'fakeram45_2048x39': 8}
+  [606] mem/icm/ic_tag_inst                                  macros=  4 {'fakeram45_64x21': 4}
+
+------------------------------------------------------------------------------
+STD-CELL CLUSTERS (largest 20)
+------------------------------------------------------------------------------
+  [ 63] swerv/ifu/aln                                          inst=  4986 area=   7519.3um2
+  [592] swerv/lsu/stbuf/glue_logic(+75).p0                     inst=  4965 area=   8190.4um2
+  [ 56] swerv/exu/mul_e1                                       inst=  4550 area=   9390.1um2
+  [586] swerv/dec/decode/glue_logic(+84).p0                    inst=  4532 area=   7053.8um2
+  [607] swerv/ifu/glue_logic(+21)/std                          inst=  4518 area=   7989.0um2
+  [587] swerv/dec/decode/glue_logic(+84).p1                    inst=  4507 area=   9916.2um2
+  [ 64] swerv/ifu/bp(+4)                                       inst=  4432 area=   7565.0um2
+  [583] swerv/dec/arf/glue_logic(+32).p0                       inst=  4291 area=   7872.5um2
+  [584] swerv/dec/arf/glue_logic(+32).p1                       inst=  4267 area=   6898.7um2
+  [ 22] swerv/dec/glue_logic(+2)                               inst=  4112 area=   7264.7um2
+  [590] swerv/dec/tlu/glue_logic(+64).p1                       inst=  3851 area=   6502.1um2
+  [589] swerv/dec/tlu/glue_logic(+64).p0                       inst=  3633 area=   6697.3um2
+  [602] swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p1   inst=  3251 area=   6301.3um2
+  [571] swerv/glue_logic(+5).p1                                inst=  3245 area=   6141.7um2
+  [570] swerv/glue_logic(+5).p0                                inst=  3160 area=   5907.3um2
+  [575] swerv/exu/glue_logic(+28).p0.p1                        inst=  3036 area=   4389.5um2
+  [574] swerv/exu/glue_logic(+28).p0.p0                        inst=  2992 area=   3488.6um2
+  [599] swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p0.p1   inst=  2988 area=   4877.4um2
+  [601] swerv/lsu/bus_intf/bus_buffer/glue_logic(+188).p1.p0   inst=  2914 area=   4510.0um2
+  [577] swerv/exu/glue_logic(+28).p1.p0                        inst=  2856 area=   4779.0um2
+
+------------------------------------------------------------------------------
+STRONGEST DATAFLOW VIRTUAL CONNECTIONS  (Info_Flow / 2^hops)
+------------------------------------------------------------------------------
+         1961.00  Pin    :PIN_R1                       <-> Macro  :mem/icm/ic_data_inst/WAYS_{0
+         1695.50  Pin    :PIN_R1                       <-> Macro  :mem/Gen_dccm_enable_dccm/mac
+         1048.00  Macro  :mem/Gen_dccm_enable_dccm/mac <-> Macro  :mem/icm/ic_data_inst/WAYS_{0
+          928.94  Pin    :PIN_B1                       <-> Pin    :PIN_T1
+          720.00  Macro  :mem/icm/ic_tag_inst          <-> Macro  :mem/icm/ic_data_inst/WAYS_{0
+          615.06  Pin    :PIN_B1                       <-> Pin    :PIN_R1
+          591.00  Pin    :PIN_R1                       <-> Macro  :mem/icm/ic_tag_inst
+          573.00  Pin    :PIN_T1                       <-> Macro  :mem/Gen_dccm_enable_dccm/mac
+          556.69  Pin    :PIN_T1                       <-> Pin    :PIN_L1
+          470.00  Macro  :mem/Gen_dccm_enable_dccm/mac <-> Macro  :mem/icm/ic_tag_inst
+          312.50  Pin    :PIN_L1                       <-> Macro  :mem/icm/ic_data_inst/WAYS_{0
+          258.12  Pin    :PIN_L1                       <-> Pin    :PIN_R1
+          254.75  Pin    :PIN_T1                       <-> Pin    :PIN_R1
+          250.25  Pin    :PIN_B1                       <-> Macro  :mem/icm/ic_tag_inst
+          227.50  Pin    :PIN_B1                       <-> Macro  :mem/icm/ic_data_inst/WAYS_{0
+          176.50  Pin    :PIN_B1                       <-> Macro  :mem/Gen_dccm_enable_dccm/mac
+           70.50  Pin    :PIN_L1                       <-> Macro  :mem/icm/ic_tag_inst
+           66.31  Pin    :PIN_B1                       <-> Pin    :PIN_L1
+           58.00  Pin    :PIN_T1                       <-> Macro  :mem/icm/ic_tag_inst
+           40.00  Pin    :PIN_T1                       <-> Macro  :mem/icm/ic_data_inst/WAYS_{0
+           33.00  Pin    :PIN_L1                       <-> Macro  :mem/Gen_dccm_enable_dccm/mac
+
+------------------------------------------------------------------------------
+STRONGEST REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      3904.0  StdCell:swerv/dec/arf/glue_logic(+32 <-> StdCell:swerv/dec/arf/glue_logic(+32
+      2914.0  StdCell:swerv/lsu/stbuf/glue_logic(+ <-> StdCell:swerv/lsu/stbuf/glue_logic(+
+      2827.0  StdCell:swerv/dec/decode/glue_logic( <-> StdCell:swerv/dec/decode/glue_logic(
+      2719.0  StdCell:swerv/lsu/stbuf/glue_logic(+ <-> StdCell:swerv/lsu/stbuf/glue_logic(+
+      2636.0  StdCell:swerv/dec/tlu/glue_logic(+64 <-> StdCell:swerv/dec/tlu/glue_logic(+64
+      2213.0  StdCell:swerv/lsu/stbuf/glue_logic(+ <-> StdCell:swerv/lsu/stbuf/glue_logic(+
+      1873.0  StdCell:swerv/lsu/bus_intf/bus_buffe <-> StdCell:swerv/lsu/bus_intf/bus_buffe
+      1792.0  StdCell:swerv/ifu/glue_logic(+21)/st <-> Macro  :mem/icm/ic_data_inst/WAYS_{0
+      1382.0  StdCell:swerv/lsu/bus_intf/bus_buffe <-> StdCell:swerv/lsu/bus_intf/bus_buffe
+      1078.0  StdCell:swerv/dec/glue_logic(+2)     <-> StdCell:swerv/ifu/aln
+      1043.0  StdCell:swerv/lsu/bus_intf/bus_buffe <-> StdCell:swerv/lsu/bus_intf/bus_buffe
+      1041.0  StdCell:mem/Gen_dccm_enable_dccm/std <-> Macro  :mem/Gen_dccm_enable_dccm/mac
+       977.0  StdCell:swerv/lsu/glue_logic(+10).p0 <-> StdCell:swerv/lsu/glue_logic(+10).p1
+       970.0  StdCell:swerv/glue_logic(+5).p0      <-> StdCell:swerv/glue_logic(+5).p1
+       842.0  StdCell:swerv/exu/glue_logic(+28).p0 <-> StdCell:swerv/exu/glue_logic(+28).p0
+       778.0  StdCell:swerv/{dec/tlu/flush_lower_f <-> StdCell:swerv/exu/glue_logic(+28).p1
+       741.0  StdCell:swerv/lsu/bus_intf/bus_buffe <-> StdCell:swerv/lsu/bus_intf/bus_buffe
+       645.0  StdCell:swerv/{dec/decode/i1e2result <-> StdCell:swerv/exu/glue_logic(+28).p1
+       610.0  StdCell:swerv/{dec/decode/i1e2result <-> StdCell:swerv/exu/glue_logic(+28).p1
+       514.0  StdCell:swerv/exu/glue_logic(+28).p0 <-> StdCell:swerv/exu/glue_logic(+28).p1
+       498.0  StdCell:swerv/{dec/decode/i1e2result <-> StdCell:swerv/exu/glue_logic(+28).p0
+       474.0  StdCell:swerv/{dec/tlu/flush_lower_f <-> StdCell:swerv/exu/glue_logic(+28).p1
+       448.0  StdCell:mem/icm/ic_tag_inst(+1)/std  <-> Macro  :mem/icm/ic_tag_inst
+       447.0  StdCell:swerv/lsu/bus_intf/glue_logi <-> StdCell:swerv/lsu/glue_logic(+10).p0
+       405.0  StdCell:swerv/lsu/bus_intf/bus_buffe <-> StdCell:swerv/lsu/bus_intf/bus_buffe
+
+------------------------------------------------------------------------------
+MACRO <-> STD-CELL VIRTUAL CONNECTIONS (Step 4, weight=virtual_weight)
+------------------------------------------------------------------------------
+     500.0  StdCell:mem/Gen_dccm_enable_dccm/std <-> Macro  :mem/Gen_dccm_enable_dccm/mac
+     500.0  StdCell:mem/icm/ic_tag_inst(+1)/std  <-> Macro  :mem/icm/ic_tag_inst
+     500.0  StdCell:swerv/ifu/glue_logic(+21)/st <-> Macro  :mem/icm/ic_data_inst/WAYS_{0
+
+==============================================================================
+DIRECTED VIEW  (driver-cluster --> sink-cluster, dataflow direction)
+==============================================================================
+
+DIRECTED IO FLOW SUMMARY
+------------------------------------------------------------------------------
+  Top-level INPUT ports drive their bundled pin clusters into the core.
+  Top-level OUTPUT ports are sinks driven by std-cell or macro clusters.
+  Edges below are aggregated directed star-model net connections.
+
+STRONGEST DIRECTED DATAFLOW CONNECTIONS
+------------------------------------------------------------------------------
+         1961.00  Pin    :PIN_R1                       --> Macro  :mem/icm/ic_data_inst/WAYS_{0
+         1654.00  Pin    :PIN_R1                       --> Macro  :mem/Gen_dccm_enable_dccm/mac
+          919.44  Pin    :PIN_B1                       --> Pin    :PIN_T1
+          816.00  Macro  :mem/Gen_dccm_enable_dccm/mac --> Macro  :mem/icm/ic_data_inst/WAYS_{0
+          613.62  Pin    :PIN_R1                       --> Pin    :PIN_B1
+          587.25  Pin    :PIN_R1                       --> Macro  :mem/icm/ic_tag_inst
+          457.00  Macro  :mem/Gen_dccm_enable_dccm/mac --> Pin    :PIN_T1
+          448.19  Pin    :PIN_L1                       --> Pin    :PIN_T1
+          412.00  Macro  :mem/Gen_dccm_enable_dccm/mac --> Macro  :mem/icm/ic_tag_inst
+          384.00  Macro  :mem/icm/ic_tag_inst          --> Macro  :mem/icm/ic_data_inst/WAYS_{0
+          336.00  Macro  :mem/icm/ic_data_inst/WAYS_{0 --> Macro  :mem/icm/ic_tag_inst
+          312.50  Pin    :PIN_L1                       --> Macro  :mem/icm/ic_data_inst/WAYS_{0
+          239.38  Pin    :PIN_R1                       --> Pin    :PIN_T1
+          232.00  Macro  :mem/icm/ic_data_inst/WAYS_{0 --> Macro  :mem/Gen_dccm_enable_dccm/mac
+          211.50  Pin    :PIN_B1                       --> Macro  :mem/icm/ic_data_inst/WAYS_{0
+          151.75  Macro  :mem/icm/ic_tag_inst          --> Pin    :PIN_B1
+          131.25  Pin    :PIN_L1                       --> Pin    :PIN_R1
+          126.88  Pin    :PIN_R1                       --> Pin    :PIN_L1
+          116.00  Pin    :PIN_T1                       --> Macro  :mem/Gen_dccm_enable_dccm/mac
+          108.50  Pin    :PIN_T1                       --> Pin    :PIN_L1
+           98.50  Pin    :PIN_B1                       --> Macro  :mem/icm/ic_tag_inst
+           91.00  Pin    :PIN_B1                       --> Macro  :mem/Gen_dccm_enable_dccm/mac
+           85.50  Macro  :mem/Gen_dccm_enable_dccm/mac --> Pin    :PIN_B1
+           70.50  Pin    :PIN_L1                       --> Macro  :mem/icm/ic_tag_inst
+           66.31  Pin    :PIN_L1                       --> Pin    :PIN_B1
+
+STRONGEST DIRECTED REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      2306.0  StdCell:swerv/dec/arf/glue_logic(+32 --> StdCell:swerv/dec/arf/glue_logic(+32
+      1668.0  StdCell:swerv/lsu/stbuf/glue_logic(+ --> StdCell:swerv/lsu/stbuf/glue_logic(+
+      1598.0  StdCell:swerv/dec/arf/glue_logic(+32 --> StdCell:swerv/dec/arf/glue_logic(+32
+      1539.0  StdCell:swerv/lsu/stbuf/glue_logic(+ --> StdCell:swerv/lsu/stbuf/glue_logic(+
+      1517.0  StdCell:swerv/dec/decode/glue_logic( --> StdCell:swerv/dec/decode/glue_logic(
+      1417.0  StdCell:swerv/dec/tlu/glue_logic(+64 --> StdCell:swerv/dec/tlu/glue_logic(+64
+      1310.0  StdCell:swerv/dec/decode/glue_logic( --> StdCell:swerv/dec/decode/glue_logic(
+      1248.0  StdCell:swerv/ifu/glue_logic(+21)/st --> Macro  :mem/icm/ic_data_inst/WAYS_{0
+      1246.0  StdCell:swerv/lsu/stbuf/glue_logic(+ --> StdCell:swerv/lsu/stbuf/glue_logic(+
+      1228.0  StdCell:swerv/lsu/stbuf/glue_logic(+ --> StdCell:swerv/lsu/stbuf/glue_logic(+
+      1219.0  StdCell:swerv/dec/tlu/glue_logic(+64 --> StdCell:swerv/dec/tlu/glue_logic(+64
+      1180.0  StdCell:swerv/lsu/stbuf/glue_logic(+ --> StdCell:swerv/lsu/stbuf/glue_logic(+
+      1073.0  StdCell:swerv/ifu/aln                --> StdCell:swerv/dec/glue_logic(+2)
+      1035.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> StdCell:swerv/lsu/bus_intf/bus_buffe
+       985.0  StdCell:swerv/lsu/stbuf/glue_logic(+ --> StdCell:swerv/lsu/stbuf/glue_logic(+
+       838.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> StdCell:swerv/lsu/bus_intf/bus_buffe
+       817.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> StdCell:swerv/lsu/bus_intf/bus_buffe
+       625.0  Macro  :mem/Gen_dccm_enable_dccm/mac --> StdCell:mem/Gen_dccm_enable_dccm/std
+       614.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> StdCell:swerv/lsu/bus_intf/bus_buffe
+       613.0  StdCell:swerv/{dec/decode/i1e2result --> StdCell:swerv/exu/glue_logic(+28).p1
+       586.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> StdCell:swerv/lsu/bus_intf/bus_buffe
+       566.0  StdCell:swerv/lsu/glue_logic(+10).p0 --> StdCell:swerv/lsu/glue_logic(+10).p1
+       565.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> StdCell:swerv/lsu/bus_intf/bus_buffe
+       544.0  Macro  :mem/icm/ic_data_inst/WAYS_{0 --> StdCell:swerv/ifu/glue_logic(+21)/st
+       524.0  StdCell:swerv/{dec/tlu/flush_lower_f --> StdCell:swerv/exu/glue_logic(+28).p1
+
+STRONGEST INPUT-PIN --> CORE CONNECTIONS
+------------------------------------------------------------------------------
+       239.0  Pin    :PIN_L1                       --> StdCell:swerv/glue_logic(+5).p0
+        97.0  Pin    :PIN_R1                       --> StdCell:swerv/dec/tlu/glue_logic(+64
+        86.0  Pin    :PIN_T1                       --> StdCell:swerv/glue_logic(+5).p1
+        64.0  Pin    :PIN_R1                       --> StdCell:swerv/lsu/bus_intf/bus_buffe
+        50.0  Pin    :PIN_L1                       --> StdCell:swerv/ifu/glue_logic(+21)/st
+        47.0  Pin    :PIN_L1                       --> StdCell:swerv/glue_logic(+5).p1
+        40.0  Pin    :PIN_B1                       --> StdCell:swerv/glue_logic(+5).p1
+        31.0  Pin    :PIN_T1                       --> StdCell:swerv/glue_logic(+5).p0
+        24.0  Pin    :PIN_B1                       --> StdCell:swerv/ifu/glue_logic(+21)/st
+        15.0  Pin    :PIN_R1                       --> StdCell:swerv/lsu/bus_intf/bus_buffe
+         7.0  Pin    :PIN_B1                       --> StdCell:swerv/glue_logic(+5).p0
+         7.0  Pin    :PIN_R1                       --> StdCell:swerv/glue_logic(+5).p0
+         6.0  Pin    :PIN_R1                       --> StdCell:swerv/lsu/bus_intf/bus_buffe
+         4.0  Pin    :PIN_R1                       --> StdCell:swerv/lsu/bus_intf/bus_buffe
+         3.0  Pin    :PIN_R1                       --> StdCell:swerv/glue_logic(+5).p1
+         2.0  Pin    :PIN_B1                       --> StdCell:swerv/dec/tlu/glue_logic(+64
+         2.0  Pin    :PIN_R1                       --> StdCell:swerv/dec/tlu/glue_logic(+64
+         1.0  Pin    :PIN_L1                       --> StdCell:swerv/dec/tlu/glue_logic(+64
+
+STRONGEST CORE --> OUTPUT-PIN CONNECTIONS
+------------------------------------------------------------------------------
+       131.0  StdCell:swerv/ifu/glue_logic(+21)/st --> Pin    :PIN_B1
+       126.0  StdCell:swerv/dec/decode/{i0wb1instf --> Pin    :PIN_B1
+       101.0  StdCell:swerv/glue_logic(+5).p0      --> Pin    :PIN_L1
+        75.0  StdCell:swerv/glue_logic(+5).p1      --> Pin    :PIN_T1
+        75.0  StdCell:swerv/ifu/glue_logic(+21)/st --> Pin    :PIN_L1
+        65.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> Pin    :PIN_R1
+        64.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> Pin    :PIN_R1
+        46.0  StdCell:swerv/glue_logic(+5).p0      --> Pin    :PIN_R1
+        40.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> Pin    :PIN_R1
+        37.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> Pin    :PIN_L1
+        29.0  StdCell:swerv/glue_logic(+5).p1      --> Pin    :PIN_R1
+        27.0  StdCell:swerv/glue_logic(+5).p1      --> Pin    :PIN_L1
+        25.0  StdCell:swerv/dec/tlu/glue_logic(+64 --> Pin    :PIN_B1
+        15.0  StdCell:swerv/dec/glue_logic(+2)     --> Pin    :PIN_B1
+         9.0  StdCell:swerv/dec/tlu/glue_logic(+64 --> Pin    :PIN_T1
+         7.0  StdCell:swerv/dec/tlu/glue_logic(+64 --> Pin    :PIN_B1
+         6.0  StdCell:swerv/dec/tlu/glue_logic(+64 --> Pin    :PIN_R1
+         2.0  StdCell:swerv/lsu/bus_intf/bus_buffe --> Pin    :PIN_L1
+         1.0  StdCell:swerv/glue_logic(+5).p1      --> Pin    :PIN_B1
+         1.0  StdCell:swerv/dec/glue_logic(+2)     --> Pin    :PIN_L1

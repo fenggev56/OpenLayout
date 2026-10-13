@@ -1,0 +1,1596 @@
+{
+  "design": "VeriGPU",
+  "directed": true,
+  "params": {
+    "min_num_inst": 1000,
+    "max_num_inst": 5000,
+    "max_num_macro": 12,
+    "min_num_macro": 4,
+    "virtual_weight": 500,
+    "net_threshold": 5,
+    "large_net_threshold": 500,
+    "num_bundled_pins_per_edge": 3,
+    "bisect_refine_passes": 4,
+    "bisect_balance": 0.1,
+    "tiny_cluster_inst": 100,
+    "dataflow_mode": "min"
+  },
+  "stats": {
+    "instances": 71094,
+    "macros": 12,
+    "io_bits": 134,
+    "nets": 73936,
+    "clusters": 23,
+    "bundled_pins": 12
+  },
+  "clusters": [
+    {
+      "id": 14,
+      "name": "gpu_die_/glue_logic(+1)",
+      "type": "StdCell",
+      "num_inst": 1483,
+      "num_macro": 0,
+      "area_um2": 3189.074
+    },
+    {
+      "id": 46,
+      "name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "type": "Macro",
+      "num_inst": 12,
+      "num_macro": 12,
+      "area_um2": 135214.62,
+      "macro_masters": {
+        "small_mem": 12
+      }
+    },
+    {
+      "id": 41,
+      "name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0",
+      "type": "StdCell",
+      "num_inst": 3379,
+      "num_macro": 0,
+      "area_um2": 8327.662
+    },
+    {
+      "id": 42,
+      "name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3271,
+      "num_macro": 0,
+      "area_um2": 6725.81
+    },
+    {
+      "id": 44,
+      "name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p0",
+      "type": "StdCell",
+      "num_inst": 2874,
+      "num_macro": 0,
+      "area_um2": 6912.542
+    },
+    {
+      "id": 45,
+      "name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1",
+      "type": "StdCell",
+      "num_inst": 2568,
+      "num_macro": 0,
+      "area_um2": 6389.852
+    },
+    {
+      "id": 49,
+      "name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0",
+      "type": "StdCell",
+      "num_inst": 3550,
+      "num_macro": 0,
+      "area_um2": 6640.424
+    },
+    {
+      "id": 50,
+      "name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3650,
+      "num_macro": 0,
+      "area_um2": 7418.208
+    },
+    {
+      "id": 52,
+      "name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0",
+      "type": "StdCell",
+      "num_inst": 3529,
+      "num_macro": 0,
+      "area_um2": 5672.982
+    },
+    {
+      "id": 53,
+      "name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1",
+      "type": "StdCell",
+      "num_inst": 3563,
+      "num_macro": 0,
+      "area_um2": 5292.07
+    },
+    {
+      "id": 56,
+      "name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p0",
+      "type": "StdCell",
+      "num_inst": 3597,
+      "num_macro": 0,
+      "area_um2": 6454.756
+    },
+    {
+      "id": 57,
+      "name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3620,
+      "num_macro": 0,
+      "area_um2": 7773.052
+    },
+    {
+      "id": 59,
+      "name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0",
+      "type": "StdCell",
+      "num_inst": 3572,
+      "num_macro": 0,
+      "area_um2": 5729.906
+    },
+    {
+      "id": 60,
+      "name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p1",
+      "type": "StdCell",
+      "num_inst": 3605,
+      "num_macro": 0,
+      "area_um2": 5179.552
+    },
+    {
+      "id": 63,
+      "name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p0",
+      "type": "StdCell",
+      "num_inst": 3597,
+      "num_macro": 0,
+      "area_um2": 6454.756
+    },
+    {
+      "id": 64,
+      "name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3620,
+      "num_macro": 0,
+      "area_um2": 7773.052
+    },
+    {
+      "id": 66,
+      "name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0",
+      "type": "StdCell",
+      "num_inst": 3572,
+      "num_macro": 0,
+      "area_um2": 5729.906
+    },
+    {
+      "id": 67,
+      "name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p1",
+      "type": "StdCell",
+      "num_inst": 3605,
+      "num_macro": 0,
+      "area_um2": 5179.552
+    },
+    {
+      "id": 70,
+      "name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p0",
+      "type": "StdCell",
+      "num_inst": 3597,
+      "num_macro": 0,
+      "area_um2": 6454.756
+    },
+    {
+      "id": 71,
+      "name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3620,
+      "num_macro": 0,
+      "area_um2": 7773.052
+    },
+    {
+      "id": 73,
+      "name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0",
+      "type": "StdCell",
+      "num_inst": 3572,
+      "num_macro": 0,
+      "area_um2": 5729.906
+    },
+    {
+      "id": 74,
+      "name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p1",
+      "type": "StdCell",
+      "num_inst": 3605,
+      "num_macro": 0,
+      "area_um2": 5179.552
+    },
+    {
+      "id": 12,
+      "name": "<top>/glue_logic",
+      "type": "StdCell",
+      "num_inst": 33,
+      "num_macro": 0,
+      "area_um2": 30.59
+    },
+    {
+      "id": 0,
+      "name": "PIN_B0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        117.89416666666666,
+        0.0
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "PIN_B1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        353.68250000000006,
+        0.0
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "PIN_B2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        589.4708333333333,
+        0.0
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "PIN_T0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        117.89416666666666,
+        707.365
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "PIN_T1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        353.68250000000006,
+        707.365
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "PIN_T2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        589.4708333333333,
+        707.365
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "PIN_L0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        117.89416666666666
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "PIN_L1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        353.68250000000006
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "PIN_L2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        589.4708333333333
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "PIN_R0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        707.365,
+        117.89416666666666
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "PIN_R1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        707.365,
+        353.68250000000006
+      ],
+      "io_pins": 134,
+      "io_summary": {
+        "INPUT": 66,
+        "OUTPUT": 68,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "clk",
+            "rst",
+            "cpu_in_data[31]",
+            "cpu_in_data[30]",
+            "cpu_in_data[29]",
+            "cpu_in_data[28]",
+            "cpu_in_data[27]",
+            "cpu_in_data[26]"
+          ],
+          "OUTPUT": [
+            "cpu_out_ack",
+            "halt",
+            "outen",
+            "outflen",
+            "cpu_out_data[31]",
+            "cpu_out_data[30]",
+            "cpu_out_data[29]",
+            "cpu_out_data[28]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "PIN_R2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        707.365,
+        589.4708333333333
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    }
+  ],
+  "real_connections": [
+    {
+      "a": 57,
+      "b": 60,
+      "weight": 3203.0
+    },
+    {
+      "a": 64,
+      "b": 67,
+      "weight": 3203.0
+    },
+    {
+      "a": 71,
+      "b": 74,
+      "weight": 3203.0
+    },
+    {
+      "a": 50,
+      "b": 53,
+      "weight": 3127.0
+    },
+    {
+      "a": 49,
+      "b": 50,
+      "weight": 2777.0
+    },
+    {
+      "a": 56,
+      "b": 57,
+      "weight": 2586.0
+    },
+    {
+      "a": 63,
+      "b": 64,
+      "weight": 2586.0
+    },
+    {
+      "a": 70,
+      "b": 71,
+      "weight": 2586.0
+    },
+    {
+      "a": 42,
+      "b": 45,
+      "weight": 1561.0
+    },
+    {
+      "a": 45,
+      "b": 46,
+      "weight": 1140.0
+    },
+    {
+      "a": 52,
+      "b": 53,
+      "weight": 1045.0
+    },
+    {
+      "a": 59,
+      "b": 60,
+      "weight": 947.0
+    },
+    {
+      "a": 73,
+      "b": 74,
+      "weight": 947.0
+    },
+    {
+      "a": 66,
+      "b": 67,
+      "weight": 947.0
+    },
+    {
+      "a": 57,
+      "b": 59,
+      "weight": 871.0
+    },
+    {
+      "a": 71,
+      "b": 73,
+      "weight": 871.0
+    },
+    {
+      "a": 64,
+      "b": 66,
+      "weight": 871.0
+    },
+    {
+      "a": 50,
+      "b": 52,
+      "weight": 852.0
+    },
+    {
+      "a": 41,
+      "b": 45,
+      "weight": 835.0
+    },
+    {
+      "a": 44,
+      "b": 45,
+      "weight": 585.0
+    },
+    {
+      "a": 41,
+      "b": 42,
+      "weight": 570.0
+    },
+    {
+      "a": 14,
+      "b": 53,
+      "weight": 531.0
+    },
+    {
+      "a": 14,
+      "b": 50,
+      "weight": 501.0
+    },
+    {
+      "a": 42,
+      "b": 46,
+      "weight": 396.0
+    },
+    {
+      "a": 14,
+      "b": 49,
+      "weight": 355.0
+    },
+    {
+      "a": 10,
+      "b": 14,
+      "weight": 194.0
+    },
+    {
+      "a": 56,
+      "b": 60,
+      "weight": 147.0
+    },
+    {
+      "a": 63,
+      "b": 67,
+      "weight": 147.0
+    },
+    {
+      "a": 70,
+      "b": 74,
+      "weight": 147.0
+    },
+    {
+      "a": 49,
+      "b": 53,
+      "weight": 97.0
+    },
+    {
+      "a": 14,
+      "b": 41,
+      "weight": 65.0
+    },
+    {
+      "a": 14,
+      "b": 45,
+      "weight": 44.0
+    },
+    {
+      "a": 42,
+      "b": 44,
+      "weight": 36.0
+    },
+    {
+      "a": 10,
+      "b": 49,
+      "weight": 34.0
+    },
+    {
+      "a": 10,
+      "b": 12,
+      "weight": 31.0
+    },
+    {
+      "a": 14,
+      "b": 52,
+      "weight": 24.0
+    },
+    {
+      "a": 56,
+      "b": 59,
+      "weight": 21.0
+    },
+    {
+      "a": 70,
+      "b": 73,
+      "weight": 21.0
+    },
+    {
+      "a": 63,
+      "b": 66,
+      "weight": 21.0
+    },
+    {
+      "a": 49,
+      "b": 52,
+      "weight": 12.0
+    },
+    {
+      "a": 41,
+      "b": 46,
+      "weight": 12.0
+    },
+    {
+      "a": 41,
+      "b": 44,
+      "weight": 10.0
+    },
+    {
+      "a": 14,
+      "b": 42,
+      "weight": 1.0
+    },
+    {
+      "a": 45,
+      "b": 49,
+      "weight": 1.0
+    },
+    {
+      "a": 42,
+      "b": 49,
+      "weight": 1.0
+    },
+    {
+      "a": 45,
+      "b": 52,
+      "weight": 1.0
+    },
+    {
+      "a": 14,
+      "b": 59,
+      "weight": 1.0
+    },
+    {
+      "a": 14,
+      "b": 73,
+      "weight": 1.0
+    },
+    {
+      "a": 14,
+      "b": 66,
+      "weight": 1.0
+    }
+  ],
+  "virtual_connections": [
+    {
+      "a": 10,
+      "b": 46,
+      "weight": 1872.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 41,
+      "b": 46,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 42,
+      "b": 46,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 44,
+      "b": 46,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 45,
+      "b": 46,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    }
+  ],
+  "real_connections_directed": [
+    {
+      "src": 57,
+      "dst": 60,
+      "weight": 1642.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 64,
+      "dst": 67,
+      "weight": 1642.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 71,
+      "dst": 74,
+      "weight": 1642.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 50,
+      "dst": 53,
+      "weight": 1614.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 60,
+      "dst": 57,
+      "weight": 1561.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 67,
+      "dst": 64,
+      "weight": 1561.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 74,
+      "dst": 71,
+      "weight": 1561.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 53,
+      "dst": 50,
+      "weight": 1513.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 49,
+      "dst": 50,
+      "weight": 1461.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 57,
+      "dst": 56,
+      "weight": 1381.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 64,
+      "dst": 63,
+      "weight": 1381.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 71,
+      "dst": 70,
+      "weight": 1381.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 50,
+      "dst": 49,
+      "weight": 1316.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 56,
+      "dst": 57,
+      "weight": 1205.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 63,
+      "dst": 64,
+      "weight": 1205.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 70,
+      "dst": 71,
+      "weight": 1205.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 45,
+      "dst": 42,
+      "weight": 877.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 46,
+      "dst": 45,
+      "weight": 768.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 42,
+      "dst": 45,
+      "weight": 684.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 41,
+      "dst": 45,
+      "weight": 624.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 53,
+      "dst": 52,
+      "weight": 616.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 60,
+      "dst": 59,
+      "weight": 579.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 67,
+      "dst": 66,
+      "weight": 579.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 74,
+      "dst": 73,
+      "weight": 579.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 14,
+      "dst": 53,
+      "weight": 528.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/glue_logic(+1)",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 14,
+      "dst": 50,
+      "weight": 498.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/glue_logic(+1)",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 57,
+      "dst": 59,
+      "weight": 474.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 64,
+      "dst": 66,
+      "weight": 474.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 71,
+      "dst": 73,
+      "weight": 474.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 50,
+      "dst": 52,
+      "weight": 471.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 52,
+      "dst": 53,
+      "weight": 429.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 59,
+      "dst": 57,
+      "weight": 397.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 73,
+      "dst": 71,
+      "weight": 397.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 66,
+      "dst": 64,
+      "weight": 397.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 42,
+      "dst": 46,
+      "weight": 396.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1",
+      "dst_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}"
+    },
+    {
+      "src": 52,
+      "dst": 50,
+      "weight": 381.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1"
+    },
+    {
+      "src": 45,
+      "dst": 46,
+      "weight": 372.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1",
+      "dst_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}"
+    },
+    {
+      "src": 59,
+      "dst": 60,
+      "weight": 368.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 73,
+      "dst": 74,
+      "weight": 368.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 66,
+      "dst": 67,
+      "weight": 368.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 14,
+      "dst": 49,
+      "weight": 352.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/glue_logic(+1)",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 44,
+      "dst": 45,
+      "weight": 306.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 42,
+      "dst": 41,
+      "weight": 288.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 41,
+      "dst": 42,
+      "weight": 282.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 45,
+      "dst": 44,
+      "weight": 279.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 45,
+      "dst": 41,
+      "weight": 211.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 10,
+      "dst": 14,
+      "weight": 192.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 60,
+      "dst": 56,
+      "weight": 104.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 67,
+      "dst": 63,
+      "weight": 104.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 74,
+      "dst": 70,
+      "weight": 104.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 53,
+      "dst": 49,
+      "weight": 63.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 14,
+      "dst": 45,
+      "weight": 43.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/glue_logic(+1)",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 56,
+      "dst": 60,
+      "weight": 43.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 63,
+      "dst": 67,
+      "weight": 43.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 70,
+      "dst": 74,
+      "weight": 43.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 42,
+      "dst": 44,
+      "weight": 36.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 49,
+      "dst": 10,
+      "weight": 34.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 49,
+      "dst": 53,
+      "weight": 34.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1"
+    },
+    {
+      "src": 14,
+      "dst": 41,
+      "weight": 33.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/glue_logic(+1)",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 41,
+      "dst": 14,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 12,
+      "dst": 10,
+      "weight": 31.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "<top>/glue_logic",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 14,
+      "dst": 52,
+      "weight": 19.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/glue_logic(+1)",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 59,
+      "dst": 56,
+      "weight": 16.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 73,
+      "dst": 70,
+      "weight": 16.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 66,
+      "dst": 63,
+      "weight": 16.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 41,
+      "dst": 46,
+      "weight": 12.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}"
+    },
+    {
+      "src": 52,
+      "dst": 49,
+      "weight": 9.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0"
+    },
+    {
+      "src": 41,
+      "dst": 44,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p0"
+    },
+    {
+      "src": 52,
+      "dst": 14,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 56,
+      "dst": 59,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 63,
+      "dst": 66,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 70,
+      "dst": 73,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 49,
+      "dst": 52,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0"
+    },
+    {
+      "src": 49,
+      "dst": 14,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 50,
+      "dst": 14,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p1",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 53,
+      "dst": 14,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p1",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 44,
+      "dst": 41,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 14,
+      "dst": 10,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "gpu_die_/glue_logic(+1)",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 14,
+      "dst": 42,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/glue_logic(+1)",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 49,
+      "dst": 45,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 49,
+      "dst": 42,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p0.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 52,
+      "dst": 45,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[0]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1"
+    },
+    {
+      "src": 59,
+      "dst": 14,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[1]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 73,
+      "dst": 14,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[3]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 66,
+      "dst": 14,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/core_array[2]/core_inst/glue_logic(+4).p1.p0",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    },
+    {
+      "src": 45,
+      "dst": 14,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "gpu_die_/global_mem_controller_/glue_logic(+3).p1.p1",
+      "dst_name": "gpu_die_/glue_logic(+1)"
+    }
+  ],
+  "virtual_connections_directed": [
+    {
+      "src": 10,
+      "dst": 46,
+      "weight": 1872.0,
+      "kind": "dataflow"
+    }
+  ]
+}

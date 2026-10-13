@@ -58,6 +58,14 @@ def parse_args():
                     help="Write only macro-cluster membership reports and skip dataflow.")
     ap.add_argument("--large-net-threshold", type=int,
                     help="Override global/broadcast net fanout threshold.")
+    ap.add_argument("--infer-hierarchy", choices=("auto", "on", "off"), default="auto",
+                    help="Infer module scopes from net names for instances whose "
+                         "names carry no hierarchy (auto: only for flat netlists).")
+    ap.add_argument("--dataflow-mode", choices=("min", "sum"), default="min",
+                    help="Eq.1 accumulation: flow at the shortest register distance "
+                         "only (min) or every hop level decayed by 2^hops (sum).")
+    ap.add_argument("--no-scipy", action="store_true",
+                    help="Force the pure-Python dataflow BFS.")
     return ap.parse_args()
 
 
@@ -73,7 +81,7 @@ def main():
           f"{len(nl.net_name)} nets, {time.time()-t0:.1f}s", file=sys.stderr)
 
     print("[2/4] reconstructing logical hierarchy ...", file=sys.stderr)
-    hier = hierarchy.Hierarchy(nl)
+    hier = hierarchy.Hierarchy(nl, infer=args.infer_hierarchy)
     print(f"      {hier.stats()}", file=sys.stderr)
 
     print("[3/4] autoclustering (Algorithm 1) ...", file=sys.stderr)
@@ -83,6 +91,8 @@ def main():
         ac.p.large_net_threshold = args.large_net_threshold
     print(f"      {ac.p}", file=sys.stderr)
     clusters = ac.run()
+    for line in ac.log:
+        print(f"      {line}", file=sys.stderr)
     if args.macro_only:
         write_macro_only_reports(nl, ac, design=design, out_dir=args.out_dir)
         print(f"\nDONE in {time.time()-t0:.1f}s -> {args.out_dir}/", file=sys.stderr)
@@ -101,7 +111,7 @@ def main():
     else:
         print("[4/4] dataflow virtual connections (Eq. 1) ...", file=sys.stderr)
         t = time.time()
-        df = Dataflow(nl, ac)
+        df = Dataflow(nl, ac, mode=args.dataflow_mode, use_scipy=not args.no_scipy)
         df.run()
         print(f"      {len(df.virtual_edges)} dataflow edges, "
               f"hops={dict(sorted(df.hop_hist.items()))}, "
@@ -308,7 +318,7 @@ def write_reports(nl, ac, bundled, df, design, out_dir, directed=False, bundled_
     out = {
         "design": design,
         "directed": directed,
-        "params": vars(ac.p),
+        "params": dict(vars(ac.p), dataflow_mode=getattr(df, "mode", None)),
         "stats": {
             "instances": nl.num_insts,
             "macros": nl.num_macros,

@@ -38,6 +38,8 @@ _TOKEN_RE = re.compile(
 _INSTANCE_RE = re.compile(r"^\s*([A-Za-z_][A-Za-z0-9_$]*)\s+((?:\\\S+)|\S+)\s*\(")
 _BUS_RE = re.compile(r"\[\s*(-?\d+)\s*:\s*(-?\d+)\s*\]")
 _BIT_RE = re.compile(r"^(.*)\[(-?\d+)\]$")
+# sized / unsized constant literals (1'b0, 32'h0000_0000, 'd5) - not nets
+_LITERAL_RE = re.compile(r"\d*\s*'\s*[sS]?[bBoOdDhH]\s*[0-9a-fA-FxXzZ_?]+")
 
 _SKIP_STMT_PREFIXES = (
     "module ", "endmodule", "input ", "output ", "inout ", "wire ",
@@ -267,9 +269,9 @@ def _parse_named_ports(body: str):
 
 def _expr_nets(expr: str, port_bits: dict[str, list[str]]) -> list[str]:
     nets: list[str] = []
+    if "'" in expr:
+        expr = _LITERAL_RE.sub(" ", expr)
     for tok in _TOKEN_RE.findall(expr):
-        if "'" in tok:
-            continue
         name = _clean_name(tok)
         if not name:
             continue

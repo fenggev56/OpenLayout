@@ -1,0 +1,236 @@
+==============================================================================
+RTL-MP CLUSTERED NETLIST  (design: bp_be)
+==============================================================================
+
+Hyperparameters: Params(min_inst=1000, max_inst=5000, min_macro=4, max_macro=12, net_thr=5, virt_w=500)
+
+20 clusters  (17 std-cell, 3 macro)  + 12 bundled IO pins
+
+------------------------------------------------------------------------------
+BUNDLED IO PIN CLUSTERS
+------------------------------------------------------------------------------
+  [  0] PIN_B0   xy=(111.3, 0.0) inputs= 110 outputs= 119 inouts=  0
+  [  1] PIN_B1   xy=(333.9, 0.0) inputs= 133 outputs= 257 inouts=  0
+  [  2] PIN_B2   xy=(556.5, 0.0) inputs=   5 outputs= 205 inouts=  0
+  [  3] PIN_T0   xy=(111.3, 667.8) inputs=   0 outputs=  21 inouts=  0
+  [  4] PIN_T1   xy=(333.9, 667.8) inputs=   1 outputs= 389 inouts=  0
+  [  5] PIN_T2   xy=(556.5, 667.8) inputs=   0 outputs= 189 inouts=  0
+  [  6] PIN_L0   xy=(0.0, 111.3) inputs=   7 outputs= 200 inouts=  0
+  [  7] PIN_L1   xy=(0.0, 333.9) inputs= 197 outputs= 200 inouts=  0
+  [  8] PIN_L2   xy=(0.0, 556.5) inputs= 196 outputs=   0 inouts=  0
+  [  9] PIN_R0   xy=(667.8, 111.3) inputs= 196 outputs=   0 inouts=  0
+  [ 10] PIN_R1   xy=(667.8, 333.9) inputs= 368 outputs=  29 inouts=  0
+  [ 11] PIN_R2   xy=(667.8, 556.5) inputs=  50 outputs= 157 inouts=  0
+------------------------------------------------------------------------------
+MACRO CLUSTERS (grouped by footprint -> regular tilings)
+------------------------------------------------------------------------------
+  [ 66] be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem       macros=  8 {'fakeram45_512x64': 8}
+  [ 67] be_mmu/dcache/tag_mem                                macros=  1 {'fakeram45_64x96': 1}
+  [ 32] be_mmu/dcache/stat_mem                               macros=  1 {'fakeram45_64x15': 1}
+
+------------------------------------------------------------------------------
+STD-CELL CLUSTERS (largest 20)
+------------------------------------------------------------------------------
+  [ 58] be_mmu/dcache/lce/glue_logic(+3).p1                    inst=  4887 area=   6968.1um2
+  [ 44] be_calculator/glue_logic(+4).p0                        inst=  4822 area=   6097.0um2
+  [ 45] be_calculator/glue_logic(+4).p1                        inst=  4465 area=   7775.4um2
+  [ 51] be_mmu/dcache/glue_logic(+11).p1.p0                    inst=  3760 area=   4393.8um2
+  [ 49] be_mmu/dcache/glue_logic(+11).p0.p1                    inst=  3669 area=   5447.4um2
+  [ 48] be_mmu/dcache/glue_logic(+11).p0.p0                    inst=  3570 area=   7283.1um2
+  [ 52] be_mmu/dcache/glue_logic(+11).p1.p1                    inst=  3461 area=   4195.6um2
+  [ 64] be_calculator/int_regfile/rf/synth(+3).p1.p0           inst=  2823 area=   5855.5um2
+  [ 65] be_calculator/int_regfile/rf/synth(+3).p1.p1           inst=  2780 area=   4808.7um2
+  [ 61] be_calculator/int_regfile/rf/synth(+3).p0.p0           inst=  2763 area=   4683.5um2
+  [ 57] be_mmu/dcache/lce/glue_logic(+3).p0.p1                 inst=  2762 area=   4518.8um2
+  [ 56] be_mmu/dcache/lce/glue_logic(+3).p0.p0                 inst=  2719 area=   3742.1um2
+  [ 62] be_calculator/int_regfile/rf/synth(+3).p0.p1           inst=  2550 area=   5698.0um2
+  [ 13] <top>/glue_logic(+1)                                   inst=  2404 area=   3204.5um2
+  [ 14] be_calculator/calc_stage_reg                           inst=  1855 area=   8388.3um2
+  [ 39] be_mmu/dcache/lce/lce_data_cmd_fifo                    inst=  1046 area=   4730.0um2
+  [ 40] be_mmu/dcache/lce/lce_tr_resp_in_fifo                  inst=  1046 area=   4730.0um2
+
+------------------------------------------------------------------------------
+STRONGEST DATAFLOW VIRTUAL CONNECTIONS  (Info_Flow / 2^hops)
+------------------------------------------------------------------------------
+        55045.50  Pin    :PIN_L1                       <-> Pin    :PIN_R1
+         5394.00  Pin    :PIN_L1                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         3558.00  Pin    :PIN_R1                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1656.00  Pin    :PIN_L0                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1656.00  Pin    :PIN_R2                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1568.00  Pin    :PIN_R0                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1568.00  Pin    :PIN_L2                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1504.00  Pin    :PIN_T1                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1504.00  Pin    :PIN_B1                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1448.00  Pin    :PIN_T2                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1426.00  Pin    :PIN_B2                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+          984.00  Pin    :PIN_B0                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+          616.31  Pin    :PIN_B0                       <-> Pin    :PIN_R1
+          372.75  Pin    :PIN_B2                       <-> Pin    :PIN_R1
+          168.00  Pin    :PIN_T0                       <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+          128.38  Pin    :PIN_T1                       <-> Pin    :PIN_R1
+          107.00  Pin    :PIN_R1                       <-> Macro  :be_mmu/dcache/tag_mem
+          103.00  Pin    :PIN_T2                       <-> Pin    :PIN_R1
+           83.00  Pin    :PIN_B2                       <-> Pin    :PIN_L1
+           81.50  Pin    :PIN_B0                       <-> Pin    :PIN_B1
+           81.00  Pin    :PIN_B0                       <-> Pin    :PIN_R0
+           72.12  Pin    :PIN_R1                       <-> Macro  :be_mmu/dcache/stat_mem
+           61.12  Pin    :PIN_B1                       <-> Pin    :PIN_B2
+           60.75  Pin    :PIN_B2                       <-> Pin    :PIN_R0
+           51.38  Pin    :PIN_B0                       <-> Pin    :PIN_B2
+
+------------------------------------------------------------------------------
+STRONGEST REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      3011.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> StdCell:be_mmu/dcache/glue_logic(+11
+      2992.0  StdCell:be_mmu/dcache/lce/lce_data_c <-> StdCell:be_mmu/dcache/lce/glue_logic
+      2580.0  StdCell:be_mmu/dcache/lce/lce_tr_res <-> StdCell:be_mmu/dcache/lce/glue_logic
+      2116.0  StdCell:be_calculator/int_regfile/rf <-> StdCell:be_calculator/int_regfile/rf
+      1993.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> StdCell:be_mmu/dcache/glue_logic(+11
+      1672.0  StdCell:be_calculator/int_regfile/rf <-> StdCell:be_calculator/int_regfile/rf
+      1649.0  StdCell:be_calculator/int_regfile/rf <-> StdCell:be_calculator/int_regfile/rf
+      1639.0  StdCell:be_calculator/int_regfile/rf <-> StdCell:be_calculator/int_regfile/rf
+      1604.0  StdCell:be_calculator/glue_logic(+4) <-> StdCell:be_calculator/glue_logic(+4)
+      1435.0  StdCell:be_mmu/dcache/lce/glue_logic <-> StdCell:be_mmu/dcache/lce/glue_logic
+      1227.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> StdCell:be_mmu/dcache/glue_logic(+11
+       995.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+       908.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+       905.0  StdCell:be_mmu/dcache/lce/glue_logic <-> StdCell:be_mmu/dcache/lce/glue_logic
+       741.0  StdCell:be_calculator/calc_stage_reg <-> StdCell:be_calculator/glue_logic(+4)
+       577.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> StdCell:be_mmu/dcache/lce/glue_logic
+       555.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> StdCell:be_mmu/dcache/lce/glue_logic
+       547.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> StdCell:be_mmu/dcache/lce/glue_logic
+       523.0  StdCell:be_mmu/dcache/lce/lce_tr_res <-> StdCell:be_mmu/dcache/lce/glue_logic
+       474.0  StdCell:<top>/glue_logic(+1)         <-> StdCell:be_calculator/glue_logic(+4)
+       394.0  Pin    :PIN_R1                       <-> StdCell:be_mmu/dcache/lce/glue_logic
+       394.0  Pin    :PIN_L1                       <-> StdCell:be_mmu/dcache/lce/glue_logic
+       392.0  Pin    :PIN_R0                       <-> StdCell:be_mmu/dcache/lce/glue_logic
+       392.0  Pin    :PIN_L2                       <-> StdCell:be_mmu/dcache/lce/glue_logic
+       369.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> StdCell:be_mmu/dcache/lce/glue_logic
+
+------------------------------------------------------------------------------
+MACRO <-> STD-CELL VIRTUAL CONNECTIONS (Step 4, weight=virtual_weight)
+------------------------------------------------------------------------------
+     500.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+     500.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+     500.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+     500.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/data_mem_{0,1,
+     500.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/tag_mem
+     500.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/tag_mem
+     500.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/tag_mem
+     500.0  StdCell:be_mmu/dcache/glue_logic(+11 <-> Macro  :be_mmu/dcache/tag_mem
+
+==============================================================================
+DIRECTED VIEW  (driver-cluster --> sink-cluster, dataflow direction)
+==============================================================================
+
+DIRECTED IO FLOW SUMMARY
+------------------------------------------------------------------------------
+  Top-level INPUT ports drive their bundled pin clusters into the core.
+  Top-level OUTPUT ports are sinks driven by std-cell or macro clusters.
+  Edges below are aggregated directed star-model net connections.
+
+STRONGEST DIRECTED DATAFLOW CONNECTIONS
+------------------------------------------------------------------------------
+        55045.50  Pin    :PIN_R1                       --> Pin    :PIN_L1
+         3818.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_L1
+         2362.00  Pin    :PIN_R1                       --> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1600.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_L0
+         1576.00  Pin    :PIN_L1                       --> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1568.00  Pin    :PIN_R0                       --> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1568.00  Pin    :PIN_L2                       --> Macro  :be_mmu/dcache/data_mem_{0,1,
+         1504.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_T1
+         1448.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_T2
+         1408.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_B2
+         1256.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_R2
+         1196.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_R1
+         1056.00  Pin    :PIN_B1                       --> Macro  :be_mmu/dcache/data_mem_{0,1,
+          615.31  Pin    :PIN_R1                       --> Pin    :PIN_B0
+          556.00  Pin    :PIN_B0                       --> Macro  :be_mmu/dcache/data_mem_{0,1,
+          448.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_B1
+          428.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_B0
+          400.00  Pin    :PIN_R2                       --> Macro  :be_mmu/dcache/data_mem_{0,1,
+          346.06  Pin    :PIN_R1                       --> Pin    :PIN_B2
+          168.00  Macro  :be_mmu/dcache/data_mem_{0,1, --> Pin    :PIN_T0
+          128.38  Pin    :PIN_R1                       --> Pin    :PIN_T1
+          107.00  Pin    :PIN_R1                       --> Macro  :be_mmu/dcache/tag_mem
+          103.00  Pin    :PIN_R1                       --> Pin    :PIN_T2
+           83.00  Pin    :PIN_B2                       --> Pin    :PIN_L1
+           81.00  Pin    :PIN_B1                       --> Pin    :PIN_B0
+
+STRONGEST DIRECTED REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      1950.0  StdCell:be_mmu/dcache/lce/lce_data_c --> StdCell:be_mmu/dcache/lce/glue_logic
+      1764.0  StdCell:be_mmu/dcache/glue_logic(+11 --> StdCell:be_mmu/dcache/glue_logic(+11
+      1538.0  StdCell:be_mmu/dcache/lce/lce_tr_res --> StdCell:be_mmu/dcache/lce/glue_logic
+      1476.0  StdCell:be_calculator/int_regfile/rf --> StdCell:be_calculator/int_regfile/rf
+      1429.0  StdCell:be_calculator/glue_logic(+4) --> StdCell:be_calculator/glue_logic(+4)
+      1336.0  StdCell:be_mmu/dcache/glue_logic(+11 --> StdCell:be_mmu/dcache/glue_logic(+11
+      1247.0  StdCell:be_mmu/dcache/glue_logic(+11 --> StdCell:be_mmu/dcache/glue_logic(+11
+      1179.0  StdCell:be_calculator/int_regfile/rf --> StdCell:be_calculator/int_regfile/rf
+      1053.0  StdCell:be_mmu/dcache/lce/glue_logic --> StdCell:be_mmu/dcache/lce/glue_logic
+      1042.0  StdCell:be_mmu/dcache/lce/glue_logic --> StdCell:be_mmu/dcache/lce/lce_data_c
+      1042.0  StdCell:be_mmu/dcache/lce/glue_logic --> StdCell:be_mmu/dcache/lce/lce_tr_res
+       927.0  StdCell:be_calculator/int_regfile/rf --> StdCell:be_calculator/int_regfile/rf
+       867.0  StdCell:be_calculator/int_regfile/rf --> StdCell:be_calculator/int_regfile/rf
+       857.0  StdCell:be_mmu/dcache/lce/glue_logic --> StdCell:be_mmu/dcache/lce/glue_logic
+       783.0  StdCell:be_mmu/dcache/glue_logic(+11 --> StdCell:be_mmu/dcache/glue_logic(+11
+       782.0  StdCell:be_calculator/int_regfile/rf --> StdCell:be_calculator/int_regfile/rf
+       712.0  StdCell:be_calculator/int_regfile/rf --> StdCell:be_calculator/int_regfile/rf
+       657.0  StdCell:be_mmu/dcache/glue_logic(+11 --> StdCell:be_mmu/dcache/glue_logic(+11
+       640.0  StdCell:be_calculator/int_regfile/rf --> StdCell:be_calculator/int_regfile/rf
+       570.0  StdCell:be_mmu/dcache/glue_logic(+11 --> Macro  :be_mmu/dcache/data_mem_{0,1,
+       556.0  Macro  :be_mmu/dcache/data_mem_{0,1, --> StdCell:be_mmu/dcache/glue_logic(+11
+       555.0  StdCell:be_mmu/dcache/lce/glue_logic --> StdCell:be_mmu/dcache/glue_logic(+11
+       547.0  StdCell:be_mmu/dcache/lce/glue_logic --> StdCell:be_mmu/dcache/glue_logic(+11
+       523.0  StdCell:be_mmu/dcache/lce/lce_tr_res --> StdCell:be_mmu/dcache/lce/glue_logic
+       501.0  StdCell:be_mmu/dcache/glue_logic(+11 --> StdCell:be_mmu/dcache/lce/glue_logic
+
+STRONGEST INPUT-PIN --> CORE CONNECTIONS
+------------------------------------------------------------------------------
+       394.0  Pin    :PIN_R1                       --> StdCell:be_mmu/dcache/lce/glue_logic
+       394.0  Pin    :PIN_L1                       --> StdCell:be_mmu/dcache/lce/glue_logic
+       392.0  Pin    :PIN_R0                       --> StdCell:be_mmu/dcache/lce/glue_logic
+       392.0  Pin    :PIN_L2                       --> StdCell:be_mmu/dcache/lce/glue_logic
+       264.0  Pin    :PIN_B1                       --> StdCell:be_mmu/dcache/lce/glue_logic
+       213.0  Pin    :PIN_R1                       --> StdCell:<top>/glue_logic(+1)
+       134.0  Pin    :PIN_B0                       --> StdCell:be_mmu/dcache/lce/glue_logic
+       100.0  Pin    :PIN_R2                       --> StdCell:be_mmu/dcache/lce/glue_logic
+        72.0  Pin    :PIN_R1                       --> StdCell:be_mmu/dcache/lce/glue_logic
+        34.0  Pin    :PIN_R1                       --> StdCell:be_calculator/glue_logic(+4)
+        14.0  Pin    :PIN_L0                       --> StdCell:be_mmu/dcache/lce/glue_logic
+         7.0  Pin    :PIN_B0                       --> StdCell:be_mmu/dcache/lce/glue_logic
+         7.0  Pin    :PIN_B2                       --> StdCell:be_mmu/dcache/lce/glue_logic
+         4.0  Pin    :PIN_B2                       --> StdCell:be_mmu/dcache/lce/glue_logic
+         2.0  Pin    :PIN_B1                       --> StdCell:be_mmu/dcache/lce/glue_logic
+         1.0  Pin    :PIN_B2                       --> StdCell:<top>/glue_logic(+1)
+         1.0  Pin    :PIN_B2                       --> StdCell:be_calculator/glue_logic(+4)
+         1.0  Pin    :PIN_B2                       --> StdCell:be_mmu/dcache/glue_logic(+11
+         1.0  Pin    :PIN_B2                       --> StdCell:be_calculator/glue_logic(+4)
+
+STRONGEST CORE --> OUTPUT-PIN CONNECTIONS
+------------------------------------------------------------------------------
+       200.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_L0
+       196.0  StdCell:be_calculator/calc_stage_reg --> Pin    :PIN_B1
+       190.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_T1
+       189.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_T2
+       172.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_B2
+       133.0  StdCell:be_calculator/glue_logic(+4) --> Pin    :PIN_T1
+       113.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_B0
+       107.0  StdCell:be_calculator/calc_stage_reg --> Pin    :PIN_L1
+        88.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_R2
+        86.0  StdCell:<top>/glue_logic(+1)         --> Pin    :PIN_L1
+        69.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_R2
+        63.0  StdCell:be_calculator/calc_stage_reg --> Pin    :PIN_T1
+        56.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_B1
+        31.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_B2
+        27.0  StdCell:<top>/glue_logic(+1)         --> Pin    :PIN_R1
+        21.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_T0
+         5.0  StdCell:be_calculator/glue_logic(+4) --> Pin    :PIN_L1
+         5.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_B0
+         4.0  StdCell:be_calculator/glue_logic(+4) --> Pin    :PIN_B1
+         3.0  StdCell:be_calculator/glue_logic(+4) --> Pin    :PIN_T1
+         2.0  StdCell:be_calculator/glue_logic(+4) --> Pin    :PIN_L1
+         1.0  StdCell:be_calculator/glue_logic(+4) --> Pin    :PIN_R1
+         1.0  StdCell:be_mmu/dcache/lce/glue_logic --> Pin    :PIN_R1
+         1.0  StdCell:be_mmu/dcache/lce/lce_data_c --> Pin    :PIN_B1
+         1.0  StdCell:be_mmu/dcache/lce/lce_tr_res --> Pin    :PIN_B2

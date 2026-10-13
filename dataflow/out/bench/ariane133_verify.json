@@ -1,0 +1,60 @@
+{
+  "design": "ariane133",
+  "macros_verilog": 132,
+  "macros_clustered": 132,
+  "clusters": 14,
+  "cluster_sizes": [
+    24,
+    12,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "rtl_modules_with_macros": 24,
+  "rtl_bank_groups": 22,
+  "bank_group_sizes": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "bank_groups_split": 16,
+  "clusters_spanning_modules": 2,
+  "problems": [
+    [
+      "C5",
+      "cluster [47] has 24 macros > max_num_macro=12 (i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_s)"
+    ],
+    [
+      "C4",
+      "16 address-sharing macro groups span several clusters (4 macros under i_cache_subsystem/i_icache/sram_block_0_ -> 4 clusters; 4 macros under i_cache_subsystem/i_icache/sram_block_0_ -> 4 clusters)"
+    ]
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "design": "VeriGPU",
+  "stats": {
+    "instances": 71094,
+    "macros": 12,
+    "macro_clusters": 1
+  },
+  "macro_in_netlist": [
+    {
+      "real_name": "inst_58676",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_58677",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_58678",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61847",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61848",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61849",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61850",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61851",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61852",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61853",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61854",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "inst_61855",
+      "type": "small_mem",
+      "width_um": 75.56,
+      "height_um": 149.125,
+      "area_um2": 11267.885,
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro"
+    }
+  ],
+  "macro_clusters": [
+    {
+      "cluster_id": 46,
+      "cluster_name": "gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}",
+      "cluster_type": "Macro",
+      "macro_count": 12,
+      "macro_types": {
+        "small_mem": 12
+      },
+      "area_um2": 135214.62,
+      "macros": [
+        {
+          "real_name": "inst_58676",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_58677",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_58678",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61847",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61848",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61849",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61850",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61851",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61852",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61853",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61854",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        },
+        {
+          "real_name": "inst_61855",
+          "type": "small_mem",
+          "width_um": 75.56,
+          "height_um": 149.125,
+          "area_um2": 11267.885
+        }
+      ]
+    }
+  ]
+}

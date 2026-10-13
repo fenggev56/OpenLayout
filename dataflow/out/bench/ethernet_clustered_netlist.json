@@ -1,0 +1,1655 @@
+{
+  "design": "ethernet",
+  "directed": true,
+  "params": {
+    "min_num_inst": 1000,
+    "max_num_inst": 5000,
+    "max_num_macro": 12,
+    "min_num_macro": 4,
+    "virtual_weight": 500,
+    "net_threshold": 5,
+    "large_net_threshold": 500,
+    "num_bundled_pins_per_edge": 3,
+    "bisect_refine_passes": 4,
+    "bisect_balance": 0.1,
+    "tiny_cluster_inst": 100,
+    "dataflow_mode": "min"
+  },
+  "stats": {
+    "instances": 35236,
+    "macros": 64,
+    "io_bits": 211,
+    "nets": 35651,
+    "clusters": 14,
+    "bundled_pins": 12
+  },
+  "clusters": [
+    {
+      "id": 18,
+      "name": "<top>/glue_logic(+1)",
+      "type": "StdCell",
+      "num_inst": 3341,
+      "num_macro": 0,
+      "area_um2": 4665.374
+    },
+    {
+      "id": 19,
+      "name": "wishbone/glue_logic(+2)",
+      "type": "StdCell",
+      "num_inst": 2370,
+      "num_macro": 0,
+      "area_um2": 4856.628
+    },
+    {
+      "id": 28,
+      "name": "wishbone/bd_ram.p0.p0.p0",
+      "type": "StdCell",
+      "num_inst": 3531,
+      "num_macro": 0,
+      "area_um2": 7109.648
+    },
+    {
+      "id": 29,
+      "name": "wishbone/bd_ram.p0.p0.p1",
+      "type": "StdCell",
+      "num_inst": 4296,
+      "num_macro": 0,
+      "area_um2": 11276.272
+    },
+    {
+      "id": 31,
+      "name": "wishbone/bd_ram.p0.p1.p0",
+      "type": "StdCell",
+      "num_inst": 3359,
+      "num_macro": 0,
+      "area_um2": 5933.396
+    },
+    {
+      "id": 32,
+      "name": "wishbone/bd_ram.p0.p1.p1",
+      "type": "StdCell",
+      "num_inst": 3046,
+      "num_macro": 0,
+      "area_um2": 9777.628
+    },
+    {
+      "id": 35,
+      "name": "wishbone/bd_ram.p1.p0.p0",
+      "type": "StdCell",
+      "num_inst": 3608,
+      "num_macro": 0,
+      "area_um2": 5488.378
+    },
+    {
+      "id": 36,
+      "name": "wishbone/bd_ram.p1.p0.p1",
+      "type": "StdCell",
+      "num_inst": 3630,
+      "num_macro": 0,
+      "area_um2": 7257.278
+    },
+    {
+      "id": 38,
+      "name": "wishbone/bd_ram.p1.p1.p0",
+      "type": "StdCell",
+      "num_inst": 3652,
+      "num_macro": 0,
+      "area_um2": 10342.346
+    },
+    {
+      "id": 39,
+      "name": "wishbone/bd_ram.p1.p1.p1",
+      "type": "StdCell",
+      "num_inst": 3690,
+      "num_macro": 0,
+      "area_um2": 12978.14
+    },
+    {
+      "id": 23,
+      "name": "wishbone/rx_fifo/fifo",
+      "type": "Macro",
+      "num_inst": 32,
+      "num_macro": 32,
+      "area_um2": 12821.6,
+      "macro_masters": {
+        "RAM16X1D": 32
+      }
+    },
+    {
+      "id": 24,
+      "name": "wishbone/tx_fifo/fifo",
+      "type": "Macro",
+      "num_inst": 32,
+      "num_macro": 32,
+      "area_um2": 12821.6,
+      "macro_masters": {
+        "RAM16X1D": 32
+      }
+    },
+    {
+      "id": 12,
+      "name": "{ethreg1,macstatus1,rxethmac1}",
+      "type": "StdCell",
+      "num_inst": 427,
+      "num_macro": 0,
+      "area_um2": 2266.054
+    },
+    {
+      "id": 13,
+      "name": "{maccontrol1,txethmac1}",
+      "type": "StdCell",
+      "num_inst": 222,
+      "num_macro": 0,
+      "area_um2": 1179.444
+    },
+    {
+      "id": 0,
+      "name": "PIN_B0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        77.63,
+        0.0
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "PIN_B1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        232.89,
+        0.0
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "PIN_B2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        388.1499999999999,
+        0.0
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "PIN_T0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        77.63,
+        465.78
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "PIN_T1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        232.89,
+        465.78
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "PIN_T2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        388.1499999999999,
+        465.78
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "PIN_L0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        77.63
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "PIN_L1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        232.89
+      ],
+      "io_pins": 11,
+      "io_summary": {
+        "INPUT": 7,
+        "OUTPUT": 4,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "wb_rst_i",
+            "wb_stb_i",
+            "wb_we_i",
+            "wb_sel_i[3]",
+            "wb_sel_i[2]",
+            "wb_sel_i[1]",
+            "wb_sel_i[0]"
+          ],
+          "OUTPUT": [
+            "wb_err_o",
+            "wb_dat_o[9]",
+            "wb_dat_o[8]",
+            "wb_dat_o[7]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "PIN_L2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        388.1499999999999
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "PIN_R0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        465.78,
+        77.63
+      ],
+      "io_pins": 0,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "PIN_R1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        465.78,
+        232.89
+      ],
+      "io_pins": 153,
+      "io_summary": {
+        "INPUT": 71,
+        "OUTPUT": 82,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "m_wb_ack_i",
+            "m_wb_err_i",
+            "mcoll_pad_i",
+            "mcrs_pad_i",
+            "md_pad_i",
+            "mrx_clk_pad_i",
+            "mrxdv_pad_i",
+            "mrxerr_pad_i"
+          ],
+          "OUTPUT": [
+            "int_o",
+            "m_wb_cyc_o",
+            "m_wb_stb_o",
+            "m_wb_we_o",
+            "md_pad_o",
+            "md_padoe_o",
+            "mdc_pad_o",
+            "mtxen_pad_o"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "PIN_R2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        465.78,
+        388.1499999999999
+      ],
+      "io_pins": 47,
+      "io_summary": {
+        "INPUT": 18,
+        "OUTPUT": 29,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "wb_dat_i[31]",
+            "wb_dat_i[30]",
+            "wb_dat_i[29]",
+            "wb_dat_i[28]",
+            "wb_dat_i[27]",
+            "wb_dat_i[26]",
+            "wb_dat_i[25]",
+            "wb_dat_i[24]"
+          ],
+          "OUTPUT": [
+            "wb_dat_o[31]",
+            "wb_dat_o[30]",
+            "wb_dat_o[29]",
+            "wb_dat_o[28]",
+            "wb_dat_o[27]",
+            "wb_dat_o[26]",
+            "wb_dat_o[25]",
+            "wb_dat_o[24]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    }
+  ],
+  "real_connections": [
+    {
+      "a": 35,
+      "b": 36,
+      "weight": 3418.0
+    },
+    {
+      "a": 31,
+      "b": 39,
+      "weight": 3001.0
+    },
+    {
+      "a": 28,
+      "b": 29,
+      "weight": 2886.0
+    },
+    {
+      "a": 28,
+      "b": 32,
+      "weight": 2495.0
+    },
+    {
+      "a": 36,
+      "b": 39,
+      "weight": 2338.0
+    },
+    {
+      "a": 29,
+      "b": 32,
+      "weight": 1639.0
+    },
+    {
+      "a": 12,
+      "b": 18,
+      "weight": 1589.0
+    },
+    {
+      "a": 31,
+      "b": 38,
+      "weight": 1545.0
+    },
+    {
+      "a": 36,
+      "b": 38,
+      "weight": 1310.0
+    },
+    {
+      "a": 32,
+      "b": 39,
+      "weight": 1223.0
+    },
+    {
+      "a": 29,
+      "b": 39,
+      "weight": 1114.0
+    },
+    {
+      "a": 32,
+      "b": 38,
+      "weight": 1037.0
+    },
+    {
+      "a": 29,
+      "b": 38,
+      "weight": 990.0
+    },
+    {
+      "a": 32,
+      "b": 36,
+      "weight": 926.0
+    },
+    {
+      "a": 29,
+      "b": 36,
+      "weight": 844.0
+    },
+    {
+      "a": 29,
+      "b": 31,
+      "weight": 775.0
+    },
+    {
+      "a": 13,
+      "b": 18,
+      "weight": 724.0
+    },
+    {
+      "a": 28,
+      "b": 31,
+      "weight": 636.0
+    },
+    {
+      "a": 31,
+      "b": 36,
+      "weight": 542.0
+    },
+    {
+      "a": 32,
+      "b": 35,
+      "weight": 540.0
+    },
+    {
+      "a": 38,
+      "b": 39,
+      "weight": 369.0
+    },
+    {
+      "a": 19,
+      "b": 24,
+      "weight": 352.0
+    },
+    {
+      "a": 29,
+      "b": 35,
+      "weight": 349.0
+    },
+    {
+      "a": 19,
+      "b": 23,
+      "weight": 320.0
+    },
+    {
+      "a": 10,
+      "b": 13,
+      "weight": 228.0
+    },
+    {
+      "a": 10,
+      "b": 19,
+      "weight": 222.0
+    },
+    {
+      "a": 31,
+      "b": 35,
+      "weight": 145.0
+    },
+    {
+      "a": 10,
+      "b": 12,
+      "weight": 131.0
+    },
+    {
+      "a": 19,
+      "b": 35,
+      "weight": 117.0
+    },
+    {
+      "a": 35,
+      "b": 39,
+      "weight": 116.0
+    },
+    {
+      "a": 35,
+      "b": 38,
+      "weight": 111.0
+    },
+    {
+      "a": 11,
+      "b": 18,
+      "weight": 90.0
+    },
+    {
+      "a": 10,
+      "b": 18,
+      "weight": 78.0
+    },
+    {
+      "a": 12,
+      "b": 19,
+      "weight": 68.0
+    },
+    {
+      "a": 31,
+      "b": 32,
+      "weight": 65.0
+    },
+    {
+      "a": 18,
+      "b": 19,
+      "weight": 59.0
+    },
+    {
+      "a": 28,
+      "b": 35,
+      "weight": 41.0
+    },
+    {
+      "a": 28,
+      "b": 38,
+      "weight": 37.0
+    },
+    {
+      "a": 19,
+      "b": 28,
+      "weight": 33.0
+    },
+    {
+      "a": 10,
+      "b": 24,
+      "weight": 32.0
+    },
+    {
+      "a": 10,
+      "b": 23,
+      "weight": 32.0
+    },
+    {
+      "a": 18,
+      "b": 35,
+      "weight": 32.0
+    },
+    {
+      "a": 7,
+      "b": 18,
+      "weight": 22.0
+    },
+    {
+      "a": 28,
+      "b": 39,
+      "weight": 22.0
+    },
+    {
+      "a": 11,
+      "b": 19,
+      "weight": 18.0
+    },
+    {
+      "a": 19,
+      "b": 29,
+      "weight": 16.0
+    },
+    {
+      "a": 28,
+      "b": 36,
+      "weight": 14.0
+    },
+    {
+      "a": 13,
+      "b": 19,
+      "weight": 6.0
+    },
+    {
+      "a": 7,
+      "b": 19,
+      "weight": 2.0
+    },
+    {
+      "a": 7,
+      "b": 28,
+      "weight": 2.0
+    },
+    {
+      "a": 7,
+      "b": 35,
+      "weight": 1.0
+    }
+  ],
+  "virtual_connections": [
+    {
+      "a": 10,
+      "b": 23,
+      "weight": 378.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 11,
+      "weight": 213.812,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 24,
+      "weight": 146.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 11,
+      "weight": 92.062,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 10,
+      "weight": 73.562,
+      "kind": "dataflow"
+    },
+    {
+      "a": 11,
+      "b": 23,
+      "weight": 72.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 23,
+      "weight": 24.0,
+      "kind": "dataflow"
+    }
+  ],
+  "real_connections_directed": [
+    {
+      "src": 36,
+      "dst": 35,
+      "weight": 2831.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p1",
+      "dst_name": "wishbone/bd_ram.p1.p0.p0"
+    },
+    {
+      "src": 39,
+      "dst": 36,
+      "weight": 2118.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p1",
+      "dst_name": "wishbone/bd_ram.p1.p0.p1"
+    },
+    {
+      "src": 28,
+      "dst": 29,
+      "weight": 2003.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p0",
+      "dst_name": "wishbone/bd_ram.p0.p0.p1"
+    },
+    {
+      "src": 31,
+      "dst": 39,
+      "weight": 1598.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p0",
+      "dst_name": "wishbone/bd_ram.p1.p1.p1"
+    },
+    {
+      "src": 28,
+      "dst": 32,
+      "weight": 1561.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p0",
+      "dst_name": "wishbone/bd_ram.p0.p1.p1"
+    },
+    {
+      "src": 39,
+      "dst": 31,
+      "weight": 1403.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p1",
+      "dst_name": "wishbone/bd_ram.p0.p1.p0"
+    },
+    {
+      "src": 12,
+      "dst": 18,
+      "weight": 1188.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "{ethreg1,macstatus1,rxethmac1}",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 38,
+      "dst": 36,
+      "weight": 1134.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p0",
+      "dst_name": "wishbone/bd_ram.p1.p0.p1"
+    },
+    {
+      "src": 32,
+      "dst": 28,
+      "weight": 934.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p1",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 31,
+      "dst": 38,
+      "weight": 905.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p0",
+      "dst_name": "wishbone/bd_ram.p1.p1.p0"
+    },
+    {
+      "src": 29,
+      "dst": 28,
+      "weight": 883.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p1",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 29,
+      "dst": 32,
+      "weight": 872.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p1",
+      "dst_name": "wishbone/bd_ram.p0.p1.p1"
+    },
+    {
+      "src": 32,
+      "dst": 39,
+      "weight": 777.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p1",
+      "dst_name": "wishbone/bd_ram.p1.p1.p1"
+    },
+    {
+      "src": 32,
+      "dst": 29,
+      "weight": 767.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p1",
+      "dst_name": "wishbone/bd_ram.p0.p0.p1"
+    },
+    {
+      "src": 29,
+      "dst": 38,
+      "weight": 739.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p1",
+      "dst_name": "wishbone/bd_ram.p1.p1.p0"
+    },
+    {
+      "src": 32,
+      "dst": 36,
+      "weight": 739.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p1",
+      "dst_name": "wishbone/bd_ram.p1.p0.p1"
+    },
+    {
+      "src": 32,
+      "dst": 38,
+      "weight": 732.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p1",
+      "dst_name": "wishbone/bd_ram.p1.p1.p0"
+    },
+    {
+      "src": 29,
+      "dst": 39,
+      "weight": 727.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p1",
+      "dst_name": "wishbone/bd_ram.p1.p1.p1"
+    },
+    {
+      "src": 29,
+      "dst": 36,
+      "weight": 659.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p1",
+      "dst_name": "wishbone/bd_ram.p1.p0.p1"
+    },
+    {
+      "src": 38,
+      "dst": 31,
+      "weight": 640.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p0",
+      "dst_name": "wishbone/bd_ram.p0.p1.p0"
+    },
+    {
+      "src": 28,
+      "dst": 31,
+      "weight": 589.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p0",
+      "dst_name": "wishbone/bd_ram.p0.p1.p0"
+    },
+    {
+      "src": 35,
+      "dst": 36,
+      "weight": 587.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "wishbone/bd_ram.p1.p0.p1"
+    },
+    {
+      "src": 31,
+      "dst": 29,
+      "weight": 524.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p0",
+      "dst_name": "wishbone/bd_ram.p0.p0.p1"
+    },
+    {
+      "src": 13,
+      "dst": 18,
+      "weight": 518.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "{maccontrol1,txethmac1}",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 39,
+      "dst": 32,
+      "weight": 446.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p1",
+      "dst_name": "wishbone/bd_ram.p0.p1.p1"
+    },
+    {
+      "src": 32,
+      "dst": 35,
+      "weight": 426.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p1",
+      "dst_name": "wishbone/bd_ram.p1.p0.p0"
+    },
+    {
+      "src": 18,
+      "dst": 12,
+      "weight": 401.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "{ethreg1,macstatus1,rxethmac1}"
+    },
+    {
+      "src": 39,
+      "dst": 29,
+      "weight": 387.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p1",
+      "dst_name": "wishbone/bd_ram.p0.p0.p1"
+    },
+    {
+      "src": 29,
+      "dst": 35,
+      "weight": 321.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p1",
+      "dst_name": "wishbone/bd_ram.p1.p0.p0"
+    },
+    {
+      "src": 19,
+      "dst": 23,
+      "weight": 320.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "wishbone/glue_logic(+2)",
+      "dst_name": "wishbone/rx_fifo/fifo"
+    },
+    {
+      "src": 38,
+      "dst": 32,
+      "weight": 305.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p0",
+      "dst_name": "wishbone/bd_ram.p0.p1.p1"
+    },
+    {
+      "src": 31,
+      "dst": 36,
+      "weight": 302.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p0",
+      "dst_name": "wishbone/bd_ram.p1.p0.p1"
+    },
+    {
+      "src": 19,
+      "dst": 24,
+      "weight": 288.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "wishbone/glue_logic(+2)",
+      "dst_name": "wishbone/tx_fifo/fifo"
+    },
+    {
+      "src": 29,
+      "dst": 31,
+      "weight": 251.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p1",
+      "dst_name": "wishbone/bd_ram.p0.p1.p0"
+    },
+    {
+      "src": 39,
+      "dst": 38,
+      "weight": 251.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p1",
+      "dst_name": "wishbone/bd_ram.p1.p1.p0"
+    },
+    {
+      "src": 38,
+      "dst": 29,
+      "weight": 251.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p0",
+      "dst_name": "wishbone/bd_ram.p0.p0.p1"
+    },
+    {
+      "src": 36,
+      "dst": 31,
+      "weight": 240.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p1",
+      "dst_name": "wishbone/bd_ram.p0.p1.p0"
+    },
+    {
+      "src": 10,
+      "dst": 13,
+      "weight": 222.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "{maccontrol1,txethmac1}"
+    },
+    {
+      "src": 36,
+      "dst": 39,
+      "weight": 220.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p1",
+      "dst_name": "wishbone/bd_ram.p1.p1.p1"
+    },
+    {
+      "src": 18,
+      "dst": 13,
+      "weight": 206.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "{maccontrol1,txethmac1}"
+    },
+    {
+      "src": 36,
+      "dst": 32,
+      "weight": 187.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p1",
+      "dst_name": "wishbone/bd_ram.p0.p1.p1"
+    },
+    {
+      "src": 10,
+      "dst": 19,
+      "weight": 185.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "wishbone/glue_logic(+2)"
+    },
+    {
+      "src": 36,
+      "dst": 29,
+      "weight": 185.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p1",
+      "dst_name": "wishbone/bd_ram.p0.p0.p1"
+    },
+    {
+      "src": 36,
+      "dst": 38,
+      "weight": 176.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p1",
+      "dst_name": "wishbone/bd_ram.p1.p1.p0"
+    },
+    {
+      "src": 10,
+      "dst": 12,
+      "weight": 131.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "{ethreg1,macstatus1,rxethmac1}"
+    },
+    {
+      "src": 38,
+      "dst": 39,
+      "weight": 118.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p0",
+      "dst_name": "wishbone/bd_ram.p1.p1.p1"
+    },
+    {
+      "src": 35,
+      "dst": 19,
+      "weight": 117.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "wishbone/glue_logic(+2)"
+    },
+    {
+      "src": 35,
+      "dst": 32,
+      "weight": 114.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "wishbone/bd_ram.p0.p1.p1"
+    },
+    {
+      "src": 31,
+      "dst": 35,
+      "weight": 92.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p0",
+      "dst_name": "wishbone/bd_ram.p1.p0.p0"
+    },
+    {
+      "src": 38,
+      "dst": 35,
+      "weight": 74.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p0",
+      "dst_name": "wishbone/bd_ram.p1.p0.p0"
+    },
+    {
+      "src": 10,
+      "dst": 18,
+      "weight": 71.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 12,
+      "dst": 19,
+      "weight": 68.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "{ethreg1,macstatus1,rxethmac1}",
+      "dst_name": "wishbone/glue_logic(+2)"
+    },
+    {
+      "src": 31,
+      "dst": 32,
+      "weight": 65.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p0",
+      "dst_name": "wishbone/bd_ram.p0.p1.p1"
+    },
+    {
+      "src": 24,
+      "dst": 19,
+      "weight": 64.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/tx_fifo/fifo",
+      "dst_name": "wishbone/glue_logic(+2)"
+    },
+    {
+      "src": 11,
+      "dst": 18,
+      "weight": 61.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R2",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 39,
+      "dst": 35,
+      "weight": 59.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p1",
+      "dst_name": "wishbone/bd_ram.p1.p0.p0"
+    },
+    {
+      "src": 35,
+      "dst": 39,
+      "weight": 57.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "wishbone/bd_ram.p1.p1.p1"
+    },
+    {
+      "src": 35,
+      "dst": 31,
+      "weight": 53.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "wishbone/bd_ram.p0.p1.p0"
+    },
+    {
+      "src": 31,
+      "dst": 28,
+      "weight": 47.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p1.p0",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 18,
+      "dst": 19,
+      "weight": 38.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "wishbone/glue_logic(+2)"
+    },
+    {
+      "src": 19,
+      "dst": 10,
+      "weight": 37.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "wishbone/glue_logic(+2)",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 35,
+      "dst": 38,
+      "weight": 37.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "wishbone/bd_ram.p1.p1.p0"
+    },
+    {
+      "src": 28,
+      "dst": 35,
+      "weight": 36.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p0",
+      "dst_name": "wishbone/bd_ram.p1.p0.p0"
+    },
+    {
+      "src": 19,
+      "dst": 28,
+      "weight": 33.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/glue_logic(+2)",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 10,
+      "dst": 24,
+      "weight": 32.0,
+      "src_type": "Pin",
+      "dst_type": "Macro",
+      "src_name": "PIN_R1",
+      "dst_name": "wishbone/tx_fifo/fifo"
+    },
+    {
+      "src": 23,
+      "dst": 10,
+      "weight": 32.0,
+      "src_type": "Macro",
+      "dst_type": "Pin",
+      "src_name": "wishbone/rx_fifo/fifo",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 35,
+      "dst": 18,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 18,
+      "dst": 11,
+      "weight": 29.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "PIN_R2"
+    },
+    {
+      "src": 28,
+      "dst": 38,
+      "weight": 29.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p0",
+      "dst_name": "wishbone/bd_ram.p1.p1.p0"
+    },
+    {
+      "src": 35,
+      "dst": 29,
+      "weight": 28.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "wishbone/bd_ram.p0.p0.p1"
+    },
+    {
+      "src": 19,
+      "dst": 18,
+      "weight": 21.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/glue_logic(+2)",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 7,
+      "dst": 18,
+      "weight": 18.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 11,
+      "dst": 19,
+      "weight": 18.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R2",
+      "dst_name": "wishbone/glue_logic(+2)"
+    },
+    {
+      "src": 28,
+      "dst": 39,
+      "weight": 18.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p0",
+      "dst_name": "wishbone/bd_ram.p1.p1.p1"
+    },
+    {
+      "src": 19,
+      "dst": 29,
+      "weight": 16.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/glue_logic(+2)",
+      "dst_name": "wishbone/bd_ram.p0.p0.p1"
+    },
+    {
+      "src": 28,
+      "dst": 36,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p0.p0.p0",
+      "dst_name": "wishbone/bd_ram.p1.p0.p1"
+    },
+    {
+      "src": 38,
+      "dst": 28,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p0",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 18,
+      "dst": 10,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 13,
+      "dst": 10,
+      "weight": 6.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "{maccontrol1,txethmac1}",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 13,
+      "dst": 19,
+      "weight": 6.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "{maccontrol1,txethmac1}",
+      "dst_name": "wishbone/glue_logic(+2)"
+    },
+    {
+      "src": 36,
+      "dst": 28,
+      "weight": 6.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p1",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 35,
+      "dst": 28,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p0.p0",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 18,
+      "dst": 7,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 39,
+      "dst": 28,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "wishbone/bd_ram.p1.p1.p1",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 7,
+      "dst": 19,
+      "weight": 2.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "wishbone/glue_logic(+2)"
+    },
+    {
+      "src": 7,
+      "dst": 28,
+      "weight": 2.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "wishbone/bd_ram.p0.p0.p0"
+    },
+    {
+      "src": 7,
+      "dst": 35,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "wishbone/bd_ram.p1.p0.p0"
+    }
+  ],
+  "virtual_connections_directed": [
+    {
+      "src": 10,
+      "dst": 23,
+      "weight": 346.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 11,
+      "weight": 189.188,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 24,
+      "weight": 134.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 11,
+      "weight": 87.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 23,
+      "weight": 72.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 10,
+      "weight": 52.125,
+      "kind": "dataflow"
+    },
+    {
+      "src": 23,
+      "dst": 10,
+      "weight": 32.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 10,
+      "weight": 24.625,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 23,
+      "weight": 24.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 7,
+      "weight": 21.438,
+      "kind": "dataflow"
+    },
+    {
+      "src": 24,
+      "dst": 10,
+      "weight": 12.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 7,
+      "weight": 5.062,
+      "kind": "dataflow"
+    }
+  ]
+}

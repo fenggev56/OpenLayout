@@ -1,0 +1,77 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: swerv_wrapper)
+==============================================================================
+
+3 macro clusters, 28 macros
+
+------------------------------------------------------------------------------
+MACRO_IN_NETLIST
+------------------------------------------------------------------------------
+  mem/Gen_dccm_enable_dccm/mem_bank_0__dccm_bank/mem  type=fakeram45_2048x39 cluster=[604] mem/Gen_dccm_enable_dccm/macros
+  mem/Gen_dccm_enable_dccm/mem_bank_1__dccm_bank/mem  type=fakeram45_2048x39 cluster=[604] mem/Gen_dccm_enable_dccm/macros
+  mem/Gen_dccm_enable_dccm/mem_bank_2__dccm_bank/mem  type=fakeram45_2048x39 cluster=[604] mem/Gen_dccm_enable_dccm/macros
+  mem/Gen_dccm_enable_dccm/mem_bank_3__dccm_bank/mem  type=fakeram45_2048x39 cluster=[604] mem/Gen_dccm_enable_dccm/macros
+  mem/Gen_dccm_enable_dccm/mem_bank_4__dccm_bank/mem  type=fakeram45_2048x39 cluster=[604] mem/Gen_dccm_enable_dccm/macros
+  mem/Gen_dccm_enable_dccm/mem_bank_5__dccm_bank/mem  type=fakeram45_2048x39 cluster=[604] mem/Gen_dccm_enable_dccm/macros
+  mem/Gen_dccm_enable_dccm/mem_bank_6__dccm_bank/mem  type=fakeram45_2048x39 cluster=[604] mem/Gen_dccm_enable_dccm/macros
+  mem/Gen_dccm_enable_dccm/mem_bank_7__dccm_bank/mem  type=fakeram45_2048x39 cluster=[604] mem/Gen_dccm_enable_dccm/macros
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 cluster=[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+  mem/icm/ic_tag_inst.WAYS_0__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 cluster=[606] mem/icm/ic_tag_inst
+  mem/icm/ic_tag_inst.WAYS_1__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 cluster=[606] mem/icm/ic_tag_inst
+  mem/icm/ic_tag_inst.WAYS_2__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 cluster=[606] mem/icm/ic_tag_inst
+  mem/icm/ic_tag_inst.WAYS_3__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 cluster=[606] mem/icm/ic_tag_inst
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[604] mem/Gen_dccm_enable_dccm/macros
+type=Macro macro_count=8 macro_types={'fakeram45_2048x39': 8}
+  mem/Gen_dccm_enable_dccm/mem_bank_0__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_1__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_2__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_3__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_4__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_5__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_6__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+  mem/Gen_dccm_enable_dccm/mem_bank_7__dccm_bank/mem  type=fakeram45_2048x39 size=206.91x219.8um
+------------------------------------------------------------------------------
+[608] mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data
+type=Macro macro_count=16 macro_types={'fakeram45_256x34': 16}
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_0__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_1__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_2__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_0__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_1__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_2__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+  mem/icm/ic_data_inst/WAYS_3__SUBBANKS_3__ic_bank_sb_way_data.mem  type=fakeram45_256x34 size=98.42x65.8um
+------------------------------------------------------------------------------
+[606] mem/icm/ic_tag_inst
+type=Macro macro_count=4 macro_types={'fakeram45_64x21': 4}
+  mem/icm/ic_tag_inst.WAYS_0__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um
+  mem/icm/ic_tag_inst.WAYS_1__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um
+  mem/icm/ic_tag_inst.WAYS_2__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um
+  mem/icm/ic_tag_inst.WAYS_3__ICACHE_SZ_16_ic_way_tag.mem  type=fakeram45_64x21 size=15.77x60.2um

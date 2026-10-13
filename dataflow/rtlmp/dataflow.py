@@ -1,61 +1,81 @@
-"""Dataflow / virtual connections - RTL-MP Section 4 Step 6, Eq. (1).
+"""Dataflow / virtual connections - Hier-RTLMP Algorithm 2 line 17, Eq. (1).
 
     Virtual_Connections(A, B) = Information_Flow(A, B) / 2 ** Num_Hops
 
-  * Information_Flow  ~  connection bitwidth (number of parallel wires).
+  * Information_Flow  ~  connection bitwidth: the number of *output bits*
+                         (driver nets) of the stage nodes in A from which the
+                         stage nodes in B are reachable.  A path count would
+                         explode through reconvergent logic (multipliers,
+                         muxes); counting driver bits bounds every edge by
+                         the real bus width.
   * Num_Hops          =  number of register (flip-flop) stages on the
                          shortest register path between A and B.
   * Buffer / comb-cell "transparency": only registers count as hops; all
     combinational cells (including buffers/inverters) are traced through.
-  * If Num_Hops > 4 no virtual connection is added (aggressive decay).
-  * Only macro clusters and bundled IO pins are considered (Section 4).
+  * If Num_Hops > max_hops (default 4) no virtual connection is added.
+  * Only macro clusters and bundled IO pins are sources / destinations.
 
 The register-stage graph is built once:
 
     stage node  := a MACRO instance, a REGISTER instance, or an IO BTerm.
-    edge u -> v := v is reachable from u's outputs through a cone of purely
-                   combinational cells (memoized ``_comb_reach``).
-                   Edge weight = number of wires (bitwidth proxy).
+    edge u -> v := v is reachable from one of u's output nets through a cone
+                   of purely combinational cells.  Edge weight = number of
+                   u's output nets that reach v (bitwidth proxy).
+    A single net whose combinational cone reaches more than ``max_fanout``
+    stage nodes is a control / global signal (reset, enable, select) and is
+    not traced - it carries no dataflow bitwidth.
 
 From every macro / IO source we then BFS over this stage graph, counting a
 hop each time we relay through a register, accumulating weighted flow into
-the (macro/pin) cluster-pair virtual connections.
+the (macro/pin) cluster-pair virtual connections.  The BFS is vectorised
+with scipy.sparse when available (all sources at once, one sparse product
+per hop); a pure-Python BFS is used otherwise and gives identical results.
 """
 
 from __future__ import annotations
 
+import sys
+import time
 from collections import defaultdict, deque
 
 from .netlist import BTERM, COMB, INST, MACRO, REGISTER, Netlist
 
 
 class Dataflow:
-    # marker returned by _comb_reach for a "broadcast" cone (control / global
-    # signal) that fans out to more than ``max_fanout`` stage points - such a
-    # cone carries no meaningful dataflow bitwidth and is not propagated.
+    # marker for a "broadcast" cone (control / global signal) that fans out
+    # to more than ``max_fanout`` stage nodes - never propagated.
     BROADCAST = object()
 
-    def __init__(self, nl: Netlist, ac, max_hops: int = 4, max_fanout=None):
+    def __init__(self, nl: Netlist, ac, max_hops: int = 4, max_fanout=None,
+                 mode: str = "min", use_scipy: bool = True):
+        """``mode``: 'min' - a (src, dst) pair contributes the flow found at
+        its shortest register distance only (aggressive decay, Eq. 1);
+        'sum' - every hop level contributes flow / 2**hops (OpenROAD style).
+        """
+        if mode not in ("min", "sum"):
+            raise ValueError("mode must be 'min' or 'sum'")
         self.nl = nl
         self.ac = ac
         self.p = ac.p
         self.max_hops = max_hops
-        # a stage node reaching more sinks than this is a broadcast/control
-        # signal, not a dataflow bus (default: the global-net threshold).
+        self.mode = mode
+        self.use_scipy = use_scipy
+        # a net whose cone reaches more sinks than this is a control signal
         self.max_fanout = max_fanout or ac.p.large_net_threshold
+        # the vectorised BFS keeps one dense (sources x registers) visited
+        # array; above this budget the pure-Python BFS is used instead
+        self.max_dense_bytes = 2_000_000_000
         self.N = nl.num_insts
-        # unified stage-node id: inst -> iid ; bterm -> N + bid
-        self._comb_memo: dict[int, object] = {}
-        self._building: set[int] = set()
+        self.NB = len(nl.bterm_name)
+        kinds = nl.inst_kind
+        self.is_reg = [k == REGISTER for k in kinds] + [False] * self.NB
+        self.is_dest = [k == MACRO for k in kinds] + [True] * self.NB
+        self.is_comb = [k == COMB for k in kinds] + [False] * self.NB
+        self.backend = None
 
     # -- stage-node helpers -------------------------------------------- #
     def _bnode(self, bid):
         return self.N + bid
-
-    def _is_stage(self, node):
-        if node >= self.N:
-            return True                       # IO pin is always a stage point
-        return self.nl.inst_kind[node] in (MACRO, REGISTER)
 
     def _cluster_of(self, node):
         if node >= self.N:
@@ -65,16 +85,17 @@ class Dataflow:
     # -- driver / sink index ------------------------------------------- #
     def _build_index(self):
         nl, p = self.nl, self.p
-        # nets a node drives, and each net's sinks (as stage/comb nodes)
+        N = self.N
         self.out_nets = defaultdict(list)     # node -> [net_idx]
         self.net_sinks = [None] * len(nl.net_pins)
+        thr = p.large_net_threshold
         for nidx, pins in enumerate(nl.net_pins):
-            if len(pins) > p.large_net_threshold:
+            if len(pins) > thr:
                 continue                      # clk / reset etc.
             driver = None
             sinks = []
             for kind, eid, is_drv in pins:
-                node = eid if kind == INST else self._bnode(eid)
+                node = eid if kind == INST else N + eid
                 if is_drv:
                     driver = node
                 else:
@@ -84,173 +105,243 @@ class Dataflow:
             self.out_nets[driver].append(nidx)
             self.net_sinks[nidx] = sinks
 
-    # -- combinational cone reach (transparent tracing) ---------------- #
-    def _comb_reach(self, node):
-        """Stage nodes reachable from a *combinational* node's outputs.
+    # -- combinational cone reach ------------------------------------- #
+    def _comb_reach_sets(self):
+        """reach[c] = frozenset of stage nodes reachable from comb cell c's
+        outputs (or BROADCAST).  Computed sinks-first along a topological
+        order of the combinational DAG; cells on combinational loops (rare)
+        fall back to a guarded DFS."""
+        is_comb = self.is_comb
+        out_nets = self.out_nets
+        net_sinks = self.net_sinks
+        max_fanout = self.max_fanout
+        BROADCAST = self.BROADCAST
 
-        Returns {stage_node: wire_weight}, or ``BROADCAST`` if the cone grows
-        beyond ``max_fanout`` (control / global signal).  Memoized; guards
-        combinational loops.
-        """
-        memo = self._comb_memo.get(node)
-        if memo is not None:
-            return memo
-        if node in self._building:            # combinational loop - break it
-            return {}
-        self._building.add(node)
-        out: dict[int, int] = defaultdict(int)
-        broadcast = False
-        for nidx in self.out_nets.get(node, ()):
-            sinks = self.net_sinks[nidx]
-            if not sinks:
-                continue
-            for s in sinks:
-                if self._is_stage(s):
-                    out[s] += 1
-                else:                          # another comb cell -> recurse
-                    sub = self._comb_reach(s)
-                    if sub is self.BROADCAST:
-                        broadcast = True
-                        break
-                    for st, w in sub.items():
-                        out[st] += w
-            if broadcast or len(out) > self.max_fanout:
-                broadcast = True
-                break
-        self._building.discard(node)
-        result = self.BROADCAST if broadcast else dict(out)
-        self._comb_memo[node] = result
-        return result
+        comb_nodes = [u for u in out_nets if is_comb[u]]
+        indeg = defaultdict(int)
+        for u in comb_nodes:
+            for nidx in out_nets[u]:
+                for v in net_sinks[nidx]:
+                    if is_comb[v]:
+                        indeg[v] += 1
+        q = deque(u for u in comb_nodes if indeg[u] == 0)
+        order = []
+        while q:
+            u = q.popleft()
+            order.append(u)
+            for nidx in out_nets.get(u, ()):
+                for v in net_sinks[nidx]:
+                    if is_comb[v]:
+                        indeg[v] -= 1
+                        if indeg[v] == 0:
+                            q.append(v)
+        reach: dict[int, object] = {}
+        empty = frozenset()
 
-    def _forward(self, stage_node) -> dict[int, int]:
-        """Direct stage-graph successors of a stage node, with wire weights.
+        def compute(u):
+            acc = set()
+            for nidx in out_nets.get(u, ()):
+                for v in net_sinks[nidx]:
+                    if is_comb[v]:
+                        sub = reach.get(v, empty)
+                        if sub is BROADCAST:
+                            return BROADCAST
+                        acc |= sub
+                    else:
+                        acc.add(v)
+                if len(acc) > max_fanout:
+                    return BROADCAST
+            return frozenset(acc)
 
-        Returns {} for broadcast/control drivers (fanout > max_fanout) so they
-        do not create dense, meaningless dataflow edges.
-        """
-        out: dict[int, int] = defaultdict(int)
-        for nidx in self.out_nets.get(stage_node, ()):
-            sinks = self.net_sinks[nidx]
-            if not sinks:
-                continue
-            for s in sinks:
-                if self._is_stage(s):
-                    out[s] += 1
-                else:
-                    sub = self._comb_reach(s)
-                    if sub is self.BROADCAST:
-                        return {}
-                    for st, w in sub.items():
-                        out[st] += w
-            if len(out) > self.max_fanout:
-                return {}
-        return dict(out)
+        for u in reversed(order):
+            reach[u] = compute(u)
+        self.n_comb_loops = 0
+        if len(order) < len(comb_nodes):
+            # combinational loops: process remaining cells in any order with
+            # the partial results (break the loop conservatively)
+            for u in comb_nodes:
+                if u not in reach:
+                    reach[u] = compute(u)
+                    self.n_comb_loops += 1
+        return reach
 
     def _build_stage_graph(self):
         """Forward stage-graph adjacency for every stage node."""
-        nl = self.nl
+        reach = self._comb_reach_sets()
+        is_comb = self.is_comb
+        out_nets = self.out_nets
+        net_sinks = self.net_sinks
+        max_fanout = self.max_fanout
+        BROADCAST = self.BROADCAST
+        empty = frozenset()
         self.fwd: dict[int, dict[int, int]] = {}
-        # macros, registers
-        for iid in range(self.N):
-            if nl.inst_kind[iid] in (MACRO, REGISTER):
-                f = self._forward(iid)
-                if f:
-                    self.fwd[iid] = f
-        # IO input ports act as sources/relays
-        for bid in range(len(nl.bterm_name)):
-            node = self._bnode(bid)
-            f = self._forward(node)
-            if f:
-                self.fwd[node] = f
-        # combinational memo no longer needed -> free memory
-        self._comb_memo.clear()
+        self.n_control_nets = 0
+        stage_nodes = [u for u in out_nets if not is_comb[u]]
+        for u in stage_nodes:
+            out: dict[int, int] = defaultdict(int)
+            for nidx in out_nets[u]:
+                acc = set()
+                broadcast = False
+                for v in net_sinks[nidx]:
+                    if is_comb[v]:
+                        sub = reach.get(v, empty)
+                        if sub is BROADCAST:
+                            broadcast = True
+                            break
+                        acc |= sub
+                    else:
+                        acc.add(v)
+                if broadcast or len(acc) > max_fanout:
+                    self.n_control_nets += 1
+                    continue
+                for v in acc:
+                    out[v] += 1
+            if out:
+                self.fwd[u] = dict(out)
+        del reach
 
     def _build_prune(self):
-        """g[node] = min extra register stages from node forward to reach
-        any macro/IO endpoint.  Used to prune dead-end register exploration
-        during the per-source BFS (0-1 BFS on the reversed stage graph).
-        """
+        """g[node] = min extra register stages from node forward to reach any
+        macro/IO endpoint (0-1 BFS on the reversed stage graph).  Used to
+        prune dead-end register exploration (optimisation only)."""
         INF = self.max_hops + 1
-        g = defaultdict(lambda: INF)
+        is_dest = self.is_dest
+        is_reg = self.is_reg
+        g = {}
         dq = deque()
-        # seed: any node with a direct forward edge to an endpoint can reach
-        # it with 0 extra register stages.
-        for u, succ in self.fwd.items():
-            for v in succ:
-                if self._is_dest(v):
-                    if g[u] > 0:
-                        g[u] = 0
-                        dq.appendleft(u)
-                    break
-        # reversed adjacency
         rev = defaultdict(list)
         for u, succ in self.fwd.items():
+            hit = False
             for v in succ:
                 rev[v].append(u)
+                if is_dest[v]:
+                    hit = True
+            if hit:
+                g[u] = 0
+                dq.append(u)
         while dq:
             v = dq.popleft()
-            gv = g[v]
-            # cost to step onto v from a predecessor: +1 if v is a register
-            step = 1 if self.nl_kind_is_register(v) else 0
-            nd = gv + step
+            nd = g[v] + (1 if is_reg[v] else 0)
             if nd > self.max_hops:
                 continue
             for u in rev.get(v, ()):
-                if nd < g[u]:
+                if nd < g.get(u, INF):
                     g[u] = nd
-                    if step:
+                    if is_reg[v]:
                         dq.append(u)
                     else:
                         dq.appendleft(u)
         self.g = g
 
-    # -- BFS over register stages from one source ---------------------- #
-    def _bfs_from(self, src, dests_weight: dict[int, dict[int, float]]):
-        """BFS counting register hops; record (dest -> hop -> flow).
+    # -- BFS backends -------------------------------------------------- #
+    def _sources(self):
+        nl = self.nl
+        srcs = [iid for iid in range(self.N) if nl.inst_kind[iid] == MACRO]
+        srcs += [self.N + b for b in range(self.NB)]
+        return srcs
 
-        ``dests_weight[dst][hop] += flow`` for every macro/IO dst reached.
-        """
+    def _bfs_python(self, sources):
+        """Per-source BFS.  Returns {(src, dst): {hop: flow}}."""
         max_h = self.max_hops
         g = self.g
-        # best[node] = smallest register-hop at which we expanded it
-        best = {src: 0}
-        q = deque([(src, 0)])
-        while q:
-            u, r = q.popleft()
-            if r > best.get(u, max_h + 1):
-                continue
-            for v, w in self.fwd.get(u, {}).items():
-                if self._is_dest(v) and v != src:
-                    # macro/IO terminal reached after r register stages
-                    dw = dests_weight[v]
-                    dw[r] = dw.get(r, 0.0) + w
-                if self.nl_kind_is_register(v):
-                    nr = r + 1
-                    # prune: can v still reach an endpoint within budget?
-                    if nr > max_h or nr + g.get(v, max_h + 1) > max_h:
-                        continue
-                    if nr < best.get(v, max_h + 1):
-                        best[v] = nr
-                        q.append((v, nr))
+        fwd = self.fwd
+        is_dest = self.is_dest
+        is_reg = self.is_reg
+        INF = max_h + 1
+        result = {}
+        for src in sources:
+            dests: dict[int, dict[int, float]] = {}
+            best = {src: 0}
+            q = deque([(src, 0)])
+            while q:
+                u, r = q.popleft()
+                for v, w in fwd.get(u, {}).items():
+                    if is_dest[v] and v != src:
+                        dw = dests.get(v)
+                        if dw is None:
+                            dw = dests[v] = {}
+                        dw[r] = dw.get(r, 0.0) + w
+                    if is_reg[v]:
+                        nr = r + 1
+                        if nr > max_h or nr + g.get(v, INF) > max_h:
+                            continue
+                        if nr < best.get(v, INF):
+                            best[v] = nr
+                            q.append((v, nr))
+            for v, hm in dests.items():
+                result[(src, v)] = hm
+        return result
 
-    # convenience predicates ------------------------------------------- #
-    def _is_dest(self, node):
-        if node >= self.N:
-            return True                       # IO pin
-        return self.nl.inst_kind[node] == MACRO
+    def _bfs_scipy(self, sources):
+        """All-sources BFS with sparse matrix products (same semantics)."""
+        import numpy as np
+        import scipy.sparse as sp
 
-    def nl_kind_is_register(self, node):
-        return node < self.N and self.nl.inst_kind[node] == REGISTER
+        N = self.N + self.NB
+        max_h = self.max_hops
+        rows, cols, vals = [], [], []
+        for u, succ in self.fwd.items():
+            for v, w in succ.items():
+                rows.append(u)
+                cols.append(v)
+                vals.append(w)
+        A = sp.csr_matrix((np.asarray(vals, dtype=np.float32),
+                           (np.asarray(rows), np.asarray(cols))), shape=(N, N))
+        dest_idx = np.asarray([i for i in range(N) if self.is_dest[i]])
+        reg_idx = np.asarray([i for i in range(N) if self.is_reg[i]])
+        D = A[:, dest_idx].tocsr()                   # N x Nd (weighted)
+        R = A[:, reg_idx].tocsr()                    # N x Nr
+        R.data[:] = 1.0
+        g_reg = np.asarray([self.g.get(int(v), max_h + 1) for v in reg_idx])
+        S = len(sources)
+        src = np.asarray(sources)
+        dpos = {int(v): k for k, v in enumerate(dest_idx)}
+
+        F = sp.csr_matrix((np.ones(S, dtype=np.float32), (np.arange(S), src)),
+                          shape=(S, N))
+        visited = np.zeros((S, len(reg_idx)), dtype=bool)
+        # self-reach (a macro feeding itself) is ignored, as in the BFS
+        self_rows = np.asarray([k for k, s in enumerate(sources) if int(s) in dpos], dtype=int)
+        self_cols = np.asarray([dpos[int(sources[k])] for k in self_rows], dtype=int)
+        result = {}
+        for k in range(max_h + 1):
+            H = (F @ D).toarray()                    # dense S x Nd for this hop
+            H[self_rows, self_cols] = 0.0
+            si, di = np.nonzero(H)
+            for s_, d_, w in zip(si.tolist(), di.tolist(), H[si, di].tolist()):
+                key = (int(sources[s_]), int(dest_idx[d_]))
+                hm = result.get(key)
+                if hm is None:
+                    hm = result[key] = {}
+                hm[k] = w
+            del H
+            if k == max_h:
+                break
+            Fn = (F @ R).tocoo()
+            r, c = Fn.row, Fn.col
+            keep = (~visited[r, c]) & (g_reg[c] + (k + 1) <= max_h)
+            r, c = r[keep], c[keep]
+            if r.size == 0:
+                break
+            # a (source, register) pair may appear several times in the COO
+            # product; de-duplicate before marking visited
+            flat = np.unique(r.astype(np.int64) * len(reg_idx) + c)
+            r = flat // len(reg_idx)
+            c = flat % len(reg_idx)
+            visited[r, c] = True
+            F = sp.csr_matrix((np.ones(r.size, dtype=np.float32), (r, reg_idx[c])),
+                              shape=(S, N))
+        return result
 
     # -- main ---------------------------------------------------------- #
     def run(self, verbose=True):
-        import sys
-        import time
         t0 = time.time()
         self._build_index()
         self._build_stage_graph()
         if verbose:
             print(f"  [dataflow] stage graph: {len(self.fwd)} nodes, "
+                  f"{sum(len(s) for s in self.fwd.values())} edges, "
+                  f"{self.n_control_nets} control nets skipped, "
                   f"{time.time()-t0:.1f}s", file=sys.stderr)
         t1 = time.time()
         self._build_prune()
@@ -260,34 +351,44 @@ class Dataflow:
                   f"{self.max_hops} hops of an endpoint, {time.time()-t1:.1f}s",
                   file=sys.stderr)
 
-        nl = self.nl
-        # sources = macros + IO pins
-        sources = [iid for iid in range(self.N) if nl.inst_kind[iid] == MACRO]
-        sources += [self._bnode(b) for b in range(len(nl.bterm_name))]
+        sources = self._sources()
+        t2 = time.time()
+        pairs = None
+        n_reg = sum(1 for v in self.is_reg if v)
+        n_dest = sum(1 for v in self.is_dest if v)
+        dense_bytes = len(sources) * (n_reg + 4 * n_dest)   # visited bool + one float32 hop
+        if self.use_scipy and dense_bytes <= self.max_dense_bytes:
+            try:
+                pairs = self._bfs_scipy(sources)
+                self.backend = "scipy"
+            except ImportError:
+                pairs = None
+        if pairs is None:
+            pairs = self._bfs_python(sources)
+            self.backend = "python"
+        if verbose:
+            print(f"  [dataflow] BFS ({self.backend}): {len(sources)} sources, "
+                  f"{len(pairs)} (src,dst) pairs, {time.time()-t2:.1f}s",
+                  file=sys.stderr)
 
         # Directed cluster-pair accumulation.  The BFS source ``csrc`` is the
         # driver side and ``cdst`` the downstream sink, so the key (csrc, cdst)
         # encodes the dataflow direction csrc -> cdst.
         virt_dir: dict[tuple[int, int], float] = defaultdict(float)
-        # also keep raw per-hop breakdown for reporting
         self.hop_hist = defaultdict(int)
-
-        for src in sources:
+        self.pair_flows = pairs          # raw (src, dst) -> {hop: flow}
+        for (src, dst), hopmap in pairs.items():
             csrc = self._cluster_of(src)
-            if csrc < 0:
+            cdst = self._cluster_of(dst)
+            if csrc < 0 or cdst < 0 or cdst == csrc:
                 continue
-            dests_weight: dict[int, dict[int, float]] = defaultdict(dict)
-            self._bfs_from(src, dests_weight)
-            for dst, hopmap in dests_weight.items():
-                cdst = self._cluster_of(dst)
-                if cdst < 0 or cdst == csrc:
-                    continue
-                # shortest register-distance dominates (aggressive decay)
+            if self.mode == "min":
                 h = min(hopmap)
-                flow = hopmap[h]
-                contrib = flow / (2 ** h)
                 self.hop_hist[h] += 1
-                virt_dir[(csrc, cdst)] += contrib
+                virt_dir[(csrc, cdst)] += hopmap[h] / (2 ** h)
+            else:
+                self.hop_hist[min(hopmap)] += 1
+                virt_dir[(csrc, cdst)] += sum(f / (2 ** h) for h, f in hopmap.items())
 
         # directed edges: driver-cluster -> sink-cluster
         self.virtual_edges_directed = dict(virt_dir)

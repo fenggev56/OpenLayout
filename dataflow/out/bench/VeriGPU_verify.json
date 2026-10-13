@@ -1,0 +1,28 @@
+{
+  "design": "VeriGPU",
+  "macros_verilog": 12,
+  "macros_clustered": 12,
+  "clusters": 1,
+  "cluster_sizes": [
+    12
+  ],
+  "rtl_modules_with_macros": 1,
+  "rtl_bank_groups": 12,
+  "bank_group_sizes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "bank_groups_split": 0,
+  "clusters_spanning_modules": 0,
+  "problems": []
+}

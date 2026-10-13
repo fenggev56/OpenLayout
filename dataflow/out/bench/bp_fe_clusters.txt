@@ -1,0 +1,234 @@
+==============================================================================
+RTL-MP CLUSTERED NETLIST  (design: bp_fe)
+==============================================================================
+
+Hyperparameters: Params(min_inst=1000, max_inst=5000, min_macro=4, max_macro=12, net_thr=5, virt_w=500)
+
+16 clusters  (12 std-cell, 4 macro)  + 12 bundled IO pins
+
+------------------------------------------------------------------------------
+BUNDLED IO PIN CLUSTERS
+------------------------------------------------------------------------------
+  [  0] PIN_B0   xy=(105.9, 0.0) inputs= 167 outputs=  44 inouts=  0
+  [  1] PIN_B1   xy=(317.7, 0.0) inputs= 156 outputs= 215 inouts=  0
+  [  2] PIN_B2   xy=(529.5, 0.0) inputs=   2 outputs=  57 inouts=  0
+  [  3] PIN_T0   xy=(105.9, 635.4) inputs=  59 outputs=   0 inouts=  0
+  [  4] PIN_T1   xy=(317.7, 635.4) inputs= 274 outputs=  97 inouts=  0
+  [  5] PIN_T2   xy=(529.5, 635.4) inputs= 170 outputs=   0 inouts=  0
+  [  6] PIN_L0   xy=(0.0, 105.9) inputs=   0 outputs=  46 inouts=  0
+  [  7] PIN_L1   xy=(0.0, 317.7) inputs= 200 outputs= 178 inouts=  0
+  [  8] PIN_L2   xy=(0.0, 529.5) inputs=   0 outputs= 176 inouts=  0
+  [  9] PIN_R0   xy=(635.4, 105.9) inputs=   0 outputs= 177 inouts=  0
+  [ 10] PIN_R1   xy=(635.4, 317.7) inputs= 205 outputs= 173 inouts=  0
+  [ 11] PIN_R2   xy=(635.4, 529.5) inputs=   3 outputs= 112 inouts=  0
+------------------------------------------------------------------------------
+MACRO CLUSTERS (grouped by footprint -> regular tilings)
+------------------------------------------------------------------------------
+  [ 50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank macros=  8 {'fakeram45_512x64': 8}
+  [ 49] bp_fe_pc_gen_1/genblk1_branch_prediction_1           macros=  1 {'fakeram45_512x64': 1}
+  [ 51] icache_1/metadata_mem                                macros=  1 {'fakeram45_64x7': 1}
+  [ 52] icache_1/tag_mem                                     macros=  1 {'fakeram45_64x96': 1}
+
+------------------------------------------------------------------------------
+STD-CELL CLUSTERS (largest 20)
+------------------------------------------------------------------------------
+  [ 48] bp_fe_pc_gen_1/genblk1_branch_prediction_1(+1)/std     inst=  3996 area=   6413.8um2
+  [ 39] icache_1/glue_logic(+11).p1.p1                         inst=  3459 area=   3970.8um2
+  [ 38] icache_1/glue_logic(+11).p1.p0                         inst=  3285 area=   5981.8um2
+  [ 44] icache_1/lce/glue_logic(+3).p0.p1                      inst=  3150 area=   3060.1um2
+  [ 43] icache_1/lce/glue_logic(+3).p0.p0                      inst=  3144 area=   3515.2um2
+  [ 35] icache_1/glue_logic(+11).p0.p0                         inst=  3108 area=   3597.1um2
+  [ 36] icache_1/glue_logic(+11).p0.p1                         inst=  3032 area=   3493.1um2
+  [ 15] bp_fe_pc_gen_1/glue_logic                              inst=  2772 area=   4033.1um2
+  [ 47] icache_1/lce/glue_logic(+3).p1.p1                      inst=  2631 area=   3695.8um2
+  [ 46] icache_1/lce/glue_logic(+3).p1.p0                      inst=  2519 area=   4469.6um2
+  [ 29] icache_1/lce/lce_data_cmd_fifo                         inst=  1046 area=   4730.0um2
+  [ 31] icache_1/lce/lce_tr_resp_in_fifo                       inst=  1046 area=   4730.0um2
+
+------------------------------------------------------------------------------
+STRONGEST DATAFLOW VIRTUAL CONNECTIONS  (Info_Flow / 2^hops)
+------------------------------------------------------------------------------
+         2189.50  Pin    :PIN_T1                       <-> Macro  :icache_1/data_mem_banks_{0,1
+         1792.00  Pin    :PIN_L1                       <-> Macro  :icache_1/data_mem_banks_{0,1
+         1680.00  Pin    :PIN_R1                       <-> Macro  :icache_1/data_mem_banks_{0,1
+         1467.50  Pin    :PIN_B1                       <-> Macro  :icache_1/data_mem_banks_{0,1
+         1416.00  Pin    :PIN_R0                       <-> Macro  :icache_1/data_mem_banks_{0,1
+         1408.00  Pin    :PIN_L2                       <-> Macro  :icache_1/data_mem_banks_{0,1
+         1360.00  Pin    :PIN_B0                       <-> Macro  :icache_1/data_mem_banks_{0,1
+         1360.00  Pin    :PIN_T2                       <-> Macro  :icache_1/data_mem_banks_{0,1
+          472.00  Pin    :PIN_T0                       <-> Macro  :icache_1/data_mem_banks_{0,1
+          432.00  Pin    :PIN_R2                       <-> Macro  :icache_1/data_mem_banks_{0,1
+          205.00  Pin    :PIN_B1                       <-> Pin    :PIN_B2
+          133.94  Pin    :PIN_B1                       <-> Pin    :PIN_T1
+           88.19  Pin    :PIN_T1                       <-> Macro  :bp_fe_pc_gen_1/genblk1_branc
+           58.50  Pin    :PIN_T1                       <-> Macro  :icache_1/tag_mem
+           51.25  Pin    :PIN_B1                       <-> Pin    :PIN_R1
+           50.25  Pin    :PIN_B1                       <-> Pin    :PIN_R2
+           49.50  Pin    :PIN_B1                       <-> Macro  :icache_1/tag_mem
+           45.00  Macro  :bp_fe_pc_gen_1/genblk1_branc <-> Macro  :icache_1/data_mem_banks_{0,1
+           25.50  Pin    :PIN_B1                       <-> Macro  :icache_1/metadata_mem
+           17.75  Pin    :PIN_B2                       <-> Pin    :PIN_R2
+           15.81  Pin    :PIN_B2                       <-> Pin    :PIN_T1
+           12.00  Macro  :icache_1/data_mem_banks_{0,1 <-> Macro  :icache_1/tag_mem
+           11.88  Pin    :PIN_B1                       <-> Macro  :bp_fe_pc_gen_1/genblk1_branc
+            9.75  Pin    :PIN_B2                       <-> Pin    :PIN_R1
+            8.75  Pin    :PIN_R1                       <-> Pin    :PIN_R2
+
+------------------------------------------------------------------------------
+STRONGEST REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      2271.0  StdCell:icache_1/glue_logic(+11).p0. <-> StdCell:icache_1/glue_logic(+11).p0.
+      2084.0  StdCell:icache_1/lce/lce_data_cmd_fi <-> StdCell:icache_1/lce/glue_logic(+3).
+      2084.0  StdCell:icache_1/lce/lce_tr_resp_in_ <-> StdCell:icache_1/lce/glue_logic(+3).
+      1665.0  StdCell:icache_1/lce/glue_logic(+3). <-> StdCell:icache_1/lce/glue_logic(+3).
+      1437.0  StdCell:icache_1/glue_logic(+11).p1. <-> StdCell:icache_1/glue_logic(+11).p1.
+      1419.0  StdCell:icache_1/lce/glue_logic(+3). <-> StdCell:icache_1/lce/glue_logic(+3).
+      1321.0  StdCell:icache_1/glue_logic(+11).p0. <-> StdCell:icache_1/glue_logic(+11).p1.
+       909.0  StdCell:icache_1/lce/lce_data_cmd_fi <-> StdCell:icache_1/lce/glue_logic(+3).
+       896.0  StdCell:icache_1/glue_logic(+11).p0. <-> StdCell:icache_1/lce/glue_logic(+3).
+       798.0  StdCell:icache_1/lce/lce_tr_resp_in_ <-> StdCell:icache_1/lce/glue_logic(+3).
+       542.0  StdCell:icache_1/glue_logic(+11).p0. <-> Macro  :icache_1/data_mem_banks_{0,1
+       502.0  StdCell:icache_1/glue_logic(+11).p1. <-> Macro  :icache_1/data_mem_banks_{0,1
+       463.0  StdCell:icache_1/glue_logic(+11).p0. <-> StdCell:icache_1/lce/glue_logic(+3).
+       404.0  Pin    :PIN_R1                       <-> StdCell:icache_1/lce/glue_logic(+3).
+       400.0  Pin    :PIN_L1                       <-> StdCell:icache_1/lce/glue_logic(+3).
+       352.0  StdCell:icache_1/glue_logic(+11).p0. <-> StdCell:icache_1/glue_logic(+11).p1.
+       340.0  Pin    :PIN_T2                       <-> StdCell:icache_1/lce/glue_logic(+3).
+       332.0  Pin    :PIN_T1                       <-> StdCell:icache_1/lce/glue_logic(+3).
+       327.0  StdCell:icache_1/lce/glue_logic(+3). <-> StdCell:icache_1/lce/glue_logic(+3).
+       274.0  StdCell:bp_fe_pc_gen_1/glue_logic    <-> StdCell:icache_1/glue_logic(+11).p1.
+       271.0  StdCell:icache_1/glue_logic(+11).p1. <-> Macro  :icache_1/tag_mem
+       258.0  StdCell:icache_1/lce/lce_tr_resp_in_ <-> StdCell:icache_1/lce/glue_logic(+3).
+       252.0  Pin    :PIN_B0                       <-> StdCell:icache_1/lce/glue_logic(+3).
+       238.0  Pin    :PIN_B1                       <-> StdCell:icache_1/lce/glue_logic(+3).
+       212.0  Pin    :PIN_T1                       <-> StdCell:bp_fe_pc_gen_1/glue_logic
+
+------------------------------------------------------------------------------
+MACRO <-> STD-CELL VIRTUAL CONNECTIONS (Step 4, weight=virtual_weight)
+------------------------------------------------------------------------------
+     500.0  StdCell:bp_fe_pc_gen_1/genblk1_branc <-> Macro  :bp_fe_pc_gen_1/genblk1_branc
+     500.0  StdCell:icache_1/glue_logic(+11).p0. <-> Macro  :icache_1/data_mem_banks_{0,1
+     500.0  StdCell:icache_1/glue_logic(+11).p0. <-> Macro  :icache_1/data_mem_banks_{0,1
+     500.0  StdCell:icache_1/glue_logic(+11).p1. <-> Macro  :icache_1/data_mem_banks_{0,1
+     500.0  StdCell:icache_1/glue_logic(+11).p1. <-> Macro  :icache_1/data_mem_banks_{0,1
+     500.0  StdCell:icache_1/glue_logic(+11).p0. <-> Macro  :icache_1/metadata_mem
+     500.0  StdCell:icache_1/glue_logic(+11).p0. <-> Macro  :icache_1/metadata_mem
+     500.0  StdCell:icache_1/glue_logic(+11).p1. <-> Macro  :icache_1/metadata_mem
+     500.0  StdCell:icache_1/glue_logic(+11).p1. <-> Macro  :icache_1/metadata_mem
+     500.0  StdCell:icache_1/glue_logic(+11).p0. <-> Macro  :icache_1/tag_mem
+     500.0  StdCell:icache_1/glue_logic(+11).p0. <-> Macro  :icache_1/tag_mem
+     500.0  StdCell:icache_1/glue_logic(+11).p1. <-> Macro  :icache_1/tag_mem
+     500.0  StdCell:icache_1/glue_logic(+11).p1. <-> Macro  :icache_1/tag_mem
+
+==============================================================================
+DIRECTED VIEW  (driver-cluster --> sink-cluster, dataflow direction)
+==============================================================================
+
+DIRECTED IO FLOW SUMMARY
+------------------------------------------------------------------------------
+  Top-level INPUT ports drive their bundled pin clusters into the core.
+  Top-level OUTPUT ports are sinks driven by std-cell or macro clusters.
+  Edges below are aggregated directed star-model net connections.
+
+STRONGEST DIRECTED DATAFLOW CONNECTIONS
+------------------------------------------------------------------------------
+         1966.00  Pin    :PIN_T1                       --> Macro  :icache_1/data_mem_banks_{0,1
+         1616.00  Pin    :PIN_R1                       --> Macro  :icache_1/data_mem_banks_{0,1
+         1600.00  Pin    :PIN_L1                       --> Macro  :icache_1/data_mem_banks_{0,1
+         1416.00  Macro  :icache_1/data_mem_banks_{0,1 --> Pin    :PIN_R0
+         1408.00  Macro  :icache_1/data_mem_banks_{0,1 --> Pin    :PIN_L2
+         1360.00  Pin    :PIN_T2                       --> Macro  :icache_1/data_mem_banks_{0,1
+         1156.00  Pin    :PIN_B1                       --> Macro  :icache_1/data_mem_banks_{0,1
+         1008.00  Pin    :PIN_B0                       --> Macro  :icache_1/data_mem_banks_{0,1
+          472.00  Pin    :PIN_T0                       --> Macro  :icache_1/data_mem_banks_{0,1
+          424.00  Macro  :icache_1/data_mem_banks_{0,1 --> Pin    :PIN_R2
+          352.00  Macro  :icache_1/data_mem_banks_{0,1 --> Pin    :PIN_B0
+          311.50  Macro  :icache_1/data_mem_banks_{0,1 --> Pin    :PIN_B1
+          223.50  Macro  :icache_1/data_mem_banks_{0,1 --> Pin    :PIN_T1
+          192.00  Macro  :icache_1/data_mem_banks_{0,1 --> Pin    :PIN_L1
+          192.00  Pin    :PIN_B1                       --> Pin    :PIN_B2
+           69.75  Pin    :PIN_B1                       --> Pin    :PIN_T1
+           69.62  Pin    :PIN_T1                       --> Macro  :bp_fe_pc_gen_1/genblk1_branc
+           64.19  Pin    :PIN_T1                       --> Pin    :PIN_B1
+           64.00  Macro  :icache_1/data_mem_banks_{0,1 --> Pin    :PIN_R1
+           58.50  Pin    :PIN_T1                       --> Macro  :icache_1/tag_mem
+           50.25  Pin    :PIN_B1                       --> Pin    :PIN_R1
+           49.50  Pin    :PIN_B1                       --> Macro  :icache_1/tag_mem
+           37.25  Pin    :PIN_B1                       --> Pin    :PIN_R2
+           36.00  Macro  :bp_fe_pc_gen_1/genblk1_branc --> Macro  :icache_1/data_mem_banks_{0,1
+           25.50  Pin    :PIN_B1                       --> Macro  :icache_1/metadata_mem
+
+STRONGEST DIRECTED REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      1333.0  StdCell:icache_1/glue_logic(+11).p0. --> StdCell:icache_1/glue_logic(+11).p0.
+      1321.0  StdCell:icache_1/lce/glue_logic(+3). --> StdCell:icache_1/lce/glue_logic(+3).
+      1042.0  StdCell:icache_1/lce/lce_data_cmd_fi --> StdCell:icache_1/lce/glue_logic(+3).
+      1042.0  StdCell:icache_1/lce/lce_tr_resp_in_ --> StdCell:icache_1/lce/glue_logic(+3).
+      1042.0  StdCell:icache_1/lce/glue_logic(+3). --> StdCell:icache_1/lce/lce_data_cmd_fi
+      1042.0  StdCell:icache_1/lce/glue_logic(+3). --> StdCell:icache_1/lce/lce_tr_resp_in_
+       938.0  StdCell:icache_1/glue_logic(+11).p0. --> StdCell:icache_1/glue_logic(+11).p0.
+       909.0  StdCell:icache_1/lce/lce_data_cmd_fi --> StdCell:icache_1/lce/glue_logic(+3).
+       896.0  StdCell:icache_1/lce/glue_logic(+3). --> StdCell:icache_1/glue_logic(+11).p0.
+       865.0  StdCell:icache_1/lce/glue_logic(+3). --> StdCell:icache_1/lce/glue_logic(+3).
+       798.0  StdCell:icache_1/lce/lce_tr_resp_in_ --> StdCell:icache_1/lce/glue_logic(+3).
+       794.0  StdCell:icache_1/glue_logic(+11).p1. --> StdCell:icache_1/glue_logic(+11).p1.
+       755.0  StdCell:icache_1/glue_logic(+11).p1. --> StdCell:icache_1/glue_logic(+11).p0.
+       643.0  StdCell:icache_1/glue_logic(+11).p1. --> StdCell:icache_1/glue_logic(+11).p1.
+       566.0  StdCell:icache_1/glue_logic(+11).p0. --> StdCell:icache_1/glue_logic(+11).p1.
+       554.0  StdCell:icache_1/lce/glue_logic(+3). --> StdCell:icache_1/lce/glue_logic(+3).
+       494.0  Macro  :icache_1/data_mem_banks_{0,1 --> StdCell:icache_1/glue_logic(+11).p1.
+       433.0  StdCell:icache_1/lce/glue_logic(+3). --> StdCell:icache_1/glue_logic(+11).p0.
+       404.0  Pin    :PIN_R1                       --> StdCell:icache_1/lce/glue_logic(+3).
+       400.0  Pin    :PIN_L1                       --> StdCell:icache_1/lce/glue_logic(+3).
+       385.0  StdCell:icache_1/glue_logic(+11).p0. --> Macro  :icache_1/data_mem_banks_{0,1
+       344.0  StdCell:icache_1/lce/glue_logic(+3). --> StdCell:icache_1/lce/glue_logic(+3).
+       340.0  Pin    :PIN_T2                       --> StdCell:icache_1/lce/glue_logic(+3).
+       332.0  Pin    :PIN_T1                       --> StdCell:icache_1/lce/glue_logic(+3).
+       264.0  StdCell:icache_1/glue_logic(+11).p1. --> StdCell:bp_fe_pc_gen_1/glue_logic
+
+STRONGEST INPUT-PIN --> CORE CONNECTIONS
+------------------------------------------------------------------------------
+       404.0  Pin    :PIN_R1                       --> StdCell:icache_1/lce/glue_logic(+3).
+       400.0  Pin    :PIN_L1                       --> StdCell:icache_1/lce/glue_logic(+3).
+       340.0  Pin    :PIN_T2                       --> StdCell:icache_1/lce/glue_logic(+3).
+       332.0  Pin    :PIN_T1                       --> StdCell:icache_1/lce/glue_logic(+3).
+       252.0  Pin    :PIN_B0                       --> StdCell:icache_1/lce/glue_logic(+3).
+       238.0  Pin    :PIN_B1                       --> StdCell:icache_1/lce/glue_logic(+3).
+       129.0  Pin    :PIN_T1                       --> Macro  :bp_fe_pc_gen_1/genblk1_branc
+       119.0  Pin    :PIN_T1                       --> StdCell:bp_fe_pc_gen_1/glue_logic
+       118.0  Pin    :PIN_T0                       --> StdCell:icache_1/lce/glue_logic(+3).
+        87.0  Pin    :PIN_T1                       --> StdCell:bp_fe_pc_gen_1/genblk1_branc
+        71.0  Pin    :PIN_B1                       --> StdCell:icache_1/lce/glue_logic(+3).
+         6.0  Pin    :PIN_R2                       --> StdCell:icache_1/lce/glue_logic(+3).
+         4.0  Pin    :PIN_R1                       --> StdCell:icache_1/lce/glue_logic(+3).
+         3.0  Pin    :PIN_B2                       --> StdCell:icache_1/lce/glue_logic(+3).
+         2.0  Pin    :PIN_R2                       --> StdCell:bp_fe_pc_gen_1/glue_logic
+         2.0  Pin    :PIN_R2                       --> StdCell:bp_fe_pc_gen_1/genblk1_branc
+         1.0  Pin    :PIN_T1                       --> StdCell:icache_1/lce/glue_logic(+3).
+         1.0  Pin    :PIN_B1                       --> StdCell:bp_fe_pc_gen_1/glue_logic
+         1.0  Pin    :PIN_R1                       --> StdCell:icache_1/lce/glue_logic(+3).
+         1.0  Pin    :PIN_R2                       --> StdCell:icache_1/glue_logic(+11).p0.
+
+STRONGEST CORE --> OUTPUT-PIN CONNECTIONS
+------------------------------------------------------------------------------
+       174.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_L2
+       154.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_L1
+       149.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_R1
+       116.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_B1
+       106.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_R0
+        93.0  StdCell:bp_fe_pc_gen_1/glue_logic    --> Pin    :PIN_T1
+        71.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_R0
+        66.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_R2
+        56.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_B1
+        47.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_B2
+        46.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_L0
+        45.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_R2
+        44.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_B0
+        43.0  StdCell:bp_fe_pc_gen_1/glue_logic    --> Pin    :PIN_B1
+        24.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_L1
+        23.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_R1
+        10.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_B2
+         4.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_T1
+         2.0  StdCell:icache_1/lce/glue_logic(+3). --> Pin    :PIN_L2
+         1.0  StdCell:icache_1/lce/lce_data_cmd_fi --> Pin    :PIN_R1
+         1.0  StdCell:icache_1/lce/lce_tr_resp_in_ --> Pin    :PIN_R2

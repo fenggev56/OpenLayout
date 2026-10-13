@@ -1,0 +1,39 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: VeriGPU)
+==============================================================================
+
+1 macro clusters, 12 macros
+
+------------------------------------------------------------------------------
+MACRO_IN_NETLIST
+------------------------------------------------------------------------------
+  inst_58676  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_58677  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_58678  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61847  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61848  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61849  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61850  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61851  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61852  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61853  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61854  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+  inst_61855  type=small_mem cluster=[46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[ 46] gpu_die_/global_mem_controller_/{SUBMEM_ARRAY[12],SUBMEM_ARRAY[13],SUBMEM_ARRAY[14],...+1}
+type=Macro macro_count=12 macro_types={'small_mem': 12}
+  inst_58676  type=small_mem size=75.56x149.125um
+  inst_58677  type=small_mem size=75.56x149.125um
+  inst_58678  type=small_mem size=75.56x149.125um
+  inst_61847  type=small_mem size=75.56x149.125um
+  inst_61848  type=small_mem size=75.56x149.125um
+  inst_61849  type=small_mem size=75.56x149.125um
+  inst_61850  type=small_mem size=75.56x149.125um
+  inst_61851  type=small_mem size=75.56x149.125um
+  inst_61852  type=small_mem size=75.56x149.125um
+  inst_61853  type=small_mem size=75.56x149.125um
+  inst_61854  type=small_mem size=75.56x149.125um
+  inst_61855  type=small_mem size=75.56x149.125um

@@ -1,0 +1,218 @@
+{
+  "design": "bp_be",
+  "stats": {
+    "instances": 51392,
+    "macros": 10,
+    "macro_clusters": 3
+  },
+  "macro_in_netlist": [
+    {
+      "real_name": "be_mmu/dcache/data_mem_0__data_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/data_mem_1__data_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/data_mem_2__data_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/data_mem_3__data_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/data_mem_4__data_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/data_mem_5__data_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/data_mem_6__data_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/data_mem_7__data_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/stat_mem.macro_mem.mem",
+      "type": "fakeram45_64x15",
+      "width_um": 11.21,
+      "height_um": 58.8,
+      "area_um2": 659.148,
+      "cluster_id": 32,
+      "cluster_name": "be_mmu/dcache/stat_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "be_mmu/dcache/tag_mem.macro_mem.mem",
+      "type": "fakeram45_64x96",
+      "width_um": 54.53,
+      "height_um": 89.4,
+      "area_um2": 4874.982,
+      "cluster_id": 67,
+      "cluster_name": "be_mmu/dcache/tag_mem",
+      "cluster_type": "Macro"
+    }
+  ],
+  "macro_clusters": [
+    {
+      "cluster_id": 66,
+      "cluster_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_512x64": 8
+      },
+      "area_um2": 138411.504,
+      "macros": [
+        {
+          "real_name": "be_mmu/dcache/data_mem_0__data_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "be_mmu/dcache/data_mem_1__data_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "be_mmu/dcache/data_mem_2__data_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "be_mmu/dcache/data_mem_3__data_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "be_mmu/dcache/data_mem_4__data_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "be_mmu/dcache/data_mem_5__data_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "be_mmu/dcache/data_mem_6__data_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "be_mmu/dcache/data_mem_7__data_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        }
+      ]
+    },
+    {
+      "cluster_id": 32,
+      "cluster_name": "be_mmu/dcache/stat_mem",
+      "cluster_type": "Macro",
+      "macro_count": 1,
+      "macro_types": {
+        "fakeram45_64x15": 1
+      },
+      "area_um2": 659.148,
+      "macros": [
+        {
+          "real_name": "be_mmu/dcache/stat_mem.macro_mem.mem",
+          "type": "fakeram45_64x15",
+          "width_um": 11.21,
+          "height_um": 58.8,
+          "area_um2": 659.148
+        }
+      ]
+    },
+    {
+      "cluster_id": 67,
+      "cluster_name": "be_mmu/dcache/tag_mem",
+      "cluster_type": "Macro",
+      "macro_count": 1,
+      "macro_types": {
+        "fakeram45_64x96": 1
+      },
+      "area_um2": 4874.982,
+      "macros": [
+        {
+          "real_name": "be_mmu/dcache/tag_mem.macro_mem.mem",
+          "type": "fakeram45_64x96",
+          "width_um": 54.53,
+          "height_um": 89.4,
+          "area_um2": 4874.982
+        }
+      ]
+    }
+  ]
+}

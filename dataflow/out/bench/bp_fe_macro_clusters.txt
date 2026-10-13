@@ -1,0 +1,46 @@
+==============================================================================
+RTL-MP MACRO CLUSTERS  (design: bp_fe)
+==============================================================================
+
+4 macro clusters, 11 macros
+
+------------------------------------------------------------------------------
+MACRO_IN_NETLIST
+------------------------------------------------------------------------------
+  bp_fe_pc_gen_1/genblk1_branch_prediction_1/btb_1/btb_mem/macro_mem/mem  type=fakeram45_512x64 cluster=[49] bp_fe_pc_gen_1/genblk1_branch_prediction_1
+  icache_1/data_mem_banks_0__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 cluster=[50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+  icache_1/data_mem_banks_1__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 cluster=[50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+  icache_1/data_mem_banks_2__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 cluster=[50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+  icache_1/data_mem_banks_3__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 cluster=[50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+  icache_1/data_mem_banks_4__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 cluster=[50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+  icache_1/data_mem_banks_5__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 cluster=[50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+  icache_1/data_mem_banks_6__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 cluster=[50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+  icache_1/data_mem_banks_7__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 cluster=[50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+  icache_1/metadata_mem.macro_mem.mem  type=fakeram45_64x7 cluster=[51] icache_1/metadata_mem
+  icache_1/tag_mem.macro_mem.mem  type=fakeram45_64x96 cluster=[52] icache_1/tag_mem
+
+------------------------------------------------------------------------------
+MACRO_CLUSTERS
+------------------------------------------------------------------------------
+[ 49] bp_fe_pc_gen_1/genblk1_branch_prediction_1
+type=Macro macro_count=1 macro_types={'fakeram45_512x64': 1}
+  bp_fe_pc_gen_1/genblk1_branch_prediction_1/btb_1/btb_mem/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+------------------------------------------------------------------------------
+[ 50] icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank
+type=Macro macro_count=8 macro_types={'fakeram45_512x64': 8}
+  icache_1/data_mem_banks_0__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  icache_1/data_mem_banks_1__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  icache_1/data_mem_banks_2__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  icache_1/data_mem_banks_3__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  icache_1/data_mem_banks_4__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  icache_1/data_mem_banks_5__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  icache_1/data_mem_banks_6__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+  icache_1/data_mem_banks_7__data_mem_bank/macro_mem/mem  type=fakeram45_512x64 size=152.57x113.4um
+------------------------------------------------------------------------------
+[ 51] icache_1/metadata_mem
+type=Macro macro_count=1 macro_types={'fakeram45_64x7': 1}
+  icache_1/metadata_mem.macro_mem.mem  type=fakeram45_64x7 size=10.64x36.4um
+------------------------------------------------------------------------------
+[ 52] icache_1/tag_mem
+type=Macro macro_count=1 macro_types={'fakeram45_64x96': 1}
+  icache_1/tag_mem.macro_mem.mem  type=fakeram45_64x96 size=54.53x89.4um

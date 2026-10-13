@@ -1,0 +1,40 @@
+design         rc   time    inst macros std cl mac cl sizes                        dflow verify
+ariane133       0    7.0  168039    132     48     14 [24, 12, 8, 8, 8, 8, 8, 8...    54 C4x1,C5x1 bank-split=16
+                  vs Benchmark/PlaceReasoner-Bench/ariane133/ariane133_macro_clusters.txt: 14/14 reference clusters identical, 0 new/changed
+ariane81        0    6.8  153954     81     44     18 [25, 4, 4, 4, 4, 4, 4, 4,...   198 C4x1,C5x1 bank-split=8
+                  vs Benchmark/PlaceReasoner-Bench/ariane81/ariane81_macro_clusters.txt: 6/8 reference clusters identical, 12 new/changed
+                    +   4 macros  i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_icache/sram_block_0__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_icache/sram_block_2__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_icache/sram_block_1__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_icache/sram_block_3__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros
+                    +   4 macros  i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros
+                    -  32 macros  merged[i_cache_subsystem/i_nbdcache/sram_block_0__data_sram]+16/macros
+                    -  16 macros  merged[i_cache_subsystem/i_icache/i_lfsr]+8/macros[fakeram45_256x32]
+bp_be           0    2.4   51392     10     17      3 [8, 1, 1]                       46 ok bank-split=0
+                  vs Benchmark/PlaceReasoner-Bench/bp_be/bp_be_macro_clusters.txt: 3/3 reference clusters identical, 0 new/changed
+bp_fe           0    1.6   33199     11     12      4 [8, 1, 1, 1]                    37 ok bank-split=0
+                  vs Benchmark/PlaceReasoner-Bench/bp_fe/bp_fe_macro_clusters.txt: 4/4 reference clusters identical, 0 new/changed
+ethernet        0    1.4   35236     64     12      2 [32, 32]                         7 C5x2 bank-split=0
+                  vs Benchmark/PlaceReasoner-Bench/ethernet/ethernet_macro_clusters.txt: 2/2 reference clusters identical, 0 new/changed
+swerv_wrapper   0    3.7   98067     28     33      3 [16, 8, 4]                      21 C5x1 bank-split=0
+                  vs Benchmark/PlaceReasoner-Bench/swerv_wrapper/swerv_wrapper_macro_clusters.txt: 3/3 reference clusters identical, 0 new/changed
+VeriGPU         0    3.2   71094     12     22      1 [12]                             1 ok bank-split=0
+                  vs Benchmark/PlaceReasoner-Bench/VeriGPU/VeriGPU_macro_clusters.txt: 1/1 reference clusters identical, 0 new/changed
+vga_lcd         0    4.9  127066     62     40     19 [4, 4, 4, 4, 4, 4, 4, 4, ...    51 C4x1 bank-split=2
+                  vs Benchmark/PlaceReasoner-Bench/vga_lcd/vga_lcd_macro_clusters.txt: 11/12 reference clusters identical, 8 new/changed
+                    +   4 macros  line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros
+                    +   4 macros  line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros
+                    +   4 macros  line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros
+                    +   4 macros  line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros
+                    +   4 macros  line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros
+                    +   4 macros  line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros
+                    +   4 macros  line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros
+                    +   4 macros  line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros
+                    -  32 macros  merged[line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0]+7

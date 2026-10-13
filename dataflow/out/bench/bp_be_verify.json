@@ -1,0 +1,28 @@
+{
+  "design": "bp_be",
+  "macros_verilog": 10,
+  "macros_clustered": 10,
+  "clusters": 3,
+  "cluster_sizes": [
+    8,
+    1,
+    1
+  ],
+  "rtl_modules_with_macros": 10,
+  "rtl_bank_groups": 10,
+  "bank_group_sizes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "bank_groups_split": 0,
+  "clusters_spanning_modules": 1,
+  "problems": []
+}

@@ -1,0 +1,247 @@
+{
+  "design": "bp_fe",
+  "stats": {
+    "instances": 33199,
+    "macros": 11,
+    "macro_clusters": 4
+  },
+  "macro_in_netlist": [
+    {
+      "real_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1/btb_1/btb_mem/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 49,
+      "cluster_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/data_mem_banks_0__data_mem_bank/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/data_mem_banks_1__data_mem_bank/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/data_mem_banks_2__data_mem_bank/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/data_mem_banks_3__data_mem_bank/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/data_mem_banks_4__data_mem_bank/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/data_mem_banks_5__data_mem_bank/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/data_mem_banks_6__data_mem_bank/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/data_mem_banks_7__data_mem_bank/macro_mem/mem",
+      "type": "fakeram45_512x64",
+      "width_um": 152.57,
+      "height_um": 113.4,
+      "area_um2": 17301.438,
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/metadata_mem.macro_mem.mem",
+      "type": "fakeram45_64x7",
+      "width_um": 10.64,
+      "height_um": 36.4,
+      "area_um2": 387.296,
+      "cluster_id": 51,
+      "cluster_name": "icache_1/metadata_mem",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "icache_1/tag_mem.macro_mem.mem",
+      "type": "fakeram45_64x96",
+      "width_um": 54.53,
+      "height_um": 89.4,
+      "area_um2": 4874.982,
+      "cluster_id": 52,
+      "cluster_name": "icache_1/tag_mem",
+      "cluster_type": "Macro"
+    }
+  ],
+  "macro_clusters": [
+    {
+      "cluster_id": 49,
+      "cluster_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1",
+      "cluster_type": "Macro",
+      "macro_count": 1,
+      "macro_types": {
+        "fakeram45_512x64": 1
+      },
+      "area_um2": 17301.438,
+      "macros": [
+        {
+          "real_name": "bp_fe_pc_gen_1/genblk1_branch_prediction_1/btb_1/btb_mem/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        }
+      ]
+    },
+    {
+      "cluster_id": 50,
+      "cluster_name": "icache_1/data_mem_banks_{0,1,2,...+5}__data_mem_bank",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_512x64": 8
+      },
+      "area_um2": 138411.504,
+      "macros": [
+        {
+          "real_name": "icache_1/data_mem_banks_0__data_mem_bank/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "icache_1/data_mem_banks_1__data_mem_bank/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "icache_1/data_mem_banks_2__data_mem_bank/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "icache_1/data_mem_banks_3__data_mem_bank/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "icache_1/data_mem_banks_4__data_mem_bank/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "icache_1/data_mem_banks_5__data_mem_bank/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "icache_1/data_mem_banks_6__data_mem_bank/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        },
+        {
+          "real_name": "icache_1/data_mem_banks_7__data_mem_bank/macro_mem/mem",
+          "type": "fakeram45_512x64",
+          "width_um": 152.57,
+          "height_um": 113.4,
+          "area_um2": 17301.438
+        }
+      ]
+    },
+    {
+      "cluster_id": 51,
+      "cluster_name": "icache_1/metadata_mem",
+      "cluster_type": "Macro",
+      "macro_count": 1,
+      "macro_types": {
+        "fakeram45_64x7": 1
+      },
+      "area_um2": 387.296,
+      "macros": [
+        {
+          "real_name": "icache_1/metadata_mem.macro_mem.mem",
+          "type": "fakeram45_64x7",
+          "width_um": 10.64,
+          "height_um": 36.4,
+          "area_um2": 387.296
+        }
+      ]
+    },
+    {
+      "cluster_id": 52,
+      "cluster_name": "icache_1/tag_mem",
+      "cluster_type": "Macro",
+      "macro_count": 1,
+      "macro_types": {
+        "fakeram45_64x96": 1
+      },
+      "area_um2": 4874.982,
+      "macros": [
+        {
+          "real_name": "icache_1/tag_mem.macro_mem.mem",
+          "type": "fakeram45_64x96",
+          "width_um": 54.53,
+          "height_um": 89.4,
+          "area_um2": 4874.982
+        }
+      ]
+    }
+  ]
+}

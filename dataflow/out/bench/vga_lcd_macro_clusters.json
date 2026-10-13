@@ -1,0 +1,1294 @@
+{
+  "design": "vga_lcd",
+  "stats": {
+    "instances": 127066,
+    "macros": 62,
+    "macro_clusters": 19
+  },
+  "macro_in_netlist": [
+    {
+      "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_1",
+      "type": "memory_block_64x24",
+      "width_um": 73.365,
+      "height_um": 216.09,
+      "area_um2": 15853.44285,
+      "cluster_id": 134,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x24]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_2",
+      "type": "memory_block_64x24",
+      "width_um": 73.365,
+      "height_um": 216.09,
+      "area_um2": 15853.44285,
+      "cluster_id": 134,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x24]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block0",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 133,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block1",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 133,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 135,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 135,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 136,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 136,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 136,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 136,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem4",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 137,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem5",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 137,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 138,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 138,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 138,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 138,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem4",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 139,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem5",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 139,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 142,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 142,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 142,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 142,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem4",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 143,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem5",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 143,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 140,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 140,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 140,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 140,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem4",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 141,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem5",
+      "type": "memory_block_128x8",
+      "width_um": 63.28,
+      "height_um": 185.84,
+      "area_um2": 11759.9552,
+      "cluster_id": 141,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_128x8]",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 132,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 132,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 132,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 132,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 130,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 130,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 130,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 130,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 128,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 128,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 128,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 128,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 126,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 126,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 126,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 126,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 122,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 122,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 122,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 122,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 124,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 124,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 124,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 124,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 120,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 120,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 120,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 120,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem0",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 118,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem1",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 118,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem2",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 118,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem3",
+      "type": "memory_block_64x8",
+      "width_um": 43.585,
+      "height_um": 126.755,
+      "area_um2": 5524.616675,
+      "cluster_id": 118,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros",
+      "cluster_type": "Macro"
+    }
+  ],
+  "macro_clusters": [
+    {
+      "cluster_id": 133,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_128x8]",
+      "cluster_type": "Macro",
+      "macro_count": 2,
+      "macro_types": {
+        "memory_block_128x8": 2
+      },
+      "area_um2": 23519.9104,
+      "macros": [
+        {
+          "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block0",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        },
+        {
+          "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block1",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        }
+      ]
+    },
+    {
+      "cluster_id": 134,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x24]",
+      "cluster_type": "Macro",
+      "macro_count": 2,
+      "macro_types": {
+        "memory_block_64x24": 2
+      },
+      "area_um2": 31706.8857,
+      "macros": [
+        {
+          "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_1",
+          "type": "memory_block_64x24",
+          "width_um": 73.365,
+          "height_um": 216.09,
+          "area_um2": 15853.44285
+        },
+        {
+          "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_memory_block_64x24_2",
+          "type": "memory_block_64x24",
+          "width_um": 73.365,
+          "height_um": 216.09,
+          "area_um2": 15853.44285
+        }
+      ]
+    },
+    {
+      "cluster_id": 135,
+      "cluster_name": "clut_mem/clut_mem/u_spram_256x24_composed/macros[memory_block_64x8]",
+      "cluster_type": "Macro",
+      "macro_count": 2,
+      "macro_types": {
+        "memory_block_64x8": 2
+      },
+      "area_um2": 11049.23335,
+      "macros": [
+        {
+          "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "clut_mem.clut_mem.u_spram_256x24_composed.u_spram_128x24_1.mem_block2.mem_block_1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 137,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_128x8]",
+      "cluster_type": "Macro",
+      "macro_count": 2,
+      "macro_types": {
+        "memory_block_128x8": 2
+      },
+      "area_um2": 23519.9104,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem4",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem5",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        }
+      ]
+    },
+    {
+      "cluster_id": 136,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem0/macros[memory_block_64x8]",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem0.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 139,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_128x8]",
+      "cluster_type": "Macro",
+      "macro_count": 2,
+      "macro_types": {
+        "memory_block_128x8": 2
+      },
+      "area_um2": 23519.9104,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem4",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem5",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        }
+      ]
+    },
+    {
+      "cluster_id": 138,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem1/macros[memory_block_64x8]",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem1.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 143,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_128x8]",
+      "cluster_type": "Macro",
+      "macro_count": 2,
+      "macro_types": {
+        "memory_block_128x8": 2
+      },
+      "area_um2": 23519.9104,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem4",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem5",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        }
+      ]
+    },
+    {
+      "cluster_id": 142,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem2/macros[memory_block_64x8]",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem2.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 141,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_128x8]",
+      "cluster_type": "Macro",
+      "macro_count": 2,
+      "macro_types": {
+        "memory_block_128x8": 2
+      },
+      "area_um2": 23519.9104,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem4",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem5",
+          "type": "memory_block_128x8",
+          "width_um": 63.28,
+          "height_um": 185.84,
+          "area_um2": 11759.9552
+        }
+      ]
+    },
+    {
+      "cluster_id": 140,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice1/u_mem3/macros[memory_block_64x8]",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice1.u_mem3.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 132,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem0/macros",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem0.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 130,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem1/macros",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem1.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 128,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem2/macros",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem2.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 126,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem3/macros",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem3.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 122,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem4/macros",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem4.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 124,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem5/macros",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem5.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 120,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem6/macros",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem6.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    },
+    {
+      "cluster_id": 118,
+      "cluster_name": "line_fifo/fifo_dc_mem/u_mem_slice2/u_mem7/macros",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "memory_block_64x8": 4
+      },
+      "area_um2": 22098.4667,
+      "macros": [
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem0",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem1",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem2",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        },
+        {
+          "real_name": "line_fifo.fifo_dc_mem.u_mem_slice2.u_mem7.u_mem3",
+          "type": "memory_block_64x8",
+          "width_um": 43.585,
+          "height_um": 126.755,
+          "area_um2": 5524.616675
+        }
+      ]
+    }
+  ]
+}

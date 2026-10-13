@@ -1,0 +1,11 @@
+cluster_id,cluster_name,cluster_type,macro_real_name,macro_type,width_um,height_um,area_um2
+66,"be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",Macro,be_mmu/dcache/data_mem_0__data_mem/macro_mem/mem,fakeram45_512x64,152.57,113.4,17301.438
+66,"be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",Macro,be_mmu/dcache/data_mem_1__data_mem/macro_mem/mem,fakeram45_512x64,152.57,113.4,17301.438
+66,"be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",Macro,be_mmu/dcache/data_mem_2__data_mem/macro_mem/mem,fakeram45_512x64,152.57,113.4,17301.438
+66,"be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",Macro,be_mmu/dcache/data_mem_3__data_mem/macro_mem/mem,fakeram45_512x64,152.57,113.4,17301.438
+66,"be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",Macro,be_mmu/dcache/data_mem_4__data_mem/macro_mem/mem,fakeram45_512x64,152.57,113.4,17301.438
+66,"be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",Macro,be_mmu/dcache/data_mem_5__data_mem/macro_mem/mem,fakeram45_512x64,152.57,113.4,17301.438
+66,"be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",Macro,be_mmu/dcache/data_mem_6__data_mem/macro_mem/mem,fakeram45_512x64,152.57,113.4,17301.438
+66,"be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",Macro,be_mmu/dcache/data_mem_7__data_mem/macro_mem/mem,fakeram45_512x64,152.57,113.4,17301.438
+32,be_mmu/dcache/stat_mem,Macro,be_mmu/dcache/stat_mem.macro_mem.mem,fakeram45_64x15,11.21,58.8,659.148
+67,be_mmu/dcache/tag_mem,Macro,be_mmu/dcache/tag_mem.macro_mem.mem,fakeram45_64x96,54.53,89.4,4874.982

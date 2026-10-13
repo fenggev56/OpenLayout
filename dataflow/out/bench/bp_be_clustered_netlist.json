@@ -1,0 +1,3259 @@
+{
+  "design": "bp_be",
+  "directed": true,
+  "params": {
+    "min_num_inst": 1000,
+    "max_num_inst": 5000,
+    "max_num_macro": 12,
+    "min_num_macro": 4,
+    "virtual_weight": 500,
+    "net_threshold": 5,
+    "large_net_threshold": 500,
+    "num_bundled_pins_per_edge": 3,
+    "bisect_refine_passes": 4,
+    "bisect_balance": 0.1,
+    "tiny_cluster_inst": 100,
+    "dataflow_mode": "min"
+  },
+  "stats": {
+    "instances": 51392,
+    "macros": 10,
+    "io_bits": 3029,
+    "nets": 53988,
+    "clusters": 20,
+    "bundled_pins": 12
+  },
+  "clusters": [
+    {
+      "id": 13,
+      "name": "<top>/glue_logic(+1)",
+      "type": "StdCell",
+      "num_inst": 2404,
+      "num_macro": 0,
+      "area_um2": 3204.502
+    },
+    {
+      "id": 14,
+      "name": "be_calculator/calc_stage_reg",
+      "type": "StdCell",
+      "num_inst": 1855,
+      "num_macro": 0,
+      "area_um2": 8388.31
+    },
+    {
+      "id": 44,
+      "name": "be_calculator/glue_logic(+4).p0",
+      "type": "StdCell",
+      "num_inst": 4822,
+      "num_macro": 0,
+      "area_um2": 6096.986
+    },
+    {
+      "id": 45,
+      "name": "be_calculator/glue_logic(+4).p1",
+      "type": "StdCell",
+      "num_inst": 4465,
+      "num_macro": 0,
+      "area_um2": 7775.446
+    },
+    {
+      "id": 66,
+      "name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "type": "Macro",
+      "num_inst": 8,
+      "num_macro": 8,
+      "area_um2": 138411.504,
+      "macro_masters": {
+        "fakeram45_512x64": 8
+      }
+    },
+    {
+      "id": 67,
+      "name": "be_mmu/dcache/tag_mem",
+      "type": "Macro",
+      "num_inst": 1,
+      "num_macro": 1,
+      "area_um2": 4874.982,
+      "macro_masters": {
+        "fakeram45_64x96": 1
+      }
+    },
+    {
+      "id": 48,
+      "name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "type": "StdCell",
+      "num_inst": 3570,
+      "num_macro": 0,
+      "area_um2": 7283.08
+    },
+    {
+      "id": 49,
+      "name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "type": "StdCell",
+      "num_inst": 3669,
+      "num_macro": 0,
+      "area_um2": 5447.414
+    },
+    {
+      "id": 51,
+      "name": "be_mmu/dcache/glue_logic(+11).p1.p0",
+      "type": "StdCell",
+      "num_inst": 3760,
+      "num_macro": 0,
+      "area_um2": 4393.788
+    },
+    {
+      "id": 52,
+      "name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "type": "StdCell",
+      "num_inst": 3461,
+      "num_macro": 0,
+      "area_um2": 4195.618
+    },
+    {
+      "id": 39,
+      "name": "be_mmu/dcache/lce/lce_data_cmd_fifo",
+      "type": "StdCell",
+      "num_inst": 1046,
+      "num_macro": 0,
+      "area_um2": 4730.012
+    },
+    {
+      "id": 40,
+      "name": "be_mmu/dcache/lce/lce_tr_resp_in_fifo",
+      "type": "StdCell",
+      "num_inst": 1046,
+      "num_macro": 0,
+      "area_um2": 4730.012
+    },
+    {
+      "id": 56,
+      "name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "type": "StdCell",
+      "num_inst": 2719,
+      "num_macro": 0,
+      "area_um2": 3742.088
+    },
+    {
+      "id": 57,
+      "name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "type": "StdCell",
+      "num_inst": 2762,
+      "num_macro": 0,
+      "area_um2": 4518.808
+    },
+    {
+      "id": 58,
+      "name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "type": "StdCell",
+      "num_inst": 4887,
+      "num_macro": 0,
+      "area_um2": 6968.136
+    },
+    {
+      "id": 61,
+      "name": "be_calculator/int_regfile/rf/synth(+3).p0.p0",
+      "type": "StdCell",
+      "num_inst": 2763,
+      "num_macro": 0,
+      "area_um2": 4683.462
+    },
+    {
+      "id": 62,
+      "name": "be_calculator/int_regfile/rf/synth(+3).p0.p1",
+      "type": "StdCell",
+      "num_inst": 2550,
+      "num_macro": 0,
+      "area_um2": 5697.986
+    },
+    {
+      "id": 64,
+      "name": "be_calculator/int_regfile/rf/synth(+3).p1.p0",
+      "type": "StdCell",
+      "num_inst": 2823,
+      "num_macro": 0,
+      "area_um2": 5855.458
+    },
+    {
+      "id": 65,
+      "name": "be_calculator/int_regfile/rf/synth(+3).p1.p1",
+      "type": "StdCell",
+      "num_inst": 2780,
+      "num_macro": 0,
+      "area_um2": 4808.748
+    },
+    {
+      "id": 32,
+      "name": "be_mmu/dcache/stat_mem",
+      "type": "Macro",
+      "num_inst": 1,
+      "num_macro": 1,
+      "area_um2": 659.148,
+      "macro_masters": {
+        "fakeram45_64x15": 1
+      }
+    },
+    {
+      "id": 0,
+      "name": "PIN_B0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        111.29666666666667,
+        0.0
+      ],
+      "io_pins": 229,
+      "io_summary": {
+        "INPUT": 110,
+        "OUTPUT": 119,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_data_resp_ready_i",
+            "lce_req_ready_i",
+            "lce_resp_ready_i",
+            "fe_queue_i[0]",
+            "lce_cmd_i[35]",
+            "lce_data_cmd_i[539]",
+            "lce_data_cmd_i[538]",
+            "lce_data_cmd_i[537]"
+          ],
+          "OUTPUT": [
+            "lce_data_resp_v_o",
+            "lce_req_v_o",
+            "lce_resp_v_o",
+            "lce_data_resp_o[536]",
+            "lce_data_resp_o[535]",
+            "lce_data_resp_o[534]",
+            "lce_data_resp_o[533]",
+            "lce_data_resp_o[532]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "PIN_B1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        333.89,
+        0.0
+      ],
+      "io_pins": 390,
+      "io_summary": {
+        "INPUT": 133,
+        "OUTPUT": 257,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_data_cmd_v_i",
+            "lce_data_cmd_i[536]",
+            "lce_data_cmd_i[535]",
+            "lce_data_cmd_i[534]",
+            "lce_data_cmd_i[523]",
+            "lce_data_cmd_i[522]",
+            "lce_data_cmd_i[521]",
+            "lce_data_cmd_i[520]"
+          ],
+          "OUTPUT": [
+            "lce_data_cmd_ready_o",
+            "cmt_trace_stage_reg_o[337]",
+            "cmt_trace_stage_reg_o[336]",
+            "cmt_trace_stage_reg_o[335]",
+            "cmt_trace_stage_reg_o[334]",
+            "cmt_trace_stage_reg_o[333]",
+            "cmt_trace_stage_reg_o[332]",
+            "cmt_trace_stage_reg_o[331]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "PIN_B2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        556.4833333333332,
+        0.0
+      ],
+      "io_pins": 210,
+      "io_summary": {
+        "INPUT": 5,
+        "OUTPUT": 205,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_tr_resp_ready_i",
+            "lce_tr_resp_v_i",
+            "reset_i",
+            "proc_cfg_i[2]",
+            "proc_cfg_i[0]"
+          ],
+          "OUTPUT": [
+            "lce_tr_resp_ready_o",
+            "lce_tr_resp_v_o",
+            "lce_data_resp_o[169]",
+            "lce_data_resp_o[168]",
+            "lce_data_resp_o[167]",
+            "lce_data_resp_o[166]",
+            "lce_data_resp_o[165]",
+            "lce_data_resp_o[164]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "PIN_T0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        111.29666666666667,
+        667.78
+      ],
+      "io_pins": 21,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 21,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [
+            "lce_data_resp_o[349]",
+            "lce_data_resp_o[348]",
+            "lce_data_resp_o[347]",
+            "lce_data_resp_o[346]",
+            "lce_data_resp_o[345]",
+            "lce_data_resp_o[344]",
+            "lce_data_resp_o[343]",
+            "lce_data_resp_o[342]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "PIN_T1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        333.89,
+        667.78
+      ],
+      "io_pins": 390,
+      "io_summary": {
+        "INPUT": 1,
+        "OUTPUT": 389,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "clk_i"
+          ],
+          "OUTPUT": [
+            "cmt_trace_exc_o[6]",
+            "cmt_trace_exc_o[5]",
+            "cmt_trace_exc_o[4]",
+            "cmt_trace_exc_o[3]",
+            "cmt_trace_exc_o[2]",
+            "cmt_trace_exc_o[1]",
+            "cmt_trace_exc_o[0]",
+            "cmt_trace_result_o[127]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "PIN_T2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        556.4833333333332,
+        667.78
+      ],
+      "io_pins": 189,
+      "io_summary": {
+        "INPUT": 0,
+        "OUTPUT": 189,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [],
+          "OUTPUT": [
+            "lce_data_resp_o[519]",
+            "lce_data_resp_o[518]",
+            "lce_data_resp_o[517]",
+            "lce_data_resp_o[516]",
+            "lce_data_resp_o[515]",
+            "lce_data_resp_o[514]",
+            "lce_data_resp_o[513]",
+            "lce_data_resp_o[512]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "PIN_L0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        111.29666666666667
+      ],
+      "io_pins": 207,
+      "io_summary": {
+        "INPUT": 7,
+        "OUTPUT": 200,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_data_cmd_i[459]",
+            "lce_data_cmd_i[458]",
+            "lce_data_cmd_i[457]",
+            "lce_data_cmd_i[456]",
+            "lce_data_cmd_i[455]",
+            "lce_data_cmd_i[454]",
+            "lce_data_cmd_i[45]"
+          ],
+          "OUTPUT": [
+            "lce_tr_resp_o[420]",
+            "lce_tr_resp_o[419]",
+            "lce_tr_resp_o[418]",
+            "lce_tr_resp_o[417]",
+            "lce_tr_resp_o[416]",
+            "lce_tr_resp_o[415]",
+            "lce_tr_resp_o[414]",
+            "lce_tr_resp_o[413]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "PIN_L1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        333.89
+      ],
+      "io_pins": 397,
+      "io_summary": {
+        "INPUT": 197,
+        "OUTPUT": 200,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_data_cmd_i[453]",
+            "lce_data_cmd_i[452]",
+            "lce_data_cmd_i[451]",
+            "lce_data_cmd_i[450]",
+            "lce_data_cmd_i[449]",
+            "lce_data_cmd_i[448]",
+            "lce_data_cmd_i[447]",
+            "lce_data_cmd_i[446]"
+          ],
+          "OUTPUT": [
+            "cmt_trace_stage_reg_o[377]",
+            "cmt_trace_stage_reg_o[376]",
+            "cmt_trace_stage_reg_o[375]",
+            "cmt_trace_stage_reg_o[374]",
+            "cmt_trace_stage_reg_o[373]",
+            "cmt_trace_stage_reg_o[372]",
+            "cmt_trace_stage_reg_o[371]",
+            "cmt_trace_stage_reg_o[370]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "PIN_L2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        0.0,
+        556.4833333333332
+      ],
+      "io_pins": 196,
+      "io_summary": {
+        "INPUT": 196,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_tr_resp_i[346]",
+            "lce_tr_resp_i[345]",
+            "lce_tr_resp_i[344]",
+            "lce_tr_resp_i[343]",
+            "lce_tr_resp_i[342]",
+            "lce_tr_resp_i[341]",
+            "lce_tr_resp_i[340]",
+            "lce_tr_resp_i[339]"
+          ],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "PIN_R0",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        667.78,
+        111.29666666666667
+      ],
+      "io_pins": 196,
+      "io_summary": {
+        "INPUT": 196,
+        "OUTPUT": 0,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_tr_resp_i[536]",
+            "lce_tr_resp_i[535]",
+            "lce_tr_resp_i[534]",
+            "lce_tr_resp_i[523]",
+            "lce_tr_resp_i[522]",
+            "lce_tr_resp_i[521]",
+            "lce_tr_resp_i[520]",
+            "lce_tr_resp_i[519]"
+          ],
+          "OUTPUT": [],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "PIN_R1",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        667.78,
+        333.89
+      ],
+      "io_pins": 397,
+      "io_summary": {
+        "INPUT": 368,
+        "OUTPUT": 29,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "fe_cmd_ready_i",
+            "fe_queue_v_i",
+            "lce_cmd_v_i",
+            "fe_queue_i[133]",
+            "fe_queue_i[132]",
+            "fe_queue_i[131]",
+            "fe_queue_i[130]",
+            "fe_queue_i[129]"
+          ],
+          "OUTPUT": [
+            "fe_cmd_v_o",
+            "fe_queue_clr_o",
+            "fe_queue_dequeue_o",
+            "fe_queue_ready_o",
+            "fe_queue_rollback_o",
+            "lce_cmd_ready_o",
+            "fe_cmd_o[99]",
+            "fe_cmd_o[98]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "PIN_R2",
+      "type": "Pin",
+      "num_inst": 0,
+      "num_macro": 0,
+      "area_um2": 0.0,
+      "xy": [
+        667.78,
+        556.4833333333332
+      ],
+      "io_pins": 207,
+      "io_summary": {
+        "INPUT": 50,
+        "OUTPUT": 157,
+        "INOUT": 0,
+        "OTHER": 0,
+        "examples": {
+          "INPUT": [
+            "lce_data_cmd_i[279]",
+            "lce_data_cmd_i[278]",
+            "lce_data_cmd_i[277]",
+            "lce_data_cmd_i[276]",
+            "lce_data_cmd_i[275]",
+            "lce_data_cmd_i[274]",
+            "lce_data_cmd_i[27]",
+            "lce_tr_resp_i[99]"
+          ],
+          "OUTPUT": [
+            "lce_tr_resp_o[240]",
+            "lce_tr_resp_o[239]",
+            "lce_tr_resp_o[238]",
+            "lce_tr_resp_o[237]",
+            "lce_tr_resp_o[236]",
+            "lce_tr_resp_o[235]",
+            "lce_tr_resp_o[234]",
+            "lce_tr_resp_o[233]"
+          ],
+          "INOUT": [],
+          "OTHER": []
+        }
+      }
+    }
+  ],
+  "real_connections": [
+    {
+      "a": 49,
+      "b": 52,
+      "weight": 3011.0
+    },
+    {
+      "a": 39,
+      "b": 58,
+      "weight": 2992.0
+    },
+    {
+      "a": 40,
+      "b": 58,
+      "weight": 2580.0
+    },
+    {
+      "a": 61,
+      "b": 62,
+      "weight": 2116.0
+    },
+    {
+      "a": 51,
+      "b": 52,
+      "weight": 1993.0
+    },
+    {
+      "a": 62,
+      "b": 64,
+      "weight": 1672.0
+    },
+    {
+      "a": 62,
+      "b": 65,
+      "weight": 1649.0
+    },
+    {
+      "a": 64,
+      "b": 65,
+      "weight": 1639.0
+    },
+    {
+      "a": 44,
+      "b": 45,
+      "weight": 1604.0
+    },
+    {
+      "a": 56,
+      "b": 57,
+      "weight": 1435.0
+    },
+    {
+      "a": 48,
+      "b": 49,
+      "weight": 1227.0
+    },
+    {
+      "a": 52,
+      "b": 66,
+      "weight": 995.0
+    },
+    {
+      "a": 49,
+      "b": 66,
+      "weight": 908.0
+    },
+    {
+      "a": 57,
+      "b": 58,
+      "weight": 905.0
+    },
+    {
+      "a": 14,
+      "b": 45,
+      "weight": 741.0
+    },
+    {
+      "a": 52,
+      "b": 57,
+      "weight": 577.0
+    },
+    {
+      "a": 51,
+      "b": 58,
+      "weight": 555.0
+    },
+    {
+      "a": 51,
+      "b": 57,
+      "weight": 547.0
+    },
+    {
+      "a": 40,
+      "b": 57,
+      "weight": 523.0
+    },
+    {
+      "a": 13,
+      "b": 45,
+      "weight": 474.0
+    },
+    {
+      "a": 10,
+      "b": 58,
+      "weight": 394.0
+    },
+    {
+      "a": 7,
+      "b": 58,
+      "weight": 394.0
+    },
+    {
+      "a": 9,
+      "b": 58,
+      "weight": 392.0
+    },
+    {
+      "a": 8,
+      "b": 58,
+      "weight": 392.0
+    },
+    {
+      "a": 49,
+      "b": 57,
+      "weight": 369.0
+    },
+    {
+      "a": 52,
+      "b": 56,
+      "weight": 326.0
+    },
+    {
+      "a": 14,
+      "b": 44,
+      "weight": 304.0
+    },
+    {
+      "a": 61,
+      "b": 64,
+      "weight": 282.0
+    },
+    {
+      "a": 48,
+      "b": 66,
+      "weight": 281.0
+    },
+    {
+      "a": 49,
+      "b": 56,
+      "weight": 275.0
+    },
+    {
+      "a": 61,
+      "b": 65,
+      "weight": 274.0
+    },
+    {
+      "a": 1,
+      "b": 58,
+      "weight": 264.0
+    },
+    {
+      "a": 56,
+      "b": 58,
+      "weight": 263.0
+    },
+    {
+      "a": 10,
+      "b": 13,
+      "weight": 240.0
+    },
+    {
+      "a": 49,
+      "b": 51,
+      "weight": 209.0
+    },
+    {
+      "a": 6,
+      "b": 57,
+      "weight": 200.0
+    },
+    {
+      "a": 52,
+      "b": 67,
+      "weight": 200.0
+    },
+    {
+      "a": 1,
+      "b": 14,
+      "weight": 196.0
+    },
+    {
+      "a": 4,
+      "b": 56,
+      "weight": 190.0
+    },
+    {
+      "a": 5,
+      "b": 56,
+      "weight": 189.0
+    },
+    {
+      "a": 2,
+      "b": 56,
+      "weight": 179.0
+    },
+    {
+      "a": 52,
+      "b": 58,
+      "weight": 158.0
+    },
+    {
+      "a": 13,
+      "b": 14,
+      "weight": 157.0
+    },
+    {
+      "a": 0,
+      "b": 58,
+      "weight": 139.0
+    },
+    {
+      "a": 51,
+      "b": 66,
+      "weight": 134.0
+    },
+    {
+      "a": 4,
+      "b": 45,
+      "weight": 133.0
+    },
+    {
+      "a": 0,
+      "b": 56,
+      "weight": 120.0
+    },
+    {
+      "a": 39,
+      "b": 57,
+      "weight": 116.0
+    },
+    {
+      "a": 45,
+      "b": 65,
+      "weight": 112.0
+    },
+    {
+      "a": 7,
+      "b": 14,
+      "weight": 107.0
+    },
+    {
+      "a": 11,
+      "b": 58,
+      "weight": 100.0
+    },
+    {
+      "a": 11,
+      "b": 56,
+      "weight": 88.0
+    },
+    {
+      "a": 48,
+      "b": 67,
+      "weight": 87.0
+    },
+    {
+      "a": 7,
+      "b": 13,
+      "weight": 86.0
+    },
+    {
+      "a": 10,
+      "b": 56,
+      "weight": 73.0
+    },
+    {
+      "a": 45,
+      "b": 52,
+      "weight": 73.0
+    },
+    {
+      "a": 11,
+      "b": 57,
+      "weight": 69.0
+    },
+    {
+      "a": 45,
+      "b": 48,
+      "weight": 64.0
+    },
+    {
+      "a": 4,
+      "b": 14,
+      "weight": 63.0
+    },
+    {
+      "a": 1,
+      "b": 56,
+      "weight": 58.0
+    },
+    {
+      "a": 45,
+      "b": 64,
+      "weight": 54.0
+    },
+    {
+      "a": 49,
+      "b": 58,
+      "weight": 47.0
+    },
+    {
+      "a": 40,
+      "b": 56,
+      "weight": 36.0
+    },
+    {
+      "a": 10,
+      "b": 45,
+      "weight": 35.0
+    },
+    {
+      "a": 39,
+      "b": 56,
+      "weight": 32.0
+    },
+    {
+      "a": 48,
+      "b": 56,
+      "weight": 31.0
+    },
+    {
+      "a": 2,
+      "b": 57,
+      "weight": 31.0
+    },
+    {
+      "a": 45,
+      "b": 49,
+      "weight": 28.0
+    },
+    {
+      "a": 48,
+      "b": 52,
+      "weight": 27.0
+    },
+    {
+      "a": 32,
+      "b": 48,
+      "weight": 27.0
+    },
+    {
+      "a": 3,
+      "b": 56,
+      "weight": 21.0
+    },
+    {
+      "a": 32,
+      "b": 49,
+      "weight": 21.0
+    },
+    {
+      "a": 45,
+      "b": 62,
+      "weight": 19.0
+    },
+    {
+      "a": 6,
+      "b": 58,
+      "weight": 14.0
+    },
+    {
+      "a": 13,
+      "b": 52,
+      "weight": 9.0
+    },
+    {
+      "a": 13,
+      "b": 44,
+      "weight": 9.0
+    },
+    {
+      "a": 49,
+      "b": 67,
+      "weight": 9.0
+    },
+    {
+      "a": 13,
+      "b": 61,
+      "weight": 8.0
+    },
+    {
+      "a": 13,
+      "b": 65,
+      "weight": 8.0
+    },
+    {
+      "a": 45,
+      "b": 61,
+      "weight": 8.0
+    },
+    {
+      "a": 32,
+      "b": 58,
+      "weight": 8.0
+    },
+    {
+      "a": 32,
+      "b": 56,
+      "weight": 8.0
+    },
+    {
+      "a": 7,
+      "b": 45,
+      "weight": 5.0
+    },
+    {
+      "a": 2,
+      "b": 58,
+      "weight": 5.0
+    },
+    {
+      "a": 14,
+      "b": 64,
+      "weight": 5.0
+    },
+    {
+      "a": 48,
+      "b": 51,
+      "weight": 5.0
+    },
+    {
+      "a": 13,
+      "b": 49,
+      "weight": 4.0
+    },
+    {
+      "a": 51,
+      "b": 56,
+      "weight": 4.0
+    },
+    {
+      "a": 1,
+      "b": 44,
+      "weight": 4.0
+    },
+    {
+      "a": 4,
+      "b": 44,
+      "weight": 3.0
+    },
+    {
+      "a": 44,
+      "b": 48,
+      "weight": 3.0
+    },
+    {
+      "a": 48,
+      "b": 58,
+      "weight": 3.0
+    },
+    {
+      "a": 45,
+      "b": 56,
+      "weight": 2.0
+    },
+    {
+      "a": 7,
+      "b": 44,
+      "weight": 2.0
+    },
+    {
+      "a": 13,
+      "b": 48,
+      "weight": 1.0
+    },
+    {
+      "a": 1,
+      "b": 39,
+      "weight": 1.0
+    },
+    {
+      "a": 2,
+      "b": 13,
+      "weight": 1.0
+    },
+    {
+      "a": 2,
+      "b": 45,
+      "weight": 1.0
+    },
+    {
+      "a": 2,
+      "b": 49,
+      "weight": 1.0
+    },
+    {
+      "a": 2,
+      "b": 44,
+      "weight": 1.0
+    },
+    {
+      "a": 2,
+      "b": 40,
+      "weight": 1.0
+    },
+    {
+      "a": 0,
+      "b": 57,
+      "weight": 1.0
+    },
+    {
+      "a": 32,
+      "b": 52,
+      "weight": 1.0
+    }
+  ],
+  "virtual_connections": [
+    {
+      "a": 7,
+      "b": 10,
+      "weight": 55045.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 7,
+      "b": 66,
+      "weight": 5394.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 66,
+      "weight": 3558.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 6,
+      "b": 66,
+      "weight": 1656.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 11,
+      "b": 66,
+      "weight": 1656.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 9,
+      "b": 66,
+      "weight": 1568.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 8,
+      "b": 66,
+      "weight": 1568.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 66,
+      "weight": 1504.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 66,
+      "weight": 1504.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 5,
+      "b": 66,
+      "weight": 1448.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 66,
+      "weight": 1426.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 66,
+      "weight": 984.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 10,
+      "weight": 616.312,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 10,
+      "weight": 372.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 3,
+      "b": 66,
+      "weight": 168.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "weight": 128.375,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 67,
+      "weight": 107.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 5,
+      "b": 10,
+      "weight": 103.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 7,
+      "weight": 83.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "weight": 81.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 9,
+      "weight": 81.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 10,
+      "b": 32,
+      "weight": 72.125,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "weight": 61.125,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 9,
+      "weight": 60.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "weight": 51.375,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 32,
+      "weight": 29.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "weight": 22.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "weight": 22.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "weight": 18.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 5,
+      "b": 9,
+      "weight": 18.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 10,
+      "weight": 13.438,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 4,
+      "weight": 10.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 32,
+      "weight": 9.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 9,
+      "b": 32,
+      "weight": 9.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 5,
+      "weight": 8.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 67,
+      "weight": 6.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 9,
+      "b": 67,
+      "weight": 6.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "weight": 6.312,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 5,
+      "weight": 5.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 0,
+      "b": 67,
+      "weight": 3.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 32,
+      "b": 66,
+      "weight": 3.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 67,
+      "weight": 2.5,
+      "kind": "dataflow"
+    },
+    {
+      "a": 9,
+      "b": 10,
+      "weight": 2.25,
+      "kind": "dataflow"
+    },
+    {
+      "a": 1,
+      "b": 9,
+      "weight": 2.25,
+      "kind": "dataflow"
+    },
+    {
+      "a": 66,
+      "b": 67,
+      "weight": 2.0,
+      "kind": "dataflow"
+    },
+    {
+      "a": 2,
+      "b": 32,
+      "weight": 1.75,
+      "kind": "dataflow"
+    },
+    {
+      "a": 48,
+      "b": 66,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 49,
+      "b": 66,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 51,
+      "b": 66,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 52,
+      "b": 66,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 48,
+      "b": 67,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 49,
+      "b": 67,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 51,
+      "b": 67,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    },
+    {
+      "a": 52,
+      "b": 67,
+      "weight": 500.0,
+      "kind": "macro_stdcell"
+    }
+  ],
+  "real_connections_directed": [
+    {
+      "src": 39,
+      "dst": 58,
+      "weight": 1950.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/lce_data_cmd_fifo",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 49,
+      "dst": 52,
+      "weight": 1764.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 40,
+      "dst": 58,
+      "weight": 1538.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/lce_tr_resp_in_fifo",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 62,
+      "dst": 61,
+      "weight": 1476.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p0.p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0"
+    },
+    {
+      "src": 44,
+      "dst": 45,
+      "weight": 1429.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p0",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 51,
+      "dst": 52,
+      "weight": 1336.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 52,
+      "dst": 49,
+      "weight": 1247.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 64,
+      "dst": 62,
+      "weight": 1179.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p1"
+    },
+    {
+      "src": 57,
+      "dst": 56,
+      "weight": 1053.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 58,
+      "dst": 39,
+      "weight": 1042.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "be_mmu/dcache/lce/lce_data_cmd_fifo"
+    },
+    {
+      "src": 58,
+      "dst": 40,
+      "weight": 1042.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "be_mmu/dcache/lce/lce_tr_resp_in_fifo"
+    },
+    {
+      "src": 64,
+      "dst": 65,
+      "weight": 927.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1"
+    },
+    {
+      "src": 62,
+      "dst": 65,
+      "weight": 867.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p0.p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1"
+    },
+    {
+      "src": 58,
+      "dst": 57,
+      "weight": 857.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 49,
+      "dst": 48,
+      "weight": 783.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 65,
+      "dst": 62,
+      "weight": 782.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p1"
+    },
+    {
+      "src": 65,
+      "dst": 64,
+      "weight": 712.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0"
+    },
+    {
+      "src": 52,
+      "dst": 51,
+      "weight": 657.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 61,
+      "dst": 62,
+      "weight": 640.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p1"
+    },
+    {
+      "src": 52,
+      "dst": 66,
+      "weight": 570.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem"
+    },
+    {
+      "src": 66,
+      "dst": 49,
+      "weight": 556.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 58,
+      "dst": 51,
+      "weight": 555.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 57,
+      "dst": 51,
+      "weight": 547.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 40,
+      "dst": 57,
+      "weight": 523.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/lce_tr_resp_in_fifo",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 52,
+      "dst": 57,
+      "weight": 501.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 62,
+      "dst": 64,
+      "weight": 493.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p0.p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0"
+    },
+    {
+      "src": 48,
+      "dst": 49,
+      "weight": 444.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 66,
+      "dst": 52,
+      "weight": 425.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 10,
+      "dst": 58,
+      "weight": 394.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 7,
+      "dst": 58,
+      "weight": 394.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 9,
+      "dst": 58,
+      "weight": 392.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R0",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 8,
+      "dst": 58,
+      "weight": 392.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L2",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 56,
+      "dst": 57,
+      "weight": 382.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 14,
+      "dst": 45,
+      "weight": 377.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/calc_stage_reg",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 49,
+      "dst": 57,
+      "weight": 368.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 45,
+      "dst": 14,
+      "weight": 364.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_calculator/calc_stage_reg"
+    },
+    {
+      "src": 49,
+      "dst": 66,
+      "weight": 352.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem"
+    },
+    {
+      "src": 14,
+      "dst": 44,
+      "weight": 297.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/calc_stage_reg",
+      "dst_name": "be_calculator/glue_logic(+4).p0"
+    },
+    {
+      "src": 52,
+      "dst": 56,
+      "weight": 288.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 45,
+      "dst": 13,
+      "weight": 279.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 1,
+      "dst": 58,
+      "weight": 264.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 49,
+      "dst": 56,
+      "weight": 259.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 64,
+      "dst": 61,
+      "weight": 230.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0"
+    },
+    {
+      "src": 56,
+      "dst": 58,
+      "weight": 226.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 66,
+      "dst": 48,
+      "weight": 225.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 10,
+      "dst": 13,
+      "weight": 213.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 57,
+      "dst": 6,
+      "weight": 200.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "PIN_L0"
+    },
+    {
+      "src": 52,
+      "dst": 67,
+      "weight": 200.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/tag_mem"
+    },
+    {
+      "src": 14,
+      "dst": 1,
+      "weight": 196.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/calc_stage_reg",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 13,
+      "dst": 45,
+      "weight": 195.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 56,
+      "dst": 4,
+      "weight": 190.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_T1"
+    },
+    {
+      "src": 56,
+      "dst": 5,
+      "weight": 189.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_T2"
+    },
+    {
+      "src": 45,
+      "dst": 44,
+      "weight": 175.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_calculator/glue_logic(+4).p0"
+    },
+    {
+      "src": 61,
+      "dst": 65,
+      "weight": 174.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1"
+    },
+    {
+      "src": 56,
+      "dst": 2,
+      "weight": 172.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_B2"
+    },
+    {
+      "src": 14,
+      "dst": 13,
+      "weight": 157.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/calc_stage_reg",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 51,
+      "dst": 49,
+      "weight": 149.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 0,
+      "dst": 58,
+      "weight": 134.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B0",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 51,
+      "dst": 66,
+      "weight": 134.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p0",
+      "dst_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem"
+    },
+    {
+      "src": 45,
+      "dst": 4,
+      "weight": 133.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "PIN_T1"
+    },
+    {
+      "src": 39,
+      "dst": 57,
+      "weight": 116.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/lce_data_cmd_fifo",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1"
+    },
+    {
+      "src": 56,
+      "dst": 0,
+      "weight": 113.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_B0"
+    },
+    {
+      "src": 65,
+      "dst": 45,
+      "weight": 108.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 14,
+      "dst": 7,
+      "weight": 107.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/calc_stage_reg",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 11,
+      "dst": 58,
+      "weight": 100.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R2",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 65,
+      "dst": 61,
+      "weight": 100.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0"
+    },
+    {
+      "src": 56,
+      "dst": 11,
+      "weight": 88.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_R2"
+    },
+    {
+      "src": 67,
+      "dst": 48,
+      "weight": 87.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/tag_mem",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 13,
+      "dst": 7,
+      "weight": 86.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 52,
+      "dst": 58,
+      "weight": 83.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 57,
+      "dst": 52,
+      "weight": 76.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 58,
+      "dst": 52,
+      "weight": 75.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 10,
+      "dst": 56,
+      "weight": 72.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 45,
+      "dst": 52,
+      "weight": 71.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 57,
+      "dst": 11,
+      "weight": 69.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "PIN_R2"
+    },
+    {
+      "src": 14,
+      "dst": 4,
+      "weight": 63.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/calc_stage_reg",
+      "dst_name": "PIN_T1"
+    },
+    {
+      "src": 49,
+      "dst": 51,
+      "weight": 60.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 56,
+      "dst": 1,
+      "weight": 56.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 48,
+      "dst": 45,
+      "weight": 56.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 48,
+      "dst": 66,
+      "weight": 56.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_mmu/dcache/data_mem_{0,1,2,...+5}__data_mem"
+    },
+    {
+      "src": 61,
+      "dst": 64,
+      "weight": 52.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0"
+    },
+    {
+      "src": 45,
+      "dst": 64,
+      "weight": 51.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0"
+    },
+    {
+      "src": 57,
+      "dst": 58,
+      "weight": 48.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 49,
+      "dst": 58,
+      "weight": 43.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 56,
+      "dst": 52,
+      "weight": 38.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 58,
+      "dst": 56,
+      "weight": 37.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 10,
+      "dst": 45,
+      "weight": 34.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_R1",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 40,
+      "dst": 56,
+      "weight": 32.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/lce_tr_resp_in_fifo",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 57,
+      "dst": 2,
+      "weight": 31.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "PIN_B2"
+    },
+    {
+      "src": 39,
+      "dst": 56,
+      "weight": 28.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/lce_data_cmd_fifo",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 13,
+      "dst": 10,
+      "weight": 27.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 48,
+      "dst": 56,
+      "weight": 27.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 45,
+      "dst": 49,
+      "weight": 23.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 48,
+      "dst": 32,
+      "weight": 22.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_mmu/dcache/stat_mem"
+    },
+    {
+      "src": 56,
+      "dst": 3,
+      "weight": 21.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_T0"
+    },
+    {
+      "src": 52,
+      "dst": 48,
+      "weight": 19.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 56,
+      "dst": 49,
+      "weight": 16.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 49,
+      "dst": 32,
+      "weight": 15.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_mmu/dcache/stat_mem"
+    },
+    {
+      "src": 62,
+      "dst": 45,
+      "weight": 15.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p0.p1",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 6,
+      "dst": 58,
+      "weight": 14.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_L0",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 44,
+      "dst": 13,
+      "weight": 9.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p0",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 67,
+      "dst": 49,
+      "weight": 9.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/tag_mem",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 13,
+      "dst": 61,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0"
+    },
+    {
+      "src": 13,
+      "dst": 65,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1"
+    },
+    {
+      "src": 13,
+      "dst": 52,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 45,
+      "dst": 48,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 48,
+      "dst": 52,
+      "weight": 8.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p1"
+    },
+    {
+      "src": 32,
+      "dst": 58,
+      "weight": 8.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/stat_mem",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 32,
+      "dst": 56,
+      "weight": 8.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/stat_mem",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 0,
+      "dst": 56,
+      "weight": 7.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B0",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 2,
+      "dst": 56,
+      "weight": 7.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B2",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 44,
+      "dst": 14,
+      "weight": 7.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p0",
+      "dst_name": "be_calculator/calc_stage_reg"
+    },
+    {
+      "src": 45,
+      "dst": 61,
+      "weight": 6.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0"
+    },
+    {
+      "src": 32,
+      "dst": 49,
+      "weight": 6.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/stat_mem",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 45,
+      "dst": 7,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 14,
+      "dst": 64,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/calc_stage_reg",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0"
+    },
+    {
+      "src": 58,
+      "dst": 0,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "PIN_B0"
+    },
+    {
+      "src": 49,
+      "dst": 45,
+      "weight": 5.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p1",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 32,
+      "dst": 48,
+      "weight": 5.0,
+      "src_type": "Macro",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/stat_mem",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 13,
+      "dst": 49,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 45,
+      "dst": 62,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p0.p1"
+    },
+    {
+      "src": 45,
+      "dst": 65,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "be_calculator/int_regfile/rf/synth(+3).p1.p1"
+    },
+    {
+      "src": 56,
+      "dst": 51,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 56,
+      "dst": 48,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 56,
+      "dst": 39,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_mmu/dcache/lce/lce_data_cmd_fifo"
+    },
+    {
+      "src": 56,
+      "dst": 40,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_mmu/dcache/lce/lce_tr_resp_in_fifo"
+    },
+    {
+      "src": 2,
+      "dst": 58,
+      "weight": 4.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B2",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 44,
+      "dst": 1,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/glue_logic(+4).p0",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 58,
+      "dst": 49,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 48,
+      "dst": 51,
+      "weight": 4.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p1.p0"
+    },
+    {
+      "src": 44,
+      "dst": 4,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/glue_logic(+4).p0",
+      "dst_name": "PIN_T1"
+    },
+    {
+      "src": 48,
+      "dst": 44,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_calculator/glue_logic(+4).p0"
+    },
+    {
+      "src": 48,
+      "dst": 58,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p0.p0",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p1"
+    },
+    {
+      "src": 64,
+      "dst": 45,
+      "weight": 3.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p1.p0",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 56,
+      "dst": 45,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 1,
+      "dst": 56,
+      "weight": 2.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B1",
+      "dst_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0"
+    },
+    {
+      "src": 44,
+      "dst": 7,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/glue_logic(+4).p0",
+      "dst_name": "PIN_L1"
+    },
+    {
+      "src": 52,
+      "dst": 45,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 61,
+      "dst": 45,
+      "weight": 2.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_calculator/int_regfile/rf/synth(+3).p0.p0",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 13,
+      "dst": 48,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "<top>/glue_logic(+1)",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    },
+    {
+      "src": 45,
+      "dst": 10,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_calculator/glue_logic(+4).p1",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 56,
+      "dst": 10,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p0",
+      "dst_name": "PIN_R1"
+    },
+    {
+      "src": 39,
+      "dst": 1,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/lce_data_cmd_fifo",
+      "dst_name": "PIN_B1"
+    },
+    {
+      "src": 2,
+      "dst": 13,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B2",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 2,
+      "dst": 45,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B2",
+      "dst_name": "be_calculator/glue_logic(+4).p1"
+    },
+    {
+      "src": 2,
+      "dst": 49,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B2",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 2,
+      "dst": 44,
+      "weight": 1.0,
+      "src_type": "Pin",
+      "dst_type": "StdCell",
+      "src_name": "PIN_B2",
+      "dst_name": "be_calculator/glue_logic(+4).p0"
+    },
+    {
+      "src": 40,
+      "dst": 2,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/lce_tr_resp_in_fifo",
+      "dst_name": "PIN_B2"
+    },
+    {
+      "src": 58,
+      "dst": 2,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p1",
+      "dst_name": "PIN_B2"
+    },
+    {
+      "src": 57,
+      "dst": 0,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Pin",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "PIN_B0"
+    },
+    {
+      "src": 57,
+      "dst": 49,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/lce/glue_logic(+3).p0.p1",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p1"
+    },
+    {
+      "src": 52,
+      "dst": 13,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "<top>/glue_logic(+1)"
+    },
+    {
+      "src": 52,
+      "dst": 32,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "Macro",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p1",
+      "dst_name": "be_mmu/dcache/stat_mem"
+    },
+    {
+      "src": 51,
+      "dst": 48,
+      "weight": 1.0,
+      "src_type": "StdCell",
+      "dst_type": "StdCell",
+      "src_name": "be_mmu/dcache/glue_logic(+11).p1.p0",
+      "dst_name": "be_mmu/dcache/glue_logic(+11).p0.p0"
+    }
+  ],
+  "virtual_connections_directed": [
+    {
+      "src": 10,
+      "dst": 7,
+      "weight": 55045.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 7,
+      "weight": 3818.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 66,
+      "weight": 2362.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 6,
+      "weight": 1600.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 7,
+      "dst": 66,
+      "weight": 1576.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 66,
+      "weight": 1568.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 8,
+      "dst": 66,
+      "weight": 1568.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 4,
+      "weight": 1504.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 5,
+      "weight": 1448.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 2,
+      "weight": 1408.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 11,
+      "weight": 1256.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 10,
+      "weight": 1196.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 66,
+      "weight": 1056.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 0,
+      "weight": 615.312,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 66,
+      "weight": 556.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 1,
+      "weight": 448.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 0,
+      "weight": 428.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 11,
+      "dst": 66,
+      "weight": 400.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 2,
+      "weight": 346.062,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 3,
+      "weight": 168.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 4,
+      "weight": 128.375,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 67,
+      "weight": 107.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 5,
+      "weight": 103.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 7,
+      "weight": 83.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 0,
+      "weight": 81.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 0,
+      "weight": 81.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 32,
+      "weight": 72.125,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 2,
+      "weight": 60.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 2,
+      "weight": 60.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 6,
+      "dst": 66,
+      "weight": 56.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 10,
+      "weight": 26.688,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 2,
+      "weight": 26.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 32,
+      "dst": 0,
+      "weight": 26.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 0,
+      "weight": 24.875,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 4,
+      "weight": 22.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 4,
+      "weight": 22.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 66,
+      "weight": 18.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 5,
+      "weight": 18.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 5,
+      "weight": 18.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 10,
+      "dst": 1,
+      "weight": 11.188,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 4,
+      "weight": 10.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 32,
+      "weight": 9.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 32,
+      "weight": 9.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 5,
+      "weight": 8.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 67,
+      "weight": 6.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 67,
+      "weight": 6.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 4,
+      "weight": 6.312,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 5,
+      "weight": 5.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 67,
+      "weight": 3.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 32,
+      "weight": 3.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 32,
+      "weight": 3.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 67,
+      "weight": 2.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 1,
+      "dst": 10,
+      "weight": 2.25,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 10,
+      "weight": 2.25,
+      "kind": "dataflow"
+    },
+    {
+      "src": 9,
+      "dst": 1,
+      "weight": 2.25,
+      "kind": "dataflow"
+    },
+    {
+      "src": 66,
+      "dst": 67,
+      "weight": 2.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 32,
+      "weight": 1.75,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 10,
+      "weight": 1.0,
+      "kind": "dataflow"
+    },
+    {
+      "src": 0,
+      "dst": 1,
+      "weight": 0.5,
+      "kind": "dataflow"
+    },
+    {
+      "src": 2,
+      "dst": 1,
+      "weight": 0.375,
+      "kind": "dataflow"
+    }
+  ]
+}

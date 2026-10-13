@@ -1,0 +1,164 @@
+==============================================================================
+RTL-MP CLUSTERED NETLIST  (design: ethernet)
+==============================================================================
+
+Hyperparameters: Params(min_inst=1000, max_inst=5000, min_macro=4, max_macro=12, net_thr=5, virt_w=500)
+
+14 clusters  (12 std-cell, 2 macro)  + 12 bundled IO pins
+
+------------------------------------------------------------------------------
+BUNDLED IO PIN CLUSTERS
+------------------------------------------------------------------------------
+  [  0] PIN_B0   xy=(77.6, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  1] PIN_B1   xy=(232.9, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  2] PIN_B2   xy=(388.1, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  3] PIN_T0   xy=(77.6, 465.8) inputs=   0 outputs=   0 inouts=  0
+  [  4] PIN_T1   xy=(232.9, 465.8) inputs=   0 outputs=   0 inouts=  0
+  [  5] PIN_T2   xy=(388.1, 465.8) inputs=   0 outputs=   0 inouts=  0
+  [  6] PIN_L0   xy=(0.0, 77.6) inputs=   0 outputs=   0 inouts=  0
+  [  7] PIN_L1   xy=(0.0, 232.9) inputs=   7 outputs=   4 inouts=  0
+  [  8] PIN_L2   xy=(0.0, 388.1) inputs=   0 outputs=   0 inouts=  0
+  [  9] PIN_R0   xy=(465.8, 77.6) inputs=   0 outputs=   0 inouts=  0
+  [ 10] PIN_R1   xy=(465.8, 232.9) inputs=  71 outputs=  82 inouts=  0
+  [ 11] PIN_R2   xy=(465.8, 388.1) inputs=  18 outputs=  29 inouts=  0
+------------------------------------------------------------------------------
+MACRO CLUSTERS (grouped by footprint -> regular tilings)
+------------------------------------------------------------------------------
+  [ 23] wishbone/rx_fifo/fifo                                macros= 32 {'RAM16X1D': 32}
+  [ 24] wishbone/tx_fifo/fifo                                macros= 32 {'RAM16X1D': 32}
+
+------------------------------------------------------------------------------
+STD-CELL CLUSTERS (largest 20)
+------------------------------------------------------------------------------
+  [ 29] wishbone/bd_ram.p0.p0.p1                               inst=  4296 area=  11276.3um2
+  [ 39] wishbone/bd_ram.p1.p1.p1                               inst=  3690 area=  12978.1um2
+  [ 38] wishbone/bd_ram.p1.p1.p0                               inst=  3652 area=  10342.3um2
+  [ 36] wishbone/bd_ram.p1.p0.p1                               inst=  3630 area=   7257.3um2
+  [ 35] wishbone/bd_ram.p1.p0.p0                               inst=  3608 area=   5488.4um2
+  [ 28] wishbone/bd_ram.p0.p0.p0                               inst=  3531 area=   7109.6um2
+  [ 31] wishbone/bd_ram.p0.p1.p0                               inst=  3359 area=   5933.4um2
+  [ 18] <top>/glue_logic(+1)                                   inst=  3341 area=   4665.4um2
+  [ 32] wishbone/bd_ram.p0.p1.p1                               inst=  3046 area=   9777.6um2
+  [ 19] wishbone/glue_logic(+2)                                inst=  2370 area=   4856.6um2
+  [ 12] {ethreg1,macstatus1,rxethmac1}                         inst=   427 area=   2266.1um2
+  [ 13] {maccontrol1,txethmac1}                                inst=   222 area=   1179.4um2
+
+------------------------------------------------------------------------------
+STRONGEST DATAFLOW VIRTUAL CONNECTIONS  (Info_Flow / 2^hops)
+------------------------------------------------------------------------------
+          378.00  Pin    :PIN_R1                       <-> Macro  :wishbone/rx_fifo/fifo
+          213.81  Pin    :PIN_R1                       <-> Pin    :PIN_R2
+          146.50  Pin    :PIN_R1                       <-> Macro  :wishbone/tx_fifo/fifo
+           92.06  Pin    :PIN_L1                       <-> Pin    :PIN_R2
+           73.56  Pin    :PIN_L1                       <-> Pin    :PIN_R1
+           72.00  Pin    :PIN_R2                       <-> Macro  :wishbone/rx_fifo/fifo
+           24.00  Pin    :PIN_L1                       <-> Macro  :wishbone/rx_fifo/fifo
+
+------------------------------------------------------------------------------
+STRONGEST REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      3418.0  StdCell:wishbone/bd_ram.p1.p0.p0     <-> StdCell:wishbone/bd_ram.p1.p0.p1
+      3001.0  StdCell:wishbone/bd_ram.p0.p1.p0     <-> StdCell:wishbone/bd_ram.p1.p1.p1
+      2886.0  StdCell:wishbone/bd_ram.p0.p0.p0     <-> StdCell:wishbone/bd_ram.p0.p0.p1
+      2495.0  StdCell:wishbone/bd_ram.p0.p0.p0     <-> StdCell:wishbone/bd_ram.p0.p1.p1
+      2338.0  StdCell:wishbone/bd_ram.p1.p0.p1     <-> StdCell:wishbone/bd_ram.p1.p1.p1
+      1639.0  StdCell:wishbone/bd_ram.p0.p0.p1     <-> StdCell:wishbone/bd_ram.p0.p1.p1
+      1589.0  StdCell:{ethreg1,macstatus1,rxethmac <-> StdCell:<top>/glue_logic(+1)
+      1545.0  StdCell:wishbone/bd_ram.p0.p1.p0     <-> StdCell:wishbone/bd_ram.p1.p1.p0
+      1310.0  StdCell:wishbone/bd_ram.p1.p0.p1     <-> StdCell:wishbone/bd_ram.p1.p1.p0
+      1223.0  StdCell:wishbone/bd_ram.p0.p1.p1     <-> StdCell:wishbone/bd_ram.p1.p1.p1
+      1114.0  StdCell:wishbone/bd_ram.p0.p0.p1     <-> StdCell:wishbone/bd_ram.p1.p1.p1
+      1037.0  StdCell:wishbone/bd_ram.p0.p1.p1     <-> StdCell:wishbone/bd_ram.p1.p1.p0
+       990.0  StdCell:wishbone/bd_ram.p0.p0.p1     <-> StdCell:wishbone/bd_ram.p1.p1.p0
+       926.0  StdCell:wishbone/bd_ram.p0.p1.p1     <-> StdCell:wishbone/bd_ram.p1.p0.p1
+       844.0  StdCell:wishbone/bd_ram.p0.p0.p1     <-> StdCell:wishbone/bd_ram.p1.p0.p1
+       775.0  StdCell:wishbone/bd_ram.p0.p0.p1     <-> StdCell:wishbone/bd_ram.p0.p1.p0
+       724.0  StdCell:{maccontrol1,txethmac1}      <-> StdCell:<top>/glue_logic(+1)
+       636.0  StdCell:wishbone/bd_ram.p0.p0.p0     <-> StdCell:wishbone/bd_ram.p0.p1.p0
+       542.0  StdCell:wishbone/bd_ram.p0.p1.p0     <-> StdCell:wishbone/bd_ram.p1.p0.p1
+       540.0  StdCell:wishbone/bd_ram.p0.p1.p1     <-> StdCell:wishbone/bd_ram.p1.p0.p0
+       369.0  StdCell:wishbone/bd_ram.p1.p1.p0     <-> StdCell:wishbone/bd_ram.p1.p1.p1
+       352.0  StdCell:wishbone/glue_logic(+2)      <-> Macro  :wishbone/tx_fifo/fifo
+       349.0  StdCell:wishbone/bd_ram.p0.p0.p1     <-> StdCell:wishbone/bd_ram.p1.p0.p0
+       320.0  StdCell:wishbone/glue_logic(+2)      <-> Macro  :wishbone/rx_fifo/fifo
+       228.0  Pin    :PIN_R1                       <-> StdCell:{maccontrol1,txethmac1}
+
+------------------------------------------------------------------------------
+MACRO <-> STD-CELL VIRTUAL CONNECTIONS (Step 4, weight=virtual_weight)
+------------------------------------------------------------------------------
+
+==============================================================================
+DIRECTED VIEW  (driver-cluster --> sink-cluster, dataflow direction)
+==============================================================================
+
+DIRECTED IO FLOW SUMMARY
+------------------------------------------------------------------------------
+  Top-level INPUT ports drive their bundled pin clusters into the core.
+  Top-level OUTPUT ports are sinks driven by std-cell or macro clusters.
+  Edges below are aggregated directed star-model net connections.
+
+STRONGEST DIRECTED DATAFLOW CONNECTIONS
+------------------------------------------------------------------------------
+          346.00  Pin    :PIN_R1                       --> Macro  :wishbone/rx_fifo/fifo
+          189.19  Pin    :PIN_R1                       --> Pin    :PIN_R2
+          134.00  Pin    :PIN_R1                       --> Macro  :wishbone/tx_fifo/fifo
+           87.00  Pin    :PIN_L1                       --> Pin    :PIN_R2
+           72.00  Pin    :PIN_R2                       --> Macro  :wishbone/rx_fifo/fifo
+           52.12  Pin    :PIN_L1                       --> Pin    :PIN_R1
+           32.00  Macro  :wishbone/rx_fifo/fifo        --> Pin    :PIN_R1
+           24.62  Pin    :PIN_R2                       --> Pin    :PIN_R1
+           24.00  Pin    :PIN_L1                       --> Macro  :wishbone/rx_fifo/fifo
+           21.44  Pin    :PIN_R1                       --> Pin    :PIN_L1
+           12.50  Macro  :wishbone/tx_fifo/fifo        --> Pin    :PIN_R1
+            5.06  Pin    :PIN_R2                       --> Pin    :PIN_L1
+
+STRONGEST DIRECTED REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      2831.0  StdCell:wishbone/bd_ram.p1.p0.p1     --> StdCell:wishbone/bd_ram.p1.p0.p0
+      2118.0  StdCell:wishbone/bd_ram.p1.p1.p1     --> StdCell:wishbone/bd_ram.p1.p0.p1
+      2003.0  StdCell:wishbone/bd_ram.p0.p0.p0     --> StdCell:wishbone/bd_ram.p0.p0.p1
+      1598.0  StdCell:wishbone/bd_ram.p0.p1.p0     --> StdCell:wishbone/bd_ram.p1.p1.p1
+      1561.0  StdCell:wishbone/bd_ram.p0.p0.p0     --> StdCell:wishbone/bd_ram.p0.p1.p1
+      1403.0  StdCell:wishbone/bd_ram.p1.p1.p1     --> StdCell:wishbone/bd_ram.p0.p1.p0
+      1188.0  StdCell:{ethreg1,macstatus1,rxethmac --> StdCell:<top>/glue_logic(+1)
+      1134.0  StdCell:wishbone/bd_ram.p1.p1.p0     --> StdCell:wishbone/bd_ram.p1.p0.p1
+       934.0  StdCell:wishbone/bd_ram.p0.p1.p1     --> StdCell:wishbone/bd_ram.p0.p0.p0
+       905.0  StdCell:wishbone/bd_ram.p0.p1.p0     --> StdCell:wishbone/bd_ram.p1.p1.p0
+       883.0  StdCell:wishbone/bd_ram.p0.p0.p1     --> StdCell:wishbone/bd_ram.p0.p0.p0
+       872.0  StdCell:wishbone/bd_ram.p0.p0.p1     --> StdCell:wishbone/bd_ram.p0.p1.p1
+       777.0  StdCell:wishbone/bd_ram.p0.p1.p1     --> StdCell:wishbone/bd_ram.p1.p1.p1
+       767.0  StdCell:wishbone/bd_ram.p0.p1.p1     --> StdCell:wishbone/bd_ram.p0.p0.p1
+       739.0  StdCell:wishbone/bd_ram.p0.p0.p1     --> StdCell:wishbone/bd_ram.p1.p1.p0
+       739.0  StdCell:wishbone/bd_ram.p0.p1.p1     --> StdCell:wishbone/bd_ram.p1.p0.p1
+       732.0  StdCell:wishbone/bd_ram.p0.p1.p1     --> StdCell:wishbone/bd_ram.p1.p1.p0
+       727.0  StdCell:wishbone/bd_ram.p0.p0.p1     --> StdCell:wishbone/bd_ram.p1.p1.p1
+       659.0  StdCell:wishbone/bd_ram.p0.p0.p1     --> StdCell:wishbone/bd_ram.p1.p0.p1
+       640.0  StdCell:wishbone/bd_ram.p1.p1.p0     --> StdCell:wishbone/bd_ram.p0.p1.p0
+       589.0  StdCell:wishbone/bd_ram.p0.p0.p0     --> StdCell:wishbone/bd_ram.p0.p1.p0
+       587.0  StdCell:wishbone/bd_ram.p1.p0.p0     --> StdCell:wishbone/bd_ram.p1.p0.p1
+       524.0  StdCell:wishbone/bd_ram.p0.p1.p0     --> StdCell:wishbone/bd_ram.p0.p0.p1
+       518.0  StdCell:{maccontrol1,txethmac1}      --> StdCell:<top>/glue_logic(+1)
+       446.0  StdCell:wishbone/bd_ram.p1.p1.p1     --> StdCell:wishbone/bd_ram.p0.p1.p1
+
+STRONGEST INPUT-PIN --> CORE CONNECTIONS
+------------------------------------------------------------------------------
+       222.0  Pin    :PIN_R1                       --> StdCell:{maccontrol1,txethmac1}
+       185.0  Pin    :PIN_R1                       --> StdCell:wishbone/glue_logic(+2)
+       131.0  Pin    :PIN_R1                       --> StdCell:{ethreg1,macstatus1,rxethmac
+        71.0  Pin    :PIN_R1                       --> StdCell:<top>/glue_logic(+1)
+        61.0  Pin    :PIN_R2                       --> StdCell:<top>/glue_logic(+1)
+        32.0  Pin    :PIN_R1                       --> Macro  :wishbone/tx_fifo/fifo
+        18.0  Pin    :PIN_L1                       --> StdCell:<top>/glue_logic(+1)
+        18.0  Pin    :PIN_R2                       --> StdCell:wishbone/glue_logic(+2)
+         2.0  Pin    :PIN_L1                       --> StdCell:wishbone/glue_logic(+2)
+         2.0  Pin    :PIN_L1                       --> StdCell:wishbone/bd_ram.p0.p0.p0
+         1.0  Pin    :PIN_L1                       --> StdCell:wishbone/bd_ram.p1.p0.p0
+
+STRONGEST CORE --> OUTPUT-PIN CONNECTIONS
+------------------------------------------------------------------------------
+        37.0  StdCell:wishbone/glue_logic(+2)      --> Pin    :PIN_R1
+        32.0  Macro  :wishbone/rx_fifo/fifo        --> Pin    :PIN_R1
+        29.0  StdCell:<top>/glue_logic(+1)         --> Pin    :PIN_R2
+         7.0  StdCell:<top>/glue_logic(+1)         --> Pin    :PIN_R1
+         6.0  StdCell:{maccontrol1,txethmac1}      --> Pin    :PIN_R1
+         4.0  StdCell:<top>/glue_logic(+1)         --> Pin    :PIN_L1

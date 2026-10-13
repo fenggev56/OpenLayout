@@ -1,0 +1,44 @@
+{
+  "design": "vga_lcd",
+  "macros_verilog": 62,
+  "macros_clustered": 62,
+  "clusters": 19,
+  "cluster_sizes": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "rtl_modules_with_macros": 4,
+  "rtl_bank_groups": 5,
+  "bank_group_sizes": [
+    48,
+    8,
+    2,
+    2,
+    2
+  ],
+  "bank_groups_split": 2,
+  "clusters_spanning_modules": 0,
+  "problems": [
+    [
+      "C4",
+      "2 address-sharing macro groups span several clusters (48 macros under line_fifo/fifo_dc_mem/u_mem_slice1 -> 12 clusters; 8 macros under line_fifo/fifo_dc_mem/u_mem_slice1 -> 4 clusters)"
+    ]
+  ]
+}

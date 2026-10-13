@@ -1,0 +1,524 @@
+{
+  "design": "swerv_wrapper",
+  "stats": {
+    "instances": 98067,
+    "macros": 28,
+    "macro_clusters": 3
+  },
+  "macro_in_netlist": [
+    {
+      "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_0__dccm_bank/mem",
+      "type": "fakeram45_2048x39",
+      "width_um": 206.91,
+      "height_um": 219.8,
+      "area_um2": 45478.818,
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_1__dccm_bank/mem",
+      "type": "fakeram45_2048x39",
+      "width_um": 206.91,
+      "height_um": 219.8,
+      "area_um2": 45478.818,
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_2__dccm_bank/mem",
+      "type": "fakeram45_2048x39",
+      "width_um": 206.91,
+      "height_um": 219.8,
+      "area_um2": 45478.818,
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_3__dccm_bank/mem",
+      "type": "fakeram45_2048x39",
+      "width_um": 206.91,
+      "height_um": 219.8,
+      "area_um2": 45478.818,
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_4__dccm_bank/mem",
+      "type": "fakeram45_2048x39",
+      "width_um": 206.91,
+      "height_um": 219.8,
+      "area_um2": 45478.818,
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_5__dccm_bank/mem",
+      "type": "fakeram45_2048x39",
+      "width_um": 206.91,
+      "height_um": 219.8,
+      "area_um2": 45478.818,
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_6__dccm_bank/mem",
+      "type": "fakeram45_2048x39",
+      "width_um": 206.91,
+      "height_um": 219.8,
+      "area_um2": 45478.818,
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_7__dccm_bank/mem",
+      "type": "fakeram45_2048x39",
+      "width_um": 206.91,
+      "height_um": 219.8,
+      "area_um2": 45478.818,
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_0__SUBBANKS_0__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_0__SUBBANKS_1__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_0__SUBBANKS_2__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_0__SUBBANKS_3__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_1__SUBBANKS_0__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_1__SUBBANKS_1__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_1__SUBBANKS_2__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_1__SUBBANKS_3__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_2__SUBBANKS_0__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_2__SUBBANKS_1__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_2__SUBBANKS_2__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_2__SUBBANKS_3__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_3__SUBBANKS_0__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_3__SUBBANKS_1__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_3__SUBBANKS_2__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_data_inst/WAYS_3__SUBBANKS_3__ic_bank_sb_way_data.mem",
+      "type": "fakeram45_256x34",
+      "width_um": 98.42,
+      "height_um": 65.8,
+      "area_um2": 6476.036,
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_tag_inst.WAYS_0__ICACHE_SZ_16_ic_way_tag.mem",
+      "type": "fakeram45_64x21",
+      "width_um": 15.77,
+      "height_um": 60.2,
+      "area_um2": 949.354,
+      "cluster_id": 606,
+      "cluster_name": "mem/icm/ic_tag_inst",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_tag_inst.WAYS_1__ICACHE_SZ_16_ic_way_tag.mem",
+      "type": "fakeram45_64x21",
+      "width_um": 15.77,
+      "height_um": 60.2,
+      "area_um2": 949.354,
+      "cluster_id": 606,
+      "cluster_name": "mem/icm/ic_tag_inst",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_tag_inst.WAYS_2__ICACHE_SZ_16_ic_way_tag.mem",
+      "type": "fakeram45_64x21",
+      "width_um": 15.77,
+      "height_um": 60.2,
+      "area_um2": 949.354,
+      "cluster_id": 606,
+      "cluster_name": "mem/icm/ic_tag_inst",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "mem/icm/ic_tag_inst.WAYS_3__ICACHE_SZ_16_ic_way_tag.mem",
+      "type": "fakeram45_64x21",
+      "width_um": 15.77,
+      "height_um": 60.2,
+      "area_um2": 949.354,
+      "cluster_id": 606,
+      "cluster_name": "mem/icm/ic_tag_inst",
+      "cluster_type": "Macro"
+    }
+  ],
+  "macro_clusters": [
+    {
+      "cluster_id": 604,
+      "cluster_name": "mem/Gen_dccm_enable_dccm/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_2048x39": 8
+      },
+      "area_um2": 363830.544,
+      "macros": [
+        {
+          "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_0__dccm_bank/mem",
+          "type": "fakeram45_2048x39",
+          "width_um": 206.91,
+          "height_um": 219.8,
+          "area_um2": 45478.818
+        },
+        {
+          "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_1__dccm_bank/mem",
+          "type": "fakeram45_2048x39",
+          "width_um": 206.91,
+          "height_um": 219.8,
+          "area_um2": 45478.818
+        },
+        {
+          "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_2__dccm_bank/mem",
+          "type": "fakeram45_2048x39",
+          "width_um": 206.91,
+          "height_um": 219.8,
+          "area_um2": 45478.818
+        },
+        {
+          "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_3__dccm_bank/mem",
+          "type": "fakeram45_2048x39",
+          "width_um": 206.91,
+          "height_um": 219.8,
+          "area_um2": 45478.818
+        },
+        {
+          "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_4__dccm_bank/mem",
+          "type": "fakeram45_2048x39",
+          "width_um": 206.91,
+          "height_um": 219.8,
+          "area_um2": 45478.818
+        },
+        {
+          "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_5__dccm_bank/mem",
+          "type": "fakeram45_2048x39",
+          "width_um": 206.91,
+          "height_um": 219.8,
+          "area_um2": 45478.818
+        },
+        {
+          "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_6__dccm_bank/mem",
+          "type": "fakeram45_2048x39",
+          "width_um": 206.91,
+          "height_um": 219.8,
+          "area_um2": 45478.818
+        },
+        {
+          "real_name": "mem/Gen_dccm_enable_dccm/mem_bank_7__dccm_bank/mem",
+          "type": "fakeram45_2048x39",
+          "width_um": 206.91,
+          "height_um": 219.8,
+          "area_um2": 45478.818
+        }
+      ]
+    },
+    {
+      "cluster_id": 608,
+      "cluster_name": "mem/icm/ic_data_inst/WAYS_{0__SUBBANKS_0,0__SUBBANKS_1,0__SUBBANKS_2,...+13}__ic_bank_sb_way_data",
+      "cluster_type": "Macro",
+      "macro_count": 16,
+      "macro_types": {
+        "fakeram45_256x34": 16
+      },
+      "area_um2": 103616.576,
+      "macros": [
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_0__SUBBANKS_0__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_0__SUBBANKS_1__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_0__SUBBANKS_2__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_0__SUBBANKS_3__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_1__SUBBANKS_0__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_1__SUBBANKS_1__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_1__SUBBANKS_2__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_1__SUBBANKS_3__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_2__SUBBANKS_0__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_2__SUBBANKS_1__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_2__SUBBANKS_2__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_2__SUBBANKS_3__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_3__SUBBANKS_0__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_3__SUBBANKS_1__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_3__SUBBANKS_2__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        },
+        {
+          "real_name": "mem/icm/ic_data_inst/WAYS_3__SUBBANKS_3__ic_bank_sb_way_data.mem",
+          "type": "fakeram45_256x34",
+          "width_um": 98.42,
+          "height_um": 65.8,
+          "area_um2": 6476.036
+        }
+      ]
+    },
+    {
+      "cluster_id": 606,
+      "cluster_name": "mem/icm/ic_tag_inst",
+      "cluster_type": "Macro",
+      "macro_count": 4,
+      "macro_types": {
+        "fakeram45_64x21": 4
+      },
+      "area_um2": 3797.416,
+      "macros": [
+        {
+          "real_name": "mem/icm/ic_tag_inst.WAYS_0__ICACHE_SZ_16_ic_way_tag.mem",
+          "type": "fakeram45_64x21",
+          "width_um": 15.77,
+          "height_um": 60.2,
+          "area_um2": 949.354
+        },
+        {
+          "real_name": "mem/icm/ic_tag_inst.WAYS_1__ICACHE_SZ_16_ic_way_tag.mem",
+          "type": "fakeram45_64x21",
+          "width_um": 15.77,
+          "height_um": 60.2,
+          "area_um2": 949.354
+        },
+        {
+          "real_name": "mem/icm/ic_tag_inst.WAYS_2__ICACHE_SZ_16_ic_way_tag.mem",
+          "type": "fakeram45_64x21",
+          "width_um": 15.77,
+          "height_um": 60.2,
+          "area_um2": 949.354
+        },
+        {
+          "real_name": "mem/icm/ic_tag_inst.WAYS_3__ICACHE_SZ_16_ic_way_tag.mem",
+          "type": "fakeram45_64x21",
+          "width_um": 15.77,
+          "height_um": 60.2,
+          "area_um2": 949.354
+        }
+      ]
+    }
+  ]
+}

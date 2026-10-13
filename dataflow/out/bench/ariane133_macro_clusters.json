@@ -1,0 +1,2424 @@
+{
+  "design": "ariane133",
+  "stats": {
+    "instances": 168039,
+    "macros": 132,
+    "macro_clusters": 14
+  },
+  "macro_in_netlist": [
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_icache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_3",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_0",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_1",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    },
+    {
+      "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_2",
+      "type": "fakeram45_256x16",
+      "width_um": 77.71,
+      "height_um": 40.6,
+      "area_um2": 3155.026,
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro"
+    }
+  ],
+  "macro_clusters": [
+    {
+      "cluster_id": 150,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 152,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 154,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 156,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 158,
+      "cluster_name": "i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}__tag_sram",
+      "cluster_type": "Macro",
+      "macro_count": 12,
+      "macro_types": {
+        "fakeram45_256x16": 12
+      },
+      "area_um2": 37860.312,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_icache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 160,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 162,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 164,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 166,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 168,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 170,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 172,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 174,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/macros",
+      "cluster_type": "Macro",
+      "macro_count": 8,
+      "macro_types": {
+        "fakeram45_256x16": 8
+      },
+      "area_um2": 25240.208,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_0__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__data_sram/genblk1_1__i_ram/macro_mem_3",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    },
+    {
+      "cluster_id": 47,
+      "cluster_name": "i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5}__tag_sram",
+      "cluster_type": "Macro",
+      "macro_count": 24,
+      "macro_types": {
+        "fakeram45_256x16": 24
+      },
+      "area_um2": 75720.624,
+      "macros": [
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_0__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_1__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_2__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_3__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_4__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_5__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_6__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_0",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_1",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        },
+        {
+          "real_name": "i_cache_subsystem/i_nbdcache/sram_block_7__tag_sram.genblk1_0__i_ram.macro_mem_2",
+          "type": "fakeram45_256x16",
+          "width_um": 77.71,
+          "height_um": 40.6,
+          "area_um2": 3155.026
+        }
+      ]
+    }
+  ]
+}

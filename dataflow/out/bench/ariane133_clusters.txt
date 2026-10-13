@@ -1,0 +1,229 @@
+==============================================================================
+RTL-MP CLUSTERED NETLIST  (design: ariane133)
+==============================================================================
+
+Hyperparameters: Params(min_inst=1000, max_inst=5000, min_macro=4, max_macro=12, net_thr=5, virt_w=500)
+
+62 clusters  (48 std-cell, 14 macro)  + 12 bundled IO pins
+
+------------------------------------------------------------------------------
+BUNDLED IO PIN CLUSTERS
+------------------------------------------------------------------------------
+  [  0] PIN_B0   xy=(190.3, 0.0) inputs=   4 outputs=   0 inouts=  0
+  [  1] PIN_B1   xy=(571.0, 0.0) inputs=  91 outputs=   0 inouts=  0
+  [  2] PIN_B2   xy=(951.7, 0.0) inputs=   0 outputs=   0 inouts=  0
+  [  3] PIN_T0   xy=(190.3, 1142.0) inputs=   0 outputs=   0 inouts=  0
+  [  4] PIN_T1   xy=(571.0, 1142.0) inputs=   0 outputs=   0 inouts=  0
+  [  5] PIN_T2   xy=(951.7, 1142.0) inputs=   0 outputs=   0 inouts=  0
+  [  6] PIN_L0   xy=(0.0, 190.3) inputs=   0 outputs=   0 inouts=  0
+  [  7] PIN_L1   xy=(0.0, 571.0) inputs= 122 outputs=  78 inouts=  0
+  [  8] PIN_L2   xy=(0.0, 951.7) inputs=   0 outputs=   0 inouts=  0
+  [  9] PIN_R0   xy=(1142.0, 190.3) inputs=   0 outputs=   0 inouts=  0
+  [ 10] PIN_R1   xy=(1142.0, 571.0) inputs=   0 outputs= 200 inouts=  0
+  [ 11] PIN_R2   xy=(1142.0, 951.7) inputs=   0 outputs=   0 inouts=  0
+------------------------------------------------------------------------------
+MACRO CLUSTERS (grouped by footprint -> regular tilings)
+------------------------------------------------------------------------------
+  [ 47] i_cache_subsystem/i_nbdcache/sram_block_{0,1,2,...+5 macros= 24 {'fakeram45_256x16': 24}
+  [158] i_cache_subsystem/i_icache/sram_block_{0,1,2,...+1}_ macros= 12 {'fakeram45_256x16': 12}
+  [150] i_cache_subsystem/i_icache/sram_block_0__data_sram/m macros=  8 {'fakeram45_256x16': 8}
+  [152] i_cache_subsystem/i_icache/sram_block_1__data_sram/m macros=  8 {'fakeram45_256x16': 8}
+  [154] i_cache_subsystem/i_icache/sram_block_2__data_sram/m macros=  8 {'fakeram45_256x16': 8}
+  [156] i_cache_subsystem/i_icache/sram_block_3__data_sram/m macros=  8 {'fakeram45_256x16': 8}
+  [160] i_cache_subsystem/i_nbdcache/sram_block_0__data_sram macros=  8 {'fakeram45_256x16': 8}
+  [162] i_cache_subsystem/i_nbdcache/sram_block_1__data_sram macros=  8 {'fakeram45_256x16': 8}
+  [164] i_cache_subsystem/i_nbdcache/sram_block_2__data_sram macros=  8 {'fakeram45_256x16': 8}
+  [166] i_cache_subsystem/i_nbdcache/sram_block_3__data_sram macros=  8 {'fakeram45_256x16': 8}
+  [168] i_cache_subsystem/i_nbdcache/sram_block_4__data_sram macros=  8 {'fakeram45_256x16': 8}
+  [170] i_cache_subsystem/i_nbdcache/sram_block_5__data_sram macros=  8 {'fakeram45_256x16': 8}
+  [172] i_cache_subsystem/i_nbdcache/sram_block_6__data_sram macros=  8 {'fakeram45_256x16': 8}
+  [174] i_cache_subsystem/i_nbdcache/sram_block_7__data_sram macros=  8 {'fakeram45_256x16': 8}
+
+------------------------------------------------------------------------------
+STD-CELL CLUSTERS (largest 20)
+------------------------------------------------------------------------------
+  [104] issue_stage_i/i_scoreboard(+2).p0.p0.p0                inst=  4907 area=   8218.6um2
+  [ 89] i_frontend/glue_logic(+2).p0                           inst=  4864 area=   7244.5um2
+  [ 90] i_frontend/glue_logic(+2).p1                           inst=  4845 area=   7224.0um2
+  [ 28] ex_stage_i/i_mult/glue_logic(+1)                       inst=  4408 area=   6181.0um2
+  [ 84] csr_regfile_i.p1                                       inst=  4397 area=   7515.0um2
+  [ 83] csr_regfile_i.p0                                       inst=  4251 area=   7770.7um2
+  [115] issue_stage_i/i_scoreboard(+2).p1.p1.p1                inst=  4159 area=   6693.4um2
+  [107] issue_stage_i/i_scoreboard(+2).p0.p1.p0                inst=  4139 area=   8075.5um2
+  [112] issue_stage_i/i_scoreboard(+2).p1.p0.p1                inst=  4086 area=   6447.6um2
+  [ 62] i_cache_subsystem/i_nbdcache/glue_logic(+3)            inst=  4075 area=   6002.6um2
+  [114] issue_stage_i/i_scoreboard(+2).p1.p1.p0                inst=  4051 area=   7778.6um2
+  [105] issue_stage_i/i_scoreboard(+2).p0.p0.p1                inst=  4015 area=   4769.6um2
+  [122] ex_stage_i/i_mult/i_multiplier.p1.p1                   inst=  3938 area=   7179.1um2
+  [108] issue_stage_i/i_scoreboard(+2).p0.p1.p1                inst=  3924 area=   7831.8um2
+  [111] issue_stage_i/i_scoreboard(+2).p1.p0.p0                inst=  3877 area=   5415.5um2
+  [121] ex_stage_i/i_mult/i_multiplier.p1.p0                   inst=  3829 area=   6990.2um2
+  [118] ex_stage_i/i_mult/i_multiplier.p0.p0                   inst=  3789 area=   9210.8um2
+  [100] i_frontend/i_btb.p1.p1                                 inst=  3786 area=  12104.6um2
+  [ 96] i_frontend/i_btb.p0.p0                                 inst=  3769 area=   7847.0um2
+  [ 99] i_frontend/i_btb.p1.p0                                 inst=  3630 area=   6871.3um2
+
+------------------------------------------------------------------------------
+STRONGEST DATAFLOW VIRTUAL CONNECTIONS  (Info_Flow / 2^hops)
+------------------------------------------------------------------------------
+         4005.25  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         2336.25  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         2336.25  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         2336.25  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         2336.25  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         2263.25  Pin    :PIN_B1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         1440.00  Macro  :i_cache_subsystem/i_icache/s <-> Macro  :i_cache_subsystem/i_icache/s
+         1440.00  Macro  :i_cache_subsystem/i_icache/s <-> Macro  :i_cache_subsystem/i_icache/s
+         1440.00  Macro  :i_cache_subsystem/i_icache/s <-> Macro  :i_cache_subsystem/i_icache/s
+         1440.00  Macro  :i_cache_subsystem/i_icache/s <-> Macro  :i_cache_subsystem/i_icache/s
+         1237.50  Pin    :PIN_B1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         1237.50  Pin    :PIN_B1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         1237.50  Pin    :PIN_B1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         1237.50  Pin    :PIN_B1                       <-> Macro  :i_cache_subsystem/i_icache/s
+         1126.75  Pin    :PIN_L1                       <-> Pin    :PIN_R1
+          720.00  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+          347.94  Pin    :PIN_B1                       <-> Pin    :PIN_L1
+          264.50  Pin    :PIN_B1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       <-> Macro  :i_cache_subsystem/i_nbdcache
+
+------------------------------------------------------------------------------
+STRONGEST REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      3483.0  StdCell:csr_regfile_i.p0             <-> StdCell:csr_regfile_i.p1
+      3315.0  StdCell:i_frontend/i_btb.p0.p0       <-> StdCell:i_frontend/i_btb.p0.p1
+      3025.0  StdCell:i_frontend/i_btb.p1.p0       <-> StdCell:i_frontend/i_btb.p1.p1
+      3016.0  StdCell:issue_stage_i/i_issue_read_o <-> StdCell:issue_stage_i/i_issue_read_o
+      2755.0  StdCell:i_frontend/i_btb.p0.p1       <-> StdCell:i_frontend/i_btb.p1.p1
+      2719.0  StdCell:issue_stage_i/i_issue_read_o <-> StdCell:issue_stage_i/i_issue_read_o
+      2676.0  StdCell:i_frontend/i_btb.p0.p1       <-> StdCell:i_frontend/i_btb.p1.p0
+      2592.0  StdCell:issue_stage_i/i_scoreboard(+ <-> StdCell:issue_stage_i/i_scoreboard(+
+      2401.0  StdCell:ex_stage_i/i_mult/i_multipli <-> StdCell:ex_stage_i/i_mult/i_multipli
+      2279.0  StdCell:issue_stage_i/i_scoreboard(+ <-> StdCell:issue_stage_i/i_scoreboard(+
+      2254.0  StdCell:i_perf_counters.p0           <-> StdCell:i_perf_counters.p1
+      2082.0  StdCell:i_frontend/i_fetch_fifo/i_fi <-> StdCell:i_frontend/i_fetch_fifo/i_fi
+      1950.0  StdCell:issue_stage_i/i_issue_read_o <-> StdCell:issue_stage_i/i_issue_read_o
+      1812.0  StdCell:ex_stage_i/i_mult/i_multipli <-> StdCell:ex_stage_i/i_mult/i_multipli
+      1789.0  StdCell:i_cache_subsystem/i_nbdcache <-> StdCell:i_cache_subsystem/i_nbdcache
+      1746.0  StdCell:ex_stage_i/lsu_i/i_mmu/i_itl <-> StdCell:ex_stage_i/lsu_i/i_mmu/i_itl
+      1746.0  StdCell:ex_stage_i/lsu_i/i_mmu/i_dtl <-> StdCell:ex_stage_i/lsu_i/i_mmu/i_dtl
+      1716.0  StdCell:ex_stage_i/i_mult/i_multipli <-> StdCell:ex_stage_i/i_mult/i_multipli
+      1689.0  StdCell:i_cache_subsystem/i_nbdcache <-> StdCell:i_cache_subsystem/i_nbdcache
+      1569.0  StdCell:issue_stage_i/i_issue_read_o <-> StdCell:issue_stage_i/i_issue_read_o
+      1482.0  StdCell:i_frontend/glue_logic(+2).p0 <-> StdCell:i_frontend/glue_logic(+2).p1
+      1424.0  StdCell:issue_stage_i/i_scoreboard(+ <-> StdCell:issue_stage_i/i_scoreboard(+
+      1335.0  StdCell:issue_stage_i/i_scoreboard(+ <-> StdCell:issue_stage_i/i_scoreboard(+
+      1216.0  StdCell:issue_stage_i/i_scoreboard(+ <-> StdCell:issue_stage_i/i_scoreboard(+
+      1172.0  StdCell:issue_stage_i/i_issue_read_o <-> StdCell:issue_stage_i/i_scoreboard(+
+
+------------------------------------------------------------------------------
+MACRO <-> STD-CELL VIRTUAL CONNECTIONS (Step 4, weight=virtual_weight)
+------------------------------------------------------------------------------
+     500.0  Macro  :i_cache_subsystem/i_icache/s <-> StdCell:i_cache_subsystem/i_icache/g
+     500.0  Macro  :i_cache_subsystem/i_icache/s <-> StdCell:i_cache_subsystem/i_icache/g
+     500.0  Macro  :i_cache_subsystem/i_icache/s <-> StdCell:i_cache_subsystem/i_icache/g
+     500.0  Macro  :i_cache_subsystem/i_icache/s <-> StdCell:i_cache_subsystem/i_icache/g
+     500.0  StdCell:i_cache_subsystem/i_icache/g <-> Macro  :i_cache_subsystem/i_icache/s
+     500.0  StdCell:i_cache_subsystem/i_nbdcache <-> Macro  :i_cache_subsystem/i_nbdcache
+     500.0  StdCell:i_cache_subsystem/i_nbdcache <-> Macro  :i_cache_subsystem/i_nbdcache
+     500.0  StdCell:i_cache_subsystem/i_nbdcache <-> Macro  :i_cache_subsystem/i_nbdcache
+     500.0  StdCell:i_cache_subsystem/i_nbdcache <-> Macro  :i_cache_subsystem/i_nbdcache
+     500.0  StdCell:i_cache_subsystem/i_nbdcache <-> Macro  :i_cache_subsystem/i_nbdcache
+     500.0  StdCell:i_cache_subsystem/i_nbdcache <-> Macro  :i_cache_subsystem/i_nbdcache
+     500.0  StdCell:i_cache_subsystem/i_nbdcache <-> Macro  :i_cache_subsystem/i_nbdcache
+     500.0  StdCell:i_cache_subsystem/i_nbdcache <-> Macro  :i_cache_subsystem/i_nbdcache
+
+==============================================================================
+DIRECTED VIEW  (driver-cluster --> sink-cluster, dataflow direction)
+==============================================================================
+
+DIRECTED IO FLOW SUMMARY
+------------------------------------------------------------------------------
+  Top-level INPUT ports drive their bundled pin clusters into the core.
+  Top-level OUTPUT ports are sinks driven by std-cell or macro clusters.
+  Edges below are aggregated directed star-model net connections.
+
+STRONGEST DIRECTED DATAFLOW CONNECTIONS
+------------------------------------------------------------------------------
+         3688.00  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_icache/s
+         2336.25  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_icache/s
+         2336.25  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_icache/s
+         2336.25  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_icache/s
+         2336.25  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_icache/s
+         2263.25  Pin    :PIN_B1                       --> Macro  :i_cache_subsystem/i_icache/s
+         1440.00  Macro  :i_cache_subsystem/i_icache/s --> Macro  :i_cache_subsystem/i_icache/s
+         1440.00  Macro  :i_cache_subsystem/i_icache/s --> Macro  :i_cache_subsystem/i_icache/s
+         1440.00  Macro  :i_cache_subsystem/i_icache/s --> Macro  :i_cache_subsystem/i_icache/s
+         1440.00  Macro  :i_cache_subsystem/i_icache/s --> Macro  :i_cache_subsystem/i_icache/s
+         1237.50  Pin    :PIN_B1                       --> Macro  :i_cache_subsystem/i_icache/s
+         1237.50  Pin    :PIN_B1                       --> Macro  :i_cache_subsystem/i_icache/s
+         1237.50  Pin    :PIN_B1                       --> Macro  :i_cache_subsystem/i_icache/s
+         1237.50  Pin    :PIN_B1                       --> Macro  :i_cache_subsystem/i_icache/s
+         1126.75  Pin    :PIN_L1                       --> Pin    :PIN_R1
+          544.00  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_nbdcache
+          347.94  Pin    :PIN_B1                       --> Pin    :PIN_L1
+          317.25  Macro  :i_cache_subsystem/i_icache/s --> Pin    :PIN_L1
+          264.50  Pin    :PIN_B1                       --> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_nbdcache
+          235.00  Pin    :PIN_L1                       --> Macro  :i_cache_subsystem/i_nbdcache
+
+STRONGEST DIRECTED REAL (BUNDLED) CONNECTIONS
+------------------------------------------------------------------------------
+      2072.0  StdCell:i_frontend/i_btb.p0.p1       --> StdCell:i_frontend/i_btb.p0.p0
+      1863.0  StdCell:i_frontend/i_btb.p1.p0       --> StdCell:i_frontend/i_btb.p1.p1
+      1765.0  StdCell:csr_regfile_i.p0             --> StdCell:csr_regfile_i.p1
+      1761.0  StdCell:issue_stage_i/i_issue_read_o --> StdCell:issue_stage_i/i_issue_read_o
+      1732.0  StdCell:i_frontend/i_btb.p1.p1       --> StdCell:i_frontend/i_btb.p0.p1
+      1718.0  StdCell:csr_regfile_i.p1             --> StdCell:csr_regfile_i.p0
+      1660.0  StdCell:issue_stage_i/i_issue_read_o --> StdCell:issue_stage_i/i_issue_read_o
+      1549.0  StdCell:i_frontend/i_btb.p1.p0       --> StdCell:i_frontend/i_btb.p0.p1
+      1475.0  StdCell:i_frontend/i_fetch_fifo/i_fi --> StdCell:i_frontend/i_fetch_fifo/i_fi
+      1375.0  StdCell:issue_stage_i/i_scoreboard(+ --> StdCell:issue_stage_i/i_scoreboard(+
+      1356.0  StdCell:issue_stage_i/i_issue_read_o --> StdCell:issue_stage_i/i_issue_read_o
+      1344.0  StdCell:ex_stage_i/i_mult/i_multipli --> StdCell:ex_stage_i/i_mult/i_multipli
+      1304.0  StdCell:issue_stage_i/i_scoreboard(+ --> StdCell:issue_stage_i/i_scoreboard(+
+      1288.0  StdCell:issue_stage_i/i_scoreboard(+ --> StdCell:issue_stage_i/i_scoreboard(+
+      1243.0  StdCell:i_frontend/i_btb.p0.p0       --> StdCell:i_frontend/i_btb.p0.p1
+      1216.0  StdCell:i_perf_counters.p1           --> StdCell:i_perf_counters.p0
+      1172.0  StdCell:issue_stage_i/i_scoreboard(+ --> StdCell:issue_stage_i/i_issue_read_o
+      1162.0  StdCell:i_frontend/i_btb.p1.p1       --> StdCell:i_frontend/i_btb.p1.p0
+      1127.0  StdCell:i_frontend/i_btb.p0.p1       --> StdCell:i_frontend/i_btb.p1.p0
+      1122.0  StdCell:ex_stage_i/lsu_i/i_mmu/i_itl --> StdCell:ex_stage_i/lsu_i/i_mmu/i_itl
+      1122.0  StdCell:ex_stage_i/lsu_i/i_mmu/i_dtl --> StdCell:ex_stage_i/lsu_i/i_mmu/i_dtl
+      1057.0  StdCell:ex_stage_i/i_mult/i_multipli --> StdCell:ex_stage_i/i_mult/i_multipli
+      1051.0  StdCell:ex_stage_i/i_mult/i_multipli --> StdCell:ex_stage_i/i_mult/i_multipli
+      1041.0  StdCell:issue_stage_i/i_issue_read_o --> StdCell:issue_stage_i/i_issue_read_o
+      1038.0  StdCell:i_perf_counters.p0           --> StdCell:i_perf_counters.p1
+
+STRONGEST INPUT-PIN --> CORE CONNECTIONS
+------------------------------------------------------------------------------
+       144.0  Pin    :PIN_L1                       --> StdCell:i_cache_subsystem/i_nbdcache
+       130.0  Pin    :PIN_L1                       --> StdCell:i_cache_subsystem/i_icache/g
+        99.0  Pin    :PIN_L1                       --> StdCell:csr_regfile_i.p0
+        67.0  Pin    :PIN_L1                       --> StdCell:i_cache_subsystem/i_nbdcache
+        64.0  Pin    :PIN_B1                       --> StdCell:csr_regfile_i.p1
+        60.0  Pin    :PIN_L1                       --> StdCell:i_cache_subsystem/i_nbdcache
+        50.0  Pin    :PIN_B1                       --> StdCell:csr_regfile_i.p0
+        32.0  Pin    :PIN_L1                       --> StdCell:i_frontend/glue_logic(+2).p1
+        18.0  Pin    :PIN_B1                       --> StdCell:i_frontend/glue_logic(+2).p1
+        14.0  Pin    :PIN_L1                       --> StdCell:i_frontend/glue_logic(+2).p0
+        11.0  Pin    :PIN_L1                       --> StdCell:i_cache_subsystem/i_nbdcache
+         4.0  Pin    :PIN_B1                       --> StdCell:i_frontend/glue_logic(+2).p0
+         1.0  Pin    :PIN_B1                       --> StdCell:<top>/glue_logic(+2)
+
+STRONGEST CORE --> OUTPUT-PIN CONNECTIONS
+------------------------------------------------------------------------------
+       134.0  StdCell:i_cache_subsystem/i_nbdcache --> Pin    :PIN_R1
+        77.0  StdCell:i_cache_subsystem/i_nbdcache --> Pin    :PIN_L1
+        65.0  StdCell:i_cache_subsystem/i_nbdcache --> Pin    :PIN_R1
+         1.0  StdCell:i_cache_subsystem/i_nbdcache --> Pin    :PIN_L1
+         1.0  StdCell:i_cache_subsystem/i_nbdcache --> Pin    :PIN_R1
