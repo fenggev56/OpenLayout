@@ -1,15 +1,30 @@
 # OpenLayout (open-source)
 
-Multi-agent physical design flow on **OpenROAD** (Nangate45).
-Merges the macro-placement optimization project (`macroflow`, Planner /
-Placer / Checker VLM agents) into the OpenLayout whole-flow multi-agent
-framework, rebuilt on open-source tools only.
+**End-to-end physical design done by AI.** OpenLayout lets AI agents take a
+netlist from floorplan to a routed, timing-clean layout on **OpenROAD**
+(Nangate45) — no human in the loop. The agents plan macro placement, run
+every stage, read the reports and layout images, diagnose what went wrong,
+and iterate until the design goal (timing met, DRC clean, …) is reached or
+the budget is spent. The open-source tools do the computation; the AI does
+the engineering judgment.
 
 ```
 floorplan -> macro_place -> detail_place -> cts -> route -> finish
               (candidate                (each stage: Worker -> Debugger -> Optimizer)
                sampling)
 ```
+
+The same flow can be driven two ways (details in [Two ways to run](#two-ways-to-run)):
+
+1. **API-driven framework** (`run_openlayout.py`) — a Python orchestrator
+   calls an LLM through an OpenAI-compatible API for every agent decision.
+2. **Coding-agent driven** (`Instructions/macro_placement_loop.md`) — a
+   coding agent such as Claude Code or Codex *is* the Planner / Checker /
+   Optimizer: it reads the skills, runs OpenROAD, looks at the images and
+   closes the optimization loop itself.
+
+Both share the same skill library and the same gates, so results are
+comparable.
 
 - **macro_place**: samples N macro-placement candidates (macroflow), gets
   PPA/DRC feedback for each from the *same simple downstream scripts*
@@ -40,7 +55,9 @@ floorplan -> macro_place -> detail_place -> cts -> route -> finish
 ## Showcase
 
 Macro placement of **ariane133** (Nangate45, 60% utilization, core aspect
-ratio 2:1) by ten methods. Each panel shows the macro placement result and
+ratio 2:1) by ten methods. The OpenLayout result was produced entirely by
+the AI agents — placement, downstream flow, checking and optimization
+loop — with no manual intervention. Each panel shows the macro placement result and
 its post-route outcome: `failed` means the downstream flow could not
 converge (DRC / timing), otherwise the total negative slack (TNS) and DRC
 count are given. The last panel is the fully routed layout of the
@@ -69,7 +86,9 @@ tasks: `ariane133`, `ariane81`, `bp_be`, `bp_fe`, `ethernet`, `swerv_wrapper`,
 `vga_lcd`, `VeriGPU`. See [`Benchmark/README.md`](Benchmark/README.md) for the
 design table (top module names, macro counts, clock periods) and layout.
 
-## Run
+## Two ways to run
+
+### 1. API-driven framework
 
 An OpenAI-compatible API key is required for the LLM agents — export
 `$OPENAI_API_KEY`, or see [`API_key/README.md`](API_key/README.md) for the
@@ -80,6 +99,31 @@ python run_openlayout.py --config configs/bp_fe.yaml            # whole flow
 python run_openlayout.py --config configs/bp_fe.yaml --stages detail_place cts
 python run_openlayout.py --config configs/bp_fe.yaml --no-llm   # worker-only
 ```
+
+### 2. Coding-agent driven (Claude Code / Codex)
+
+No API glue: the coding agent itself plans, places, checks, and optimizes,
+following the prompt in
+[`Instructions/macro_placement_loop.md`](Instructions/macro_placement_loop.md).
+It uses the same `skills/skills_Nangate45/` library (init, planner, checker,
+detail place, CTS+route, PPA checker, optimizer) and the same two gates:
+
+```
+Info -> Plan -> Macro place -> [Gate A: placement check] -> Detail place
+     -> CTS + Route -> [Gate B: timing/DRC] -> Optimizer -> back to Plan
+```
+
+```bash
+cd OpenLayout
+claude      # or: codex
+> Read Instructions/macro_placement_loop.md and run it with DESIGN=bp_fe ASPECT=ar2.
+```
+
+The prompt fixes the fairness rules (only macro placement and halo are
+optimized; downstream stages stay at skill defaults), the refinement budgets
+(2 for Gate A, 4 for Gate B), and the deliverables (stage images, routed
+ODB, per-iteration summary, runtime breakdown). Only the input variables at
+the top of the file change between designs.
 
 ## Config (`configs/<design>.yaml`)
 
@@ -128,4 +172,7 @@ macroflow/ + run_flow.py merged macro-placement system
 legalize.py              force-directed macro legalizer (used by both systems)
 Digital_lib/Nangate45/   PDK files (std-cell lib, tech LEF, cell LEF) — tech.dir
 configs/bp_fe.yaml       reference design config (budgets=3, goal=timing+DRC)
+Instructions/            prompts for coding agents (Claude Code / Codex) that
+                         run the optimization loop without the API framework
+docs/images/             figures used in this README
 ```
