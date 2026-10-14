@@ -44,11 +44,11 @@ ratio 2:1) by ten methods. Each panel shows the macro placement result and
 its post-route outcome: `failed` means the downstream flow could not
 converge (DRC / timing), otherwise the total negative slack (TNS) and DRC
 count are given. The last panel is the fully routed layout of the
-PlaceReasoner-Beta result (TNS = -0.08 ns, DRC = 0).
+OpenLayout result (TNS = -0.08 ns, DRC = 0).
 
 <p align="center">
-  <img src="docs/images/ariane133_ar2_qwen30B_layout.png"
-       alt="Macro placement comparison on ariane133 (aspect ratio 2:1): SA, ChiPFormer, DREAMPlace, RTL-MP, Qwen3-VL-8B, Qwen3-VL-30B, CWS, CWI, PlaceReasoner-Beta, and the routed PlaceReasoner-Beta layout"
+  <img src="docs/images/ariane133_ar2_layout.png"
+       alt="Macro placement comparison on ariane133 (aspect ratio 2:1): SA, ChiPFormer, DREAMPlace, RTL-MP, Qwen3-VL-8B, Qwen3-VL-30B, CWS, CWI, OpenLayout, and the routed OpenLayout layout"
        width="90%">
 </p>
 
