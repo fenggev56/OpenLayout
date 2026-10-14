@@ -37,6 +37,21 @@ floorplan -> macro_place -> detail_place -> cts -> route -> finish
 - Layout images are taken through the `image_snapshot` skill
   (`skills/skills_openroad_flow/image_snapshot/`) after every stage.
 
+## Showcase
+
+Macro placement of **ariane133** (Nangate45, 60% utilization, core aspect
+ratio 2:1) by ten methods. Each panel shows the macro placement result and
+its post-route outcome: `failed` means the downstream flow could not
+converge (DRC / timing), otherwise the total negative slack (TNS) and DRC
+count are given. The last panel is the fully routed layout of the
+PlaceReasoner-Beta result (TNS = -0.08 ns, DRC = 0).
+
+<p align="center">
+  <img src="docs/images/ariane133_ar2_qwen30B_layout.png"
+       alt="Macro placement comparison on ariane133 (aspect ratio 2:1): SA, ChiPFormer, DREAMPlace, RTL-MP, Qwen3-VL-8B, Qwen3-VL-30B, CWS, CWI, PlaceReasoner-Beta, and the routed PlaceReasoner-Beta layout"
+       width="90%">
+</p>
+
 ## Benchmark data
 
 The design data is **not** in this repository (~589 MB). Fetch it from
