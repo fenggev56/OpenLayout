@@ -183,3 +183,16 @@ Instructions/            prompts for coding agents (Claude Code / Codex) that
                          run the optimization loop without the API framework
 docs/images/             figures used in this README
 ```
+
+## Citation
+
+If you use this code of OpenLayout, please cite:
+
+```bibtex
+@article{li2026openlayout,
+  title={OpenLayout: An Open and Agentic-Driven Platform for Holistic VLSI Physical Design and Benchmarking},
+  author={Li, Qiufeng and Tang, Sizhe and Cheng, Quan and Wang, Zirui and Li, Wantong and Lan, Tian and Cao, Weidong},
+  journal={arXiv preprint arXiv:2611.18517},
+  year={2026}
+}
+```
